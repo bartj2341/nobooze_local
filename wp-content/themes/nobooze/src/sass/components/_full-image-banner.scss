@@ -1,0 +1,57 @@
+/* ==========================================================================
+   #FULL IMAGE BANNER / PARTIAL
+   ========================================================================== */
+
+.full-banner {
+    background-color: $color-bg-gray;
+}
+
+.full-banner__bg {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-repeat: no-repeat;
+    background-position: 55% 0;
+    background-size: cover;
+    background-attachment: scroll;
+
+    @include bp(medium) {
+        background-position: left bottom;
+        background-size: contain;
+    }
+}
+
+.full-banner__wrapper {
+    min-height: 480px;
+    padding: 110px 0 40px;
+    
+
+    @include bp(medium) {
+        min-height: 600px;
+    }
+
+    @include bp(large) {
+        padding: 130px 0 35px;
+    }
+
+    @include bp(xlarge) {
+        padding: 70px 0;
+        min-height: 700px;
+
+    }
+}
+
+.full-banner__container {
+    max-width: 61%;
+    z-index: $z-lvl-1;
+    padding-top: 30px;
+
+    *:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.full-banner__title,
+.full-banner__subtitle {
+    margin-bottom: 50px;
+}

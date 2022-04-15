@@ -26,6 +26,21 @@ body.has-scrollbar {
 .wrapper-basic {
     margin-left: auto;
     margin-right: auto;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    @include bp(medium) {
+        padding-left: 35px;
+        padding-right: 35px;
+    }
+
+    @include bp(large) {
+        padding-left: 70px;
+        padding-right: 70px;
+    }
+}
+
+.wrapper-full {
+    max-width: 1200px;
+    @extend .wrapper-basic;
 }

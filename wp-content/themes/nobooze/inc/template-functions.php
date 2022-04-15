@@ -35,3 +35,20 @@ function _s_pingback_header() {
 	}
 }
 add_action( 'wp_head', '_s_pingback_header' );
+
+
+// Handle layout builders
+function nobooze_layout( $name = 'page_partials', $dir = 'page' ) 
+{
+    if ( have_rows( $name ) ) :
+        while ( have_rows( $name ) ) : the_row();
+    
+            $builder = str_replace(
+                '_', '-', get_row_layout()
+            );
+    
+            get_template_part( "partials/{$dir}/{$builder}" );
+    
+        endwhile;
+    endif;
+}

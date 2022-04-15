@@ -30,6 +30,10 @@ html {
 body {
     font-family: $text-family;
     font-size: 1.9rem; //* 19px */
+
+    * {
+        box-sizing: border-box;
+    }
 }
 
 .vh {

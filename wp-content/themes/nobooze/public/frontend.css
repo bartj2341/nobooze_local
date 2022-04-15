@@ -352,20 +352,14 @@ template {
 }
 
 @font-face {
-  font-family: "Gilroy Light";
-  src: url("/wp-content/themes/peaforme/src/fonts/Gilroy-Light.woff") format("woff"), url("/wp-content/themes/peaforme/src/fonts/Gilroy-Light.woff2") format("woff2");
+  font-family: "Proxima Nova Regular";
+  src: url("/wp-content/themes/peaforme/src/fonts/proximanova-regular.woff") format("woff"), url("/wp-content/themes/peaforme/src/fonts/proximanova-regular.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
-  font-family: "Gilroy";
-  src: url("/wp-content/themes/peaforme/src/fonts/Gilroy-Medium.woff") format("woff"), url("/wp-content/themes/peaforme/src/fonts/Gilroy-Medium.woff2") format("woff2");
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Gilroy Bold";
-  src: url("/wp-content/themes/peaforme/src/fonts/Gilroy-Bold.woff") format("woff"), url("/wp-content/themes/peaforme/src/fonts/Gilroy-Bold.woff2") format("woff2");
+  font-family: "Opens Sans Regular";
+  src: url("/wp-content/themes/peaforme/src/fonts/open-sans-regular.woff") format("woff"), url("/wp-content/themes/peaforme/src/fonts/open-sans-regular.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
 }
@@ -512,11 +506,27 @@ body.has-scrollbar .wrapper-stretched {
   margin-right: calc(-50vw + 50% + var(--scroll-bar) / 2) !important;
 }
 
-.wrapper-basic {
+.wrapper-basic, .wrapper-full {
   margin-left: auto;
   margin-right: auto;
-  padding-left: 30px;
-  padding-right: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+@media (min-width: 768px) {
+  .wrapper-basic, .wrapper-full {
+    padding-left: 35px;
+    padding-right: 35px;
+  }
+}
+@media (min-width: 1024px) {
+  .wrapper-basic, .wrapper-full {
+    padding-left: 70px;
+    padding-right: 70px;
+  }
+}
+
+.wrapper-full {
+  max-width: 1200px;
 }
 
 /* ==========================================================================
@@ -536,7 +546,7 @@ body.has-scrollbar .wrapper-stretched {
 }
 
 html {
-  color: #000;
+  color: #08192b;
   font-size: 10px;
   /* [1] */
   line-height: 1.3;
@@ -551,8 +561,11 @@ html {
 }
 
 body {
-  font-family: "Gilroy", Arial, sans-serif;
+  font-family: "Open Sans Regular", Arial, sans-serif;
   font-size: 1.9rem;
+}
+body * {
+  box-sizing: border-box;
 }
 
 .vh {
@@ -569,7 +582,7 @@ body {
 }
 
 p {
-  color: #000;
+  color: #08192b;
 }
 
 /* ==========================================================================
@@ -581,10 +594,40 @@ p {
  * http://csswizardry.com/2016/02/managing-typography-on-large-apps/).
  */
 h1, h2, h3, h4, h5, h6, .heading-family {
-  font-family: "Gilroy Bold", Arial, sans-serif;
+  font-family: "Proxima Nova Regular", Arial, sans-serif;
   line-height: 1.2;
-  color: #000;
-  letter-spacing: -2px;
+  color: #08192b;
+  font-weight: normal;
+}
+
+.heading-large {
+  /* 50px ~ 38px ~ 24px */
+  font-size: 2.4rem;
+}
+@media (min-width: 768px) {
+  .heading-large {
+    font-size: 3.8rem;
+  }
+}
+@media (min-width: 1280px) {
+  .heading-large {
+    font-size: 5rem;
+  }
+}
+
+.text-large {
+  /* 38px ~ 30px ~ 24px */
+  font-size: 2.4rem;
+}
+@media (min-width: 1024px) {
+  .text-large {
+    font-size: 3rem;
+  }
+}
+@media (min-width: 1280px) {
+  .text-large {
+    font-size: 3.8rem;
+  }
 }
 
 /* ==========================================================================
@@ -594,7 +637,7 @@ h1, h2, h3, h4, h5, h6, .heading-family {
  * Font Colors
  */
 .color-black {
-  color: #000;
+  color: #08192b;
 }
 
 .color-white {
@@ -604,16 +647,12 @@ h1, h2, h3, h4, h5, h6, .heading-family {
 /**
  * Font Weights
  */
-.light {
-  font-family: "Gilroy Light", Arial, sans-serif;
+.f-body {
+  font-family: "Open Sans Regular", Arial, sans-serif;
 }
 
-.medium {
-  font-family: "Gilroy", Arial, sans-serif;
-}
-
-.bold {
-  font-family: "Gilroy Bold", Arial, sans-serif;
+.f-heading {
+  font-family: "Proxima Nova Regular", Arial, sans-serif;
 }
 
 /**
@@ -645,6 +684,28 @@ a {
 /* ==========================================================================
    #BUTTONS
    ========================================================================== */
+.u-btn {
+  display: inline-block;
+  color: #fff;
+  padding: 12px 12px;
+  font-size: 1.8rem;
+  background: #c58511;
+  border: none;
+  position: relative;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .u-btn {
+    padding: 12px 24px;
+    font-size: 2rem;
+  }
+}
+@media (min-width: 1280px) {
+  .u-btn:hover {
+    background-color: #0a3c4e;
+  }
+}
+
 /* ==========================================================================
    #IMAGES
    ========================================================================== */
@@ -722,4 +783,62 @@ a {
 
 .h-max {
   max-height: 100%;
+}
+
+/* ==========================================================================
+   #FULL IMAGE BANNER / PARTIAL
+   ========================================================================== */
+.full-banner {
+  background-color: #d1d5d8;
+}
+
+.full-banner__bg {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-repeat: no-repeat;
+  background-position: 55% 0;
+  background-size: cover;
+  background-attachment: scroll;
+}
+@media (min-width: 768px) {
+  .full-banner__bg {
+    background-position: left bottom;
+    background-size: contain;
+  }
+}
+
+.full-banner__wrapper {
+  min-height: 480px;
+  padding: 110px 0 40px;
+}
+@media (min-width: 768px) {
+  .full-banner__wrapper {
+    min-height: 600px;
+  }
+}
+@media (min-width: 1024px) {
+  .full-banner__wrapper {
+    padding: 130px 0 35px;
+  }
+}
+@media (min-width: 1280px) {
+  .full-banner__wrapper {
+    padding: 70px 0;
+    min-height: 700px;
+  }
+}
+
+.full-banner__container {
+  max-width: 61%;
+  z-index: 100;
+  padding-top: 30px;
+}
+.full-banner__container *:last-child {
+  margin-bottom: 0;
+}
+
+.full-banner__title,
+.full-banner__subtitle {
+  margin-bottom: 50px;
 }

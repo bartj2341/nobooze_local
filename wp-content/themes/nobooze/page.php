@@ -14,13 +14,9 @@
 
 get_header();
 ?>
-
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main">
-			This is the page content.
+		<main>
+			<?php nobooze_layout(); ?>
 		</main><!-- #main -->
-	</div><!-- #primary -->
-
 <?php
 
 get_footer();

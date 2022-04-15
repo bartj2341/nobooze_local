@@ -13,5 +13,30 @@ h1, h2, h3, h4, h5, h6, .heading-family {
     font-family: $heading-family;
     line-height: 1.2; 
     color: $color-heading;
-    letter-spacing: -2px;
+    font-weight: normal;
 }
+
+.heading-large { /* 50px ~ 38px ~ 24px */
+    font-size: 2.4rem;
+
+    @include bp(medium) {
+        font-size: 3.8rem;
+    }
+
+    @include bp(xlarge) {
+        font-size: 5rem;
+    }
+}
+
+.text-large { /* 38px ~ 30px ~ 24px */
+    font-size: 2.4rem;
+
+    @include bp(large) {
+        font-size: 3rem;
+    }
+
+    @include bp(xlarge) {
+        font-size: 3.8rem;
+    }
+}
+
