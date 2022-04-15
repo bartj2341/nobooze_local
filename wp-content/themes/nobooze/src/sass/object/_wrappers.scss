@@ -1,0 +1,31 @@
+/* ==========================================================================
+   #WRAPPER
+   ========================================================================== */
+
+/**
+ * Page-level constraining and wrapping elements.
+ */
+ 
+body:not(.has-scrollbar) {
+    .wrapper-stretched {
+        width: 100vw !important;
+        margin-left: calc(-50vw + 50%) !important;
+        margin-right: calc(-50vw + 50%) !important;
+        left: 0 !important;
+    }
+}
+
+body.has-scrollbar {
+    .wrapper-stretched {
+        width: calc(100vw - var(--scroll-bar)) !important;
+        margin-left: calc(-50vw + 50% + (var(--scroll-bar) / 2)) !important;
+        margin-right: calc(-50vw + 50% + (var(--scroll-bar) / 2)) !important;
+    }
+}
+
+.wrapper-basic {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 30px;
+    padding-right: 30px;
+}

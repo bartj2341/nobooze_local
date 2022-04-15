@@ -1,0 +1,67 @@
+// ==========================================================================
+// #GLOBAL
+// ==========================================================================
+// The global settings file contains any project-wide variables; things that
+// need to be made available to the entire codebase.
+
+$global-radius: 15px !default;
+$global-opacity: 0.4;
+$btn-transition: all 200ms linear !default;
+
+/* Fonts
+   ========================================================================== */
+
+$gilroy-light: 'Gilroy Light', Arial, sans-serif !default;
+$gilroy: 'Gilroy', Arial, sans-serif !default;
+$gilroy-bold: 'Gilroy Bold', Arial, sans-serif;
+
+
+/* Breakpoints
+   ========================================================================== */
+
+$breakpoints: (
+  small: 480px,
+  medium: 768px,
+  large: 1024px,
+  xlarge: 1280px,
+  full: 1600px,
+  retina: 2500px,
+);
+
+/* Colors
+   ========================================================================== */
+
+// Colors shouldn't be used directly but reassigned
+$color-primary: #ffc759;
+$color-primary-hover: #FFD076;
+$color-white: #fff;
+$color-black: #000;
+$color-green: #35bc83;
+$color-gray: #767676;
+$color-gray-1: #f9f9f9;
+$color-gray-2: #eeeeee;
+
+// Text
+$color-text: $color-black;
+$color-text-white: $color-white;
+$color-heading: $color-black;
+
+// Background
+$color-bg: $color-gray-1;
+$color-bg-primary: $color-primary;
+$color-bg-green: $color-green;
+$color-bg-black: $color-black;
+
+// Borders
+$color-border: $color-gray-2;
+
+// Z-Index
+$z-lvl-1: 100;
+$z-lvl-2: 200;
+$z-lvl-3: 300;
+$z-lvl-4: 400;
+
+// Font Family
+$text-light: $gilroy-light;
+$text-family: $gilroy;
+$heading-family: $gilroy-bold;

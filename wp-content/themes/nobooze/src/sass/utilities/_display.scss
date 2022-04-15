@@ -1,0 +1,27 @@
+/* ==========================================================================
+   #DISPLAY
+   ========================================================================== */
+   
+.d-mobile {
+    display: block;
+
+    @include bp (large) {
+        display: none;
+    }
+}
+
+.d-medium {
+    display: none;
+
+    @include bp (medium) {
+        display: block;
+    }
+}
+
+.d-desktop {
+    display: none;
+
+    @include bp (large) {
+        display: block;
+    }
+}

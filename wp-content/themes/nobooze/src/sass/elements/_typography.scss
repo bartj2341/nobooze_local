@@ -1,0 +1,52 @@
+/* ==========================================================================
+   #TYPOGRAPHY & COLORS & FONT WEIGHTS & LINE HEIGHTS
+   ========================================================================== */
+
+/**
+ * Font Colors
+ */
+
+.color-black {
+    color: $color-text;
+}
+
+.color-white {
+    color: $color-text-white;
+}
+
+
+/**
+ * Font Weights
+ */
+
+.light {
+    font-family: $text-light;
+} 
+
+.medium {
+    font-family: $text-family;
+}
+
+.bold {
+    font-family: $heading-family;
+}
+
+
+/**
+ * Line Heights
+ */
+.line-lg {
+    line-height: 2.33;
+}
+
+.line-reset {
+    line-height: 1;
+}
+
+
+/**
+ * Letter Spacing
+ */
+.letter-spacing-sm {
+    letter-spacing: -1px;
+}
