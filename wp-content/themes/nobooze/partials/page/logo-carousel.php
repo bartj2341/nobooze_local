@@ -7,7 +7,7 @@ $title = get_sub_field("title") ? get_sub_field("title") : "";
 <section class="l-carousel wrapper-carousel">
     <div class="l-carousel__container d-flex d-flex-column d-flex-align-c">
         <?php if($title): ?>
-            <h2 class="l-carousel__title text-sixteen ls-4 u-text-center line-half"><?= $title ?></h2>
+            <div class="l-carousel__title f-heading text-sixteen ls-4 u-text-center line-half"><?= $title ?></div>
         <?php endif; ?>
         <?php if(have_rows("items")): ?>
             <div class="js-carousel l-carousel__carousel swiper">

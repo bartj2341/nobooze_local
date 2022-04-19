@@ -1262,6 +1262,21 @@ h1, h2, h3, h4, h5, h6, .heading-family {
   }
 }
 
+.text-sub {
+  /* 30px ~ 26px ~ 20px */
+  font-size: 2rem;
+}
+@media (min-width: 768px) {
+  .text-sub {
+    font-size: 2.6rem;
+  }
+}
+@media (min-width: 1024px) {
+  .text-sub {
+    font-size: 3rem;
+  }
+}
+
 .text-medium {
   /* 24px */
   font-size: 2.4rem;
@@ -1501,6 +1516,7 @@ a {
 .basic-banner {
   background-color: #1a9ac8;
   padding: 50px 0;
+  margin-bottom: 200px;
 }
 
 .basic-banner__container *:last-child {

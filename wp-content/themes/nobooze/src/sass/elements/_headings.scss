@@ -40,6 +40,18 @@ h1, h2, h3, h4, h5, h6, .heading-family {
     }
 }
 
+.text-sub { /* 30px ~ 26px ~ 20px */
+    font-size: 2rem;
+
+    @include bp(medium) {
+        font-size: 2.6rem;
+    }
+
+    @include bp(large) {
+        font-size: 3rem;
+    }
+}
+
 .text-medium { /* 24px */
     font-size: 2.4rem;
 }

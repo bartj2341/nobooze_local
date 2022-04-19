@@ -16,11 +16,11 @@ $cta = get_sub_field("cta") ? get_sub_field("cta") : "";
         <div class="full-banner__wrapper d-flex d-flex-justify-e d-flex-align-c">
             <div class="full-banner__container p-relative">
                 <?php if($title): ?>
-                    <h2 class="full-banner__title heading-large u-text-center"><?= $title ?></h2>
+                    <h1 class="full-banner__title heading-large u-text-center"><?= $title ?></h1>
                 <?php endif; ?>
     
                 <?php if($subtitle): ?>
-                    <h3 class="full-banner__subtitle text-large u-text-center"><?= $subtitle ?></h3>
+                    <h2 class="full-banner__subtitle text-large u-text-center"><?= $subtitle ?></h2>
                 <?php endif; ?>
     
                 <?php if($cta): ?>
