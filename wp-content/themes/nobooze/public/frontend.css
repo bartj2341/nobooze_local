@@ -630,17 +630,22 @@ h1, h2, h3, h4, h5, h6, .heading-family {
   }
 }
 
+.text-medium {
+  /* 24px */
+  font-size: 2.4rem;
+}
+
 /* ==========================================================================
    #TYPOGRAPHY & COLORS & FONT WEIGHTS & LINE HEIGHTS
    ========================================================================== */
 /**
  * Font Colors
  */
-.color-black {
+.c-black {
   color: #08192b;
 }
 
-.color-white {
+.c-white {
   color: #fff;
 }
 
@@ -841,4 +846,24 @@ a {
 .full-banner__title,
 .full-banner__subtitle {
   margin-bottom: 50px;
+}
+
+/* ==========================================================================
+   #BASIC BANNER / PARTIAL
+   ========================================================================== */
+.basic-banner {
+  background-color: #1a9ac8;
+  padding: 50px 0;
+}
+
+.basic-banner__container *:last-child {
+  margin-bottom: 0;
+}
+
+.basic-banner__text {
+  margin-bottom: 15px;
+}
+
+.basic-banner--narrow .basic-banner__container {
+  max-width: 760px;
 }

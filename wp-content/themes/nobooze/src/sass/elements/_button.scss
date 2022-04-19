@@ -4,10 +4,10 @@
 
 .u-btn {
    display: inline-block;
-   color: $color-text-white;
+   color: $ct-white;
    padding: 12px 12px;
    font-size: 1.8rem;
-   background: $color-bg-gold;
+   background: $cbg-gold;
    border: none;
    position: relative;
    text-align: center;
@@ -19,7 +19,7 @@
 
    @include bp(xlarge) {
       &:hover {
-         background-color: $color-bg-blue;
+         background-color: $cbg-blue;
       }
    }
 }
