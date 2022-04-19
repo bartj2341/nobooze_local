@@ -1,0 +1,29 @@
+/* ==========================================================================
+   #LOGO CAROUSEL / PARTIAL
+   ========================================================================== */
+
+.l-carousel {
+    margin-bottom: 35px;
+}
+
+.l-carousel__title {
+    margin-bottom: 20px;
+}
+
+.l-carousel__carousel {
+    width: 250px;
+
+    @include bp(medium) {
+        width: 100%;
+    }
+}
+
+.l-carousel__item {
+    padding: 15px;
+}
+
+.l-carousel__img {
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+}

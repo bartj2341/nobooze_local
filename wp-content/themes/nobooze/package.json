@@ -68,6 +68,7 @@
   },
   "dependencies": {
     "@babel/polyfill": "^7.6.0",
-    "sass": "^1.50.0"
+    "sass": "^1.50.0",
+    "swiper": "^8.1.1"
   }
 }

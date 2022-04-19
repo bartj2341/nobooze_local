@@ -5,7 +5,6 @@
 /**
  * Font Colors
  */
-
 .c-black {
     color: $ct;
 }
@@ -18,7 +17,6 @@
 /**
  * Font Weights
  */
-
 .f-body {
     font-family: $text-family;
 }
@@ -35,6 +33,10 @@
     line-height: 2.33;
 }
 
+.line-half {
+    line-height: 1.5;
+}
+
 .line-reset {
     line-height: 1;
 }
@@ -43,6 +45,6 @@
 /**
  * Letter Spacing
  */
-.letter-spacing-sm {
-    letter-spacing: -1px;
+.ls-4 {
+    letter-spacing: 4px;
 }

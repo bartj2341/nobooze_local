@@ -5,6 +5,7 @@
 * Template: freshio
 * Version: 1.7.0
 */
+@import '~swiper/swiper-bundle.css';
 @import 'settings/global';
 
 @import 'base/normalize';
@@ -33,3 +34,4 @@
 
 @import 'components/full-image-banner';
 @import 'components/basic-banner';
+@import 'components/logo-carousel';

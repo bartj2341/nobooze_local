@@ -44,3 +44,8 @@ body.has-scrollbar {
     max-width: 1200px;
     @extend .wrapper-basic;
 }
+
+.wrapper-carousel {
+    max-width: 1124px;
+    @extend .wrapper-basic;
+}
