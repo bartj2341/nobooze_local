@@ -18,7 +18,7 @@ $copy = get_sub_field("copy") ? get_sub_field("copy") : "";
             <?php endif; ?>
 
             <?php if($subtitle): ?>
-                <h3 class="heavy-text__subtitle text-sub u-text-center line-half"><?= $subtitle ?></h3>
+                <h3 class="heavy-text__subtitle heading-sub u-text-center line-half"><?= $subtitle ?></h3>
             <?php endif; ?>
 
             <?php if($copy): ?>

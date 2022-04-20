@@ -16,6 +16,18 @@ h1, h2, h3, h4, h5, h6, .heading-family {
     font-weight: normal;
 }
 
+.heading-hero { /* 51px ~ 40px ~ 30px */
+    font-size: 3rem;
+
+    @include bp(medium) {
+        font-size: 4rem;
+    }
+
+    @include bp(large) {
+        font-size: 5.1rem;
+    }
+}
+
 .heading-xlarge { /* 50px ~ 38px ~ 24px */
     font-size: 2.4rem;
 
@@ -48,7 +60,7 @@ h1, h2, h3, h4, h5, h6, .heading-family {
     }
 }
 
-.text-large { /* 38px ~ 30px ~ 24px */
+.heading-large { /* 38px ~ 30px ~ 24px */
     font-size: 2.4rem;
 
     @include bp(medium) {
@@ -60,7 +72,7 @@ h1, h2, h3, h4, h5, h6, .heading-family {
     }
 }
 
-.text-sub { /* 30px ~ 26px ~ 20px */
+.heading-sub { /* 30px ~ 26px ~ 20px */
     font-size: 2rem;
 
     @include bp(medium) {
