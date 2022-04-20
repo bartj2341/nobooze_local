@@ -9,13 +9,13 @@ $author = get_sub_field("author") ? get_sub_field("author") : "";
 <section class="basic-banner p-relative <?php foreach ($modifier as $value) { echo(' ' . $value); } ?>">
     <div class="wrapper-full">
         <div class="basic-banner__wrapper d-flex d-flex-justify-c">
-            <div class="basic-banner__container">
+            <div class="basic-banner__container p-relative">
                 <?php if($text): ?>
-                    <div class="basic-banner__text f-heading text-large c-white u-text-center"><?= $text ?></div>
+                    <p class="basic-banner__text f-heading text-banner c-white u-text-center"><?= $text ?></p>
                 <?php endif; ?>
     
                 <?php if($author): ?>
-                    <div class="basic-banner__author f-heading c-white text-medium u-text-center"><?= $author ?></div>
+                    <p class="basic-banner__author f-heading c-white text-medium u-text-center"><?= $author ?></p>
                 <?php endif; ?>
             </div>
         </div>

@@ -1,0 +1,53 @@
+/* ==========================================================================
+   #HEAVY TEXT / PARTIAL
+   ========================================================================== */
+
+.heavy-text {
+    padding: 170px 0 70px 0;
+    margin-top: -100px;
+}
+
+.heavy-text__bg {
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: auto;
+    background-attachment: scroll;
+
+    @include bp(large) {
+        background-position: right top;
+        background-size: contain;
+    }
+}
+
+.heavy-text__container {
+    z-index: $z-lvl-1;
+
+    @include bp(xlarge) {
+        padding: 20px;
+    }
+}
+
+.heavy-text__title {
+    margin-bottom: 20px;
+}
+
+.heavy-text__subtitle {
+    margin-bottom: 40px;
+}
+
+.heavy-text__copy {
+    max-width: 800px;
+    padding: 0 20px;
+    margin: 0 auto; 
+
+    p {
+        margin: 0 0 10px 0;
+
+        &:last-child {
+            margin: 0;
+        }
+    }
+}

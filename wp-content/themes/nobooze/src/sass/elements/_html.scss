@@ -19,7 +19,7 @@
 html {
     color: $ct; 
     font-size: 10px; /* [1] */
-    line-height: 1.3; /* [1] */
+    line-height: 1.2; /* [1] */
     min-height: 100%; /* [3] */
     overflow-y: scroll; /* [2] */
     -moz-osx-font-smoothing: grayscale;
@@ -29,11 +29,16 @@ html {
 
 body {
     font-family: $text-family;
-    font-size: 1.9rem; //* 19px */
-
+    font-size: 1.7rem; //* 17px */
+    
     * {
         box-sizing: border-box;
     }
+
+    @include bp(medium) {
+        font-size: 1.9rem; //* 19px */
+    }
+
 }
 
 .vh {

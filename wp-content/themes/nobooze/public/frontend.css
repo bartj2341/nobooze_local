@@ -1154,7 +1154,7 @@ body.has-scrollbar .wrapper-stretched {
 }
 
 .wrapper-full {
-  max-width: 1200px;
+  max-width: 1240px;
 }
 
 .wrapper-carousel {
@@ -1181,7 +1181,7 @@ html {
   color: #08192b;
   font-size: 10px;
   /* [1] */
-  line-height: 1.3;
+  line-height: 1.2;
   /* [1] */
   min-height: 100%;
   /* [3] */
@@ -1194,10 +1194,15 @@ html {
 
 body {
   font-family: "Open Sans Regular", Arial, sans-serif;
-  font-size: 1.9rem;
+  font-size: 1.7rem;
 }
 body * {
   box-sizing: border-box;
+}
+@media (min-width: 768px) {
+  body {
+    font-size: 1.9rem;
+  }
 }
 
 .vh {
@@ -1241,9 +1246,24 @@ h1, h2, h3, h4, h5, h6, .heading-family {
     font-size: 3.8rem;
   }
 }
-@media (min-width: 1280px) {
+@media (min-width: 1024px) {
   .heading-large {
     font-size: 5rem;
+  }
+}
+
+.text-banner {
+  /* 38px ~ 32px ~ 24px */
+  font-size: 2.4rem;
+}
+@media (min-width: 768px) {
+  .text-banner {
+    font-size: 3.2rem;
+  }
+}
+@media (min-width: 1024px) {
+  .text-banner {
+    font-size: 3.8rem;
   }
 }
 
@@ -1256,7 +1276,7 @@ h1, h2, h3, h4, h5, h6, .heading-family {
     font-size: 3rem;
   }
 }
-@media (min-width: 1280px) {
+@media (min-width: 1024px) {
   .text-large {
     font-size: 3.8rem;
   }
@@ -1452,6 +1472,13 @@ a {
 }
 
 /* ==========================================================================
+   # SPACING
+   ========================================================================== */
+.m-reset {
+  margin: 0;
+}
+
+/* ==========================================================================
    #FULL IMAGE BANNER / PARTIAL
    ========================================================================== */
 .full-banner {
@@ -1482,24 +1509,26 @@ a {
 @media (min-width: 768px) {
   .full-banner__wrapper {
     min-height: 600px;
+    padding: 130px 0 35px;
   }
 }
 @media (min-width: 1024px) {
   .full-banner__wrapper {
-    padding: 130px 0 35px;
-  }
-}
-@media (min-width: 1280px) {
-  .full-banner__wrapper {
-    padding: 70px 0;
     min-height: 700px;
+    padding: 70px 0;
   }
 }
 
 .full-banner__container {
-  max-width: 61%;
+  max-width: 65%;
   z-index: 100;
-  padding-top: 30px;
+  padding: 50px 0 0 20px;
+}
+@media (min-width: 768px) {
+  .full-banner__container {
+    max-width: 62%;
+    padding: 50px 20px 0;
+  }
 }
 .full-banner__container *:last-child {
   margin-bottom: 0;
@@ -1507,7 +1536,7 @@ a {
 
 .full-banner__title,
 .full-banner__subtitle {
-  margin-bottom: 50px;
+  margin: 0 0 50px 0;
 }
 
 /* ==========================================================================
@@ -1515,12 +1544,15 @@ a {
    ========================================================================== */
 .basic-banner {
   background-color: #1a9ac8;
-  padding: 50px 0;
-  margin-bottom: 200px;
+  padding: 20px 0;
 }
 
+.basic-banner__container {
+  padding: 30px 20px;
+  z-index: 100;
+}
 .basic-banner__container *:last-child {
-  margin-bottom: 0;
+  margin: 0;
 }
 
 .basic-banner__text {
@@ -1559,4 +1591,57 @@ a {
   max-width: 100%;
   height: auto;
   margin: 0 auto;
+}
+
+/* ==========================================================================
+   #HEAVY TEXT / PARTIAL
+   ========================================================================== */
+.heavy-text {
+  padding: 170px 0 70px 0;
+  margin-top: -100px;
+}
+
+.heavy-text__bg {
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: auto;
+  background-attachment: scroll;
+}
+@media (min-width: 1024px) {
+  .heavy-text__bg {
+    background-position: right top;
+    background-size: contain;
+  }
+}
+
+.heavy-text__container {
+  z-index: 100;
+}
+@media (min-width: 1280px) {
+  .heavy-text__container {
+    padding: 20px;
+  }
+}
+
+.heavy-text__title {
+  margin-bottom: 20px;
+}
+
+.heavy-text__subtitle {
+  margin-bottom: 40px;
+}
+
+.heavy-text__copy {
+  max-width: 800px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+.heavy-text__copy p {
+  margin: 0 0 10px 0;
+}
+.heavy-text__copy p:last-child {
+  margin: 0;
 }

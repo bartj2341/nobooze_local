@@ -4,13 +4,15 @@
 
 .basic-banner {
     background-color: $cbg-blue-2;
-    padding: 50px 0;
-    margin-bottom: 200px;
+    padding: 20px 0;
 }
 
 .basic-banner__container {
+    padding: 30px 20px;
+    z-index: $z-lvl-1;
+
     *:last-child {
-        margin-bottom: 0;
+        margin: 0;
     }
 }
 

@@ -18,21 +18,13 @@ export class SwiperCarousel {
       slidesPerGroup: 1,
       spaceBetween: 20,
       loop: true,
-      autoplay: {
-        delay: 5000,
-      },
       breakpoints: {
         768: {
           slidesPerView: 4,
           slidesPerGroup: 4,
           resistanceRatio: 0,
-          autoplay: {
-            delay: 5000,
-          },
         }
       }
-
-      
     });
   }
 }

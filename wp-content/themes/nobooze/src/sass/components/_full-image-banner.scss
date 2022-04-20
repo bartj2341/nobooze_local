@@ -29,23 +29,24 @@
 
     @include bp(medium) {
         min-height: 600px;
-    }
-
-    @include bp(large) {
         padding: 130px 0 35px;
     }
 
-    @include bp(xlarge) {
-        padding: 70px 0;
+    @include bp(large) {
         min-height: 700px;
-
+        padding: 70px 0;
     }
 }
 
 .full-banner__container {
-    max-width: 61%;
+    max-width: 65%;
     z-index: $z-lvl-1;
-    padding-top: 30px;
+    padding: 50px 0 0 20px;
+
+    @include bp(medium) {
+        max-width: 62%;
+        padding: 50px 20px 0;
+    }
 
     *:last-child {
         margin-bottom: 0;
@@ -54,5 +55,5 @@
 
 .full-banner__title,
 .full-banner__subtitle {
-    margin-bottom: 50px;
+    margin: 0 0 50px 0;
 }
