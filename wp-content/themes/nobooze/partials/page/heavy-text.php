@@ -14,7 +14,7 @@ $copy = get_sub_field("copy") ? get_sub_field("copy") : "";
     <div class="heavy-text__wrapper d-flex d-flex-justify-c wrapper-full">
         <div class="heavy-text__container p-relative">
             <?php if($title): ?>
-                <h2 class="heavy-text__title text-large u-text-center"><?= $title ?></h2>
+                <h2 class="heavy-text__title heading-heavy u-text-center"><?= $title ?></h2>
             <?php endif; ?>
 
             <?php if($subtitle): ?>

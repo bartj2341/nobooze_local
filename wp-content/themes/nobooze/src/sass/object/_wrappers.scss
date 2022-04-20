@@ -26,26 +26,26 @@ body.has-scrollbar {
 .wrapper-basic {
     margin-left: auto;
     margin-right: auto;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
 
     @include bp(medium) {
-        padding-left: 35px;
-        padding-right: 35px;
+        padding-left: 55px;
+        padding-right: 55px;
     }
 
     @include bp(large) {
-        padding-left: 70px;
-        padding-right: 70px;
+        padding-left: 90px;
+        padding-right: 90px;
     }
 }
 
 .wrapper-full {
-    max-width: 1240px;
+    max-width: 1280px;
     @extend .wrapper-basic;
 }
 
 .wrapper-carousel {
-    max-width: 1124px;
+    max-width: 1204px;
     @extend .wrapper-basic;
 }

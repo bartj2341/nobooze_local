@@ -25,11 +25,12 @@
 .full-banner__wrapper {
     min-height: 480px;
     padding: 110px 0 40px;
+    margin: 0 -20px;
     
-
     @include bp(medium) {
         min-height: 600px;
         padding: 130px 0 35px;
+        margin: 0;
     }
 
     @include bp(large) {
@@ -39,13 +40,16 @@
 }
 
 .full-banner__container {
-    max-width: 65%;
+    max-width: 60%;
     z-index: $z-lvl-1;
-    padding: 50px 0 0 20px;
+    padding-top: 30px;
 
     @include bp(medium) {
-        max-width: 62%;
-        padding: 50px 20px 0;
+        max-width: 61%;
+    }
+
+    @include bp(large) {
+        max-width: 59%;
     }
 
     *:last-child {

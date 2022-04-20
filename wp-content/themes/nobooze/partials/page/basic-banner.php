@@ -11,7 +11,7 @@ $author = get_sub_field("author") ? get_sub_field("author") : "";
         <div class="basic-banner__wrapper d-flex d-flex-justify-c">
             <div class="basic-banner__container p-relative">
                 <?php if($text): ?>
-                    <p class="basic-banner__text f-heading text-banner c-white u-text-center"><?= $text ?></p>
+                    <p class="basic-banner__text f-heading heading-banner c-white u-text-center"><?= $text ?></p>
                 <?php endif; ?>
     
                 <?php if($author): ?>
