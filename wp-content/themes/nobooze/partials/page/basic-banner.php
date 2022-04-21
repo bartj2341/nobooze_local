@@ -1,6 +1,7 @@
 <?php
 
 $modifier = get_sub_field("modifier") ? get_sub_field("modifier") : [];
+$title = get_sub_field("title") ? get_sub_field("title") : "";
 $text = get_sub_field("text") ? get_sub_field("text") : "";
 $author = get_sub_field("author") ? get_sub_field("author") : "";
 
@@ -10,8 +11,12 @@ $author = get_sub_field("author") ? get_sub_field("author") : "";
     <div class="wrapper-xlarge">
         <div class="basic-banner__wrapper d-flex d-flex-justify-c">
             <div class="basic-banner__container p-relative">
+                <?php if($title): ?>
+                    <h2 class="basic-banner__title f-heading heading-banner c-white u-text-center"><?= $title ?></h2>
+                <?php endif; ?>
+    
                 <?php if($text): ?>
-                    <p class="basic-banner__text f-heading heading-banner c-white u-text-center"><?= $text ?></p>
+                    <p class="basic-banner__text f-heading heading-basic c-white u-text-center"><?= $text ?></p>
                 <?php endif; ?>
     
                 <?php if($author): ?>

@@ -15,6 +15,10 @@
     }
 }
 
+.basic-banner__title {
+    margin-bottom: 30px;
+}
+
 .basic-banner__text {
     margin-bottom: 15px;
 }
@@ -23,5 +27,12 @@
 .basic-banner--narrow {
     .basic-banner__container {
         max-width: 760px;
+    }
+}
+
+.basic-banner--blue-gradient {
+    &.basic-banner {
+        background-color: transparent;
+        background: radial-gradient(at center center, $cbg-blue-2 15%, $cbg-blue 100%)
     }
 }

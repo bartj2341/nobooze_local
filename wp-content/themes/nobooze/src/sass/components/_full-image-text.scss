@@ -1,13 +1,13 @@
 /* ==========================================================================
-   #FULL IMAGE BANNER / PARTIAL
+   #FULL IMAGE TEXT / PARTIAL
    ========================================================================== */
 
-.full-banner {
+.full-image {
     background-color: $cbg-gray;
     margin-bottom: 55px;
 }
 
-.full-banner__bg {
+.full-image__bg {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -22,7 +22,7 @@
     }
 }
 
-.full-banner__wrapper {
+.full-image__wrapper {
     min-height: 480px;
     padding: 110px 0 40px;
     margin: 0 -20px;
@@ -39,7 +39,7 @@
     }
 }
 
-.full-banner__container {
+.full-image__container {
     max-width: 60%;
     z-index: $z-lvl-1;
     padding-top: 30px;
@@ -57,7 +57,7 @@
     }
 }
 
-.full-banner__title,
-.full-banner__subtitle {
+.full-image__title,
+.full-image__subtitle {
     margin: 0 0 50px 0;
 }
