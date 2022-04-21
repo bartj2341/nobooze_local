@@ -1205,7 +1205,7 @@ body * {
 }
 @media (min-width: 768px) {
   body {
-    font-size: 1.9rem;
+    font-size: 1.8rem;
   }
 }
 
@@ -1691,7 +1691,7 @@ a {
 
 .hero-banner__wrapper {
   min-height: 371px;
-  padding: 70px 0;
+  padding: 110px 0 120px;
 }
 @media (min-width: 768px) {
   .hero-banner__wrapper {
@@ -1710,6 +1710,15 @@ a {
   left: 0;
 }
 
+.hero-banner__container {
+  z-index: 100;
+}
+@media (min-width: 480px) {
+  .hero-banner__container {
+    padding: 0 20px;
+  }
+}
+
 .hero-banner__title {
   margin-bottom: 10px;
 }
@@ -1717,13 +1726,29 @@ a {
 /* ==========================================================================
    #FIFTY FIFTY / PARTIAL
    ========================================================================== */
-.fifty__wrapper {
-  min-height: 520px;
+@media (min-width: 768px) {
+  .fifty__wrapper {
+    justify-content: flex-end;
+    align-items: center;
+  }
 }
 
 .fifty__container {
-  padding: 90px 0 90px 70px;
-  width: 50%;
+  width: 100%;
+  justify-content: center;
+  padding: 40px 0 50px;
+}
+@media (min-width: 768px) {
+  .fifty__container {
+    justify-content: flex-end;
+    padding: 40px 0 40px 40px;
+    width: 50%;
+  }
+}
+@media (min-width: 1024px) {
+  .fifty__container {
+    padding: 90px 0 90px 70px;
+  }
 }
 
 .fifty__content {
@@ -1742,15 +1767,34 @@ a {
 }
 
 .fifty__image {
-  position: absolute;
-  width: 50%;
+  margin-top: -100px;
+}
+@media (min-width: 768px) {
+  .fifty__image {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    left: 0;
+    bottom: 0;
+    margin: 0;
+  }
+}
+
+.fifty__img {
   height: 100%;
-  left: 0;
-  bottom: 0;
+  width: 100%;
+  object-fit: cover;
 }
 
 .fifty--rounded .fifty__image {
-  height: calc(100% + 100px);
   border-top-right-radius: 1000px;
   overflow: hidden;
+  margin-right: 100px;
+  height: 400px;
+}
+@media (min-width: 768px) {
+  .fifty--rounded .fifty__image {
+    height: calc(100% + 100px);
+    margin: 0;
+  }
 }

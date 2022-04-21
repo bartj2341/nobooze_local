@@ -1,6 +1,6 @@
 .hero-banner__wrapper {
     min-height: 371px;
-    padding: 70px 0;
+    padding: 110px 0 120px;
 
     @include bp(medium) {
         min-height: 416px;
@@ -15,6 +15,14 @@
     position: absolute;
     top: 0;
     left: 0;
+}
+
+.hero-banner__container {
+    z-index: $z-lvl-1;
+    
+    @include bp(small) {
+        padding: 0 20px;
+    }
 }
 
 .hero-banner__title {

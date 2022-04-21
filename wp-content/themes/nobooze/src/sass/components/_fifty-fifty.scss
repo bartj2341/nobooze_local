@@ -3,12 +3,26 @@
    ========================================================================== */
 
 .fifty__wrapper {
-    min-height: 520px;
+    @include bp(medium) {
+        justify-content: flex-end;
+        align-items: center;
+    }
 }
 
 .fifty__container {
-    padding: 90px 0 90px 70px;
-    width: 50%;
+    width: 100%;
+    justify-content: center;
+    padding: 40px 0 50px;
+    
+    @include bp(medium) {
+        justify-content: flex-end;
+        padding: 40px 0 40px 40px;
+        width: 50%;
+    }
+
+    @include bp(large) {
+        padding: 90px 0 90px 70px;
+    }
 }
 
 .fifty__content {
@@ -30,19 +44,36 @@
 }
 
 .fifty__image {
-    position: absolute;
-    width: 50%;
+    margin-top: -100px;
+    
+    @include bp(medium) {
+        position: absolute;
+        width: 50%;
+        height: 100%;
+        left: 0;
+        bottom: 0;
+        margin: 0;
+    }
+}
+
+.fifty__img {
     height: 100%;
-    left: 0;
-    bottom: 0;
+    width: 100%;
+    object-fit: cover;
 }
 
 // Modifiers
 .fifty--rounded {
     .fifty__image {
-        height: calc(100% + 100px);
         border-top-right-radius: 1000px;
         overflow: hidden;
+        margin-right: 100px;
+        height: 400px;
+
+        @include bp(medium) {
+            height: calc(100% + 100px);
+            margin: 0;
+        }
     }
 }
 
