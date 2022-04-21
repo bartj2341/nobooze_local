@@ -8,12 +8,12 @@ $text = get_sub_field("text") ? get_sub_field("text") : "";
 ?>
 
 
-<section class="fifty p-relative <?php foreach ($modifier as $value) { echo(' ' . $value); } ?>">
+<section class="fifty p-relative d-flex d-flex-wrap <?php foreach ($modifier as $value) { echo(' ' . $value); } ?>">
     <div class="fifty__image">
-        <img src="<?= $image["url"] ?>" alt="<?= $image["alt"] ?>" class="fifty__img">
+        <img src="<?= $image["url"] ?>" alt="<?= $image["alt"] ?>" class="fifty__img w-100 h-100 fit-cover">
     </div>
-    <div class="fifty__wrapper wrapper-full d-flex d-flex-wrap">
-        <div class="fifty__container p-relative d-flex">
+    <div class="fifty__wrapper wrapper-full d-flex d-flex-wrap w-100">
+        <div class="fifty__container p-relative d-flex d-flex-justify-e">
             <div class="fifty__content">
             <?php if($title): ?>
                     <p class="fifty__title f-heading heading-fifty m-reset"><?= $title ?></p>

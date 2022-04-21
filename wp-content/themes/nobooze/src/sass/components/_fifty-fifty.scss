@@ -44,8 +44,6 @@
 }
 
 .fifty__image {
-    margin-top: -100px;
-    
     @include bp(medium) {
         position: absolute;
         width: 50%;
@@ -69,11 +67,61 @@
         overflow: hidden;
         margin-right: 100px;
         height: 400px;
+        margin-top: -100px;
 
         @include bp(medium) {
             height: calc(100% + 100px);
+            margin-right: 0;
+        }
+    }
+}
+
+.fifty--gray-bg {
+    background-color: $cbg-gray-2;
+}
+
+.fifty--invert {
+    .fifty__image {
+        order: 2;
+
+        @include bp(medium) {
+            position: absolute;
+            width: 50%;
+            height: 100%;
+            right: 0;
+            left: auto;
+            bottom: 0;
             margin: 0;
         }
+    }
+
+    .fifty__wrapper,
+    .fifty__container {
+        @include bp(medium) {
+            justify-content: flex-start;
+        }
+    }
+
+    .fifty__container {
+        order: 0;
+
+        @include bp(medium) {
+            padding: 40px 40px 40px 0;
+        }
+
+        @include bp(large) {
+            padding: 90px 70px 90px 0;
+        }
+    }
+}
+
+.fifty--always-top {
+    .fifty__image {
+        order: 0;
+    }
+
+    .fifty__container {
+        order: 2;
     }
 }
 
