@@ -1,0 +1,49 @@
+/* ==========================================================================
+   #FIFTY FIFTY / PARTIAL
+   ========================================================================== */
+
+.fifty__wrapper {
+    min-height: 520px;
+}
+
+.fifty__container {
+    padding: 90px 0 90px 70px;
+    width: 50%;
+}
+
+.fifty__content {
+    max-width: 460px;
+}
+
+.fifty__text {
+    p {
+        margin: 0 0 10px 0;
+
+        &:last-child {
+            margin: 0;
+        }
+    }
+}
+
+.fifty__title { 
+    margin-bottom: 50px;
+}
+
+.fifty__image {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    left: 0;
+    bottom: 0;
+}
+
+// Modifiers
+.fifty--rounded {
+    .fifty__image {
+        height: calc(100% + 100px);
+        border-top-right-radius: 1000px;
+        overflow: hidden;
+    }
+}
+
+

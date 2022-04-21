@@ -12,7 +12,7 @@ $cta = get_sub_field("cta") ? get_sub_field("cta") : "";
     <?php if($bg_image): ?>
         <div class="full-banner__bg w-100 h-100" style="background-image: url(<?= $bg_image["url"] ?>)"></div>
     <?php endif; ?>
-    <div class="wrapper-full">
+    <div class="wrapper-xlarge">
         <div class="full-banner__wrapper d-flex d-flex-justify-e d-flex-align-c">
             <div class="full-banner__container p-relative">
                 <?php if($title): ?>

@@ -7,7 +7,7 @@ $author = get_sub_field("author") ? get_sub_field("author") : "";
 ?>
 
 <section class="basic-banner p-relative <?php foreach ($modifier as $value) { echo(' ' . $value); } ?>">
-    <div class="wrapper-full">
+    <div class="wrapper-xlarge">
         <div class="basic-banner__wrapper d-flex d-flex-justify-c">
             <div class="basic-banner__container p-relative">
                 <?php if($text): ?>
