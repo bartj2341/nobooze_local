@@ -28,6 +28,14 @@ h1, h2, h3, h4, h5, h6, .heading-family {
     }
 }
 
+.heading-heavy-lg { /* 51px ~ 34px */
+    font-size: 3.4rem;
+
+    @include bp(medium) {
+        font-size: 5.1rem;
+    }
+}
+
 .heading-xlarge { /* 50px ~ 38px ~ 24px */
     font-size: 2.4rem;
 

@@ -1,5 +1,6 @@
 <?php
 
+$modifier = get_sub_field("modifier") ? get_sub_field("modifier") : [];
 $decoration = get_sub_field("decoration") ? get_sub_field("decoration") : "";
 $title = get_sub_field("title") ? get_sub_field("title") : "";
 $subtitle = get_sub_field("subtitle") ? get_sub_field("subtitle") : "";
@@ -7,7 +8,7 @@ $copy = get_sub_field("copy") ? get_sub_field("copy") : "";
 
 ?>
 
-<section class="heavy-text p-relative">
+<section class="heavy-text p-relative <?php foreach ($modifier as $value) { echo(' ' . $value); } ?>">
     <?php if($decoration): ?>
         <div class="heavy-text__bg w-100 h-100" style="background-image: url(<?= $decoration["url"] ?>)"></div>
     <?php endif; ?>
