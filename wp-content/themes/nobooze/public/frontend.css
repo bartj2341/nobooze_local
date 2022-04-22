@@ -1945,11 +1945,26 @@ a {
   }
 }
 
-@media (min-width: 768px) {
-  .contact-form__wrapper {
-    justify-content: flex-end;
-    align-items: center;
+.contact-form__decoration {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center bottom;
+  background-size: contain;
+}
+@media (min-width: 1024px) {
+  .contact-form__decoration {
+    background-position: right bottom;
+    background-size: auto;
   }
+}
+
+.contact-form__decoration__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .contact-form__image {
@@ -1977,20 +1992,21 @@ a {
   }
 }
 
-.contact-form__container {
+.contact-form__wrapper {
   width: 100%;
   justify-content: center;
   padding: 30px 40px 66px;
+  z-index: 100;
 }
 @media (min-width: 768px) {
-  .contact-form__container {
+  .contact-form__wrapper {
     justify-content: flex-end;
     padding: 200px 40px 40px 40px;
     width: 54%;
   }
 }
 @media (min-width: 1024px) {
-  .contact-form__container {
+  .contact-form__wrapper {
     padding: 200px 70px 70px;
   }
 }
