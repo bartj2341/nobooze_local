@@ -1,10 +1,15 @@
 import { vh, handleWindow } from './js/helpers'
 import { SwiperCarousel } from './js/swiper'
 
-const carousel = document.querySelector(".js-carousel");
+import $ from 'jquery';
 
-if(carousel) {
-    new SwiperCarousel()
-}
+window.addEventListener("DOMContentLoaded", () => {
 
-handleWindow()
+    const carousel = document.querySelector(".js-carousel");
+    
+    if(carousel) {
+        new SwiperCarousel()
+    }
+    
+    handleWindow()
+})

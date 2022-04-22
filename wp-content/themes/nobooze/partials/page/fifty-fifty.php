@@ -10,7 +10,7 @@ $text = get_sub_field("text") ? get_sub_field("text") : "";
 
 <section class="fifty p-relative d-flex d-flex-wrap <?php foreach ($modifier as $value) { echo(' ' . $value); } ?>">
     <div class="fifty__image">
-        <img src="<?= $image["url"] ?>" alt="<?= $image["alt"] ?>" class="fifty__img w-100 h-100 fit-cover">
+        <img src="<?= $image["url"] ?>" alt="<?= $image["alt"] ?>" class="fifty__img">
     </div>
     <div class="fifty__wrapper wrapper-full d-flex d-flex-wrap w-100">
         <div class="fifty__container p-relative d-flex d-flex-justify-e">

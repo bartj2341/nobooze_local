@@ -17,8 +17,12 @@
 /**
  * Font Weights
  */
-.f-body {
+.f-text {
     font-family: $text-family;
+}
+
+.f-text-bold {
+    font-family: $text-bold;
 }
 
 .f-heading {

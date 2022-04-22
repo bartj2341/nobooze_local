@@ -1,0 +1,83 @@
+/* ==========================================================================
+   #CONTACT FORM / PARTIAL
+   ========================================================================== */
+
+.contact-form {
+    background-color: $cbg-gray-2;
+    justify-content: center;
+
+    @include bp(medium) {
+        justify-content: unset;
+    }
+}
+
+.contact-form__wrapper {
+    @include bp(medium) {
+        justify-content: flex-end;
+        align-items: center;
+    }
+}
+
+.contact-form__image {
+    width: 100%;
+    max-width: 400px;
+    height: 280px;
+
+    @include bp(medium) {
+        width: 46%;
+        height: auto;
+        max-width: unset;
+    }
+}
+
+.contact-form__img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center top;
+
+    @include bp(medium) {
+        object-position: 50% 50%;
+    }
+}
+
+.contact-form__container {
+    width: 100%;
+    justify-content: center;
+    padding: 30px 40px 66px;
+    
+    @include bp(medium) {
+        justify-content: flex-end;
+        padding: 200px 40px 40px 40px;
+        width: 54%;
+    }
+
+    @include bp(large) {
+        padding: 200px 70px 70px;
+    }
+}
+
+.contact-form__title {
+    margin-bottom: 50px;
+}
+
+.contact-form__text {
+    margin-bottom: 60px;
+
+    p {
+        margin: 0 0 10px 0;
+
+        &:last-child {
+            margin: 0;
+        }
+    }
+}
+
+.contact-form__text {
+    max-width: 430px;
+}
+
+.contact-form__form {
+    max-width: 100%;
+    width: 460px;
+}

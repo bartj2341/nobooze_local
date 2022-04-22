@@ -40,6 +40,11 @@ body.has-scrollbar {
     }
 }
 
+.wrapper-contact {
+    max-width: 1920px;
+    @extend .wrapper-basic;
+}
+
 .wrapper-full {
     max-width: 1630px;
     @extend .wrapper-basic;

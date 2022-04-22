@@ -13,6 +13,7 @@ $btn-transition: all 200ms linear !default;
 
 $proxima-regular: 'Proxima Nova Regular', Arial, sans-serif;
 $open-regular: 'Open Sans Regular', Arial, sans-serif;
+$open-bold : 'Open Sans Bold', Arial, sans-serif;
 
 
 /* Breakpoints
@@ -20,6 +21,7 @@ $open-regular: 'Open Sans Regular', Arial, sans-serif;
 
 $breakpoints: (
   small: 480px,
+  xsmall: 640px,
   medium: 768px,
   large: 1024px,
   xlarge: 1280px,
@@ -38,6 +40,7 @@ $c-gray-2: #f0f0f0;
 $c-gold: #c58511;
 $c-blue: #0a3c4e;
 $c-blue-2: #1a9ac8;
+$c-yellow: #f6db91;
 
 // Text
 $ct: $c-black;
@@ -50,8 +53,11 @@ $cbg-gray-2: $c-gray-2;
 $cbg-gold: $c-gold;
 $cbg-blue: $c-blue;
 $cbg-blue-2: $c-blue-2;
+$cbg-white: $c-white;
 
 // Borders
+$cb-blue: $c-blue;
+$cb-yellow: $c-yellow;
 
 // Z-Index
 $z-lvl-1: 100;
@@ -61,4 +67,5 @@ $z-lvl-4: 400;
 
 // Font Family
 $text-family: $open-regular;
+$text-bold: $open-bold;
 $heading-family: $proxima-regular;
