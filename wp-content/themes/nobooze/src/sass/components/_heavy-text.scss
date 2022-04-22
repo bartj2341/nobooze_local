@@ -24,7 +24,8 @@
 
 .heavy-text__copy {
     max-width: 760px;
-    margin: 0 auto; 
+    margin: 0 auto;
+    text-align: center; 
 
     p {
         margin: 0 0 10px 0;
@@ -77,5 +78,11 @@
 .heavy-text--title-mb-lg {
     .heavy-text__title {
         margin-bottom: 50px;
+    }
+}
+
+.heavy-text--align-left {
+    .heavy-text__copy {
+        text-align: left;
     }
 }

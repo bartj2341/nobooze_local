@@ -23,7 +23,7 @@ $copy = get_sub_field("copy") ? get_sub_field("copy") : "";
             <?php endif; ?>
 
             <?php if($copy): ?>
-                <div class="heavy-text__copy u-text-center line-half"><?= $copy ?></div>
+                <div class="heavy-text__copy line-half"><?= $copy ?></div>
             <?php endif; ?>
         </div>
     </div>

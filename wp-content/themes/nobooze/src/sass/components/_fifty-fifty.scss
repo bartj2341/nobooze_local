@@ -44,6 +44,8 @@
 }
 
 .fifty__image {
+    width: 100%;
+    
     @include bp(medium) {
         position: absolute;
         width: 50%;

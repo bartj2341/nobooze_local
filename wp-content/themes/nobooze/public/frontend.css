@@ -1211,14 +1211,14 @@ html::-webkit-scrollbar {
 
 body {
   font-family: "Open Sans Regular", Arial, sans-serif;
-  font-size: 1.7rem;
+  font-size: 1.8rem;
 }
 body * {
   box-sizing: border-box;
 }
 @media (min-width: 768px) {
   body {
-    font-size: 1.8rem;
+    font-size: 1.9rem;
   }
 }
 
@@ -1738,6 +1738,7 @@ a {
 .heavy-text__copy {
   max-width: 760px;
   margin: 0 auto;
+  text-align: center;
 }
 .heavy-text__copy p {
   margin: 0 0 10px 0;
@@ -1777,6 +1778,10 @@ a {
 
 .heavy-text--title-mb-lg .heavy-text__title {
   margin-bottom: 50px;
+}
+
+.heavy-text--align-left .heavy-text__copy {
+  text-align: left;
 }
 
 .hero-banner__wrapper {
@@ -1856,6 +1861,9 @@ a {
   margin-bottom: 50px;
 }
 
+.fifty__image {
+  width: 100%;
+}
 @media (min-width: 768px) {
   .fifty__image {
     position: absolute;

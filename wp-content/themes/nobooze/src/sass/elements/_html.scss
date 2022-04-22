@@ -33,14 +33,14 @@ html {
 
 body {
     font-family: $text-family;
-    font-size: 1.7rem; //* 17px */
+    font-size: 1.8rem; //* 18px */
     
     * {
         box-sizing: border-box;
     }
 
     @include bp(medium) {
-        font-size: 1.8rem; //* 18px */
+        font-size: 1.9rem; //* 19px */
     }
 
 }
