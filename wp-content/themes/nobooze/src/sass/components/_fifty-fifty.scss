@@ -2,26 +2,19 @@
    #FIFTY FIFTY / PARTIAL
    ========================================================================== */
 
-.fifty__wrapper {
-    @include bp(medium) {
-        justify-content: flex-end;
-        align-items: center;
-    }
-}
-
 .fifty__container {
     width: 100%;
     justify-content: center;
+    align-items: center;
     padding: 40px 0 50px;
     
     @include bp(medium) {
-        justify-content: flex-end;
         padding: 40px 0 40px 40px;
         width: 50%;
     }
 
     @include bp(large) {
-        padding: 90px 0 90px 70px;
+        padding: 90px 70px 90px 70px;
     }
 }
 
@@ -53,12 +46,8 @@
     width: 100%;
     
     @include bp(medium) {
-        position: absolute;
         width: 50%;
         height: 100%;
-        left: 0;
-        top: 0;
-        margin: 0;
     }
 }
 
@@ -69,20 +58,6 @@
 }
 
 // Modifiers
-.fifty--rounded {
-    .fifty__image {
-        border-top-right-radius: 1000px;
-        overflow: hidden;
-        margin-right: 100px;
-        height: 400px;
-        margin-top: -100px;
-
-        @include bp(medium) {
-            height: calc(100% + 100px);
-            margin-right: 0;
-        }
-    }
-}
 
 .fifty--gray-bg {
     background-color: $cbg-gray-2;
@@ -91,45 +66,32 @@
 .fifty--invert {
     .fifty__image {
         order: 2;
-
-        @include bp(medium) {
-            position: absolute;
-            width: 50%;
-            height: 100%;
-            right: 0;
-            left: auto;
-            bottom: 0;
-            margin: 0;
-        }
-    }
-
-    .fifty__wrapper,
-    .fifty__container {
-        @include bp(medium) {
-            justify-content: flex-start;
-        }
     }
 
     .fifty__container {
         order: 0;
 
         @include bp(medium) {
-            padding: 40px 40px 40px 0;
+            padding: 40px 40px 40px 40px;
         }
 
         @include bp(large) {
-            padding: 90px 70px 90px 0;
+            padding: 90px 70px 90px 70px;
         }
     }
 }
 
 .fifty--always-top {
     .fifty__image {
-        order: 0;
+        @include bp-down(medium) {
+            order: 0;
+        }
     }
 
     .fifty__container {
-        order: 2;
+        @include bp-down(medium) {
+            order: 2; 
+        } 
     }
 }
 
