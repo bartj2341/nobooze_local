@@ -2009,6 +2009,10 @@ a {
 /* ==========================================================================
    #WAVE SECTION / PARTIAL
    ========================================================================== */
+.wave-section {
+  justify-content: center;
+}
+
 @media (min-width: 768px) {
   .wave-section__wrapper {
     justify-content: flex-end;
@@ -2113,6 +2117,26 @@ a {
 @media (min-width: 1024px) {
   .wave-section--invert .wave-section__container {
     padding: 90px 70px 90px 0;
+  }
+}
+
+.wave-section--mobile-centered .wave-section__image {
+  margin-left: 0;
+  margin-right: 0;
+  max-width: 400px;
+}
+@media (min-width: 768px) {
+  .wave-section--mobile-centered .wave-section__image {
+    max-width: none;
+  }
+}
+
+.wave-section--mobile-narrow .wave-section__content {
+  max-width: 320px;
+}
+@media (min-width: 768px) {
+  .wave-section--mobile-narrow .wave-section__content {
+    max-width: 460px;
   }
 }
 

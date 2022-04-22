@@ -2,6 +2,10 @@
    #WAVE SECTION / PARTIAL
    ========================================================================== */
 
+.wave-section {
+    justify-content: center;
+}
+
 .wave-section__wrapper {
     @include bp(medium) {
         justify-content: flex-end;
@@ -106,6 +110,28 @@
 
         @include bp(large) {
             padding: 90px 70px 90px 0;
+        }
+    }
+}
+
+.wave-section--mobile-centered {
+    .wave-section__image {
+        margin-left: 0;
+        margin-right: 0;
+        max-width: 400px;
+
+        @include bp(medium) {
+            max-width: none;
+        }
+    }
+}
+
+.wave-section--mobile-narrow {
+    .wave-section__content {
+        max-width: 320px;
+
+        @include bp(medium) {
+            max-width: 460px;
         }
     }
 }
