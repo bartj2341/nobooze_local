@@ -27,9 +27,15 @@
 
 .fifty__content {
     max-width: 460px;
+
+    *:last-child {
+        margin-bottom: 0;
+    }
 }
 
 .fifty__text {
+    margin-bottom: 50px;
+
     p {
         margin: 0 0 10px 0;
 

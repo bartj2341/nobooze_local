@@ -1785,17 +1785,13 @@ a {
 }
 
 .hero-banner__wrapper {
-  min-height: 371px;
-  padding: 110px 0 120px;
-}
-@media (min-width: 768px) {
-  .hero-banner__wrapper {
-    min-height: 416px;
-  }
+  min-height: 220px;
+  padding: 100px 0 120px;
 }
 @media (min-width: 1024px) {
   .hero-banner__wrapper {
-    min-height: 632px;
+    padding: 200px 0 190px;
+    min-height: 390px;
   }
 }
 
@@ -1849,7 +1845,13 @@ a {
 .fifty__content {
   max-width: 460px;
 }
+.fifty__content *:last-child {
+  margin-bottom: 0;
+}
 
+.fifty__text {
+  margin-bottom: 50px;
+}
 .fifty__text p {
   margin: 0 0 10px 0;
 }

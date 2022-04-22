@@ -1,13 +1,10 @@
 .hero-banner__wrapper {
-    min-height: 371px;
-    padding: 110px 0 120px;
-
-    @include bp(medium) {
-        min-height: 416px;
-    }
-
+    min-height: 220px;
+    padding: 100px 0 120px;
+    
     @include bp(large) {
-        min-height: 632px;
+        padding: 200px 0 190px;
+        min-height: 390px;
     }
 }
 

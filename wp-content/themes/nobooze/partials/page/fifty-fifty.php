@@ -4,6 +4,7 @@ $modifier = get_sub_field("modifier") ? get_sub_field("modifier") : [];
 $image = get_sub_field("image") ? get_sub_field("image") : "";
 $title = get_sub_field("title") ? get_sub_field("title") : "";
 $text = get_sub_field("text") ? get_sub_field("text") : "";
+$cta = get_sub_field("cta") ? get_sub_field("cta") : "";
 
 ?>
 
@@ -17,11 +18,18 @@ $text = get_sub_field("text") ? get_sub_field("text") : "";
     <div class="fifty__wrapper wrapper-full d-flex d-flex-wrap w-100">
         <div class="fifty__container p-relative d-flex d-flex-justify-e">
             <div class="fifty__content">
-            <?php if($title): ?>
+                <?php if($title): ?>
                     <p class="fifty__title f-heading heading-fifty m-reset"><?= $title ?></p>
                 <?php endif; ?>
+
                 <?php if($text): ?>
                     <div class="fifty__text line-half"><?= $text ?></div>
+                <?php endif; ?>
+
+                <?php if($cta): ?>
+                    <div class="fifty__btn w-100"> 
+                        <a href="<?= $cta["url"] ?>" target="<?= $cta["target"]?>" class="fifty__cta u-btn"><?= $cta["title"]?></a>
+                    </div>
                 <?php endif; ?>
             </div>
         </div>
