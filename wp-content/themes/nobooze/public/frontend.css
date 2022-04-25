@@ -1804,6 +1804,9 @@ a {
 .hero-banner__container {
   z-index: 100;
 }
+.hero-banner__container *:last-child {
+  margin-bottom: 0;
+}
 @media (min-width: 480px) {
   .hero-banner__container {
     padding: 0 20px;
@@ -1821,11 +1824,11 @@ a {
   width: 100%;
   justify-content: center;
   align-items: center;
-  padding: 40px 0 50px;
+  padding: 40px 40px 50px;
 }
 @media (min-width: 768px) {
   .fifty__container {
-    padding: 40px 0 40px 40px;
+    padding: 40px 40px 40px 40px;
     width: 50%;
   }
 }
@@ -1870,6 +1873,7 @@ a {
   height: 100%;
   width: 100%;
   object-fit: cover;
+  object-position: center top;
 }
 
 .fifty--gray-bg {
@@ -1894,13 +1898,33 @@ a {
 }
 
 @media (max-width: 767.98px) {
-  .fifty--always-top .fifty__image {
+  .fifty--image-top .fifty__image {
     order: 0;
   }
 }
 @media (max-width: 767.98px) {
-  .fifty--always-top .fifty__container {
+  .fifty--image-top .fifty__container {
     order: 2;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .fifty--image-bottom .fifty__image {
+    order: 2;
+  }
+}
+@media (max-width: 767.98px) {
+  .fifty--image-bottom .fifty__container {
+    order: 0;
+  }
+}
+
+.fifty--fixed-height .fifty__image {
+  height: 350px;
+}
+@media (min-width: 768px) {
+  .fifty--fixed-height .fifty__image {
+    height: auto;
   }
 }
 

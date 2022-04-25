@@ -16,7 +16,7 @@ $cta = get_sub_field("cta") ? get_sub_field("cta") : "";
         <div class="full-image__wrapper d-flex d-flex-justify-e d-flex-align-c">
             <div class="full-image__container p-relative">
                 <?php if($title): ?>
-                    <p class="full-image__title f-heading heading-basic u-text-center"><?= $title ?></p>
+                    <p class="full-image__title f-heading heading-xlarge u-text-center"><?= $title ?></p>
                 <?php endif; ?>
     
                 <?php if($subtitle): ?>

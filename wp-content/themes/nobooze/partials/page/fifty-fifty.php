@@ -16,23 +16,21 @@ $cta = get_sub_field("cta") ? get_sub_field("cta") : "";
                 <img src="<?= $image["url"] ?>" alt="<?= $image["alt"] ?>" class="fifty__img">
             </div> 
         <?php endif; ?>
-        <div class="wrapper-full">
-            <div class="fifty__container d-flex">
-                <div class="fifty__content">
-                    <?php if($title): ?>
-                        <p class="fifty__title f-heading heading-fifty m-reset"><?= $title ?></p>
-                    <?php endif; ?>
-        
-                    <?php if($text): ?>
-                        <div class="fifty__text line-half"><?= $text ?></div>
-                    <?php endif; ?>
-        
-                    <?php if($cta): ?>
-                        <div class="fifty__btn w-100"> 
-                            <a href="<?= $cta["url"] ?>" target="<?= $cta["target"]?>" class="fifty__cta u-btn"><?= $cta["title"]?></a>
-                        </div>
-                    <?php endif; ?>
-                </div>
+        <div class="fifty__container d-flex">
+            <div class="fifty__content">
+                <?php if($title): ?>
+                    <p class="fifty__title f-heading heading-fifty m-reset"><?= $title ?></p>
+                <?php endif; ?>
+    
+                <?php if($text): ?>
+                    <div class="fifty__text line-half"><?= $text ?></div>
+                <?php endif; ?>
+    
+                <?php if($cta): ?>
+                    <div class="fifty__btn w-100"> 
+                        <a href="<?= $cta["url"] ?>" target="<?= $cta["target"]?>" class="fifty__cta u-btn"><?= $cta["title"]?></a>
+                    </div>
+                <?php endif; ?>
             </div>
         </div>
     </div>

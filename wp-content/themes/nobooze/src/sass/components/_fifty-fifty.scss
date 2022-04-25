@@ -6,10 +6,10 @@
     width: 100%;
     justify-content: center;
     align-items: center;
-    padding: 40px 0 50px;
+    padding: 40px 40px 50px;
     
     @include bp(medium) {
-        padding: 40px 0 40px 40px;
+        padding: 40px 40px 40px 40px;
         width: 50%;
     }
 
@@ -55,6 +55,7 @@
     height: 100%;
     width: 100%;
     object-fit: cover;
+    object-position: center top;
 }
 
 // Modifiers
@@ -81,7 +82,7 @@
     }
 }
 
-.fifty--always-top {
+.fifty--image-top {
     .fifty__image {
         @include bp-down(medium) {
             order: 0;
@@ -95,4 +96,27 @@
     }
 }
 
+.fifty--image-bottom {
+    .fifty__image {
+        @include bp-down(medium) {
+            order: 2;
+        }
+    }
 
+    .fifty__container {
+        @include bp-down(medium) {
+            order: 0; 
+        } 
+    }
+}
+
+
+.fifty--fixed-height {
+    .fifty__image {
+        height: 350px;
+    
+        @include bp(medium) {
+            height: auto;
+        }
+    }
+}
