@@ -1,0 +1,40 @@
+/* ==========================================================================
+   #CAROUSEL
+   ========================================================================== */
+
+// Universal Carousel
+.u-carousel {
+    padding: 55px 0 35px;
+}
+
+.u-carousel__title {
+    margin-bottom: 20px;
+}
+
+.u-carousel__carousel {
+    width: 250px;
+
+    @include bp(medium) {
+        width: 1060px;
+        max-width: 100%;
+    }
+} 
+
+.u-carousel__carousel--narrow {
+    width: 250px;
+
+    @include bp(medium) {
+        width: 790px;
+        max-width: 100%;
+    }
+}
+
+.u-carousel__item {
+    padding: 15px;
+}
+
+.u-carousel__img {
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+}

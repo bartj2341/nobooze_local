@@ -1509,6 +1509,47 @@ a {
 }
 
 /* ==========================================================================
+   #CAROUSEL
+   ========================================================================== */
+.u-carousel {
+  padding: 55px 0 35px;
+}
+
+.u-carousel__title {
+  margin-bottom: 20px;
+}
+
+.u-carousel__carousel {
+  width: 250px;
+}
+@media (min-width: 768px) {
+  .u-carousel__carousel {
+    width: 1060px;
+    max-width: 100%;
+  }
+}
+
+.u-carousel__carousel--narrow {
+  width: 250px;
+}
+@media (min-width: 768px) {
+  .u-carousel__carousel--narrow {
+    width: 790px;
+    max-width: 100%;
+  }
+}
+
+.u-carousel__item {
+  padding: 15px;
+}
+
+.u-carousel__img {
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+/* ==========================================================================
    #ALIGN
    ========================================================================== */
 .u-text-center {
@@ -1702,36 +1743,6 @@ a {
 .basic-banner--blue-gradient.basic-banner {
   background-color: transparent;
   background: radial-gradient(at center center, #1a9ac8 15%, #0a3c4e 100%);
-}
-
-/* ==========================================================================
-   #LOGO CAROUSEL / PARTIAL
-   ========================================================================== */
-.l-carousel {
-  margin-bottom: 35px;
-}
-
-.l-carousel__title {
-  margin-bottom: 20px;
-}
-
-.l-carousel__carousel {
-  width: 250px;
-}
-@media (min-width: 768px) {
-  .l-carousel__carousel {
-    width: 100%;
-  }
-}
-
-.l-carousel__item {
-  padding: 15px;
-}
-
-.l-carousel__img {
-  max-width: 100%;
-  height: auto;
-  margin: 0 auto;
 }
 
 /* ==========================================================================
