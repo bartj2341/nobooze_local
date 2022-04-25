@@ -1,7 +1,11 @@
+/* ==========================================================================
+   #HERO BANNER / PARTIAL
+   ========================================================================== */
+
 .hero-banner__wrapper {
     min-height: 220px;
     padding: 100px 0 120px;
-    
+
     @include bp(large) {
         padding: 200px 0 190px;
         min-height: 390px;

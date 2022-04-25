@@ -3,7 +3,6 @@
    ========================================================================== */
 
 .full-image {
-    background-color: $cbg-gray;
     margin-bottom: 55px;
 }
 
@@ -26,6 +25,7 @@
     min-height: 480px;
     padding: 110px 0 40px;
     margin: 0 -20px;
+    justify-content: flex-end;
     
     @include bp(medium) {
         min-height: 600px;
@@ -40,17 +40,9 @@
 }
 
 .full-image__container {
-    max-width: 60%;
+    max-width: 62%;
     z-index: $z-lvl-1;
     padding-top: 30px;
-
-    @include bp(medium) {
-        max-width: 61%;
-    }
-
-    @include bp(large) {
-        max-width: 59%;
-    }
 
     *:last-child {
         margin-bottom: 0;
@@ -60,4 +52,39 @@
 .full-image__title,
 .full-image__subtitle {
     margin: 0 0 50px 0;
+}
+
+// Modifiers
+.full-image--invert {
+    .full-image__bg {
+        bottom: 0;
+        right: 0;
+        
+        @include bp(medium) {
+            background-position: right bottom;
+            background-size: contain;
+        }
+    }
+
+    .full-image__wrapper {
+        justify-content: flex-start;
+    }
+}
+
+.full-image--narrow {
+    .full-image__container {
+        @include bp(medium) {
+            max-width: 48%;
+        }
+    }
+}
+
+.full-image--title-mobile-lg {
+    .full-image__title {
+        @extend .heading-about;
+    }
+}
+
+.full-image--no-mb {
+    margin-bottom: 0;
 }

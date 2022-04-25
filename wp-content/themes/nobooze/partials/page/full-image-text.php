@@ -1,6 +1,8 @@
 <?php
 
-$bg_image = get_sub_field("background_image") ? get_sub_field("background_image") : "";
+$modifier = get_sub_field("modifier") ? get_sub_field("modifier") : [];
+$bg_color = get_sub_field("background_color") ? get_sub_field("background_color") : "";
+$image = get_sub_field("image") ? get_sub_field("image") : "";
 $title = get_sub_field("title") ? get_sub_field("title") : "";
 $subtitle = get_sub_field("subtitle") ? get_sub_field("subtitle") : "";
 $cta = get_sub_field("cta") ? get_sub_field("cta") : "";
@@ -8,12 +10,12 @@ $cta = get_sub_field("cta") ? get_sub_field("cta") : "";
 ?>
 
 
-<section class="full-image p-relative">
-    <?php if($bg_image): ?>
-        <div class="full-image__bg w-100 h-100" style="background-image: url(<?= $bg_image["url"] ?>)"></div>
+<section class="full-image p-relative <?php foreach ($modifier as $value) { echo(' ' . $value); } ?>" style="background-color: <?= $bg_color ?>">
+    <?php if($image): ?>
+        <div class="full-image__bg w-100 h-100" style="background-image: url(<?= $image["url"] ?>)"></div>
     <?php endif; ?>
     <div class="wrapper-xlarge">
-        <div class="full-image__wrapper d-flex d-flex-justify-e d-flex-align-c">
+        <div class="full-image__wrapper d-flex d-flex-align-c">
             <div class="full-image__container p-relative">
                 <?php if($title): ?>
                     <p class="full-image__title f-heading heading-xlarge u-text-center"><?= $title ?></p>

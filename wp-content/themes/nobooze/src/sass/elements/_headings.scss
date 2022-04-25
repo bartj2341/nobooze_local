@@ -44,6 +44,14 @@ h1, h2, h3, h4, h5, h6, .heading-family {
     }
 }
 
+.heading-about { /* 50px ~ 38px */
+    font-size: 3.8rem;
+
+    @include bp(large) {
+        font-size: 5rem;
+    }
+}
+
 .heading-xlarge { /* 50px ~ 38px ~ 24px */
     font-size: 2.4rem;
 

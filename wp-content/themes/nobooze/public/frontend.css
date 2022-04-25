@@ -1289,6 +1289,16 @@ h1, h2, h3, h4, h5, h6, .heading-family {
   }
 }
 
+.heading-about, .full-image--title-mobile-lg .full-image__title {
+  /* 50px ~ 38px */
+  font-size: 3.8rem;
+}
+@media (min-width: 1024px) {
+  .heading-about, .full-image--title-mobile-lg .full-image__title {
+    font-size: 5rem;
+  }
+}
+
 .heading-xlarge {
   /* 50px ~ 38px ~ 24px */
   font-size: 2.4rem;
@@ -1585,7 +1595,6 @@ a {
    #FULL IMAGE TEXT / PARTIAL
    ========================================================================== */
 .full-image {
-  background-color: #d1d5d8;
   margin-bottom: 55px;
 }
 
@@ -1609,6 +1618,7 @@ a {
   min-height: 480px;
   padding: 110px 0 40px;
   margin: 0 -20px;
+  justify-content: flex-end;
 }
 @media (min-width: 768px) {
   .full-image__wrapper {
@@ -1625,19 +1635,9 @@ a {
 }
 
 .full-image__container {
-  max-width: 60%;
+  max-width: 62%;
   z-index: 100;
   padding-top: 30px;
-}
-@media (min-width: 768px) {
-  .full-image__container {
-    max-width: 61%;
-  }
-}
-@media (min-width: 1024px) {
-  .full-image__container {
-    max-width: 59%;
-  }
 }
 .full-image__container *:last-child {
   margin-bottom: 0;
@@ -1646,6 +1646,30 @@ a {
 .full-image__title,
 .full-image__subtitle {
   margin: 0 0 50px 0;
+}
+
+.full-image--invert .full-image__bg {
+  bottom: 0;
+  right: 0;
+}
+@media (min-width: 768px) {
+  .full-image--invert .full-image__bg {
+    background-position: right bottom;
+    background-size: contain;
+  }
+}
+.full-image--invert .full-image__wrapper {
+  justify-content: flex-start;
+}
+
+@media (min-width: 768px) {
+  .full-image--narrow .full-image__container {
+    max-width: 48%;
+  }
+}
+
+.full-image--no-mb {
+  margin-bottom: 0;
 }
 
 /* ==========================================================================
@@ -1784,6 +1808,9 @@ a {
   text-align: left;
 }
 
+/* ==========================================================================
+   #HERO BANNER / PARTIAL
+   ========================================================================== */
 .hero-banner__wrapper {
   min-height: 220px;
   padding: 100px 0 120px;
