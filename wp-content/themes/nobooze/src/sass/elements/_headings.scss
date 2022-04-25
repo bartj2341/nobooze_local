@@ -16,6 +16,14 @@ h1, h2, h3, h4, h5, h6, .heading-family {
     font-weight: normal;
 }
 
+.heading-huge { /* 67px ~ 45px */
+    font-size: 4.5rem;
+
+    @include bp(medium) {
+        font-size: 6.7rem;
+    }
+}
+
 .heading-banner { /* 51px ~ 46px */
     font-size: 4.6rem;
 

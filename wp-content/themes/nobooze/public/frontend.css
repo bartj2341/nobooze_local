@@ -1254,6 +1254,16 @@ h1, h2, h3, h4, h5, h6, .heading-family {
   font-weight: normal;
 }
 
+.heading-huge {
+  /* 67px ~ 45px */
+  font-size: 4.5rem;
+}
+@media (min-width: 768px) {
+  .heading-huge {
+    font-size: 6.7rem;
+  }
+}
+
 .heading-banner {
   /* 51px ~ 46px */
   font-size: 4.6rem;
@@ -1635,10 +1645,6 @@ a {
 /* ==========================================================================
    #FULL IMAGE TEXT / PARTIAL
    ========================================================================== */
-.full-image {
-  margin-bottom: 55px;
-}
-
 .full-image__bg {
   position: absolute;
   bottom: 0;
@@ -1710,7 +1716,7 @@ a {
 }
 
 .full-image--no-mb {
-  margin-bottom: 0;
+  margin-bottom: 325px;
 }
 
 /* ==========================================================================
@@ -1858,25 +1864,44 @@ a {
 /* ==========================================================================
    #FIFTY FIFTY / PARTIAL
    ========================================================================== */
+.fifty {
+  min-height: 1270px;
+  background-color: #f0f0f0;
+}
+
+.fifty__title {
+  top: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 100;
+  width: 100%;
+  padding: 0 20px;
+}
+@media (min-width: 768px) {
+  .fifty__title {
+    text-align: center;
+  }
+}
+
 .fifty__container {
   width: 100%;
-  justify-content: center;
   align-items: center;
-  padding: 40px 40px 50px;
+  padding: 40px 0 50px;
 }
 @media (min-width: 768px) {
   .fifty__container {
-    padding: 40px 40px 40px 40px;
+    padding: 190px 40px 40px 0;
     width: 50%;
   }
 }
 @media (min-width: 1024px) {
   .fifty__container {
-    padding: 90px 70px 90px 70px;
+    padding: 190px 70px 90px 0;
   }
 }
 
 .fifty__content {
+  padding: 20px 0;
   max-width: 460px;
 }
 .fifty__content *:last-child {
@@ -1902,6 +1927,9 @@ a {
 }
 @media (min-width: 768px) {
   .fifty__image {
+    position: absolute;
+    right: 0;
+    top: 0;
     width: 50%;
     height: 100%;
   }
@@ -1912,58 +1940,6 @@ a {
   width: 100%;
   object-fit: cover;
   object-position: center top;
-}
-
-.fifty--gray-bg {
-  background-color: #f0f0f0;
-}
-
-.fifty--invert .fifty__image {
-  order: 2;
-}
-.fifty--invert .fifty__container {
-  order: 0;
-}
-@media (min-width: 768px) {
-  .fifty--invert .fifty__container {
-    padding: 40px 40px 40px 40px;
-  }
-}
-@media (min-width: 1024px) {
-  .fifty--invert .fifty__container {
-    padding: 90px 70px 90px 70px;
-  }
-}
-
-@media (max-width: 767.98px) {
-  .fifty--image-top .fifty__image {
-    order: 0;
-  }
-}
-@media (max-width: 767.98px) {
-  .fifty--image-top .fifty__container {
-    order: 2;
-  }
-}
-
-@media (max-width: 767.98px) {
-  .fifty--image-bottom .fifty__image {
-    order: 2;
-  }
-}
-@media (max-width: 767.98px) {
-  .fifty--image-bottom .fifty__container {
-    order: 0;
-  }
-}
-
-.fifty--fixed-height .fifty__image {
-  height: 350px;
-}
-@media (min-width: 768px) {
-  .fifty--fixed-height .fifty__image {
-    height: auto;
-  }
 }
 
 /* ==========================================================================
@@ -2200,6 +2176,78 @@ a {
   .wave-section--mobile-narrow .wave-section__content {
     max-width: 460px;
   }
+}
+
+/* ==========================================================================
+   #INFO ROW / PARTIAL
+   ========================================================================== */
+.info-row {
+  min-height: 700px;
+}
+
+@media (min-width: 768px) {
+  .info-row__wrapper {
+    justify-content: flex-end;
+  }
+}
+
+.info-row__container {
+  width: 100%;
+  padding: 40px 0 50px;
+  justify-content: center;
+}
+@media (min-width: 768px) {
+  .info-row__container {
+    padding: 40px 0 40px 40px;
+    width: 50%;
+    justify-content: flex-end;
+  }
+}
+@media (min-width: 1024px) {
+  .info-row__container {
+    padding: 90px 0 90px 70px;
+  }
+}
+
+.info-row__content {
+  max-width: 460px;
+}
+.info-row__content *:last-child {
+  margin-bottom: 0;
+}
+
+.info-row__text {
+  margin-bottom: 50px;
+}
+.info-row__text p {
+  margin: 0 0 10px 0;
+}
+.info-row__text p:last-child {
+  margin: 0;
+}
+
+.info-row__title {
+  margin-bottom: 50px;
+}
+
+.info-row__image {
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .info-row__image {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 50%;
+    height: 100%;
+  }
+}
+
+.info-row__img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center top;
 }
 
 .u-form__label {
