@@ -8,30 +8,31 @@
 }
 
 .fifty__title {
-    top: 40px;
-    left: 50%;
-    transform: translateX(-50%);
     z-index: $z-lvl-1;
     width: 100%;
-    padding: 0 20px;
+    padding: 30px 20px 0;
+    position: absolute;
 
     @include bp(medium) {
+        position: static;
         text-align: center;
     }
 }
 
 .fifty__container {
     width: 100%;
+    justify-content: center;
     align-items: center;
     padding: 40px 0 50px;
     
     @include bp(medium) {
-        padding: 190px 40px 40px 0;
+        justify-content: flex-start;
+        padding: 70px 40px 40px 0;
         width: 50%;
     }
 
     @include bp(large) {
-        padding: 190px 70px 90px 0;
+        padding: 70px 70px 90px 0;
     }
 }
 

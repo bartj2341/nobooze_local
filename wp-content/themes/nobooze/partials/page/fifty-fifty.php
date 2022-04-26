@@ -10,7 +10,7 @@ $cta = get_sub_field("cta") ? get_sub_field("cta") : "";
 
 <section class="fifty p-relative d-flex d-flex-wrap">
     <?php if($title): ?>
-        <h2 class="fifty__title p-absolute heading-about"><?= $title ?></h2>
+        <h2 class="fifty__title heading-script f-script"><?= $title ?></h2>
     <?php endif; ?>
     
     <?php if($image): ?>
