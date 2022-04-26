@@ -81,7 +81,7 @@ h1, h2, h3, h4, h5, h6, .heading-family {
     }
 }
 
-.heading-fifty { /* 38px ~ 40px ~ 30px */
+.heading-standard { /* 38px ~ 40px ~ 30px */
     font-size: 3rem;
 
     @include bp(medium) {

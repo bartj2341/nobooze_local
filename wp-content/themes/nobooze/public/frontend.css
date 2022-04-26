@@ -1341,17 +1341,17 @@ h1, h2, h3, h4, h5, h6, .heading-family {
   }
 }
 
-.heading-fifty {
+.heading-standard {
   /* 38px ~ 40px ~ 30px */
   font-size: 3rem;
 }
 @media (min-width: 768px) {
-  .heading-fifty {
+  .heading-standard {
     font-size: 4rem;
   }
 }
 @media (min-width: 1024px) {
-  .heading-fifty {
+  .heading-standard {
     font-size: 3.8rem;
   }
 }
@@ -1858,7 +1858,6 @@ a {
 @media (min-width: 1024px) {
   .hero-banner__wrapper {
     padding: 200px 0 190px;
-    min-height: 390px;
   }
 }
 
@@ -2348,6 +2347,94 @@ a {
 
 .glowing-banner__title {
   margin-bottom: 30px;
+}
+
+/* ==========================================================================
+   #STANDARD ROW / PARTIAL
+   ========================================================================== */
+.standard-row {
+  justify-content: center;
+}
+@media (min-width: 768px) {
+  .standard-row {
+    justify-content: unset;
+  }
+}
+
+.standard-row__wrapper {
+  justify-content: center;
+}
+@media (min-width: 768px) {
+  .standard-row__wrapper {
+    justify-content: flex-end;
+  }
+}
+
+.standard-row__container {
+  width: 100%;
+  max-width: 400px;
+  padding: 40px 0 50px;
+  justify-content: center;
+}
+@media (min-width: 768px) {
+  .standard-row__container {
+    padding: 40px 0 40px 40px;
+    width: 50%;
+    justify-content: flex-end;
+    max-width: none;
+  }
+}
+@media (min-width: 1024px) {
+  .standard-row__container {
+    padding: 90px 0 90px 70px;
+  }
+}
+
+.standard-row__content {
+  max-width: 460px;
+}
+.standard-row__content *:last-child {
+  margin-bottom: 0;
+}
+
+.standard-row__title {
+  margin-bottom: 50px;
+}
+
+.standard-row__text {
+  margin-bottom: 50px;
+}
+.standard-row__text p {
+  margin: 0 0 10px 0;
+}
+.standard-row__text p:last-child {
+  margin: 0;
+}
+
+.standard-row__image {
+  height: 400px;
+  max-width: 400px;
+  padding-right: 100px;
+  margin-top: -100px;
+}
+@media (min-width: 768px) {
+  .standard-row__image {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    max-width: none;
+  }
+}
+
+.standard-row__img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center top;
 }
 
 .u-form__label {
