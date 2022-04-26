@@ -1261,13 +1261,13 @@ h1, h2, h3, h4, h5, h6, .heading-family {
 }
 
 .heading-script {
-  /* 100px ~ 60px */
-  font-size: 6rem;
+  /* 110px ~ 70px */
+  font-size: 7rem;
   line-height: 0.9;
 }
 @media (min-width: 768px) {
   .heading-script {
-    font-size: 10rem;
+    font-size: 11rem;
   }
 }
 
@@ -1306,12 +1306,12 @@ h1, h2, h3, h4, h5, h6, .heading-family {
   }
 }
 
-.heading-heavy-lg, .heavy-text--large-title .heavy-text__title {
+.heading-heavy-lg {
   /* 51px ~ 34px */
   font-size: 3.4rem;
 }
 @media (min-width: 768px) {
-  .heading-heavy-lg, .heavy-text--large-title .heavy-text__title {
+  .heading-heavy-lg {
     font-size: 5.1rem;
   }
 }
@@ -1367,6 +1367,21 @@ h1, h2, h3, h4, h5, h6, .heading-family {
 }
 @media (min-width: 1024px) {
   .heading-basic {
+    font-size: 3.8rem;
+  }
+}
+
+.heading-heavy-two, .heavy-text--medium-title .heavy-text__title {
+  /* 38px ~ 30px ~ 34px */
+  font-size: 3.4rem;
+}
+@media (min-width: 768px) {
+  .heading-heavy-two, .heavy-text--medium-title .heavy-text__title {
+    font-size: 3rem;
+  }
+}
+@media (min-width: 1024px) {
+  .heading-heavy-two, .heavy-text--medium-title .heavy-text__title {
     font-size: 3.8rem;
   }
 }
@@ -1438,6 +1453,10 @@ h1, h2, h3, h4, h5, h6, .heading-family {
 
 .c-white {
   color: #fff;
+}
+
+.c-blue {
+  color: #1a9ac8;
 }
 
 /**
@@ -1787,7 +1806,7 @@ a {
 }
 @media (min-width: 1024px) {
   .heavy-text {
-    padding: 100px 0 100px 0;
+    padding: 100px 0 70px 0;
   }
 }
 
@@ -1795,14 +1814,15 @@ a {
   z-index: 100;
 }
 
-.heavy-text__subtitle {
-  margin-bottom: 40px;
+.heavy-text__title {
+  margin-bottom: 50px;
 }
 
 .heavy-text__copy {
   max-width: 760px;
   margin: 0 auto;
   text-align: center;
+  margin-bottom: 30px;
 }
 .heavy-text__copy p {
   margin: 0 0 10px 0;
@@ -1811,37 +1831,17 @@ a {
   margin: 0;
 }
 
-.heavy-text--decoration.heavy-text {
-  margin-top: -100px;
-  padding: 160px 0 60px 0;
+.heavy-text__handwriting {
+  padding: 30px 0;
 }
-@media (min-width: 1024px) {
-  .heavy-text--decoration.heavy-text {
-    padding: 200px 0 100px 0;
-  }
-}
-.heavy-text--decoration .heavy-text__bg {
-  position: absolute;
-  right: 0;
-  top: 0;
-  background-repeat: no-repeat;
-  background-position: center top;
-  background-size: auto;
-  background-attachment: scroll;
-}
-@media (min-width: 1024px) {
-  .heavy-text--decoration .heavy-text__bg {
-    background-position: right top;
-    background-size: contain;
+@media (min-width: 768px) {
+  .heavy-text__handwriting {
+    padding-bottom: 10px;
   }
 }
 
 .heavy-text--gray-bg.heavy-text {
   background-color: #f0f0f0;
-}
-
-.heavy-text--title-mb-lg .heavy-text__title {
-  margin-bottom: 50px;
 }
 
 .heavy-text--align-left .heavy-text__copy {
@@ -2435,6 +2435,65 @@ a {
   width: 100%;
   object-fit: cover;
   object-position: center top;
+}
+
+/* ==========================================================================
+   #DECORATION SECTION / PARTIAL
+   ========================================================================== */
+.decoration-section {
+  margin-top: -100px;
+  padding: 160px 0 60px 0;
+}
+@media (min-width: 768px) {
+  .decoration-section {
+    padding: 200px 0 100px 0;
+  }
+}
+
+.decoration-section__bg {
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: auto;
+  background-attachment: scroll;
+}
+@media (min-width: 1024px) {
+  .decoration-section__bg {
+    background-position: right top;
+    background-size: contain;
+  }
+}
+
+.decoration-section__container {
+  z-index: 100;
+}
+
+.decoration-section__subtitle {
+  margin-bottom: 40px;
+}
+
+.decoration-section__copy {
+  max-width: 760px;
+  margin: 0 auto;
+  text-align: center;
+}
+.decoration-section__copy p {
+  margin: 0 0 10px 0;
+}
+.decoration-section__copy p:last-child {
+  margin: 0;
+}
+
+.decoration-section--decoration-left .decoration-section__bg {
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-size: contain;
+  background-attachment: scroll;
 }
 
 .u-form__label {

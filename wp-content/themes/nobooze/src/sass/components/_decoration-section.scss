@@ -1,0 +1,62 @@
+/* ==========================================================================
+   #DECORATION SECTION / PARTIAL
+   ========================================================================== */
+
+.decoration-section {
+    margin-top: -100px;
+    padding: 160px 0 60px 0;
+
+    @include bp(medium) {
+        padding: 200px 0 100px 0;
+    }
+}
+
+.decoration-section__bg {
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: auto;
+    background-attachment: scroll;
+
+    @include bp(large) {
+        background-position: right top;
+        background-size: contain;
+    }
+}
+
+.decoration-section__container {
+    z-index: $z-lvl-1;
+}
+
+.decoration-section__subtitle {
+    margin-bottom: 40px;
+}
+
+.decoration-section__copy {
+    max-width: 760px;
+    margin: 0 auto;
+    text-align: center; 
+
+    p {
+        margin: 0 0 10px 0;
+
+        &:last-child {
+            margin: 0;
+        }
+    }
+}
+
+// Modifiers
+.decoration-section--decoration-left {
+    .decoration-section__bg {
+        position: absolute;
+        right: 0;
+        top: 0;
+        background-repeat: no-repeat;
+        background-position: left top;
+        background-size: contain;
+        background-attachment: scroll;
+    }
+}
