@@ -1,7 +1,6 @@
 <?php
 
 $modifier = get_sub_field("modifier") ? get_sub_field("modifier") : [];
-$title = get_sub_field("title") ? get_sub_field("title") : "";
 $text = get_sub_field("text") ? get_sub_field("text") : "";
 $author = get_sub_field("author") ? get_sub_field("author") : "";
 

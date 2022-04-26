@@ -1,13 +1,13 @@
 /* ==========================================================================
-   #BASIC BANNER / PARTIAL
+   #GLOWING BANNER / PARTIAL
    ========================================================================== */
 
-.basic-banner {
-    background-color: $cbg-blue-2;
+.glowing-banner {
+    background: radial-gradient(at center center, $cbg-blue-2 15%, $cbg-blue 100%);
     padding: 50px 0;
 }
 
-.basic-banner__container {
+.glowing-banner__container {
     z-index: $z-lvl-1;
 
     *:last-child {
@@ -15,13 +15,6 @@
     }
 }
 
-.basic-banner__text {
-    margin-bottom: 15px;
-}
-
-// Modifiers
-.basic-banner--narrow {
-    .basic-banner__container {
-        max-width: 760px;
-    }
+.glowing-banner__title {
+    margin-bottom: 30px;
 }

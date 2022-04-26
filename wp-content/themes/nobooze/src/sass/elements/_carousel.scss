@@ -4,6 +4,16 @@
 
 // Universal Carousel
 .u-carousel {
+    padding-left: 20px;
+    padding-right: 20px;
+    
+    @include bp(large) {
+        padding-left: 55px;
+        padding-right: 55px;
+    }
+}
+
+.u-carousel__container {
     padding: 55px 0 35px;
 }
 
