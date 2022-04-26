@@ -16,8 +16,8 @@ h1, h2, h3, h4, h5, h6, .heading-family {
     font-weight: normal;
 }
 
-.heading-script { /* 100px ~ 80px */
-    font-size: 8rem;
+.heading-script { /* 100px ~ 60px */
+    font-size: 6rem;
     line-height: 0.9;
 
     @include bp(medium) {
@@ -137,13 +137,12 @@ h1, h2, h3, h4, h5, h6, .heading-family {
     }
 }
 
-.text-medium { /* 24px */
+.heading-medium { /* 24px */
     font-size: 2.4rem;
 }
 
 .text-normal { /* 19px */
     font-size: 1.9rem;
-
 }
 
 .text-sixteen { /* 16px */

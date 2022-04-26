@@ -14,7 +14,7 @@ $cta = get_sub_field("cta") ? get_sub_field("cta") : "";
     <?php if($image): ?>
         <div class="full-image__bg w-100 h-100" style="background-image: url(<?= $image["url"] ?>)"></div>
     <?php endif; ?>
-    <div class="wrapper-xlarge">
+    <div class="wrapper-large">
         <div class="full-image__wrapper d-flex d-flex-align-c">
             <div class="full-image__container p-relative">
                 <?php if($title): ?>

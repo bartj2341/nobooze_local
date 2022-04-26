@@ -1,0 +1,50 @@
+/* ==========================================================================
+   #SCRIPT BANNER / PARTIAL
+   ========================================================================== */
+
+.script-banner__wrapper {
+    padding: 75px 0 175px;
+
+    @include bp(medium) {
+        padding: 105px 0;
+    }
+
+    @include bp(large) {
+        padding: 200px 0;
+    }
+}
+
+.script-banner__bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.script-banner__img {
+    object-position: right top;
+
+    @include bp(medium) {
+        object-position: 0 40%;
+    }
+}
+
+.script-banner__container {
+    z-index: $z-lvl-1;
+
+    *:last-child {
+        margin-bottom: 0;
+    }
+    
+    @include bp(small) {
+        padding: 0 20px;
+    }
+}
+
+.script-banner__title {
+    margin-bottom: 10px;
+    line-height: 1;
+
+    @include bp(large) {
+        line-height: 2.4;
+    }
+}

@@ -12,7 +12,7 @@ $copy = get_sub_field("copy") ? get_sub_field("copy") : "";
     <?php if($decoration): ?>
         <div class="heavy-text__bg w-100 h-100" style="background-image: url(<?= $decoration["url"] ?>)"></div>
     <?php endif; ?>
-    <div class="heavy-text__wrapper d-flex d-flex-justify-c wrapper-xlarge">
+    <div class="heavy-text__wrapper d-flex d-flex-justify-c wrapper-large">
         <div class="heavy-text__container p-relative">
             <?php if($title): ?>
                 <h2 class="heavy-text__title heading-heavy u-text-center"><?= $title ?></h2>

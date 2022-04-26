@@ -1146,34 +1146,34 @@ body.has-scrollbar .wrapper-stretched {
   margin-right: calc(-50vw + 50% + var(--scroll-bar) / 2) !important;
 }
 
-.wrapper-basic, .wrapper-carousel, .wrapper-xlarge, .wrapper-full, .wrapper-contact {
+.wrapper-basic, .wrapper-carousel, .wrapper-large, .wrapper-xlarge, .wrapper-full {
   margin-left: auto;
   margin-right: auto;
   padding-left: 40px;
   padding-right: 40px;
 }
 @media (min-width: 768px) {
-  .wrapper-basic, .wrapper-carousel, .wrapper-xlarge, .wrapper-full, .wrapper-contact {
+  .wrapper-basic, .wrapper-carousel, .wrapper-large, .wrapper-xlarge, .wrapper-full {
     padding-left: 55px;
     padding-right: 55px;
   }
 }
 @media (min-width: 1024px) {
-  .wrapper-basic, .wrapper-carousel, .wrapper-xlarge, .wrapper-full, .wrapper-contact {
+  .wrapper-basic, .wrapper-carousel, .wrapper-large, .wrapper-xlarge, .wrapper-full {
     padding-left: 90px;
     padding-right: 90px;
   }
 }
 
-.wrapper-contact {
+.wrapper-full {
   max-width: 1920px;
 }
 
-.wrapper-full {
+.wrapper-xlarge {
   max-width: 1630px;
 }
 
-.wrapper-xlarge {
+.wrapper-large {
   max-width: 1240px;
 }
 
@@ -1261,8 +1261,8 @@ h1, h2, h3, h4, h5, h6, .heading-family {
 }
 
 .heading-script {
-  /* 100px ~ 80px */
-  font-size: 8rem;
+  /* 100px ~ 60px */
+  font-size: 6rem;
   line-height: 0.9;
 }
 @media (min-width: 768px) {
@@ -1411,7 +1411,7 @@ h1, h2, h3, h4, h5, h6, .heading-family {
   }
 }
 
-.text-medium {
+.heading-medium {
   /* 24px */
   font-size: 2.4rem;
 }
@@ -1463,7 +1463,7 @@ h1, h2, h3, h4, h5, h6, .heading-family {
  * Line Heights
  */
 .line-lg {
-  line-height: 2.33;
+  line-height: 2.4;
 }
 
 .line-half {
@@ -2273,6 +2273,60 @@ a {
   width: 100%;
   object-fit: cover;
   object-position: center top;
+}
+
+/* ==========================================================================
+   #SCRIPT BANNER / PARTIAL
+   ========================================================================== */
+.script-banner__wrapper {
+  padding: 75px 0 175px;
+}
+@media (min-width: 768px) {
+  .script-banner__wrapper {
+    padding: 105px 0;
+  }
+}
+@media (min-width: 1024px) {
+  .script-banner__wrapper {
+    padding: 200px 0;
+  }
+}
+
+.script-banner__bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.script-banner__img {
+  object-position: right top;
+}
+@media (min-width: 768px) {
+  .script-banner__img {
+    object-position: 0 40%;
+  }
+}
+
+.script-banner__container {
+  z-index: 100;
+}
+.script-banner__container *:last-child {
+  margin-bottom: 0;
+}
+@media (min-width: 480px) {
+  .script-banner__container {
+    padding: 0 20px;
+  }
+}
+
+.script-banner__title {
+  margin-bottom: 10px;
+  line-height: 1;
+}
+@media (min-width: 1024px) {
+  .script-banner__title {
+    line-height: 2.4;
+  }
 }
 
 .u-form__label {

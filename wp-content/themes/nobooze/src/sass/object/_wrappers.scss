@@ -40,17 +40,17 @@ body.has-scrollbar {
     }
 }
 
-.wrapper-contact {
+.wrapper-full {
     max-width: 1920px;
     @extend .wrapper-basic;
 }
 
-.wrapper-full {
+.wrapper-xlarge {
     max-width: 1630px;
     @extend .wrapper-basic;
 }
 
-.wrapper-xlarge {
+.wrapper-large {
     max-width: 1240px;
     @extend .wrapper-basic;
 }

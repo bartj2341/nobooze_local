@@ -12,7 +12,7 @@ $subtitle = get_sub_field("subtitle") ? get_sub_field("subtitle") : "";
             <img src="<?= $bg_image["url"] ?>" alt="<?= $bg_image["alt"] ?>" class="hero-banner__img w-100 h-100 fit-cover">
         </div>
     <?php endif; ?>
-    <div class="wrapper-xlarge">
+    <div class="wrapper-large">
         <div class="hero-banner__wrapper d-flex d-flex-center p-relative">
             <div class="hero-banner__container p-relative">
                 <?php if($title): ?>

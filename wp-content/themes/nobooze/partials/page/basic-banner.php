@@ -8,7 +8,7 @@ $author = get_sub_field("author") ? get_sub_field("author") : "";
 ?>
 
 <section class="basic-banner p-relative <?php foreach ($modifier as $value) { echo(' ' . $value); } ?>">
-    <div class="wrapper-xlarge">
+    <div class="wrapper-large">
         <div class="basic-banner__wrapper d-flex d-flex-justify-c">
             <div class="basic-banner__container p-relative">
                 <?php if($title): ?>
@@ -20,7 +20,7 @@ $author = get_sub_field("author") ? get_sub_field("author") : "";
                 <?php endif; ?>
     
                 <?php if($author): ?>
-                    <p class="basic-banner__author f-heading c-white text-medium u-text-center"><?= $author ?></p>
+                    <p class="basic-banner__author f-heading c-white heading-medium u-text-center"><?= $author ?></p>
                 <?php endif; ?>
             </div>
         </div>

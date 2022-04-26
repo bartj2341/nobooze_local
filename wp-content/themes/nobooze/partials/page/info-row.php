@@ -5,7 +5,7 @@ $cta = get_sub_field("cta") ? get_sub_field("cta") : "";
 ?>
 
 <section class="info-row p-relative d-flex d-flex-wrap">
-    <div class="info-row__wrapper wrapper-full p-relative d-flex d-flex-wrap d-flex-align-c w-100"> 
+    <div class="info-row__wrapper wrapper-xlarge p-relative d-flex d-flex-wrap d-flex-align-c w-100"> 
         <div class="info-row__container d-flex">
             <div class="info-row__content">
                 <?php if($text): ?>

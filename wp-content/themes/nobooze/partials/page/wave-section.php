@@ -15,7 +15,7 @@ $cta = get_sub_field("cta") ? get_sub_field("cta") : "";
             <img src="<?= $image["url"] ?>" alt="<?= $image["alt"] ?>" class="wave-section__img">
         </div> 
     <?php endif; ?>
-    <div class="wave-section__wrapper wrapper-full d-flex w-100">
+    <div class="wave-section__wrapper wrapper-xlarge d-flex w-100">
         <div class="wave-section__container d-flex">
             <div class="wave-section__content">
                 <?php if($title): ?>
