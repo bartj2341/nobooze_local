@@ -1430,6 +1430,16 @@ h1, h2, h3, h4, h5, h6, .heading-family {
   }
 }
 
+.heading-tagline {
+  /* 30px ~ 24px */
+  font-size: 2.4rem;
+}
+@media (min-width: 768px) {
+  .heading-tagline {
+    font-size: 3rem;
+  }
+}
+
 .heading-medium {
   /* 24px */
   font-size: 2.4rem;
@@ -1533,7 +1543,7 @@ a {
    #BUTTONS
    ========================================================================== */
 .u-btn, .u-btn--submit {
-  display: inline-block;
+  display: inline-flex;
   color: #fff;
   padding: 12px 12px;
   font-size: 1.8rem;
@@ -1807,7 +1817,7 @@ a {
 }
 
 .basic-banner__text {
-  margin-bottom: 15px;
+  margin: 0 0 15px 0;
 }
 
 .basic-banner--narrow .basic-banner__container {
@@ -2544,6 +2554,74 @@ a {
   background-position: left top;
   background-size: contain;
   background-attachment: scroll;
+}
+
+/* ==========================================================================
+   #ALTERNATE BANNER / PARTIAL
+   ========================================================================== */
+.alternate-banner__bg {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-repeat: no-repeat;
+  background-position: 90% 0;
+  background-size: cover;
+  background-attachment: scroll;
+}
+@media (min-width: 768px) {
+  .alternate-banner__bg {
+    background-position: right bottom;
+    background-size: contain;
+  }
+}
+
+.alternate-banner__wrapper {
+  min-height: 480px;
+  padding: 110px 0 40px;
+  margin: 0 -20px;
+  justify-content: flex-start;
+}
+@media (min-width: 768px) {
+  .alternate-banner__wrapper {
+    min-height: 600px;
+    padding: 130px 0 35px;
+    margin: 0;
+  }
+}
+@media (min-width: 1024px) {
+  .alternate-banner__wrapper {
+    min-height: 700px;
+    padding: 70px 0;
+  }
+}
+
+.alternate-banner__container {
+  max-width: 66%;
+  z-index: 100;
+}
+@media (min-width: 768px) {
+  .alternate-banner__container {
+    max-width: 70%;
+  }
+}
+
+.alternate-banner__tagline,
+.alternate-banner__title {
+  margin: 0 0 30px 0;
+}
+@media (min-width: 768px) {
+  .alternate-banner__tagline,
+.alternate-banner__title {
+    margin: 0 0 50px 0;
+  }
+}
+
+.alternate-banner__btn {
+  margin: 5px;
+}
+
+.alternate-banner__cta {
+  padding: 10px 15px;
 }
 
 .u-form__label {
