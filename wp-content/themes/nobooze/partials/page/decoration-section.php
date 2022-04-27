@@ -3,6 +3,7 @@
 $modifier = get_sub_field("modifier") ? get_sub_field("modifier") : [];
 $decoration = get_sub_field("decoration") ? get_sub_field("decoration") : "";
 $title = get_sub_field("title") ? get_sub_field("title") : "";
+$handwriting = get_sub_field("handwriting") ? get_sub_field("handwriting") : "";
 $subtitle = get_sub_field("subtitle") ? get_sub_field("subtitle") : "";
 $copy = get_sub_field("copy") ? get_sub_field("copy") : "";
 $cta = get_sub_field("cta") ? get_sub_field("cta") : "";
@@ -17,6 +18,10 @@ $cta = get_sub_field("cta") ? get_sub_field("cta") : "";
         <div class="decoration-section__container p-relative">
             <?php if($title): ?>
                 <h2 class="decoration-section__title heading-heavy u-text-center"><?= $title ?></h2>
+            <?php endif; ?>
+
+            <?php if($handwriting): ?>
+                <h2 class="decoration-section__handwriting f-script heading-script-two u-text-center"><?= $handwriting ?></h2>
             <?php endif; ?>
 
             <?php if($subtitle): ?>

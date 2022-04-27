@@ -48,6 +48,14 @@
     line-height: 1.5;
 }
 
+.line-medium {
+    line-height: 1.4;
+}
+
+.line-normal {
+    line-height: 1.2;
+}
+
 .line-reset {
     line-height: 1;
 }
@@ -57,4 +65,14 @@
  */
 .ls-4 {
     letter-spacing: 4px;
+}
+
+/**
+ * Inline text classes
+ */
+.l-script {
+    @extend .heading-huge;
+    font-family: $text-script;
+    line-height: 0.5;
+    vertical-align: 10%;
 }
