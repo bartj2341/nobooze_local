@@ -1,11 +1,12 @@
 <?php
+$modifier = get_sub_field("modifier") ? get_sub_field("modifier") : [];
 $image = get_sub_field("image") ? get_sub_field("image") : "";
 $text = get_sub_field("text") ? get_sub_field("text") : "";
 $cta = get_sub_field("cta") ? get_sub_field("cta") : "";
 $handwriting = get_sub_field("handwriting") ? get_sub_field("handwriting") : "";
 ?>
 
-<section class="info-row p-relative d-flex d-flex-wrap">
+<section class="info-row p-relative d-flex d-flex-wrap <?php foreach ($modifier as $value) { echo(' ' . $value); } ?>">
     <div class="info-row__wrapper p-relative d-flex d-flex-wrap d-flex-align-c w-100"> 
         <?php if($image): ?>
             <div class="info-row__image">

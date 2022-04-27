@@ -2282,6 +2282,7 @@ a {
 }
 
 .info-row__handwriting {
+  padding: 0 20px;
   align-self: flex-end;
 }
 
@@ -2303,6 +2304,17 @@ a {
   width: 100%;
   object-fit: cover;
   object-position: center top;
+}
+
+@media (min-width: 768px) {
+  .info-row--image-wider .info-row__image {
+    width: 53%;
+  }
+}
+@media (min-width: 768px) {
+  .info-row--image-wider .info-row__container {
+    width: 47%;
+  }
 }
 
 /* ==========================================================================

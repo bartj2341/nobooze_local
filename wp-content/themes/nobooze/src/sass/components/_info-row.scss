@@ -61,6 +61,7 @@
 }
 
 .info-row__handwriting {
+    padding: 0 20px;
     align-self: flex-end;
 }
 
@@ -81,4 +82,19 @@
     width: 100%;
     object-fit: cover;
     object-position: center top;
+}
+
+// Modifiers
+.info-row--image-wider {
+    .info-row__image {
+        @include bp(medium) {
+            width: 53%;
+        }
+    }
+
+    .info-row__container { 
+        @include bp(medium) {
+            width: 47%;
+        }
+    }
 }
