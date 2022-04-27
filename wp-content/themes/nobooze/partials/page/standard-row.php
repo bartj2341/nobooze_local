@@ -12,7 +12,7 @@ $text = get_sub_field("text") ? get_sub_field("text") : "";
             <img src="<?= $image["url"] ?>" alt="<?= $image["alt"] ?>" class="standard-row__img">
         </div> 
     <?php endif; ?>
-    <div class="standard-row__wrapper wrapper-xlarge p-relative d-flex d-flex-wrap d-flex-align-c w-100"> 
+    <div class="standard-row__wrapper p-relative d-flex d-flex-wrap d-flex-align-c w-100"> 
         <div class="standard-row__container d-flex">
             <div class="standard-row__content">
                 <?php if($title): ?>

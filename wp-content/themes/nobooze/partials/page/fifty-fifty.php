@@ -18,7 +18,7 @@ $cta = get_sub_field("cta") ? get_sub_field("cta") : "";
             <img src="<?= $image["url"] ?>" alt="<?= $image["alt"] ?>" class="fifty__img">
         </div> 
     <?php endif; ?>
-    <div class="fifty__wrapper wrapper-xlarge p-relative d-flex d-flex-wrap w-100"> 
+    <div class="fifty__wrapper p-relative d-flex d-flex-wrap w-100"> 
         <div class="fifty__container d-flex">
             <div class="fifty__content">
                 <?php if($text): ?>

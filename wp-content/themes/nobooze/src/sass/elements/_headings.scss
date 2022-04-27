@@ -16,17 +16,17 @@ h1, h2, h3, h4, h5, h6, .heading-family {
     font-weight: normal;
 }
 
-.heading-script { /* 110px ~ 70px */
+.heading-script { /* 100px ~ 70px */
     font-size: 7rem;
     line-height: 0.9;
 
     @include bp(medium) {
-        font-size: 11rem;
+        font-size: 10rem;
     }
 }
 
-.heading-script-two { /* 90px */
-    font-size: 9rem;
+.heading-script-two { /* 80px */
+    font-size: 8rem;
     line-height: 1.2;
 } 
 

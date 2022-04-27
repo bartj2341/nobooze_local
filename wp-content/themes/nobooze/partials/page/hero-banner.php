@@ -1,12 +1,13 @@
 <?php
 
+$modifier = get_sub_field("modifier") ? get_sub_field("modifier") : [];
 $bg_image = get_sub_field("background_image") ? get_sub_field("background_image") : "";
 $title = get_sub_field("title") ? get_sub_field("title") : "";
 $subtitle = get_sub_field("subtitle") ? get_sub_field("subtitle") : "";
 
 ?>
 
-<section class="hero-banner p-relative">
+<section class="hero-banner p-relative <?php foreach ($modifier as $value) { echo(' ' . $value); } ?>">
     <?php if($bg_image): ?>
         <div class="hero-banner__bg w-100 h-100">
             <img src="<?= $bg_image["url"] ?>" alt="<?= $bg_image["alt"] ?>" class="hero-banner__img w-100 h-100 fit-cover">

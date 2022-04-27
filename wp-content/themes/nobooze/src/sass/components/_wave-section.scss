@@ -18,12 +18,11 @@
     justify-content: center;
     padding: 40px 0 50px;
     @include bp(medium) {
-        justify-content: flex-end;
-        padding: 40px 0 40px 40px;
+        padding: 40px 40px 40px 40px;
         width: 50%;
     }
     @include bp(large) {
-        padding: 90px 0 90px 70px;
+        padding: 90px 70px 90px 70px;
     }
 }
 
@@ -97,19 +96,18 @@
             right: 0;
             left: auto;
             margin-left: 0;
+            margin-top: -100px;
         }
     }
 
     .wave-section__container {
-        margin-bottom: 50px;
-        
         @include bp(medium) {
-            justify-content: flex-start;
-            padding: 40px 40px 40px 0;
+            justify-content: center;  
+            padding: 40px 40px 40px 40px; 
         }
 
         @include bp(large) {
-            padding: 90px 70px 90px 0;
+            padding: 90px 70px 90px 70px;
         }
     }
 }
