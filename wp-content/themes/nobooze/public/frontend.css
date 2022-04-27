@@ -1258,13 +1258,14 @@ h1, h2, h3, h4, h5, h6, .heading-family {
 }
 
 .heading-script {
-  /* 100px ~ 70px */
+  /* 120px ~ 70px */
   font-size: 7rem;
   line-height: 0.9;
+  letter-spacing: -2px;
 }
 @media (min-width: 768px) {
   .heading-script {
-    font-size: 10rem;
+    font-size: 12rem;
   }
 }
 
@@ -2308,11 +2309,11 @@ a {
    #SCRIPT BANNER / PARTIAL
    ========================================================================== */
 .script-banner__wrapper {
-  padding: 75px 0 175px;
+  padding: 70px 0 170px;
 }
 @media (min-width: 768px) {
   .script-banner__wrapper {
-    padding: 105px 0;
+    padding: 85px 0;
   }
 }
 @media (min-width: 1024px) {
@@ -2354,7 +2355,13 @@ a {
 }
 @media (min-width: 1024px) {
   .script-banner__title {
-    line-height: 2.4;
+    line-height: 2;
+  }
+}
+
+@media (min-width: 1024px) {
+  .script-banner--text-bottom .script-banner__wrapper {
+    padding: 300px 0 100px 0;
   }
 }
 

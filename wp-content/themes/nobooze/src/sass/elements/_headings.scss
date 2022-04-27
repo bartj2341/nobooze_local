@@ -16,12 +16,13 @@ h1, h2, h3, h4, h5, h6, .heading-family {
     font-weight: normal;
 }
 
-.heading-script { /* 100px ~ 70px */
+.heading-script { /* 120px ~ 70px */
     font-size: 7rem;
     line-height: 0.9;
+    letter-spacing: -2px;
 
     @include bp(medium) {
-        font-size: 10rem;
+        font-size: 12rem;
     }
 }
 
