@@ -50,6 +50,11 @@ body.has-scrollbar {
     @extend .wrapper-basic;
 }
 
+.wrapper-box {
+    max-width: 1280px;
+    @extend .wrapper-basic;
+}
+
 .wrapper-large {
     max-width: 1240px;
     @extend .wrapper-basic;
