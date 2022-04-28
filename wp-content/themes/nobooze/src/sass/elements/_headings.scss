@@ -26,9 +26,13 @@ h1, h2, h3, h4, h5, h6, .heading-family {
     }
 }
 
-.heading-script-two { /* 80px */
-    font-size: 8rem;
+.heading-script-two { /* 80px ~ 75px */
+    font-size: 7.5rem;
     line-height: 1.2;
+
+    @include bp(medium) {
+        font-size: 8rem;
+    }
 } 
 
 .heading-huge { /* 67px ~ 45px */
