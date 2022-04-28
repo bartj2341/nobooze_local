@@ -16,13 +16,13 @@
 .wave-section__container {
     width: 100%;
     justify-content: center;
-    padding: 40px 0 50px;
+    padding: 40px 40px 50px;
     @include bp(medium) {
-        padding: 40px 40px 40px 40px;
+        padding: 40px;
         width: 50%;
     }
     @include bp(large) {
-        padding: 90px 70px 90px 70px;
+        padding: 90px;
     }
 }
 
@@ -103,11 +103,6 @@
     .wave-section__container {
         @include bp(medium) {
             justify-content: center;  
-            padding: 40px 40px 40px 40px; 
-        }
-
-        @include bp(large) {
-            padding: 90px 70px 90px 70px;
         }
     }
 }

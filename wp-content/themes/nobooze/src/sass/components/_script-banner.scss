@@ -29,14 +29,11 @@
 }
 
 .script-banner__container {
+    padding: 0 20px;
     z-index: $z-lvl-1;
-
+   
     *:last-child {
         margin-bottom: 0;
-    }
-    
-    @include bp(small) {
-        padding: 0 20px;
     }
 }
 

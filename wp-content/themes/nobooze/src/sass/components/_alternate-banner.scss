@@ -37,6 +37,7 @@
 
 .alternate-banner__container {
     max-width: 66%;
+    padding: 20px;
     z-index: $z-lvl-1;
 
     @include bp(medium) {
