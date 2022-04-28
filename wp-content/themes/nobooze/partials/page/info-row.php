@@ -3,7 +3,7 @@ $modifier = get_sub_field("modifier") ? get_sub_field("modifier") : [];
 $image = get_sub_field("image") ? get_sub_field("image") : "";
 $text = get_sub_field("text") ? get_sub_field("text") : "";
 $cta = get_sub_field("cta") ? get_sub_field("cta") : "";
-$handwriting = get_sub_field("handwriting") ? get_sub_field("handwriting") : "";
+$signature = get_sub_field("signature") ? get_sub_field("signature") : "";
 ?>
 
 <section class="info-row p-relative d-flex d-flex-wrap <?php foreach ($modifier as $value) { echo(' ' . $value); } ?>">
@@ -25,8 +25,8 @@ $handwriting = get_sub_field("handwriting") ? get_sub_field("handwriting") : "";
                     </div>
                 <?php endif; ?>
             </div>
-            <?php if($handwriting): ?>
-                <div class="info-row__handwriting f-script heading-script-two u-text-center c-blue u-text-right line-medium"><?= $handwriting ?></div>
+            <?php if($signature): ?>
+                <div class="info-row__signature f-script heading-script-two c-blue u-text-right line-medium"><?= $signature ?></div>
             <?php endif; ?>
         </div>
     </div>
