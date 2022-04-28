@@ -19,6 +19,10 @@
 .hero-banner__container {
     z-index: $z-lvl-1;
     padding: 0 20px;
+
+    *:last-child {
+        margin-bottom: 0;
+    }
 }
 
 .hero-banner__title {
@@ -33,5 +37,11 @@
         @include bp(large) {
             padding: 220px 0 190px; 
         }
+    }
+}
+
+.hero-banner--text-white {
+    * {
+        color: $ct-white;
     }
 }

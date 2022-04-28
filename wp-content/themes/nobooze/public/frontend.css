@@ -1910,6 +1910,9 @@ a {
   z-index: 100;
   padding: 0 20px;
 }
+.hero-banner__container *:last-child {
+  margin-bottom: 0;
+}
 
 .hero-banner__title {
   margin-bottom: 10px;
@@ -1922,6 +1925,10 @@ a {
   .hero-banner--large-height .hero-banner__wrapper {
     padding: 220px 0 190px;
   }
+}
+
+.hero-banner--text-white * {
+  color: #fff;
 }
 
 /* ==========================================================================
