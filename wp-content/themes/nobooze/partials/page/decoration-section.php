@@ -14,7 +14,7 @@ $cta = get_sub_field("cta") ? get_sub_field("cta") : "";
     <?php if($decoration): ?>
         <div class="decoration-section__bg w-100 h-100" style="background-image: url(<?= $decoration["url"] ?>)"></div>
     <?php endif; ?>
-    <div class="decoration-section__wrapper d-flex d-flex-justify-c wrapper-large">
+    <div class="decoration-section__wrapper d-flex d-flex-justify-c wrapper-full">
         <div class="decoration-section__container p-relative">
             <?php if($title): ?>
                 <h2 class="decoration-section__title heading-heavy u-text-center"><?= $title ?></h2>
