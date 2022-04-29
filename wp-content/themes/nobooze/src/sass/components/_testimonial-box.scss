@@ -13,8 +13,11 @@
 }
 
 .testimonial-box__image {
-    width: 27%;
-    padding: 20px;
+    width: 100%;
+
+    @include bp(large) {
+        width: 27%;
+    }
 }
 
 .testimonial-box__img {
@@ -23,8 +26,17 @@
 }
 
 .testimonial-box__content {
-    width: 73%;
-    padding: 55px;
+    width: 100%; 
+    padding: 35px 20px;
+
+    @include bp(medium) {
+        padding: 55px;
+    }
+
+    @include bp(large) {
+        padding: 55px;
+        width: 73%; 
+    }
 }
 
 

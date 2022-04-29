@@ -6,7 +6,7 @@ $signature = get_sub_field("signature") ? get_sub_field("signature") : "";
 
 <section class="testimonial-box">
     <div class="testimonial-box__wrapper wrapper-box">
-        <div class="testimonial-box__container d-flex d-flex-align-c">
+        <div class="testimonial-box__container d-flex d-flex-wrap d-flex-align-c">
             <?php if($image): ?>
                 <div class="testimonial-box__image">
                     <img src="<?= $image["url"] ?>" alt="<?= $image["alt"] ?>" class="testimonial-box__img">

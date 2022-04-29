@@ -2707,8 +2707,12 @@ a {
 }
 
 .testimonial-box__image {
-  width: 27%;
-  padding: 20px;
+  width: 100%;
+}
+@media (min-width: 1024px) {
+  .testimonial-box__image {
+    width: 27%;
+  }
 }
 
 .testimonial-box__img {
@@ -2717,8 +2721,19 @@ a {
 }
 
 .testimonial-box__content {
-  width: 73%;
-  padding: 55px;
+  width: 100%;
+  padding: 35px 20px;
+}
+@media (min-width: 768px) {
+  .testimonial-box__content {
+    padding: 55px;
+  }
+}
+@media (min-width: 1024px) {
+  .testimonial-box__content {
+    padding: 55px;
+    width: 73%;
+  }
 }
 
 .testimonial-box__text {
