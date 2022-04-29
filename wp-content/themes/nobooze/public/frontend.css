@@ -1983,7 +1983,7 @@ a {
 }
 @media (min-width: 768px) {
   .fifty__container {
-    padding: 90px 40px 40px 40px;
+    padding: 90px 55px 40px 55px;
   }
 }
 @media (min-width: 1024px) {
@@ -2239,13 +2239,33 @@ a {
   }
 }
 
-.wave-section--mobile-centered .wave-section__image {
+.wave-section--mobile-centered .wave-section__image,
+.wave-section--m-centered-narrow .wave-section__image {
   margin-left: 0;
   margin-right: 0;
   max-width: 400px;
 }
 @media (min-width: 1024px) {
-  .wave-section--mobile-centered .wave-section__image {
+  .wave-section--mobile-centered .wave-section__image,
+.wave-section--m-centered-narrow .wave-section__image {
+    max-width: none;
+  }
+}
+
+.wave-section--m-centered-narrow.wave-section--invert .wave-section__image {
+  margin-left: 100px;
+}
+.wave-section--m-centered-narrow .wave-section__image {
+  margin-right: 100px;
+  max-width: 300px;
+}
+@media (min-width: 768px) {
+  .wave-section--m-centered-narrow .wave-section__image {
+    max-width: 400px;
+  }
+}
+@media (min-width: 1024px) {
+  .wave-section--m-centered-narrow .wave-section__image {
     max-width: none;
   }
 }
@@ -2282,7 +2302,7 @@ a {
 }
 @media (min-width: 768px) {
   .info-row__container {
-    padding: 40px;
+    padding: 40px 55px;
   }
 }
 @media (min-width: 1024px) {
@@ -2478,7 +2498,7 @@ a {
 }
 @media (min-width: 768px) {
   .standard-row__container {
-    padding: 40px;
+    padding: 40px 55px;
     max-width: none;
   }
 }
@@ -2751,7 +2771,7 @@ a {
 }
 @media (min-width: 768px) {
   .basic-row__container {
-    padding: 40px;
+    padding: 40px 55px;
   }
 }
 @media (min-width: 1024px) {

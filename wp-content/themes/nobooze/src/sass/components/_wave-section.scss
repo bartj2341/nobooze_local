@@ -109,7 +109,8 @@
     }
 }
 
-.wave-section--mobile-centered {
+.wave-section--mobile-centered,
+.wave-section--m-centered-narrow {
     .wave-section__image {
         margin-left: 0;
         margin-right: 0;
@@ -117,6 +118,27 @@
 
         @include bp(large) {
             max-width: none;
+        }
+    }
+}
+
+.wave-section--m-centered-narrow {
+    &.wave-section--invert {
+        .wave-section__image {
+            margin-left: 100px;
+        }
+    }
+
+    .wave-section__image {
+        margin-right: 100px;
+        max-width: 300px;
+
+        @include bp(medium) {
+            max-width: 400px;
+        }
+
+        @include bp(large) {
+            max-width: none; 
         }
     }
 }
