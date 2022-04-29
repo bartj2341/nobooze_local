@@ -26,6 +26,11 @@
    }
 }
 
+.u-btn--mobile-lg {
+   @extend .u-btn;
+   padding: 10px 15px;
+}
+
 .u-btn--submit {
    @extend .u-btn;
    padding: 15px 30px;

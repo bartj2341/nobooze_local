@@ -17,7 +17,7 @@ $title = get_sub_field("title") ? get_sub_field("title") : "";
                         $button = get_sub_field("button") ? get_sub_field("button") : "";
                         ?>
                         <div class="buttons-row__btn"> 
-                            <a href="<?= $button["url"] ?>" target="<?= $button["target"]?>" class="alternate-banner__cta u-btn"><?= $button["title"]?></a>
+                            <a href="<?= $button["url"] ?>" target="<?= $button["target"]?>" class="alternate-banner__cta u-btn--mobile-lg"><?= $button["title"]?></a>
                         </div>
                         <?php endwhile; ?>
                     </div>

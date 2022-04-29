@@ -44,3 +44,11 @@
         color: $ct-white;
     }
 }
+
+.hero-banner--text-top {
+    .hero-banner__wrapper {
+        @include bp(large) {
+            padding: 60px 0 355px 0;
+        }
+    }
+}
