@@ -5,7 +5,7 @@
 .standard-row {
     justify-content: center;
 
-    @include bp(medium) {
+    @include bp(large) {
         justify-content: unset;
     }
 }
@@ -13,25 +13,25 @@
 .standard-row__wrapper {
     justify-content: center;
     
-    @include bp(medium) {
+    @include bp(large) {
         justify-content: flex-end;
     }
 }
 
 .standard-row__container {
     width: 100%;
-    max-width: 400px;
     padding: 40px 40px 50px;
     justify-content: center;
+    max-width: 400px;
     
     @include bp(medium) {
         padding: 40px;
-        width: 50%;
         max-width: none;
     }
 
     @include bp(large) {
         padding: 90px;
+        width: 50%;
     }
 }
 
@@ -65,7 +65,7 @@
     padding-right: 100px;
     margin-top: -100px;
     
-    @include bp(medium) {
+    @include bp(large) {
         position: absolute;
         left: 0;
         top: 0;

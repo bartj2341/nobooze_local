@@ -20,20 +20,19 @@
     left: 0;
 }
 
-.script-banner__img {
-    object-position: right top;
-
-    @include bp(medium) {
-        object-position: 0 40%;
-    }
-}
-
 .script-banner__container {
-    padding: 0 20px;
     z-index: $z-lvl-1;
    
     *:last-child {
         margin-bottom: 0;
+    }
+
+    @include bp(small) {
+        padding: 0 20px;
+    }
+
+    @include bp(medium) {
+        padding: 0;
     }
 }
 

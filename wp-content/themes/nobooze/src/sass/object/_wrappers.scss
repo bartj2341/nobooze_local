@@ -26,6 +26,23 @@ body.has-scrollbar {
 .wrapper-basic {
     margin-left: auto;
     margin-right: auto;
+    padding-left: 40px;
+    padding-right: 40px;
+
+    @include bp(medium) {
+        padding-left: 55px;
+        padding-right: 55px;
+    }
+
+    @include bp(large) {
+        padding-left: 90px;
+        padding-right: 90px;
+    }
+}
+
+.wrapper-basic-two {
+    margin-left: auto;
+    margin-right: auto;
     padding-left: 20px;
     padding-right: 20px;
 
@@ -48,6 +65,11 @@ body.has-scrollbar {
 .wrapper-xlarge {
     max-width: 1595px;
     @extend .wrapper-basic;
+}
+
+.wrapper-box {
+    max-width: 1240px;
+    @extend .wrapper-basic-two;
 }
 
 .wrapper-large {

@@ -9,17 +9,16 @@ $cta = get_sub_field("cta") ? get_sub_field("cta") : "";
 
 
 <section class="fifty p-relative d-flex d-flex-wrap">
-    <?php if($title): ?>
-        <h2 class="fifty__title heading-script f-script"><?= $title ?></h2>
-    <?php endif; ?>
-    
     <?php if($image): ?>
         <div class="fifty__image">
             <img src="<?= $image["url"] ?>" alt="<?= $image["alt"] ?>" class="fifty__img">
         </div> 
-    <?php endif; ?>
-    <div class="fifty__wrapper p-relative d-flex d-flex-wrap w-100"> 
-        <div class="fifty__container d-flex">
+        <?php endif; ?>
+        <div class="fifty__wrapper d-flex d-flex-wrap d-flex-column w-100"> 
+            <?php if($title): ?>
+                <h2 class="fifty__title heading-script f-script"><?= $title ?></h2>
+            <?php endif; ?>
+            <div class="fifty__container d-flex">
             <div class="fifty__content">
                 <?php if($text): ?>
                     <div class="fifty__text line-half"><?= $text ?></div>

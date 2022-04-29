@@ -6,7 +6,7 @@
     background-color: $cbg-gray-2;
     justify-content: center;
 
-    @include bp(medium) {
+    @include bp(large) {
         justify-content: flex-end
     }
 }
@@ -37,7 +37,7 @@
     max-width: 400px;
     height: 280px;
 
-    @include bp(medium) {
+    @include bp(large) {
         position: absolute;
         left: 0;
         top: 0;
@@ -51,7 +51,6 @@
     height: 100%;
     width: 100%;
     object-fit: cover;
-    object-position: center top;
 }
 
 .contact-form__container {
@@ -61,18 +60,14 @@
     z-index: $z-lvl-1;
     
     @include bp(medium) {
-        justify-content: flex-end;
         padding: 170px 20px 60px;
+    }
+    
+    @include bp(large) {
+        justify-content: flex-end;
+        padding: 170px 70px 116px;
         width: 53%;
     }
-
-    @include bp(large) {
-        padding: 170px 70px 116px;
-    }
-}
-
-.contact-form__content {
-    padding: 0 20px;
 }
 
 .contact-form__title {

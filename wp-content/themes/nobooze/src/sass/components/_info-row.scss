@@ -3,13 +3,13 @@
    ========================================================================== */
    
 .info-row {
-    @include bp(medium) {
+    @include bp(large) {
         min-height: 700px;
     }
 }
 
 .info-row__wrapper {
-    @include bp(medium) {
+    @include bp(large) {
         justify-content: flex-end;
     }
 }
@@ -22,12 +22,12 @@
     
     @include bp(medium) {
         padding: 40px;
-        width: 50%;
-        order: 2;
     }
 
     @include bp(large) {
         padding: 90px;
+        width: 50%;
+        order: 2;
     }
 }
 
@@ -69,7 +69,7 @@
     height: 350px;
     order: 2;
 
-    @include bp(medium) {
+    @include bp(large) {
         width: 50%;
         height: 100%;
         order: 0;
@@ -80,19 +80,18 @@
     height: 100%;
     width: 100%;
     object-fit: cover;
-    object-position: center top;
 }
 
 // Modifiers
 .info-row--image-wider {
     .info-row__image {
-        @include bp(medium) {
+        @include bp(large) {
             width: 53%;
         }
     }
 
     .info-row__container { 
-        @include bp(medium) {
+        @include bp(large) {
             width: 47%;
         }
     }
@@ -113,7 +112,7 @@
         margin: 0 auto;
         
         @include bp(medium) {
-            max-width: none
+            max-width: none;
         }
     }
 }

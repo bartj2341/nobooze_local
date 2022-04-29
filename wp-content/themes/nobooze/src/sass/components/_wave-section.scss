@@ -7,7 +7,7 @@
 }
 
 .wave-section__wrapper {
-    @include bp(medium) {
+    @include bp(large) {
         justify-content: flex-end;
         align-items: center;
     }
@@ -17,12 +17,14 @@
     width: 100%;
     justify-content: center;
     padding: 40px 40px 50px;
+
     @include bp(medium) {
         padding: 40px;
-        width: 50%;
     }
+
     @include bp(large) {
         padding: 90px;
+        width: 50%;
     }
 }
 
@@ -58,7 +60,7 @@
     height: 400px;
     margin-top: -100px;
     
-    @include bp(medium) {
+    @include bp(large) {
         position: absolute;
         left: 0;
         top: 0;
@@ -78,7 +80,7 @@
 
 .wave-section--invert {
     .wave-section__wrapper {
-        @include bp(medium) {
+        @include bp(large) {
             justify-content: flex-start;
             align-items: center;
         }
@@ -92,7 +94,7 @@
         margin-left: 100px;
         margin-top: 0;
 
-        @include bp(medium) {
+        @include bp(large) {
             right: 0;
             left: auto;
             margin-left: 0;
@@ -101,7 +103,7 @@
     }
 
     .wave-section__container {
-        @include bp(medium) {
+        @include bp(large) {
             justify-content: center;  
         }
     }
@@ -113,7 +115,7 @@
         margin-right: 0;
         max-width: 400px;
 
-        @include bp(medium) {
+        @include bp(large) {
             max-width: none;
         }
     }
