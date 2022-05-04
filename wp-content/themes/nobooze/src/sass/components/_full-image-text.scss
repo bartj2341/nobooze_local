@@ -2,24 +2,13 @@
    #FULL IMAGE TEXT / PARTIAL
    ========================================================================== */
 
-.full-image__bg {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    background-repeat: no-repeat;
-    background-position: right bottom;
-    background-size: contain;
-}
-
-.full-image__wrapper {
+.full-image {
     min-height: 480px;
-    padding: 110px 0 40px;
-    margin: 0 -20px;
-    justify-content: flex-start;
-    
+    padding: 110px 0 0px;
+
     @include bp(medium) {
         min-height: 600px;
-        padding: 130px 0 35px;
+        padding: 130px 0 0px;
         margin: 0;
     }
 
@@ -29,10 +18,43 @@
     }
 }
 
+.full-image__bg {
+    width: 100%;
+    min-height: 400px;
+
+    @include bp(large) {
+        position: absolute;
+        height: 100%;
+        min-height: unset;
+        bottom: 0;
+        right: 0;
+    }
+}
+   
+.full-image__img {
+    max-width: 100%;
+    max-height: 100%; 
+    margin-left: auto;
+    object-fit: cover;
+}
+
 .full-image__container {
-    max-width: 61%; 
+    justify-content: center;
+    padding-bottom: 35px;
     z-index: $z-lvl-1;
-    padding-top: 30px;
+
+    @include bp(large) {
+        justify-content: flex-start;
+        padding-bottom: 0;
+    }
+}
+
+.full-image__content {
+    width: 100%;
+    
+    @include bp(large) {
+        max-width: 61%;
+    }
 
     *:last-child {
         margin-bottom: 0;
@@ -50,19 +72,25 @@
 // Modifiers
 .full-image--invert {
     .full-image__bg {
-        bottom: 0;
         left: 0;
-        background-position: left bottom;
+        right: auto;
+    }
+    
+    .full-image__img {
+        margin-left: unset;
+        margin-right: auto;
     }
 
-    .full-image__wrapper {
-        justify-content: flex-end;
+    .full-image__container {
+        @include bp(large) {
+            justify-content: flex-end;
+        }
     }
 }
 
 .full-image--narrow {
-    .full-image__container {
-        @include bp(medium) {
+    .full-image__content {
+        @include bp(large) {
             max-width: 48%;
         }
     }
