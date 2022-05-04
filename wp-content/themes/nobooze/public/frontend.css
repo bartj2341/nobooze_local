@@ -1795,13 +1795,17 @@ a {
 
 .full-image__bg {
   width: 100%;
-  min-height: 400px;
+  height: 300px;
+}
+@media (min-width: 768px) {
+  .full-image__bg {
+    height: 400px;
+  }
 }
 @media (min-width: 1024px) {
   .full-image__bg {
     position: absolute;
     height: 100%;
-    min-height: unset;
     bottom: 0;
     right: 0;
   }
@@ -2715,7 +2719,12 @@ a {
 
 .alternate-banner__bg {
   width: 100%;
-  min-height: 400px;
+  height: 300px;
+}
+@media (min-width: 768px) {
+  .alternate-banner__bg {
+    height: 400px;
+  }
 }
 @media (min-width: 1024px) {
   .alternate-banner__bg {

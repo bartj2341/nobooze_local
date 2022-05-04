@@ -31,7 +31,11 @@
 
 .alternate-banner__bg {
     width: 100%;
-    min-height: 400px;
+    height: 300px;
+
+    @include bp(medium) {
+        height: 400px;
+    }
 
     @include bp(large) {
         position: absolute;
