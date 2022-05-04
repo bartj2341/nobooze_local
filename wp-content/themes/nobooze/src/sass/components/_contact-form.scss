@@ -16,13 +16,11 @@
     left: 0;
     bottom: 0;
     background-repeat: no-repeat;
-    background-attachment: scroll;
     background-position: center bottom;
-    background-size: contain;
+    background-size: auto;
 
     @include bp(large) {
         background-position: right bottom;
-        background-size: auto;
     }
 }
 

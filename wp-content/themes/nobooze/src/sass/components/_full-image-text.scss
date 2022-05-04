@@ -7,14 +7,8 @@
     bottom: 0;
     right: 0;
     background-repeat: no-repeat;
-    background-position: 55% 0;
-    background-size: cover;
-    background-attachment: scroll;
-
-    @include bp(medium) {
-        background-position: right bottom;
-        background-size: contain;
-    }
+    background-position: right bottom;
+    background-size: contain;
 }
 
 .full-image__wrapper {
@@ -58,10 +52,7 @@
     .full-image__bg {
         bottom: 0;
         left: 0;
-        
-        @include bp(medium) {
-            background-position: left bottom;
-        }
+        background-position: left bottom;
     }
 
     .full-image__wrapper {

@@ -1579,7 +1579,8 @@ h1, h2, h3, h4, h5, h6, .heading-family {
    ========================================================================== */
 a {
   text-decoration: none;
-  color: inherit;
+  color: #c58511;
+  white-space: nowrap;
 }
 
 /* ==========================================================================
@@ -1779,15 +1780,8 @@ a {
   bottom: 0;
   right: 0;
   background-repeat: no-repeat;
-  background-position: 55% 0;
-  background-size: cover;
-  background-attachment: scroll;
-}
-@media (min-width: 768px) {
-  .full-image__bg {
-    background-position: right bottom;
-    background-size: contain;
-  }
+  background-position: right bottom;
+  background-size: contain;
 }
 
 .full-image__wrapper {
@@ -1830,11 +1824,7 @@ a {
 .full-image--invert .full-image__bg {
   bottom: 0;
   left: 0;
-}
-@media (min-width: 768px) {
-  .full-image--invert .full-image__bg {
-    background-position: left bottom;
-  }
+  background-position: left bottom;
 }
 .full-image--invert .full-image__wrapper {
   justify-content: flex-end;
@@ -1934,7 +1924,7 @@ a {
    #HERO BANNER / PARTIAL
    ========================================================================== */
 .hero-banner__wrapper {
-  padding: 100px 0 120px;
+  padding: 100px 0 130px;
 }
 @media (min-width: 1024px) {
   .hero-banner__wrapper {
@@ -2075,14 +2065,12 @@ a {
   left: 0;
   bottom: 0;
   background-repeat: no-repeat;
-  background-attachment: scroll;
   background-position: center bottom;
-  background-size: contain;
+  background-size: auto;
 }
 @media (min-width: 1024px) {
   .contact-form__decoration {
     background-position: right bottom;
-    background-size: auto;
   }
 }
 
@@ -2422,6 +2410,10 @@ a {
   }
 }
 
+.info-row--gray-bg {
+  background-color: #f0f0f0;
+}
+
 /* ==========================================================================
    #SCRIPT BANNER / PARTIAL
    ========================================================================== */
@@ -2604,12 +2596,10 @@ a {
   background-repeat: no-repeat;
   background-position: center top;
   background-size: auto;
-  background-attachment: scroll;
 }
 @media (min-width: 1024px) {
   .decoration-section__bg {
     background-position: right top;
-    background-size: contain;
   }
 }
 
@@ -2644,13 +2634,20 @@ a {
 }
 
 .decoration-section--decoration-left .decoration-section__bg {
-  position: absolute;
   right: 0;
   top: 0;
-  background-repeat: no-repeat;
   background-position: left top;
-  background-size: contain;
-  background-attachment: scroll;
+}
+.decoration-section--decoration-left.decoration-section--vertical-center .decoration-section__bg {
+  top: 50%;
+  transform: translateY(-50%);
+  background-position: left center;
+}
+
+.decoration-section--vertical-center .decoration-section__bg {
+  top: 50%;
+  transform: translateY(-50%);
+  background-position: right center;
 }
 
 /* ==========================================================================
@@ -2661,15 +2658,8 @@ a {
   bottom: 0;
   left: 0;
   background-repeat: no-repeat;
-  background-position: 90% 0;
-  background-size: cover;
-  background-attachment: scroll;
-}
-@media (min-width: 768px) {
-  .alternate-banner__bg {
-    background-position: right bottom;
-    background-size: contain;
-  }
+  background-position: right bottom;
+  background-size: contain;
 }
 
 .alternate-banner__wrapper {

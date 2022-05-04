@@ -18,11 +18,9 @@
     background-repeat: no-repeat;
     background-position: center top;
     background-size: auto;
-    background-attachment: scroll;
 
     @include bp(large) {
         background-position: right top;
-        background-size: contain;
     }
 }
 
@@ -60,12 +58,24 @@
 // Modifiers
 .decoration-section--decoration-left {
     .decoration-section__bg {
-        position: absolute;
         right: 0;
         top: 0;
-        background-repeat: no-repeat;
         background-position: left top;
-        background-size: contain;
-        background-attachment: scroll;
+    }
+
+    &.decoration-section--vertical-center {
+        .decoration-section__bg {
+            top: 50%;
+            transform: translateY(-50%);
+            background-position: left center;
+        }
+    }
+}
+
+.decoration-section--vertical-center {
+    .decoration-section__bg {
+        top: 50%;
+        transform: translateY(-50%);
+        background-position: right center;
     }
 }
