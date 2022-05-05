@@ -13,9 +13,6 @@ $signature = get_sub_field("signature") ? get_sub_field("signature") : "";
         <img src="<?= $image["url"] ?>" alt="<?= $image["alt"] ?>" class="contact-form__img d-block">
     </div>
     <div class="contact-form__container p-relative">
-        <?php if($form_decoration): ?>
-            <div class="contact-form__decoration w-100 h-100" style="background-image: url(<?= $form_decoration["url"] ?>)"></div>
-        <?php endif; ?>
         <div class="contact-form__content p-relative">
             <?php if($title): ?>
                 <h2 class="contact-form__title heading-xlarge u-text-center"><?= $title ?></h2>

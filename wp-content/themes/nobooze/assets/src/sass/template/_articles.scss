@@ -1,0 +1,79 @@
+/* ==========================================================================
+   #ARTICLES / TEMPLATE
+   ========================================================================== */
+
+.s-articles__article {
+    width: 100%;
+    height: auto;
+    margin-bottom: 70px;
+
+    @include bp-down(medium) {
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    @include bp(medium) {
+        margin: 15px;
+        width: calc(50% - 30px);
+    }
+
+    @include bp(large) {
+        margin: 10px;
+        width: calc(33.33% - 20px);
+    }
+}
+
+.s-articles__title {
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.s-articles__wrapper,
+.s-articles__card {
+    height: 100%;
+}
+
+.s-articles__img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.s-articles__content {
+    flex: 1;
+    padding: 35px;
+    background-color: $cbg-gray-3;
+}
+
+.s-articles__content__title {
+    margin-bottom: 15px;
+}
+
+.s-articles__author__name {
+    @include bp(xlarge) {
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+.s-articles__text {
+    margin-bottom: 16px;
+
+    p {
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+
+.s-articles__btn {
+    margin-top: auto;
+}
+
+.s-articles__cta {
+    font-size: 2rem;
+    padding: 10px 30px;
+    line-height: 1.55;
+}

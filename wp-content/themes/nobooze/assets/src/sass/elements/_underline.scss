@@ -1,0 +1,16 @@
+/* ==========================================================================
+   #UNDERLINE
+   ========================================================================== */
+
+.u-underline {
+    &:after {
+        content: "";
+        display: block;
+        left: 0;
+        bottom: 0;
+        background-color: $cbg-gray-4;
+        height: 2px;
+        width: 50px;
+        margin-top: 20px;
+    }
+}

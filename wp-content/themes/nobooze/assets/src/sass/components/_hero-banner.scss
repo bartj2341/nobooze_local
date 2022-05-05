@@ -40,7 +40,8 @@
 }
 
 .hero-banner--text-white {
-    .hero-banner__container {
+    .hero-banner__title,
+    .hero-banner__subtitle {
         color: $ct-white;
     }
 }
