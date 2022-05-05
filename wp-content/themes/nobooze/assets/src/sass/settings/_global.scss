@@ -1,0 +1,76 @@
+// ==========================================================================
+// #GLOBAL
+// ==========================================================================
+// The global settings file contains any project-wide variables; things that
+// need to be made available to the entire codebase.
+
+$global-radius: 15px !default;
+$global-opacity: 0.4;
+$btn-transition: all 200ms linear !default;
+
+/* Fonts
+   ========================================================================== */
+
+$proxima-regular: 'Proxima Nova Regular', Arial, sans-serif;
+$open-regular: 'Open Sans Regular', Arial, sans-serif;
+$open-bold : 'Open Sans Bold', Arial, sans-serif;
+$font-script : 'SquarePeg Regular', Arial, sans-serif;
+
+
+/* Breakpoints
+   ========================================================================== */
+
+$breakpoints: (
+    small: 480px,
+    xsmall: 640px,
+    medium: 768px,
+    large: 1024px,
+    xlarge: 1280px,
+    full: 1600px,
+    retina: 2500px,
+);
+
+/* Colors
+   ========================================================================== */
+
+// Colors shouldn't be used directly but reassigned
+$c-white: #fff;
+$c-black: #08192b;
+$c-gray: #d1d5d8; 
+$c-gray-2: #f0f0f0;
+$c-gold: #c58511;
+$c-blue: #0a3c4e;
+$c-blue-2: #1a9ac8;
+$c-yellow: #f6db91;
+
+// Text
+$ct: $c-black;
+$ct-white: $c-white;
+$ct-blue-2: $c-blue-2;
+$ct-gold: $c-gold;
+
+// Background
+$cbg-black: $c-black;
+$cbg-gray: $c-gray;
+$cbg-gray-2: $c-gray-2;
+$cbg-gold: $c-gold;
+$cbg-blue: $c-blue;
+$cbg-blue-2: $c-blue-2;
+$cbg-white: $c-white;
+
+// Borders
+$cb-blue: $c-blue;
+$cb-blue-2: $c-blue-2;
+$cb-yellow: $c-yellow;
+
+// Z-Index
+$z-lvl-1: 100;
+$z-lvl-2: 200;
+$z-lvl-3: 300;
+$z-lvl-4: 400;
+
+// Font Family
+$text-family: $open-regular;
+$text-bold: $open-bold;
+$heading-family: $proxima-regular;
+$text-script: $font-script;

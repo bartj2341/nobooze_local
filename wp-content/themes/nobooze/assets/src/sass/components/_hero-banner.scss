@@ -1,0 +1,54 @@
+/* ==========================================================================
+   #HERO BANNER / PARTIAL
+   ========================================================================== */
+
+.hero-banner__wrapper {
+    padding: 100px 0 130px;
+
+    @include bp(large) {
+        padding: 200px 0 190px;
+    }
+}
+
+.hero-banner__bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.hero-banner__container {
+    z-index: $z-lvl-1;
+
+    *:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.hero-banner__title {
+    margin-bottom: 10px;
+}
+
+// Modifiers
+.hero-banner--large-height {
+    .hero-banner__wrapper {
+        padding: 120px 0 130px;
+
+        @include bp(large) {
+            padding: 220px 0 190px;
+        }
+    }
+}
+
+.hero-banner--text-white {
+    .hero-banner__container {
+        color: $ct-white;
+    }
+}
+
+.hero-banner--text-top {
+    .hero-banner__wrapper {
+        @include bp(large) {
+            padding: 60px 0 355px 0;
+        }
+    }
+}
