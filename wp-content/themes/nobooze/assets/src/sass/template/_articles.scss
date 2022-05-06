@@ -2,6 +2,10 @@
    #ARTICLES / TEMPLATE
    ========================================================================== */
 
+.s-articles__container {
+    margin-bottom: 36px;
+}
+
 .s-articles__article {
     width: 100%;
     height: auto;
@@ -50,6 +54,10 @@
     margin-bottom: 15px;
 }
 
+.s-articles__author {
+    margin-bottom: 20px;
+}
+
 .s-articles__author__name {
     @include bp(xlarge) {
         &:hover {
@@ -63,7 +71,7 @@
 
     p {
         &:last-child {
-            margin-bottom: 0;
+            margin: 0;
         }
     }
 }
@@ -76,4 +84,34 @@
     font-size: 2rem;
     padding: 10px 30px;
     line-height: 1.55;
+}
+
+.s-articles__pagination {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 0 -3px;
+    
+    .page-numbers {
+        display: block;
+        border: 1px solid $cb-gold;
+        font-size: 1.4rem;
+        line-height: 1.55;
+        padding: 10px 13px;
+        margin: 3px;
+        transition: $global-transition;
+
+        @include bp(xlarge) {
+            &:hover:not(.dots) {
+                background-color: $cb-gold;
+                color: $ct-white;
+            }
+        }
+
+        &.current {
+            background-color: $cb-gold;
+            color: $ct-white;
+        }
+    }
 }

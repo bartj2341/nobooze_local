@@ -3039,6 +3039,10 @@ a {
 /* ==========================================================================
    #ARTICLES / TEMPLATE
    ========================================================================== */
+.s-articles__container {
+  margin-bottom: 36px;
+}
+
 .s-articles__article {
   width: 100%;
   height: auto;
@@ -3088,6 +3092,10 @@ a {
   margin-bottom: 15px;
 }
 
+.s-articles__author {
+  margin-bottom: 20px;
+}
+
 @media (min-width: 1280px) {
   .s-articles__author__name:hover {
     text-decoration: underline;
@@ -3098,7 +3106,7 @@ a {
   margin-bottom: 16px;
 }
 .s-articles__text p:last-child {
-  margin-bottom: 0;
+  margin: 0;
 }
 
 .s-articles__btn {
@@ -3109,6 +3117,33 @@ a {
   font-size: 2rem;
   padding: 10px 30px;
   line-height: 1.55;
+}
+
+.s-articles__pagination {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin: 0 -3px;
+}
+.s-articles__pagination .page-numbers {
+  display: block;
+  border: 1px solid #c58511;
+  font-size: 1.4rem;
+  line-height: 1.55;
+  padding: 10px 13px;
+  margin: 3px;
+  transition: all 200ms linear;
+}
+@media (min-width: 1280px) {
+  .s-articles__pagination .page-numbers:hover:not(.dots) {
+    background-color: #c58511;
+    color: #fff;
+  }
+}
+.s-articles__pagination .page-numbers.current {
+  background-color: #c58511;
+  color: #fff;
 }
 
 .u-form__label {

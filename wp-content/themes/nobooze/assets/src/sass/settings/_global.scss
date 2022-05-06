@@ -6,7 +6,7 @@
 
 $global-radius: 15px !default;
 $global-opacity: 0.4;
-$btn-transition: all 200ms linear !default;
+$global-transition: all 200ms linear !default;
 
 /* Fonts
    ========================================================================== */
@@ -66,6 +66,7 @@ $cbg-white: $c-white;
 $cb-blue: $c-blue;
 $cb-blue-2: $c-blue-2;
 $cb-yellow: $c-yellow;
+$cb-gold: $c-gold; 
 
 // Z-Index
 $z-lvl-1: 100;

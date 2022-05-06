@@ -17,11 +17,11 @@ $author_link = get_author_posts_url($author_id);
 <article class="s-articles__article" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<div class="s-articles__wrapper">
         <div class="s-articles__card d-flex d-flex-column">
+            <?php if(get_the_post_thumbnail_url()): ?>
             <div class="s-articles__image">
-                <?php if(get_the_post_thumbnail_url()): ?>
                 <img class="s-articles__img img-fluid lazy" src="<?php the_post_thumbnail_url(); ?>" alt="<?= get_post_meta( get_post_thumbnail_id(), '_wp_attachment_image_alt', true ); ?>" />
-                <?php endif; ?>
             </div>
+            <?php endif; ?>
             
             <div class="s-articles__content d-flex d-flex-column">
                 <?php if(get_the_title()): ?>
