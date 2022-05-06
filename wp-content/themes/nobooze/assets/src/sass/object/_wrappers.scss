@@ -81,3 +81,8 @@ body.has-scrollbar {
     max-width: 1204px;
     @extend .wrapper-basic;
 }
+
+.wrapper-small {
+    max-width: 1060px;
+    @extend .wrapper-basic;
+}

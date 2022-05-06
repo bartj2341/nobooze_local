@@ -9,7 +9,7 @@ $title = get_sub_field("title") ? get_sub_field("title") : "";
     <div class="alternate-banner__container d-flex wrapper-large w-100 p-relative">
         <div class="alternate-banner__content">
             <?php if($tagline): ?>
-                <p class="alternate-banner__tagline f-heading heading-tagline u-text-center"><?= $tagline ?></p>
+                <p class="alternate-banner__tagline f-heading heading-tagline line-normal u-text-center"><?= $tagline ?></p>
             <?php endif; ?>
             <?php if($title): ?>
                 <h2 class="alternate-banner__title heading-about u-text-center"><?= $title ?></h2>

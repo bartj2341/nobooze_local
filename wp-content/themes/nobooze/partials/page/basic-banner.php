@@ -12,11 +12,11 @@ $author = get_sub_field("author") ? get_sub_field("author") : "";
             <div class="basic-banner__container p-relative">
                 <div class="basic-banner__content">
                     <?php if($text): ?>
-                        <p class="basic-banner__text f-heading heading-basic c-white u-text-center"><?= $text ?></p>
+                        <p class="basic-banner__text f-heading heading-basic c-white u-text-center line-normal"><?= $text ?></p>
                     <?php endif; ?>
         
                     <?php if($author): ?>
-                        <p class="basic-banner__author f-heading c-white heading-medium u-text-center"><?= $author ?></p>
+                        <p class="basic-banner__author f-heading c-white heading-medium u-text-center line-normal"><?= $author ?></p>
                     <?php endif; ?>
                 </div>
             </div>

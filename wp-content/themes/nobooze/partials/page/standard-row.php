@@ -16,7 +16,7 @@ $text = get_sub_field("text") ? get_sub_field("text") : "";
         <div class="standard-row__container d-flex">
             <div class="standard-row__content">
                 <?php if($title): ?>
-                    <p class="standard-row__title f-heading heading-standard"><?= $title ?></p>
+                    <p class="standard-row__title f-heading heading-standard line-normal"><?= $title ?></p>
                 <?php endif; ?>
                 <?php if($text): ?>
                     <div class="standard-row__text line-half"><?= $text ?></div>

@@ -13,11 +13,11 @@ $cta = get_sub_field("cta") ? get_sub_field("cta") : "";
     <div class="full-image__container d-flex wrapper-large w-100 p-relative">
         <div class="full-image__content">
             <?php if($title): ?>
-                <p class="full-image__title f-heading heading-xlarge u-text-center"><?= $title ?></p>
+                <p class="full-image__title f-heading heading-xlarge u-text-center line-normal"><?= $title ?></p>
             <?php endif; ?>
     
             <?php if($subtitle): ?>
-                <p class="full-image__subtitle f-heading heading-large u-text-center"><?= $subtitle ?></p>
+                <p class="full-image__subtitle f-heading heading-large u-text-center line-normal"><?= $subtitle ?></p>
             <?php endif; ?>
     
             <?php if($cta): ?>
