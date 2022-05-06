@@ -20,11 +20,11 @@ $cta = get_sub_field("cta") ? get_sub_field("cta") : "";
             <?php endif; ?>
 
             <?php if($subtitle): ?>
-                <p class="heavy-content__subtitle f-heading heading-sub u-text-center line-half m-reset"><?= $subtitle ?></p>
+                <p class="heavy-content__subtitle f-heading heading-sub u-text-center m-reset"><?= $subtitle ?></p>
             <?php endif; ?>
 
             <?php if($copy): ?>
-                <div class="heavy-content__copy line-half"><?= $copy ?></div>
+                <div class="heavy-content__copy"><?= $copy ?></div>
             <?php endif; ?>
 
             <?php if($cta): ?>

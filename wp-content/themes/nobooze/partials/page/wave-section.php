@@ -23,7 +23,7 @@ $cta = get_sub_field("cta") ? get_sub_field("cta") : "";
                 <?php endif; ?>
     
                 <?php if($text): ?>
-                    <div class="wave-section__text line-half"><?= $text ?></div>
+                    <div class="wave-section__text"><?= $text ?></div>
                 <?php endif; ?>
     
                 <?php if($cta): ?>

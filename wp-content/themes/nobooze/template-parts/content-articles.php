@@ -25,10 +25,12 @@ $author_link = get_author_posts_url($author_id);
             
             <div class="s-articles__content d-flex d-flex-column">
                 <?php if(get_the_title()): ?>
-                    <h2 class="s-articles__content__title text-pills u-underline"><?= the_title(); ?></h2>
+                    <h2 class="s-articles__content__title text-pills u-underline">
+                        <a href="<?= the_permalink(); ?>"><?= the_title(); ?></a>
+                    </h2>
                 <?php endif; ?>
                 <?php if(get_the_author()): ?>
-                    <h2 class="s-articles__author text-small">By <a class="s-articles__author__name c-black" href="<?= $author_link ?>"><?= $author_name ?></a></h2>
+                    <div class="s-articles__author text-small">By <a class="s-articles__author__name" href="<?= $author_link ?>"><?= $author_name ?></a></div>
                 <?php endif; ?>
                 <div class="s-articles__text text-sixteen"><?=(get_the_excerpt() ? the_excerpt() : wp_trim_words(get_the_content(), 55)) ?></div> 
                 <div class="s-articles__btn w-100">

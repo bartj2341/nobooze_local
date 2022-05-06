@@ -15,7 +15,7 @@ $handwriting = get_sub_field("handwriting") ? get_sub_field("handwriting") : "";
             <?php endif; ?>
 
             <?php if($copy): ?>
-                <div class="heavy-text__copy line-half"><?= $copy ?></div>
+                <div class="heavy-text__copy"><?= $copy ?></div>
             <?php endif; ?>
 
             <?php if($handwriting): ?>

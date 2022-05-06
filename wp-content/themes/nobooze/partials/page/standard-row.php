@@ -19,7 +19,7 @@ $text = get_sub_field("text") ? get_sub_field("text") : "";
                     <p class="standard-row__title f-heading heading-standard line-normal"><?= $title ?></p>
                 <?php endif; ?>
                 <?php if($text): ?>
-                    <div class="standard-row__text line-half"><?= $text ?></div>
+                    <div class="standard-row__text"><?= $text ?></div>
                 <?php endif; ?>
             </div>
         </div>

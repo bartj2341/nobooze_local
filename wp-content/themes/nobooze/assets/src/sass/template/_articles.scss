@@ -2,6 +2,14 @@
    #ARTICLES / TEMPLATE
    ========================================================================== */
 
+.s-articles {
+    padding: 100px 0 50px;
+
+    @include bp(medium) {
+        padding: 190px 0 70px; 
+    }
+}
+
 .s-articles__container {
     margin-bottom: 36px;
 }
@@ -96,7 +104,8 @@
     .page-numbers {
         display: block;
         border: 1px solid $cb-gold;
-        font-size: 1.4rem;
+        color: $ct-gold;
+        font-size: 1.4rem; 
         line-height: 1.55;
         padding: 10px 13px;
         margin: 3px;

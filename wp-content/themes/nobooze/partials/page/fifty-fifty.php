@@ -21,7 +21,7 @@ $cta = get_sub_field("cta") ? get_sub_field("cta") : "";
             <div class="fifty__container d-flex">
             <div class="fifty__content">
                 <?php if($text): ?>
-                    <div class="fifty__text line-half"><?= $text ?></div>
+                    <div class="fifty__text"><?= $text ?></div>
                 <?php endif; ?>
                     
                 <?php if($cta): ?>

@@ -14,7 +14,7 @@ $signature = get_sub_field("signature") ? get_sub_field("signature") : "";
             <?php endif; ?>
             <div class="testimonial-box__content">
                 <?php if($text): ?>
-                    <div class="testimonial-box__text line-half"><?= $text ?></div>
+                    <div class="testimonial-box__text"><?= $text ?></div>
                     <div class="testimonial-box__signature f-script heading-huge u-text-right"><?= $signature ?></div>
                 <?php endif; ?>
             </div>

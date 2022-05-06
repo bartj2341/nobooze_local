@@ -22,6 +22,8 @@
     @include bp(xlarge) {
         &:hover {
             background-color: $cbg-blue;
+            color: $ct-white;
+            text-decoration: none;
         }
     }
 }
