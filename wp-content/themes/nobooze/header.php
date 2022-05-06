@@ -35,7 +35,6 @@
 				<div class="wrapper-full">
 					<div class="u-header__main d-flex d-flex-align-c d-flex-justify-s">
 						<a class="u-header__logo" href="<?= home_url(); ?>"></a>
-						<?php // Remove template template-landing-ebook.php' ?>
 						<?php if( 'lp' != get_post_type() && 'ty' != get_post_type() ): ?>
 						<ul class="u-header__ul p-relative list-reset">
 							<li class="u-header__li d-flex d-flex-align-c p-relative c-pointer line-normal f-heading"><a class="u-header__cta d-flex d-flex-align-c h-100 p-relative" href="#">HOME</a></li>
