@@ -42,6 +42,7 @@ $c-gray-2: #f0f0f0;
 $c-gray-3: #f7f7f7;
 $c-gray-4: #333333;
 $c-gray-5: #f3f6f8;
+$c-gray-6: #d7e0e4;
 $c-gold: #c58511;
 $c-blue: #0a3c4e;
 $c-blue-2: #1a9ac8;
@@ -73,16 +74,22 @@ $cbg-blue-4: $c-blue-4;
 $cbg-white: $c-white;
 
 // Borders
+$cb-black-2: $c-black-2;
 $cb-blue: $c-blue;
 $cb-blue-2: $c-blue-2;
 $cb-yellow: $c-yellow;
 $cb-gold: $c-gold; 
+$cb-gray-6: $c-gray-6;
 
 // Z-Index
 $z-lvl-1: 100;
 $z-lvl-2: 200;
 $z-lvl-3: 300;
 $z-lvl-4: 400;
+
+// Arrows
+
+$black-arrow: 2px solid $cb-black-2; 
 
 // Font Family
 $text-family: $open-regular;
