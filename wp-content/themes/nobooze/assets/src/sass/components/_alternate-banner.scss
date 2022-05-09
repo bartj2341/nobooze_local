@@ -4,17 +4,16 @@
 
 .alternate-banner {
     min-height: 480px;
-    padding: 110px 0 0px;
+    padding: 135px 0 0px;
 
     @include bp(medium) {
         min-height: 600px;
-        padding: 130px 0 0px;
         margin: 0;
     }
 
     @include bp(large) {
         min-height: 700px;
-        padding: 70px 0;
+        padding: 170px 0 70px 0;
     }
 }
 

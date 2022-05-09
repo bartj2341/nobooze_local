@@ -2399,19 +2399,18 @@ p > a {
    ========================================================================== */
 .full-image {
   min-height: 480px;
-  padding: 110px 0 0px;
+  padding: 135px 0 0px;
 }
 @media (min-width: 768px) {
   .full-image {
     min-height: 600px;
-    padding: 130px 0 0px;
     margin: 0;
   }
 }
 @media (min-width: 1024px) {
   .full-image {
     min-height: 700px;
-    padding: 70px 0;
+    padding: 170px 0 70px 0;
   }
 }
 
@@ -3271,19 +3270,18 @@ p > a {
 ========================================================================== */
 .alternate-banner {
   min-height: 480px;
-  padding: 110px 0 0px;
+  padding: 135px 0 0px;
 }
 @media (min-width: 768px) {
   .alternate-banner {
     min-height: 600px;
-    padding: 130px 0 0px;
     margin: 0;
   }
 }
 @media (min-width: 1024px) {
   .alternate-banner {
     min-height: 700px;
-    padding: 70px 0;
+    padding: 170px 0 70px 0;
   }
 }
 
