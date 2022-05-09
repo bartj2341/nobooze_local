@@ -1175,6 +1175,9 @@ fieldset {
   border: 0;
 }
 
+/* ==========================================================================
+   #HEADER
+   ========================================================================== */
 .u-header {
   position: fixed;
   z-index: 400;
@@ -1206,6 +1209,16 @@ fieldset {
   }
 }
 
+.u-header__logo {
+  width: auto;
+  height: 100%;
+}
+
+.u-header__img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
 .u-header__ul {
   display: none;
 }
@@ -1218,6 +1231,12 @@ fieldset {
 .u-header__cta {
   transition: text-shadow 0.1s;
   color: #385363;
+  font-size: 1.4rem;
+}
+@media (min-width: 1280px) {
+  .u-header__cta {
+    font-size: 1.6rem;
+  }
 }
 @media (min-width: 1600px) {
   .u-header__cta {
@@ -1233,23 +1252,127 @@ fieldset {
   margin-right: 0;
 }
 
+.u-header__cta svg {
+  position: absolute;
+  bottom: 16px;
+  transform: rotate(90deg);
+  fill: #385363;
+  transition: all 200ms linear;
+}
+
+.u-header__contact {
+  display: none;
+}
+@media (min-width: 1024px) {
+  .u-header__contact {
+    display: block;
+  }
+}
+
+/* SUBMENU
+    ========================================================================== */
+.u-header__sub__ul {
+  display: none;
+  position: relative;
+}
+@media (min-width: 1024px) {
+  .u-header__sub__ul {
+    position: absolute;
+    display: block;
+    opacity: 0;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, 40px);
+    z-index: 400;
+    padding-top: 8px;
+    transition: all 250ms cubic-bezier(0.28, 0.87, 0.5, 0.99);
+    pointer-events: none;
+  }
+  .u-header__sub__ul::after {
+    content: "";
+    position: absolute;
+    top: -16px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 120%;
+    height: 110%;
+  }
+}
+
+.u-header__sub__inner {
+  background-color: #fff;
+  box-shadow: 0 2px 12px -4px #5e7884;
+}
+.u-header__sub__inner::after {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 30px;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #fff;
+}
+.u-header__sub__inner::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  top: 1px;
+  left: 50%;
+  margin-left: 13px;
+  box-sizing: border-box;
+  border: 10px solid black;
+  border-color: transparent transparent #fff #fff;
+  transform-origin: 0 0;
+  transform: rotate(135deg);
+  box-shadow: 0 2px 12px -4px #5e7884;
+}
+
+.u-header__sub__list {
+  padding: 24px;
+}
+
+.u-header__sub__li {
+  width: 210px;
+  z-index: 200;
+}
+
+.u-header__sub__cta {
+  padding: 16px;
+  border-top-right-radius: 16px;
+  border-bottom-right-radius: 16px;
+  transition: all 80ms linear;
+  font-size: 1.4rem;
+}
+@media (min-width: 1024px) {
+  .u-header__sub__cta:hover {
+    background-color: #f3f6f8;
+  }
+}
+@media (min-width: 1280px) {
+  .u-header__sub__cta {
+    font-size: 1.6rem;
+  }
+}
+
 /* HOVER
     ========================================================================== */
 .u-header__li {
   height: 78px;
-  padding-right: 16px;
-  padding-left: 16px;
+  padding-right: 15px;
+  padding-left: 15px;
 }
 @media (min-width: 1024px) {
-  .u-header__li.active .u-header__cta {
+  .u-header__li.u-header__li--active .u-header__cta {
     color: #000;
     text-shadow: 0 0 0.4px #000, 0 0 0.4px #000;
   }
-  .u-header__li.active svg {
+  .u-header__li.u-header__li--active svg {
     fill: #000;
     bottom: 10px;
   }
-  .u-header__li.active .u-header__sub__ul {
+  .u-header__li.u-header__li--active .u-header__sub__ul {
     opacity: 1;
     transform: translate(-50%, 0);
     pointer-events: all;
@@ -1382,26 +1505,30 @@ body.has-scrollbar .wrapper-stretched {
   }
 }
 
-.wrapper-basic-two, .wrapper-box {
+.wrapper-basic-two, .wrapper-box, .wrapper-nav {
   margin-left: auto;
   margin-right: auto;
   padding-left: 20px;
   padding-right: 20px;
 }
 @media (min-width: 768px) {
-  .wrapper-basic-two, .wrapper-box {
+  .wrapper-basic-two, .wrapper-box, .wrapper-nav {
     padding-left: 35px;
     padding-right: 35px;
   }
 }
 @media (min-width: 1024px) {
-  .wrapper-basic-two, .wrapper-box {
+  .wrapper-basic-two, .wrapper-box, .wrapper-nav {
     padding-left: 70px;
     padding-right: 70px;
   }
 }
 
 .wrapper-full {
+  max-width: 1920px;
+}
+
+.wrapper-nav {
   max-width: 1920px;
 }
 
@@ -1462,6 +1589,8 @@ body {
 }
 body * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 @media (min-width: 768px) {
   body {
@@ -1981,8 +2110,7 @@ p > a {
    #LIST
    ========================================================================== */
 .list-reset {
-  margin: 0;
-  padding: 0;
+  list-style: none;
 }
 
 /* ==========================================================================

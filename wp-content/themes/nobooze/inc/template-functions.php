@@ -52,3 +52,12 @@ function nobooze_layout( $name = 'page_partials', $dir = 'page' )
         endwhile;
     endif;
 }
+
+/**
+ * Print SVG Directory
+ */ 
+function get_icons_directory( $file ) 
+{
+    $dir = '/assets/src/images/';
+    return get_stylesheet_directory() . $dir . $file;
+}
