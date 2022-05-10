@@ -1183,6 +1183,10 @@ fieldset {
   height: 102px;
   box-shadow: 0 2px 8px -4px #5e7884;
 }
+.u-header.u-header--scroll {
+  overflow-y: auto;
+  min-height: 100vh;
+}
 
 /* TOP
     ========================================================================== */
@@ -1393,11 +1397,6 @@ fieldset {
   border-top: 1px solid #d7e0e4;
 }
 
-.m-menu.open {
-  overflow: visible;
-  overflow-y: scroll;
-}
-
 @media (min-width: 768px) {
   .m-menu__ul {
     margin: 0 -24px;
@@ -1427,7 +1426,7 @@ fieldset {
   padding: 10px 0 10px 0;
 }
 
-.m-menu__link.active .m-menu__li__arrow {
+.m-menu__link--active .m-menu__li__arrow {
   transform: rotate(-45deg);
 }
 
@@ -1480,12 +1479,6 @@ fieldset {
 
 .m-menu__btn {
   padding: 24px 0 32px 0;
-}
-
-@media (min-width: 768px) {
-  .m-menu__cta__wrapper {
-    margin: 0 -24px 0;
-  }
 }
 
 /* BURGER
@@ -1547,20 +1540,20 @@ fieldset {
   transition-delay: 0.15s;
 }
 
-#menu-toggle.active #hamburger .menu-span {
+#menu-toggle.menu-toggle--active #hamburger .menu-span {
   width: 0%;
 }
-#menu-toggle.active #hamburger .menu-span:nth-child(1) {
+#menu-toggle.menu-toggle--active #hamburger .menu-span:nth-child(1) {
   transition-delay: 0s;
 }
-#menu-toggle.active #hamburger .menu-span:nth-child(2) {
+#menu-toggle.menu-toggle--active #hamburger .menu-span:nth-child(2) {
   transition-delay: 0.105s;
 }
-#menu-toggle.active #cross .menu-span:nth-child(1) {
+#menu-toggle.menu-toggle--active #cross .menu-span:nth-child(1) {
   height: 36px;
   transition-delay: 0.425s;
 }
-#menu-toggle.active #cross .menu-span:nth-child(2) {
+#menu-toggle.menu-toggle--active #cross .menu-span:nth-child(2) {
   width: 36px;
   transition-delay: 0.175s;
 }
@@ -1761,6 +1754,9 @@ html {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
+}
+html.no-scroll {
+  overflow-y: hidden;
 }
 
 body {

@@ -9,6 +9,11 @@
     width: 100%;
     height: 102px;
     box-shadow: 0 2px 8px -4px $cbg-blue-4;
+
+	&.u-header--scroll {
+		overflow-y: auto;
+		min-height: 100vh;
+	}
 }
 
 /* TOP
@@ -212,41 +217,4 @@
 		padding-right: 28px;
 		padding-left: 28px;
 	}
-} 
-
-// /* LOADING
-//     ========================================================================== */
-// .u-header__load {
-// 	display: flex;
-// 	justify-content: center;
-// 	align-items: center;
-// 	height: 100%;
-// }
-
-// .u-header__load div {
-// 	width: 20px;
-// 	height: 20px;
-// 	background-color: $bg-blue-7;
-// 	margin-left: 5px;
-// 	border-radius: 50%;
-// 	margin-top: calc(50px - 12.5px);
-// 	animation-name: loading;
-// 	animation-duration: 1.2s;
-// 	animation-iteration-count: infinite;
-// 	animation-direction: alternate;
-// }
-
-// .u-header__load-two {
-// 	animation-delay: 0.4s;
-// }
-
-// .u-header__load-three {
-// 	animation-delay: 0.8s;
-// }
-
-// @keyframes loading {
-// 	to {
-// 		opacity: 0.3;
-// 		transform: translateY(-25px);
-// 	}
-// } 
+}

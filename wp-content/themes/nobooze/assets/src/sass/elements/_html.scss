@@ -25,7 +25,11 @@ html {
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
-} 
+
+    &.no-scroll {
+        overflow-y: hidden;
+    }
+}  
 
 body {
     font-family: $text-family;

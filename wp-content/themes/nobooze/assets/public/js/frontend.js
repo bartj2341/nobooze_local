@@ -83,6 +83,71 @@ var handleWindow = function handleWindow() {
 
 /***/ }),
 
+/***/ "./assets/src/js/modules/_mobile-menu.js":
+/*!***********************************************!*\
+  !*** ./assets/src/js/modules/_mobile-menu.js ***!
+  \***********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "Menu": () => (/* binding */ Menu)
+/* harmony export */ });
+/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
+/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_0__);
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
+
+
+var Menu = /*#__PURE__*/function () {
+  function Menu() {
+    _classCallCheck(this, Menu);
+
+    this.html = jquery__WEBPACK_IMPORTED_MODULE_0___default()('html');
+    this.header = jquery__WEBPACK_IMPORTED_MODULE_0___default()('.u-header');
+    this.buttonToggle = jquery__WEBPACK_IMPORTED_MODULE_0___default()('#menu-toggle');
+    this.button = jquery__WEBPACK_IMPORTED_MODULE_0___default()('.menu-toggle__wrapper');
+    this.menu = jquery__WEBPACK_IMPORTED_MODULE_0___default()('.m-menu');
+    this.link = jquery__WEBPACK_IMPORTED_MODULE_0___default()('.m-menu__has-children .m-menu__link');
+    this.events();
+  }
+
+  _createClass(Menu, [{
+    key: "events",
+    value: function events() {
+      this.button.on('click', this.toggleMobileMenu.bind(this));
+      this.link.on('click', this.openDropdown);
+    }
+  }, {
+    key: "toggleMobileMenu",
+    value: function toggleMobileMenu() {
+      this.html.toggleClass('no-scroll');
+      this.header.toggleClass('u-header--scroll');
+      this.buttonToggle.toggleClass('menu-toggle--active');
+      this.menu.slideToggle({
+        duration: 200
+      });
+    }
+  }, {
+    key: "openDropdown",
+    value: function openDropdown() {
+      jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).toggleClass('m-menu__link--active');
+      var dropdown = jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).siblings('.m-submenu__ul');
+      dropdown.slideToggle({
+        duration: 200
+      });
+    }
+  }]);
+
+  return Menu;
+}();
+
+/***/ }),
+
 /***/ "./assets/src/js/modules/_swiper.js":
 /*!******************************************!*\
   !*** ./assets/src/js/modules/_swiper.js ***!
@@ -24072,13 +24137,13 @@ var __webpack_exports__ = {};
   \***********************************/
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _sass_frontend_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../sass/frontend.scss */ "./assets/src/sass/frontend.scss");
-/* harmony import */ var _modules_desktop_submenu__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/_desktop-submenu */ "./assets/src/js/modules/_desktop-submenu.js");
-/* harmony import */ var _modules_helpers__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./modules/_helpers */ "./assets/src/js/modules/_helpers.js");
-/* harmony import */ var _modules_swiper__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./modules/_swiper */ "./assets/src/js/modules/_swiper.js");
+/* harmony import */ var _modules_helpers__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/_helpers */ "./assets/src/js/modules/_helpers.js");
+/* harmony import */ var _modules_swiper__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./modules/_swiper */ "./assets/src/js/modules/_swiper.js");
+/* harmony import */ var _modules_desktop_submenu__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./modules/_desktop-submenu */ "./assets/src/js/modules/_desktop-submenu.js");
+/* harmony import */ var _modules_mobile_menu__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./modules/_mobile-menu */ "./assets/src/js/modules/_mobile-menu.js");
 /**
  * SASS
  */
-
 
 /**
  * JavaScript
@@ -24090,15 +24155,18 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+
+
 window.addEventListener('DOMContentLoaded', function () {
   var carousel = document.querySelector('.js-carousel');
-  new _modules_desktop_submenu__WEBPACK_IMPORTED_MODULE_1__.Accessibility();
+  new _modules_desktop_submenu__WEBPACK_IMPORTED_MODULE_3__.Accessibility();
+  new _modules_mobile_menu__WEBPACK_IMPORTED_MODULE_4__.Menu();
 
   if (carousel) {
-    new _modules_swiper__WEBPACK_IMPORTED_MODULE_3__.SwiperCarousel();
+    new _modules_swiper__WEBPACK_IMPORTED_MODULE_2__.SwiperCarousel();
   }
 
-  (0,_modules_helpers__WEBPACK_IMPORTED_MODULE_2__.handleWindow)();
+  (0,_modules_helpers__WEBPACK_IMPORTED_MODULE_1__.handleWindow)();
 });
 })();
 
