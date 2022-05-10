@@ -9,6 +9,11 @@
     @include bp(large) {
         justify-content: flex-end
     }
+
+    .wpforms-container {
+        width: 460px;
+        max-width: 100%;
+    }
 }
 
 .contact-form__image {

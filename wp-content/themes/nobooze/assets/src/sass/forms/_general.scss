@@ -2,48 +2,97 @@
 // # FORMS GENERAL
 // ==========================================================================
 
-.u-form__label {
-    display: block;
-    margin-bottom: 7px;
-    line-height: 1.3;
-}
+.wpforms-container,
+.wpforms-container-full {
+    .wpforms-form {
+        .wpforms-field-container {
+            .wpforms-field {
+                padding: 8px 0; 
+                
+                .wpforms-field-label {
+                    @extend .f-text-bold;
+                    margin-bottom: 8px;
+                    font-size: 1.9rem;
 
-.u-form__row {
-    margin-bottom: 15px;
+                }
 
-    &:last-child {
-        margin-bottom: 26px;
-    }
-}
+                input,
+                textarea {
+                    border: 1px solid $cb-yellow;
+                    padding: 12px;
+                    font-size: 19px;
+                    border-radius: 0;
 
-.u-form__basic {
-    min-height: 53px;
-    border: 1px solid $cb-yellow;
-    background-color: $cbg-white;
-    padding: 12px;
-    font-size: 18px;
-    line-height: 2;
-    color: $ct;
+                    &.wpforms-error {
+                        border: 1px solid $ct-red;
+                    }
+                }
+            
+                input {
+                    min-height: 53px;
+                    line-height: 2;
+                    color: $ct;
+                    
+                    @include bp(xsmall) {
+                        line-height: 1.4;
+                    }
+                }
+            
+                textarea {
+                    height: 120px;
+                    resize: none;
+                    line-height: 1.5;
+                    
+                    @include bp(xsmall) { 
+                        height: 160px;
+                    }
+                }
 
-    @include bp(xsmall) {
-        line-height: 1.4;
-    }
-}
+                input:focus,
+                textarea:focus {
+                    border: 1px solid $cb-blue;
+                    outline: 0;
+                }
 
-.u-form__textarea {
-    height: 120px;
-    resize: none;
-    line-height: 1.5;
+                .wpforms-required-label {
+                    @extend .f-text-bold;
+                    color: $ct-red;
+                }
+
+                .wpforms-error {
+                    margin-top: 3px;
+                }
+            }
+        }
     
-    @include bp(xsmall) { 
-        height: 160px;
-    }
-}
-
-.u-form__body {
-    input:focus,
-    textarea:focus {
-        border: 1px solid $cb-blue;
-        outline: 0;
+        .wpforms-submit-container {
+            .wpforms-submit {
+                display: inline-flex;
+                color: $ct-white;
+                padding: 15px 30px;
+                font-size: 1.8rem;
+                line-height: 2;
+                background-color: $cbg-gold;
+                border: none !important; 
+                position: relative;
+                text-align: center;
+                cursor: pointer;
+        
+                @include bp(xsmall) {
+                    line-height: 1.2;
+                }
+        
+                @include bp(medium) {
+                    padding: 12px 24px;
+                }
+            
+                @include bp(xlarge) {
+                    &:hover {
+                        background-color: $cbg-blue;
+                        color: $ct-white;
+                    }
+                }
+            }
+        }
     }
 }

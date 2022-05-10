@@ -26,29 +26,7 @@ $signature = get_sub_field("signature") ? get_sub_field("signature") : "";
                 <?php if($signature): ?>
                     <div class="contact-form__signature f-script heading-script-two u-text-right line-medium"><?= $signature ?></div>
                 <?php endif; ?>
-                <form class="contact-form__form u-form" action="">
-                    <div class="contact-form__body u-form__body">
-                        <div class="u-form__fields">
-                            <div class="u-form__row">
-                                <label for="name" class="u-form__label f-text-bold">Name <span>*</span></label>
-                                <input class="u-form__basic w-100" type="text" name="name" id="name" required>
-                            </div>
-                            <div class="u-form__row">
-                                <label for="email" class="u-form__label f-text-bold">Email <span>*</span></label>
-                                <input class="u-form__basic w-100" type="email" name="email" id="email" required>
-                            </div>
-                            <div class="u-form__row">
-                                <label for="message" class="u-form__label f-text-bold">Your message <span>*</span></label>
-                                <textarea class="u-form__textarea u-form__basic w-100" type="message" name="message" id="message" required></textarea>
-                            </div>
-                        </div>
-                        <div class="u-form__button w-100">
-                            <button type="submit" class="u-form__submit u-btn--submit">
-                                <span>CONTACT MICHAELA</span>
-                            </button>
-                        </div>
-                    </div>
-                </form>
+                <?php echo do_shortcode('[wpforms id="466" title="false"]');?>
             </div>
         </div>
     </div>

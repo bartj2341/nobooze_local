@@ -8,7 +8,7 @@
     padding: 12px 12px;
     font-size: 1.8rem;
     line-height: 1.2;
-    background: $cbg-gold;
+    background-color: $cbg-gold;
     border: none;
     position: relative;
     text-align: center;
@@ -31,19 +31,4 @@
 .u-btn--mobile-lg {
     @extend .u-btn;
     padding: 10px 15px;
-}
-
-.u-btn--submit {
-    @extend .u-btn;
-    padding: 15px 30px;
-    font-size: 1.7rem;
-    line-height: 2;
-
-    @include bp(xsmall) {
-        line-height: 1.2;
-    }
-
-    @include bp(medium) {
-        font-size: 1.8rem;
-    }
 }
