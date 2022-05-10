@@ -15,10 +15,6 @@
 @import 'tools/hidden';
 @import 'tools/ratio';
 
-@import 'generic/reset';
-@import 'generic/menu-desktop';
-@import 'generic/mobile-menu';
-
 @import 'object/layout';
 @import 'object/wrappers';
 
@@ -31,6 +27,10 @@
 @import 'elements/carousel';
 @import 'elements/underline';
 @import 'elements/list';
+
+@import 'generic/reset';
+@import 'generic/menu-desktop';
+@import 'generic/mobile-menu';
 
 @import 'utilities/align';
 @import 'utilities/display';

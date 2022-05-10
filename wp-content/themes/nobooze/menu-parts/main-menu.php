@@ -13,8 +13,8 @@ $pagename = $post ? $post->post_name : '';
     <div class="bg-white">
         <div class="wrapper-nav">
             <div class="u-header__main d-flex d-flex-align-c d-flex-justify-s">
-                <a class="u-header__logo d-block" href="<?= home_url(); ?>">
-                    <img class="u-header__img d-block" src="<?= get_template_directory_uri()?>/assets/src/images/logo.png" alt="nobooze logo">
+                <a class="u-header__logo d-flex d-flex-align-c" href="<?= home_url(); ?>">
+                    <?php include get_icons_directory('icons/logo.svg') ?>
                 </a>
 
                 <ul class="u-header__ul p-relative list-reset">
@@ -77,11 +77,12 @@ $pagename = $post ? $post->post_name : '';
                     <li class="u-header__li d-flex d-flex-align-c p-relative c-pointer line-normal f-heading">
                         <a class="u-header__cta d-flex d-flex-align-c h-100 p-relative <?= strpos('press-media', $pagename) !== false ? 'u-header__cta--active' : '' ?>" href="<?= site_url() ?>/press-media">PRESS & MEDIA</a>
                     </li>
+
+                    <li class="u-header__contact d-flex-align-c">
+                        <a class="u-header__contact__cta u-btn--mobile-lg" href="<?= site_url() ?>/contact">CONTACT</a>
+                    </li>
                 </ul>
 
-                <div class="u-header__contact">
-                    <a class="u-header__contact__cta u-btn--mobile-lg" href="<?= site_url() ?>/contact">CONTACT</a>
-                </div>
                 
                 <div class="menu-toggle__wrapper d-flex d-flex-center h-100 c-pointer">
                     <div id="menu-toggle" class="p-relative c-pointer">
