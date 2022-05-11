@@ -14,7 +14,7 @@ $author_link = get_author_posts_url($author_id);
 
 ?>
 
-<article class="s-articles__article" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+<div class="s-articles__article" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<div class="s-articles__wrapper">
         <div class="s-articles__card d-flex d-flex-column">
             <?php if(get_the_post_thumbnail_url()): ?>
@@ -39,4 +39,4 @@ $author_link = get_author_posts_url($author_id);
             </div>
         </div>
 	</div>
-</article><!-- #post-<?php the_ID(); ?> -->
+</div><!-- #post-<?php the_ID(); ?> -->

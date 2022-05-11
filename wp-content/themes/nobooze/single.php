@@ -10,26 +10,27 @@
 get_header();
 ?>
 	<main id="main">
-		
-	<?php
-	while ( have_posts() ) :
-		the_post();
-		get_template_part( 'partials/blog/article-banner');
+		<div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+			<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+			<div>
+				<?php get_template_part('partials/blog/article-banner'); ?>  
+				<section class="single-article">
+					<div class="single-article__container d-flex d-flex-wrap">
+						<div class="single-article__content">
+							<?php the_content(); ?>
+						</div>
+						<div class="single-article__sidebar">
 
-		get_template_part( 'template-parts/content', get_post_type() );
-
-		the_post_navigation();
-
-		// If comments are open or we have at least one comment, load up the comment template.
-		if ( comments_open() || get_comments_number() ) :
-			comments_template();
-		endif;
-
-	endwhile; // End of the loop.
-	?>
-
+						</div>
+					</div>
+					<footer class="entry-footer">
+						<?php _s_entry_footer(); ?>
+					</footer>
+				</section>
+			</div>
+			<?php endwhile; ?>
+			<?php endif; ?>
+		</div>
 	</main><!-- #main -->
-
 <?php
-// get_sidebar();
 get_footer();

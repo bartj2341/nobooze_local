@@ -1301,575 +1301,6 @@ body.has-scrollbar .wrapper-stretched {
 }
 
 /* ==========================================================================
-   #PAGE
-   ========================================================================== */
-/**
- * Simple page-level setup.
- *
- * 1. Set the default `font-size` and `line-height` for the entire project.
- * 2. Force scrollbars to always be visible to prevent awkward ‘jumps’ when
- *    navigating between pages that do/do not have enough content to produce
- *    scrollbars naturally.
- * 3. Ensure the page always fills at least the entire height of the viewport.
- */
-:root {
-  --scroll-bar: 8px;
-}
-
-html {
-  color: #08192b;
-  font-size: 10px;
-  /* [1] */
-  line-height: 1.55;
-  /* [1] */
-  min-height: 100%;
-  /* [3] */
-  overflow-y: scroll;
-  /* [2] */
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
-  text-rendering: optimizeLegibility;
-}
-html.no-scroll {
-  overflow-y: hidden;
-}
-
-body {
-  font-family: "Open Sans Regular", Arial, sans-serif;
-  font-size: 1.8rem;
-}
-body * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-@media (min-width: 768px) {
-  body {
-    font-size: 1.9rem;
-  }
-}
-
-.vh {
-  border: 0 !important;
-  clip: rect(0 0 0 0) !important;
-  -webkit-clip-path: inset(50%) !important;
-          clip-path: inset(50%) !important;
-  height: 1px !important;
-  margin: -1px !important;
-  overflow: hidden !important;
-  padding: 0 !important;
-  position: absolute !important;
-  white-space: nowrap !important;
-  width: 1px !important;
-}
-
-p {
-  color: #08192b;
-  white-space: normal;
-}
-
-/* ==========================================================================
-   #HEADINGS
-   ========================================================================== */
-/**
- * Simple default styles for headings 1 through 6. Anything more opinionated
- * than simple font-size changes should likely be applied via classes (see:
- * http://csswizardry.com/2016/02/managing-typography-on-large-apps/).
- */
-h1, h2, h3, h4, h5, h6, .heading-family {
-  font-family: "Proxima Nova Regular", Arial, sans-serif;
-  line-height: 1.2;
-  color: #08192b;
-  font-weight: normal;
-}
-
-h3,
-.display-3 {
-  font-size: 3.8rem;
-}
-@media (min-width: 768px) {
-  h3,
-.display-3 {
-    font-size: 5.1rem;
-  }
-}
-
-h4,
-.display-4 {
-  font-size: 3.2rem;
-}
-@media (min-width: 768px) {
-  h4,
-.display-4 {
-    font-size: 3.8rem;
-  }
-}
-
-.heading-script {
-  /* 120px ~ 70px */
-  font-size: 7rem;
-  line-height: 0.9;
-  letter-spacing: -2px;
-}
-@media (min-width: 768px) {
-  .heading-script {
-    font-size: 12rem;
-  }
-}
-
-.heading-script-two {
-  /* 80px ~ 75px */
-  font-size: 7.5rem;
-  line-height: 1.2;
-}
-@media (min-width: 768px) {
-  .heading-script-two {
-    font-size: 8rem;
-  }
-}
-
-.heading-huge {
-  /* 67px ~ 45px */
-  font-size: 4.5rem;
-}
-@media (min-width: 768px) {
-  .heading-huge {
-    font-size: 6.7rem;
-  }
-}
-
-.heading-banner {
-  /* 51px ~ 46px */
-  font-size: 4.6rem;
-}
-@media (min-width: 1024px) {
-  .heading-banner {
-    font-size: 5.1rem;
-  }
-}
-
-.heading-hero {
-  /* 51px ~ 40px ~ 30px */
-  font-size: 3rem;
-}
-@media (min-width: 768px) {
-  .heading-hero {
-    font-size: 4rem;
-  }
-}
-@media (min-width: 1024px) {
-  .heading-hero {
-    font-size: 5.1rem;
-  }
-}
-
-.heading-heavy-lg {
-  /* 51px ~ 34px */
-  font-size: 3.4rem;
-}
-@media (min-width: 768px) {
-  .heading-heavy-lg {
-    font-size: 5.1rem;
-  }
-}
-
-.heading-about, .full-image--title-mobile-lg .full-image__title {
-  /* 50px ~ 38px */
-  font-size: 3.8rem;
-}
-@media (min-width: 1024px) {
-  .heading-about, .full-image--title-mobile-lg .full-image__title {
-    font-size: 5rem;
-  }
-}
-
-.heading-xlarge {
-  /* 50px ~ 38px ~ 24px */
-  font-size: 2.4rem;
-}
-@media (min-width: 768px) {
-  .heading-xlarge {
-    font-size: 3.8rem;
-  }
-}
-@media (min-width: 1024px) {
-  .heading-xlarge {
-    font-size: 5rem;
-  }
-}
-
-.heading-full, .full-image--sub-desktop-lg .full-image__subtitle {
-  /* 50px ~ 30px ~ 24px */
-  font-size: 2.4rem;
-}
-@media (min-width: 768px) {
-  .heading-full, .full-image--sub-desktop-lg .full-image__subtitle {
-    font-size: 3rem;
-  }
-}
-@media (min-width: 1024px) {
-  .heading-full, .full-image--sub-desktop-lg .full-image__subtitle {
-    font-size: 5rem;
-  }
-}
-
-.heading-standard {
-  /* 38px ~ 40px ~ 30px */
-  font-size: 3rem;
-}
-@media (min-width: 768px) {
-  .heading-standard {
-    font-size: 4rem;
-  }
-}
-@media (min-width: 1024px) {
-  .heading-standard {
-    font-size: 3.8rem;
-  }
-}
-
-.heading-basic {
-  /* 38px ~ 32px ~ 24px */
-  font-size: 2.4rem;
-}
-@media (min-width: 768px) {
-  .heading-basic {
-    font-size: 3.2rem;
-  }
-}
-@media (min-width: 1024px) {
-  .heading-basic {
-    font-size: 3.8rem;
-  }
-}
-
-.heading-heavy-two, .heavy-text--medium-title .heavy-text__title {
-  /* 38px ~ 30px ~ 34px */
-  font-size: 3.4rem;
-}
-@media (min-width: 768px) {
-  .heading-heavy-two, .heavy-text--medium-title .heavy-text__title {
-    font-size: 3rem;
-  }
-}
-@media (min-width: 1024px) {
-  .heading-heavy-two, .heavy-text--medium-title .heavy-text__title {
-    font-size: 3.8rem;
-  }
-}
-
-.heading-heavy {
-  /* 38px ~ 30px */
-  font-size: 3rem;
-}
-@media (min-width: 1024px) {
-  .heading-heavy {
-    font-size: 3.8rem;
-  }
-}
-
-.heading-large {
-  /* 38px ~ 30px ~ 24px */
-  font-size: 2.4rem;
-}
-@media (min-width: 768px) {
-  .heading-large {
-    font-size: 3rem;
-  }
-}
-@media (min-width: 1024px) {
-  .heading-large {
-    font-size: 3.8rem;
-  }
-}
-
-.heading-post {
-  /* 30px ~ 28px */
-  font-size: 2.8rem;
-}
-@media (min-width: 768px) {
-  .heading-post {
-    font-size: 3rem;
-  }
-}
-
-.heading-sub {
-  /* 30px ~ 26px ~ 20px */
-  font-size: 2rem;
-}
-@media (min-width: 768px) {
-  .heading-sub {
-    font-size: 2.6rem;
-  }
-}
-@media (min-width: 1024px) {
-  .heading-sub {
-    font-size: 3rem;
-  }
-}
-
-.heading-tagline {
-  /* 30px ~ 24px */
-  font-size: 2.4rem;
-}
-@media (min-width: 768px) {
-  .heading-tagline {
-    font-size: 3rem;
-  }
-}
-
-.heading-medium {
-  /* 24px */
-  font-size: 2.4rem;
-}
-
-.heading-author {
-  /* 20px ~ 30px ~ 24px */
-  font-size: 2.4rem;
-}
-@media (min-width: 768px) {
-  .heading-author {
-    font-size: 3rem;
-  }
-}
-@media (min-width: 1024px) {
-  .heading-author {
-    font-size: 2rem;
-  }
-}
-
-.text-normal {
-  /* 19px */
-  font-size: 1.9rem;
-}
-
-.text-sixteen {
-  /* 16px */
-  font-size: 1.6rem;
-}
-
-.text-small {
-  /* 14px */
-  font-size: 1.4rem;
-}
-
-/* ==========================================================================
-   #TYPOGRAPHY & COLORS & FONT WEIGHTS & LINE HEIGHTS
-   ========================================================================== */
-/**
- * Font Colors
- */
-.c-black {
-  color: #08192b;
-}
-
-.c-white {
-  color: #fff;
-}
-
-.c-blue {
-  color: #1a9ac8;
-}
-
-.c-gold {
-  color: #c58511;
-}
-
-/**
- * Font Weights
- */
-.f-text {
-  font-family: "Open Sans Regular", Arial, sans-serif;
-}
-
-.f-text-bold, .wpforms-container .wpforms-form .wpforms-field-container .wpforms-field .wpforms-required-label,
-.wpforms-container-full .wpforms-form .wpforms-field-container .wpforms-field .wpforms-required-label, .wpforms-container .wpforms-form .wpforms-field-container .wpforms-field .wpforms-field-label,
-.wpforms-container-full .wpforms-form .wpforms-field-container .wpforms-field .wpforms-field-label {
-  font-family: "Open Sans Bold", Arial, sans-serif;
-}
-
-.f-heading {
-  font-family: "Proxima Nova Regular", Arial, sans-serif;
-}
-
-.f-script {
-  font-family: "SquarePeg Regular", Arial, sans-serif;
-}
-
-/**
- * Line Heights
- */
-.line-lg {
-  line-height: 2.4;
-}
-
-.line-medium {
-  line-height: 1.4;
-}
-
-.line-normal {
-  line-height: 1.2;
-}
-
-.line-reset {
-  line-height: 1;
-}
-
-/**
- * Letter Spacing
- */
-.ls-4 {
-  letter-spacing: 4px;
-}
-
-/**
- * Inline text classes
- */
-.l-script, .l-script--large {
-  font-family: "SquarePeg Regular", Arial, sans-serif;
-  font-size: 1.5em;
-  line-height: 0.5;
-  vertical-align: 10%;
-}
-
-.l-script--large {
-  font-size: 2em;
-}
-
-/* ==========================================================================
-   #LINKS
-   ========================================================================== */
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
-p > a {
-  text-decoration: none;
-  color: #c58511;
-}
-@media (min-width: 1280px) {
-  p > a:hover {
-    color: #0a3c4e;
-    text-decoration: underline;
-  }
-}
-
-/* ==========================================================================
-   #BUTTONS
-   ========================================================================== */
-.u-btn, .u-btn--mobile-lg {
-  display: inline-flex;
-  color: #fff;
-  padding: 12px 12px;
-  font-size: 1.8rem;
-  line-height: 1.2;
-  background-color: #c58511;
-  border: none;
-  position: relative;
-  text-align: center;
-  cursor: pointer;
-}
-@media (min-width: 768px) {
-  .u-btn, .u-btn--mobile-lg {
-    padding: 12px 24px;
-    font-size: 2rem;
-  }
-}
-@media (min-width: 1280px) {
-  .u-btn:hover, .u-btn--mobile-lg:hover {
-    background-color: #0a3c4e;
-    color: #fff;
-    text-decoration: none;
-  }
-}
-
-.u-btn--mobile-lg {
-  padding: 10px 15px;
-}
-
-/* ==========================================================================
-   #IMAGES
-   ========================================================================== */
-.fit-cover {
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-/* ==========================================================================
-   #CAROUSEL
-   ========================================================================== */
-.u-carousel {
-  padding-left: 20px;
-  padding-right: 20px;
-}
-@media (min-width: 1024px) {
-  .u-carousel {
-    padding-left: 55px;
-    padding-right: 55px;
-  }
-}
-
-.u-carousel__container {
-  padding: 55px 0 35px;
-}
-
-.u-carousel__title {
-  margin-bottom: 20px;
-}
-
-.u-carousel__carousel {
-  width: 250px;
-}
-@media (min-width: 768px) {
-  .u-carousel__carousel {
-    width: 1060px;
-    max-width: 100%;
-  }
-}
-
-.u-carousel__carousel--narrow {
-  width: 250px;
-}
-@media (min-width: 768px) {
-  .u-carousel__carousel--narrow {
-    width: 790px;
-    max-width: 100%;
-  }
-}
-
-.u-carousel__item {
-  padding: 15px;
-}
-
-.u-carousel__img {
-  max-width: 100%;
-  height: auto;
-  margin: 0 auto;
-}
-
-/* ==========================================================================
-   #UNDERLINE
-   ========================================================================== */
-.u-underline:after {
-  content: "";
-  display: block;
-  left: 0;
-  bottom: 0;
-  background-color: #333333;
-  height: 2px;
-  width: 50px;
-  margin-top: 20px;
-}
-
-/* ==========================================================================
-   #LIST
-   ========================================================================== */
-.list-reset {
-  list-style: none;
-}
-
-/* ==========================================================================
    #RESET
    ========================================================================== */
 /**
@@ -2308,6 +1739,636 @@ fieldset {
 #menu-toggle.menu-toggle--active #cross .menu-span:nth-child(2) {
   width: 36px;
   transition-delay: 0.175s;
+}
+
+.single-article {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding-top: 90px;
+  padding-left: 20px;
+}
+
+.single-article__content {
+  width: 65%;
+}
+.single-article__content h2 {
+  margin: 20px 0 10px 0;
+}
+.single-article__content p {
+  margin-bottom: 10px;
+}
+.single-article__content *:last-child {
+  margin-bottom: 0;
+}
+
+.single-article__sidebar {
+  width: calc(35% - 55px);
+  height: 300px;
+  background-color: #d1d5d8;
+  margin-left: 55px;
+}
+
+/* ==========================================================================
+   #PAGE
+   ========================================================================== */
+/**
+ * Simple page-level setup.
+ *
+ * 1. Set the default `font-size` and `line-height` for the entire project.
+ * 2. Force scrollbars to always be visible to prevent awkward ‘jumps’ when
+ *    navigating between pages that do/do not have enough content to produce
+ *    scrollbars naturally.
+ * 3. Ensure the page always fills at least the entire height of the viewport.
+ */
+:root {
+  --scroll-bar: 8px;
+}
+
+html {
+  color: #08192b;
+  font-size: 10px;
+  /* [1] */
+  line-height: 1.55;
+  /* [1] */
+  min-height: 100%;
+  /* [3] */
+  overflow-y: scroll;
+  /* [2] */
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+html.no-scroll {
+  overflow-y: hidden;
+}
+
+body {
+  font-family: "Open Sans Regular", Arial, sans-serif;
+  font-size: 1.8rem;
+}
+body * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+@media (min-width: 768px) {
+  body {
+    font-size: 1.9rem;
+  }
+}
+
+.vh {
+  border: 0 !important;
+  clip: rect(0 0 0 0) !important;
+  -webkit-clip-path: inset(50%) !important;
+          clip-path: inset(50%) !important;
+  height: 1px !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  padding: 0 !important;
+  position: absolute !important;
+  white-space: nowrap !important;
+  width: 1px !important;
+}
+
+p {
+  color: #08192b;
+  white-space: normal;
+}
+
+/* ==========================================================================
+   #HEADINGS
+   ========================================================================== */
+/**
+ * Simple default styles for headings 1 through 6. Anything more opinionated
+ * than simple font-size changes should likely be applied via classes (see:
+ * http://csswizardry.com/2016/02/managing-typography-on-large-apps/).
+ */
+h1, h2, h3, h4, h5, h6, .heading-family {
+  font-family: "Proxima Nova Regular", Arial, sans-serif;
+  line-height: 1.2;
+  color: #08192b;
+  font-weight: normal;
+}
+
+h3,
+.display-3 {
+  font-size: 3.8rem;
+}
+@media (min-width: 768px) {
+  h3,
+.display-3 {
+    font-size: 5rem;
+  }
+}
+
+h4,
+.display-4 {
+  font-size: 3.2rem;
+}
+@media (min-width: 768px) {
+  h4,
+.display-4 {
+    font-size: 3.8rem;
+  }
+}
+
+.single-article h2 {
+  font-size: 3.8rem;
+}
+@media (min-width: 768px) {
+  .single-article h2 {
+    font-size: 5rem;
+  }
+}
+.single-article h3 {
+  font-size: 3.2rem;
+}
+@media (min-width: 768px) {
+  .single-article h3 {
+    font-size: 3.8rem;
+  }
+}
+
+.heading-script {
+  /* 120px ~ 70px */
+  font-size: 7rem;
+  line-height: 0.9;
+  letter-spacing: -2px;
+}
+@media (min-width: 768px) {
+  .heading-script {
+    font-size: 12rem;
+  }
+}
+
+.heading-script-two {
+  /* 80px ~ 75px */
+  font-size: 7.5rem;
+  line-height: 1.2;
+}
+@media (min-width: 768px) {
+  .heading-script-two {
+    font-size: 8rem;
+  }
+}
+
+.heading-huge {
+  /* 67px ~ 45px */
+  font-size: 4.5rem;
+}
+@media (min-width: 768px) {
+  .heading-huge {
+    font-size: 6.7rem;
+  }
+}
+
+.heading-banner {
+  /* 51px ~ 46px */
+  font-size: 4.6rem;
+}
+@media (min-width: 1024px) {
+  .heading-banner {
+    font-size: 5.1rem;
+  }
+}
+
+.heading-hero {
+  /* 51px ~ 40px ~ 30px */
+  font-size: 3rem;
+}
+@media (min-width: 768px) {
+  .heading-hero {
+    font-size: 4rem;
+  }
+}
+@media (min-width: 1024px) {
+  .heading-hero {
+    font-size: 5.1rem;
+  }
+}
+
+.heading-heavy-lg {
+  /* 51px ~ 34px */
+  font-size: 3.4rem;
+}
+@media (min-width: 768px) {
+  .heading-heavy-lg {
+    font-size: 5.1rem;
+  }
+}
+
+.heading-about, .full-image--title-mobile-lg .full-image__title {
+  /* 50px ~ 38px */
+  font-size: 3.8rem;
+}
+@media (min-width: 1024px) {
+  .heading-about, .full-image--title-mobile-lg .full-image__title {
+    font-size: 5rem;
+  }
+}
+
+.heading-xlarge {
+  /* 50px ~ 38px ~ 24px */
+  font-size: 2.4rem;
+}
+@media (min-width: 768px) {
+  .heading-xlarge {
+    font-size: 3.8rem;
+  }
+}
+@media (min-width: 1024px) {
+  .heading-xlarge {
+    font-size: 5rem;
+  }
+}
+
+.heading-full, .full-image--sub-desktop-lg .full-image__subtitle {
+  /* 50px ~ 30px ~ 24px */
+  font-size: 2.4rem;
+}
+@media (min-width: 768px) {
+  .heading-full, .full-image--sub-desktop-lg .full-image__subtitle {
+    font-size: 3rem;
+  }
+}
+@media (min-width: 1024px) {
+  .heading-full, .full-image--sub-desktop-lg .full-image__subtitle {
+    font-size: 5rem;
+  }
+}
+
+.heading-standard {
+  /* 38px ~ 40px ~ 30px */
+  font-size: 3rem;
+}
+@media (min-width: 768px) {
+  .heading-standard {
+    font-size: 4rem;
+  }
+}
+@media (min-width: 1024px) {
+  .heading-standard {
+    font-size: 3.8rem;
+  }
+}
+
+.heading-basic {
+  /* 38px ~ 32px ~ 24px */
+  font-size: 2.4rem;
+}
+@media (min-width: 768px) {
+  .heading-basic {
+    font-size: 3.2rem;
+  }
+}
+@media (min-width: 1024px) {
+  .heading-basic {
+    font-size: 3.8rem;
+  }
+}
+
+.heading-heavy-two, .heavy-text--medium-title .heavy-text__title {
+  /* 38px ~ 30px ~ 34px */
+  font-size: 3.4rem;
+}
+@media (min-width: 768px) {
+  .heading-heavy-two, .heavy-text--medium-title .heavy-text__title {
+    font-size: 3rem;
+  }
+}
+@media (min-width: 1024px) {
+  .heading-heavy-two, .heavy-text--medium-title .heavy-text__title {
+    font-size: 3.8rem;
+  }
+}
+
+.heading-heavy {
+  /* 38px ~ 30px */
+  font-size: 3rem;
+}
+@media (min-width: 1024px) {
+  .heading-heavy {
+    font-size: 3.8rem;
+  }
+}
+
+.heading-large {
+  /* 38px ~ 30px ~ 24px */
+  font-size: 2.4rem;
+}
+@media (min-width: 768px) {
+  .heading-large {
+    font-size: 3rem;
+  }
+}
+@media (min-width: 1024px) {
+  .heading-large {
+    font-size: 3.8rem;
+  }
+}
+
+.heading-post {
+  /* 30px ~ 28px */
+  font-size: 2.8rem;
+}
+@media (min-width: 768px) {
+  .heading-post {
+    font-size: 3rem;
+  }
+}
+
+.heading-sub {
+  /* 30px ~ 26px ~ 20px */
+  font-size: 2rem;
+}
+@media (min-width: 768px) {
+  .heading-sub {
+    font-size: 2.6rem;
+  }
+}
+@media (min-width: 1024px) {
+  .heading-sub {
+    font-size: 3rem;
+  }
+}
+
+.heading-tagline {
+  /* 30px ~ 24px */
+  font-size: 2.4rem;
+}
+@media (min-width: 768px) {
+  .heading-tagline {
+    font-size: 3rem;
+  }
+}
+
+.heading-medium {
+  /* 24px */
+  font-size: 2.4rem;
+}
+
+.heading-author {
+  /* 20px ~ 30px ~ 24px */
+  font-size: 2.4rem;
+}
+@media (min-width: 768px) {
+  .heading-author {
+    font-size: 3rem;
+  }
+}
+@media (min-width: 1024px) {
+  .heading-author {
+    font-size: 2rem;
+  }
+}
+
+.text-normal {
+  /* 19px */
+  font-size: 1.9rem;
+}
+
+.text-sixteen {
+  /* 16px */
+  font-size: 1.6rem;
+}
+
+.text-small {
+  /* 14px */
+  font-size: 1.4rem;
+}
+
+/* ==========================================================================
+   #TYPOGRAPHY & COLORS & FONT WEIGHTS & LINE HEIGHTS
+   ========================================================================== */
+/**
+ * Font Colors
+ */
+.c-black {
+  color: #08192b;
+}
+
+.c-white {
+  color: #fff;
+}
+
+.c-blue {
+  color: #1a9ac8;
+}
+
+.c-gold {
+  color: #c58511;
+}
+
+/**
+ * Font Weights
+ */
+.f-text {
+  font-family: "Open Sans Regular", Arial, sans-serif;
+}
+
+.f-text-bold, .wpforms-container .wpforms-form .wpforms-field-container .wpforms-field .wpforms-required-label,
+.wpforms-container-full .wpforms-form .wpforms-field-container .wpforms-field .wpforms-required-label, .wpforms-container .wpforms-form .wpforms-field-container .wpforms-field .wpforms-field-label,
+.wpforms-container-full .wpforms-form .wpforms-field-container .wpforms-field .wpforms-field-label {
+  font-family: "Open Sans Bold", Arial, sans-serif;
+}
+
+.f-heading {
+  font-family: "Proxima Nova Regular", Arial, sans-serif;
+}
+
+.f-script {
+  font-family: "SquarePeg Regular", Arial, sans-serif;
+}
+
+/**
+ * Line Heights
+ */
+.line-lg {
+  line-height: 2.4;
+}
+
+.line-medium {
+  line-height: 1.4;
+}
+
+.line-normal {
+  line-height: 1.2;
+}
+
+.line-reset {
+  line-height: 1;
+}
+
+/**
+ * Letter Spacing
+ */
+.ls-4 {
+  letter-spacing: 4px;
+}
+
+/**
+ * Inline text classes
+ */
+.l-script, .l-script--large {
+  font-family: "SquarePeg Regular", Arial, sans-serif;
+  font-size: 1.5em;
+  line-height: 0.5;
+  vertical-align: 10%;
+}
+
+.l-script--large {
+  font-size: 2em;
+}
+
+/* ==========================================================================
+   #LINKS
+   ========================================================================== */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+p > a {
+  text-decoration: none;
+  color: #c58511;
+}
+@media (min-width: 1280px) {
+  p > a:hover {
+    color: #0a3c4e;
+    text-decoration: underline;
+  }
+}
+
+/* ==========================================================================
+   #BUTTONS
+   ========================================================================== */
+.u-btn, .u-btn--nav, .u-btn--mobile-lg {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  padding: 12px 12px;
+  font-size: 1.8rem;
+  line-height: 1.2;
+  background-color: #c58511;
+  border: none;
+  position: relative;
+  text-align: center;
+  cursor: pointer;
+}
+@media (min-width: 768px) {
+  .u-btn, .u-btn--nav, .u-btn--mobile-lg {
+    padding: 12px 24px;
+    font-size: 2rem;
+  }
+}
+@media (min-width: 1280px) {
+  .u-btn:hover, .u-btn--nav:hover, .u-btn--mobile-lg:hover {
+    background-color: #0a3c4e;
+    color: #fff;
+    text-decoration: none;
+  }
+}
+
+.u-btn--mobile-lg {
+  padding: 10px 15px;
+}
+
+.u-btn--nav {
+  padding: 10px 15px;
+  font-size: 1.3rem;
+}
+@media (min-width: 1280px) {
+  .u-btn--nav {
+    font-size: 1.5rem;
+  }
+}
+@media (min-width: 1600px) {
+  .u-btn--nav {
+    font-size: 1.8rem;
+  }
+}
+
+/* ==========================================================================
+   #IMAGES
+   ========================================================================== */
+.fit-cover {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+/* ==========================================================================
+   #CAROUSEL
+   ========================================================================== */
+.u-carousel {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+@media (min-width: 1024px) {
+  .u-carousel {
+    padding-left: 55px;
+    padding-right: 55px;
+  }
+}
+
+.u-carousel__container {
+  padding: 55px 0 35px;
+}
+
+.u-carousel__title {
+  margin-bottom: 20px;
+}
+
+.u-carousel__carousel {
+  width: 250px;
+}
+@media (min-width: 768px) {
+  .u-carousel__carousel {
+    width: 1060px;
+    max-width: 100%;
+  }
+}
+
+.u-carousel__carousel--narrow {
+  width: 250px;
+}
+@media (min-width: 768px) {
+  .u-carousel__carousel--narrow {
+    width: 790px;
+    max-width: 100%;
+  }
+}
+
+.u-carousel__item {
+  padding: 15px;
+}
+
+.u-carousel__img {
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+/* ==========================================================================
+   #UNDERLINE
+   ========================================================================== */
+.u-underline:after {
+  content: "";
+  display: block;
+  left: 0;
+  bottom: 0;
+  background-color: #333333;
+  height: 2px;
+  width: 50px;
+  margin-top: 20px;
+}
+
+/* ==========================================================================
+   #LIST
+   ========================================================================== */
+.list-reset {
+  list-style: none;
 }
 
 /* ==========================================================================
@@ -3738,6 +3799,39 @@ fieldset {
 .s-articles__pagination .page-numbers.current {
   background-color: #c58511;
   color: #fff;
+}
+
+/* ==========================================================================
+   #CTA BANNER / TEMPLATE (BLOCK)
+   ========================================================================== */
+.cta-banner {
+  background: radial-gradient(at center center, #1a9ac8 15%, #0a3c4e 100%);
+  padding: 25px 45px;
+  margin-top: 44px;
+}
+
+.cta-banner__content {
+  width: 65%;
+}
+.cta-banner__content .cta-banner__title {
+  font-size: 2rem;
+  margin: 0 0 10px 0;
+}
+.cta-banner__content *:last-child {
+  margin: 0;
+}
+
+.cta-banner__text {
+  font-size: 1.3rem;
+}
+
+.cta-banner__button {
+  width: 35%;
+}
+
+.cta-banner__cta {
+  width: 100%;
+  padding: 20px 30px;
 }
 
 .wpforms-container .wpforms-form .wpforms-field-container .wpforms-field,

@@ -18,6 +18,11 @@
 @import 'object/layout';
 @import 'object/wrappers';
 
+@import 'generic/reset';
+@import 'generic/menu-desktop';
+@import 'generic/mobile-menu';
+@import 'generic/single-article';
+
 @import 'elements/html';
 @import 'elements/headings';
 @import 'elements/typography';
@@ -27,10 +32,6 @@
 @import 'elements/carousel';
 @import 'elements/underline';
 @import 'elements/list';
-
-@import 'generic/reset';
-@import 'generic/menu-desktop';
-@import 'generic/mobile-menu';
 
 @import 'utilities/align';
 @import 'utilities/display';
@@ -60,5 +61,7 @@
 @import 'components/blog/article-banner';
 
 @import 'template/articles';
+
+@import 'template/blocks/cta-banner';
 
 @import 'forms/general';

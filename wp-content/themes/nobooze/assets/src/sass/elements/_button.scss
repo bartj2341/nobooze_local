@@ -4,6 +4,8 @@
 
 .u-btn {
     display: inline-flex;
+    align-items: center;
+    justify-content: center;
     color: $ct-white;
     padding: 12px 12px;
     font-size: 1.8rem;
@@ -31,4 +33,18 @@
 .u-btn--mobile-lg {
     @extend .u-btn;
     padding: 10px 15px;
+}
+
+.u-btn--nav {
+    @extend .u-btn;
+    padding: 10px 15px;
+    font-size: 1.3rem;
+
+    @include bp(xlarge) {
+        font-size: 1.5rem; 
+    }
+
+	@include bp(full) {
+		font-size: 1.8rem;
+	}
 }

@@ -1,0 +1,35 @@
+/* ==========================================================================
+   #CTA BANNER / TEMPLATE (BLOCK)
+   ========================================================================== */
+
+.cta-banner {
+    background: radial-gradient(at center center, $cbg-blue-2 15%, $cbg-blue 100%);
+    padding: 25px 45px;
+    margin-top: 44px;
+}
+
+.cta-banner__content {
+    width: 65%;
+
+    .cta-banner__title {
+        font-size: 2rem;
+        margin: 0 0 10px 0;
+    }
+
+    *:last-child {
+        margin: 0;
+    }
+}
+
+.cta-banner__text {
+    font-size: 1.3rem;
+}
+
+.cta-banner__button {
+    width: 35%;
+}
+
+.cta-banner__cta {
+    width: 100%;
+    padding: 20px 30px;
+}

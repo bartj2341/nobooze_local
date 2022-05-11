@@ -17,12 +17,12 @@ h1, h2, h3, h4, h5, h6, .heading-family {
 }
 
 h3,
-.display-3 /* 51px ~ 38px */{
+.display-3 /* 50px ~ 38px */{
     font-size: 3.8rem;
 
     @include bp(medium) {
-        font-size: 5.1rem;
-    }
+        font-size: 5rem;
+    } 
 }
 
 h4,
@@ -31,6 +31,25 @@ h4,
 
     @include bp(medium) {
         font-size: 3.8rem;
+    }
+}
+
+// Heading sizes for a single post
+.single-article {
+    h2 /* 50px ~ 38px */{
+    font-size: 3.8rem;
+
+        @include bp(medium) {
+            font-size: 5rem;
+        } 
+    }
+
+    h3 /* 38px ~ 32px */ {
+    font-size: 3.2rem;
+
+        @include bp(medium) {
+            font-size: 3.8rem;
+        }
     }
 }
 

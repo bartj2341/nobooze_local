@@ -24,7 +24,14 @@
 <body <?php body_class(); ?>>
 	<header id="masthead" class="u-header">
 		<?php get_template_part('partials/general/main-menu'); ?> 
-		<?php get_template_part('partials/general/mobile-menu'); ?> 
+		<?php get_template_part('partials/general/mobile-menu'); ?>
+		<?php
+		// Use title or custom h1 element for the page
+		$custom_h1_title = get_field("custom_h1_title") ? get_field("custom_h1_title") : get_the_title();
+		?>
+		<?php if ( 'post' != get_post_type() ) : ?>
+		<h1 class="vh"><?=  is_404() ? '404 Page' : $custom_h1_title ?></h1>
+		<?php endif; ?>
 	</header><!-- #masthead -->
 
 	

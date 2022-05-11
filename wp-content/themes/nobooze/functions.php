@@ -142,6 +142,11 @@ function _s_scripts()
 add_action('wp_enqueue_scripts', '_s_scripts');
 
 /**
+ * Custom ACF blocks to display in the Gutenberg editor.
+ */
+require get_template_directory() . '/inc/blocks.php';
+
+/**
  * Implement the Custom Header feature.
  */
 require get_template_directory() . '/inc/custom-header.php';

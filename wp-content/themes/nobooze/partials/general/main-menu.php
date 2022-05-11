@@ -79,7 +79,7 @@ $pagename = $post ? $post->post_name : '';
                     </li>
 
                     <li class="u-header__contact d-flex-align-c">
-                        <a class="u-header__contact__cta u-btn--mobile-lg" href="<?= site_url() ?>/contact">CONTACT</a>
+                        <a class="u-header__contact__cta u-btn--nav" href="<?= site_url() ?>/contact">CONTACT</a>
                     </li>
                 </ul>
 
