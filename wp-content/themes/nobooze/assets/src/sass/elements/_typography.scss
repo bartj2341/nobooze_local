@@ -76,3 +76,8 @@
     line-height: 0.5;
     vertical-align: 10%;
 }
+
+.l-script--large {
+    @extend .l-script;
+    font-size: 2em;
+}

@@ -23,8 +23,8 @@
 
 <body <?php body_class(); ?>>
 	<header id="masthead" class="u-header">
-		<?php get_template_part('menu-parts/main-menu'); ?> 
-		<?php get_template_part('menu-parts/mobile-menu'); ?> 
+		<?php get_template_part('partials/general/main-menu'); ?> 
+		<?php get_template_part('partials/general/mobile-menu'); ?> 
 	</header><!-- #masthead -->
 
 	
