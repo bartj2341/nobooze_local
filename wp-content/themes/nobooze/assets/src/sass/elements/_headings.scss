@@ -248,6 +248,14 @@ h4,
     font-size: 1.6rem;
 }
 
+.text-links { /* 16px ~ 14px */
+    font-size: 1.4rem;
+
+    @include bp(large) {
+        font-size: 1.6rem;
+    }
+}
+
 .text-small { /* 14px */
     font-size: 1.4rem;
 }

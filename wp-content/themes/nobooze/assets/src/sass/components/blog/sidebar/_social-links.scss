@@ -1,0 +1,31 @@
+/* ==========================================================================
+   #ABOUT COLUMN / BLOG SIDEBAR PARTIAL
+   ========================================================================== */
+
+.social-links {
+    margin-bottom: 50px;
+}
+
+.social-links__row {
+    margin-bottom: 25px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.social-links__row__icon {
+    width: 40px;
+    height: 40px;
+    background-color: $cbg-blue-2;
+
+    svg {
+        fill: $cbg-white;
+    }
+}
+
+.social-links__row__description {
+    flex: 1;
+    margin-left: 20px;
+    text-transform: uppercase;
+}

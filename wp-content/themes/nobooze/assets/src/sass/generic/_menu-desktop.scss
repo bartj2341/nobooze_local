@@ -186,17 +186,12 @@
 	border-top-right-radius: 16px;
 	border-bottom-right-radius: 16px;
 	transition: all 80ms linear;
-    font-size: 1.4rem;
 
 	@include bp(large) {
 		&:hover {
 			background-color: $cbg-gray-5;
 		}
 	}
-
-    @include bp(xlarge) {
-        font-size: 1.6rem;
-    }
 }
 
 /* HOVER

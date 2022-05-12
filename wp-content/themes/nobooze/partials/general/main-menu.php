@@ -32,13 +32,13 @@ $pagename = $post ? $post->post_name : '';
                             <div class="u-header__sub__inner p-relative">
                                 <ul class="u-header__sub__list d-flex d-flex-column list-reset">
                                     <li class="u-header__sub__li p-relative">
-                                        <a class="u-header__sub__cta d-flex" href="#">DISCOVER PROGRAM</a>
+                                        <a class="u-header__sub__cta text-links d-flex" href="#">DISCOVER PROGRAM</a>
                                     </li>
                                     <li class="u-header__sub__li p-relative">
-                                        <a class="u-header__sub__cta d-flex" href="#">FREEDOM COACHING PROGRAM</a>
+                                        <a class="u-header__sub__cta text-links d-flex" href="#">FREEDOM COACHING PROGRAM</a>
                                     </li>
                                     <li class="u-header__sub__li p-relative">
-                                        <a class="u-header__sub__cta d-flex" href="<?= site_url() ?>/exclusive-private-coaching">EXCLUSIVE PRIVATE COACHING</a>
+                                        <a class="u-header__sub__cta text-links d-flex" href="<?= site_url() ?>/exclusive-private-coaching">EXCLUSIVE PRIVATE COACHING</a>
                                     </li>
                                 </ul>
                             </div>
@@ -60,13 +60,13 @@ $pagename = $post ? $post->post_name : '';
                             <div class="u-header__sub__inner p-relative">
                                 <ul class="u-header__sub__list d-flex d-flex-column list-reset">
                                     <li class="u-header__sub__li p-relative">
-                                        <a class="u-header__sub__cta d-flex" href="<?= site_url() ?>/books">BOOKS</a>
+                                        <a class="u-header__sub__cta text-links d-flex" href="<?= site_url() ?>/books">BOOKS</a>
                                     </li>
                                     <li class="u-header__sub__li p-relative">
-                                        <a class="u-header__sub__cta d-flex" href="<?= site_url() ?>/videos">VIDEOS</a>
+                                        <a class="u-header__sub__cta text-links d-flex" href="<?= site_url() ?>/videos">VIDEOS</a>
                                     </li>
                                     <li class="u-header__sub__li p-relative">
-                                        <a class="u-header__sub__cta d-flex" href="<?= site_url() ?>/articles">ARTICLES</a>
+                                        <a class="u-header__sub__cta text-links d-flex" href="<?= site_url() ?>/articles">ARTICLES</a>
                                     </li>
                                 </ul>
                             </div>

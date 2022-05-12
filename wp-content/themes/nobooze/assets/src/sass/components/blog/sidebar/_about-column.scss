@@ -1,0 +1,32 @@
+/* ==========================================================================
+   #ABOUT COLUMN / BLOG SIDEBAR PARTIAL
+   ========================================================================== */
+
+.about-column {
+    margin-top: 70px;
+    margin-bottom: 50px;
+}
+
+.about-column__bg {
+    bottom: 0;
+    left: 0;
+    background-color: $cbg-gray-2;
+    height: calc(100% - 50px);
+}
+
+.about-column__container {
+    z-index: $z-lvl-1;
+}
+
+.about-column__image {
+    padding: 0 50px 40px;
+    margin-top: -50px;
+}
+
+.about-column__content {
+    padding: 0 20px 20px;
+}
+
+.about-column__text {
+    margin-bottom: 40px;
+}
