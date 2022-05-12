@@ -40,6 +40,8 @@
 @import 'utilities/backgrounds';
 @import 'utilities/events';
 
+@import 'forms/general';
+
 @import 'components/full-image-text';
 @import 'components/basic-banner';
 @import 'components/heavy-text';
@@ -62,9 +64,8 @@
 
 @import 'components/blog/sidebar/about-column';
 @import 'components/blog/sidebar/social-links';
+@import 'components/blog/sidebar/newsletter-form';
 
 @import 'template/articles';
 
 @import 'template/blocks/cta-banner';
-
-@import 'forms/general';

@@ -21,7 +21,8 @@ get_header();
 						</div>
 						<div class="single-article__sidebar">
 							<?php get_template_part('partials/blog/sidebar/about-column'); ?>
-							<?php get_template_part('partials/blog/sidebar/social-links'); ?>  
+							<?php get_template_part('partials/blog/sidebar/social-links'); ?>
+							<?php get_template_part('partials/blog/sidebar/newsletter-form'); ?>    
 						</div>
 					</div>
 					<footer class="entry-footer">

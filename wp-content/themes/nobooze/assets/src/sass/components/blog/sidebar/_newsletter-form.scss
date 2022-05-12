@@ -1,0 +1,70 @@
+/* ==========================================================================
+   #NEWSLETTER FORM / BLOG SIDEBAR PARTIAL
+   ========================================================================== */
+
+
+.newsletter-form {
+    background: radial-gradient(at center center, $cbg-blue-2 15%, $cbg-blue 100%);
+    padding: 40px;
+}
+
+.newsletter-form__title {
+    font-size: 4.9rem;
+    margin-bottom: 20px;
+}
+
+.newsletter-form__text {
+    margin-bottom: 40px;
+}
+
+.newsletter-form__form {
+    .wpforms-container,
+    .wpforms-container-full {
+        .wpforms-form {
+            .wpforms-field-container {
+                .wpforms-field {  
+                    .wpforms-field-label {
+                        font-size: 1.4rem;
+                    }
+
+                    input,
+                    textarea {
+                        border: 1px solid $cb-gray-8;
+                        padding: 10px;
+                        font-size: 14px;
+
+                        &.wpforms-error {
+                            border: 1px solid $cb-gray-8;
+                        }
+                    }
+                
+                    input {
+                        min-height: 38px;
+                        line-height: 1.2;
+                    }
+
+                    input:focus {
+                        border: 1px solid $cb-blue-5;
+                    }
+
+                    .wpforms-required-label {
+                        color: $ct-white;
+                    }
+
+                    label.wpforms-error {
+                        color: $ct-white;
+                    }
+                }
+            }
+        
+            .wpforms-submit-container {
+                .wpforms-submit {
+                    width: 100%;
+                    padding: 10px;
+                    font-size: 2rem;
+                    line-height: 1.2;
+                } 
+            }
+        }
+    }
+}

@@ -68,6 +68,8 @@
         .wpforms-submit-container {
             .wpforms-submit {
                 display: inline-flex;
+                justify-content: center;
+                align-items: center;
                 color: $ct-white;
                 padding: 15px 30px;
                 font-size: 1.8rem;
