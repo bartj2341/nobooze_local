@@ -1763,9 +1763,35 @@ fieldset {
 
 .single-article__sidebar {
   width: calc(35% - 55px);
-  height: 300px;
-  background-color: #d1d5d8;
   margin-left: 55px;
+}
+
+.about-column {
+  margin-top: 70px;
+}
+
+.about-column__bg {
+  bottom: 0;
+  left: 0;
+  background-color: #f0f0f0;
+  height: calc(100% - 50px);
+}
+
+.about-column__container {
+  z-index: 100;
+}
+
+.about-column__image {
+  padding: 0 50px 40px;
+  margin-top: -50px;
+}
+
+.about-column__content {
+  padding: 0 20px 20px;
+}
+
+.about-column__text {
+  margin-bottom: 40px;
 }
 
 /* ==========================================================================

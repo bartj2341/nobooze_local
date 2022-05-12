@@ -20,7 +20,7 @@ get_header();
 							<?php the_content(); ?>
 						</div>
 						<div class="single-article__sidebar">
-
+							<?php get_template_part('partials/blog/about-column'); ?>  
 						</div>
 					</div>
 					<footer class="entry-footer">
