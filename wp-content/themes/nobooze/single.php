@@ -26,9 +26,47 @@ get_header();
 								<?php get_template_part('partials/blog/sidebar/newsletter-form'); ?>    
 							</div>
 						</div>
-						<footer class="entry-footer">
-							<?php _s_entry_footer(); ?>
-						</footer>
+						<div class="single-article__footer wrapper-small"> 
+							<div class="single-article__categories">
+								<p>
+									<span>Posted in</span>
+									<?php
+										$output = '';
+										foreach((get_the_category()) as $category) {
+											$category_id = get_cat_ID( $category->cat_name );
+											$category_link = get_category_link( $category_id );
+										
+											if(!empty($output))
+												$output .= ', ';
+											$output .= '<a href="'.$category_link.'">'.$category->cat_name.'</a>';
+										}
+										echo $output;
+									?>
+								</p>
+							</div>
+							<div class="single-article__bio">
+								<h3 class="single-article__bio__name">Michaela Weaver</h3>
+								<p class="single-article__bio__description">Michaela is the world's leading authority for enabling highly successful women to embrace their true, alcohol-free, authentic selves in a world where alcohol is normalised for those who are successful.Her ground-breaking science-based methods using The Science of Transformational Freedom, result in the revelation of uncovering The Social Secret®, so that high achieving woman can joyfully live their lives free from alcohol – but also thrive in all aspects of their work and personal life without it.</h3>
+							</div>
+							<div class="single-article__navigation d-flex d-flex-wrap d-flex-justify-s">
+								<div class="single-article__navigation__item single-article__navigation__prev">
+									<?php
+										$prev_post = get_adjacent_post(false, '', true);
+										if(!empty($prev_post)):
+											echo '<a href="' . get_permalink($prev_post->ID) . '" title="' . $prev_post->post_title . '">← ' . $prev_post->post_title . '</a>';
+										endif;
+									?>
+								</div>
+								<div class="single-article__navigation__item single-article__navigation__next u-text-right">
+									<?php
+										$next_post = get_adjacent_post(false, '', false);
+										if(!empty($next_post)):
+											echo '<a href="' . get_permalink($next_post->ID) . '" title="' . $next_post->post_title . '">' . $next_post->post_title . ' →</a>';
+										endif; 
+									?>
+								</div>
+							</div>
+						</div>
 					</section>
 				</div>
 				<?php endwhile; ?>
