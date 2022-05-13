@@ -13,63 +13,84 @@
 	<footer id="colophon" class="u-footer">
 		<div class="bg-white">
 			<div class="wrapper-nav">
-				<div class="u-footer__main d-flex d-flex-justify-s d-flex-align-c">
+				<div class="u-footer__main d-flex">
 					<a class="u-footer__logo d-flex d-flex-center" href="<?= home_url(); ?>">
 						<?php include get_icons_directory('icons/logo.svg') ?>
 					</a>
-					<ul class="u-footer__ul d-flex d-flex-wrap list-reset">
+					<ul class="u-footer__ul d-flex d-flex-justify-c d-flex-wrap list-reset">
 						<li class="u-footer__li">
 							<ul class="u-footer__sub list-reset">
-								<li class="u-footer__link">
-									<a href="#">HOME</a>
+								<li class="u-footer__sub__li">
+									<a class="u-footer__link text-small" href="<?= home_url() ?>/home">HOME</a>
 								</li>
-								<li class="u-footer__link">
-									<a href="#">ABOUT</a>
+								<li class="u-footer__sub__li">
+									<a class="u-footer__link text-small" href="<?= site_url() ?>/about">ABOUT</a>
 								</li>
-								<li class="u-footer__link">
-									<a href="#">CONTACT</a>
+								<li class="u-footer__sub__li">
+									<a class="u-footer__link text-small" href="<?= site_url() ?>/contact">CONTACT</a>
 								</li>
 							</ul>
 						</li>
 						<li class="u-footer__li">
-							<span class="f-text-bold">WORK WITH ME</span>
+							<span class="u-footer__li__title f-text-bold text-small">WORK WITH ME</span>
 							<ul class="u-footer__sub list-reset">
-								<li class="u-footer__link">
-									<a href="#">EXCLUSIVE PRIVATE COACHING</a>
+								<li class="u-footer__sub__li">
+									<a class="u-footer__link text-small" href="<?= site_url() ?>/exclusive-private-coaching">EXCLUSIVE PRIVATE COACHING</a>
 								</li>
 							</ul>
 						</li>
 		
 						<li class="u-footer__li">
-							<span class="f-text-bold">RESOURCES</span>
+							<span class="u-footer__li__title f-text-bold text-small">RESOURCES</span>
 							<ul class="u-footer__sub list-reset">
-								<li class="u-footer__link">
-									<a href="#">BOOKS</a>
+								<li class="u-footer__sub__li">
+									<a class="u-footer__link text-small" href="<?= site_url() ?>/books">BOOKS</a>
 								</li>
-								<li class="u-footer__link">
-									<a href="#">VIDEOS</a>
+								<li class="u-footer__sub__li">
+									<a class="u-footer__link text-small" href="<?= site_url() ?>/videos">VIDEOS</a>
 								</li>
-								<li class="u-footer__link">
-									<a href="#">ARTICLES</a>
+								<li class="u-footer__sub__li">
+									<a class="u-footer__link text-small" href="<?= site_url() ?>/articles">ARTICLES</a>
 								</li>
 							</ul>
 						</li>
 					</ul>
-		
-					<ul class="u-footer__socials d-flex list-reset">
-						<li class="u-footer__socials__li"> 
-							<a href="#"><?php include get_icons_directory('icons/facebook.svg') ?></a>
-						</li>
-						<li class="u-footer__socials__li">
-							<a href="#"><?php include get_icons_directory('icons/instagram.svg') ?></a>
-						</li>
-						<li class="u-footer__socials__li">
-							<a href="#"><?php include get_icons_directory('icons/linkedin.svg') ?></a>
-						</li>
-						<li class="u-footer__socials__li">
-							<a href="#"><?php include get_icons_directory('icons/youtube.svg') ?></a>
-						</li>
-					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="bg-black">
+			<div class="wrapper-nav">
+				<div class="u-footer__summary d-flex d-flex-wrap">
+					<div class="u-footer__terms d-flex d-flex-justify-c d-flex-align-c">
+						<ul class="u-footer__terms__ul d-flex c-white list-reset">
+							<li class="u-footer__terms__li">	
+								<a class="u-footer__link text-tiny" href="<?= site_url() ?>/terms-of-service">Terms of Service</a>
+							</li>
+							<li class="u-footer__terms__li">	
+								<a class="u-footer__link text-tiny" href="<?= site_url() ?>/refund-policy">Refund Policy</a>
+							</li>
+							<li class="u-footer__terms__li">	
+								<a class="u-footer__link text-tiny" href="<?= site_url() ?>/privacy">Privacy</a>
+							</li>
+						</ul>
+					</div>
+					<div class="u-footer__socials d-flex d-flex-justify-c d-flex-align-c">
+						<ul class="u-footer__socials__ul d-flex list-reset">
+							<li class="u-footer__socials__li p-relative"> 
+								<a class="u-footer__socials__link d-flex d-flex-align-c" href="#"><?php include get_icons_directory('icons/facebook.svg') ?></a>
+							</li>
+							<li class="u-footer__socials__li p-relative">
+								<a class="u-footer__socials__link d-flex d-flex-align-c" href="#"><?php include get_icons_directory('icons/instagram.svg') ?></a>
+							</li>
+							<li class="u-footer__socials__li p-relative">
+								<a class="u-footer__socials__link d-flex d-flex-align-c" href="#"><?php include get_icons_directory('icons/linkedin.svg') ?></a>
+							</li>
+							<li class="u-footer__socials__li p-relative">
+								<a class="u-footer__socials__link d-flex d-flex-align-c" href="#"><?php include get_icons_directory('icons/youtube.svg') ?></a>
+							</li>
+						</ul>
+					</div>
+					<div class="u-footer__copyright d-flex d-flex-justify-c d-flex-align-c c-white text-tiny">© 2022 The Alcohol Coach. All Rights Reserved.</div>
 				</div>
 			</div>
 		</div>

@@ -32,12 +32,6 @@ $pagename = $post ? $post->post_name : '';
                             <div class="u-header__sub__inner p-relative">
                                 <ul class="u-header__sub__list d-flex d-flex-column list-reset">
                                     <li class="u-header__sub__li p-relative">
-                                        <a class="u-header__sub__cta text-links d-flex" href="#">DISCOVER PROGRAM</a>
-                                    </li>
-                                    <li class="u-header__sub__li p-relative">
-                                        <a class="u-header__sub__cta text-links d-flex" href="#">FREEDOM COACHING PROGRAM</a>
-                                    </li>
-                                    <li class="u-header__sub__li p-relative">
                                         <a class="u-header__sub__cta text-links d-flex" href="<?= site_url() ?>/exclusive-private-coaching">EXCLUSIVE PRIVATE COACHING</a>
                                     </li>
                                 </ul>
@@ -45,10 +39,6 @@ $pagename = $post ? $post->post_name : '';
                         </div>
                     </li>
                     <!-- WORK WITH ME END -->
-
-                    <li class="u-header__li d-flex d-flex-align-c p-relative c-pointer line-normal f-heading">
-                        <a class="u-header__cta d-flex d-flex-align-c h-100 p-relative <?= strpos(' case-studies-offshore-software-development', $pagename) !== false ? 'u-header__cta--active' : '' ?>" href="#">MASTERCLASS</a>
-                    </li>
                     
                     <!-- RESOURCES START -->
                     <li class="u-header__li d-flex d-flex-align-c p-relative c-pointer line-normal u-header__li--has-children f-heading">

@@ -9,30 +9,32 @@
 
 get_header();
 ?>
-	<main id="main">
-		<div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-			<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-			<div>
-				<?php get_template_part('partials/blog/article-banner'); ?>  
-				<section class="single-article">
-					<div class="single-article__container d-flex d-flex-wrap">
-						<div class="single-article__content">
-							<?php the_content(); ?>
+	<div class="main-wrapper">
+		<main id="main">
+			<div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+				<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+				<div>
+					<?php get_template_part('partials/blog/article-banner'); ?>  
+					<section class="single-article">
+						<div class="single-article__container d-flex d-flex-wrap">
+							<div class="single-article__content">
+								<?php the_content(); ?>
+							</div>
+							<div class="single-article__sidebar">
+								<?php get_template_part('partials/blog/sidebar/about-column'); ?>
+								<?php get_template_part('partials/blog/sidebar/social-links'); ?>
+								<?php get_template_part('partials/blog/sidebar/newsletter-form'); ?>    
+							</div>
 						</div>
-						<div class="single-article__sidebar">
-							<?php get_template_part('partials/blog/sidebar/about-column'); ?>
-							<?php get_template_part('partials/blog/sidebar/social-links'); ?>
-							<?php get_template_part('partials/blog/sidebar/newsletter-form'); ?>    
-						</div>
-					</div>
-					<footer class="entry-footer">
-						<?php _s_entry_footer(); ?>
-					</footer>
-				</section>
+						<footer class="entry-footer">
+							<?php _s_entry_footer(); ?>
+						</footer>
+					</section>
+				</div>
+				<?php endwhile; ?>
+				<?php endif; ?>
 			</div>
-			<?php endwhile; ?>
-			<?php endif; ?>
-		</div>
-	</main><!-- #main -->
-<?php
-get_footer();
+		</main><!-- #main -->
+
+		<?php get_footer(); ?>
+	</div>

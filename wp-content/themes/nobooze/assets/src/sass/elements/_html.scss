@@ -44,7 +44,13 @@ body {
     @include bp(medium) {
         font-size: 1.9rem; //* 19px */
     }
+}
 
+.main-wrapper {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .vh {
