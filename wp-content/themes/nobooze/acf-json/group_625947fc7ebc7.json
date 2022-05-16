@@ -1622,6 +1622,51 @@
                     ],
                     "min": "",
                     "max": ""
+                },
+                "layout_6282492f08ca2": {
+                    "key": "layout_6282492f08ca2",
+                    "name": "video_row",
+                    "label": "Video Row",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_6282493508ca3",
+                            "label": "Title",
+                            "name": "title",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_6282495708ca4",
+                            "label": "Video",
+                            "name": "video",
+                            "type": "oembed",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "width": "",
+                            "height": ""
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
                 }
             },
             "button_label": "Add Row",
@@ -1646,5 +1691,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1651837934
+    "modified": 1652705670
 }
