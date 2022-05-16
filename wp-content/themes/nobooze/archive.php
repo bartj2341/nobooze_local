@@ -8,46 +8,53 @@
  */
 
 get_header();
+
+
 ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
+			<section class="s-articles">
+				<div class="s-articles__wrapper wrapper-large">
+					<?php if(is_category()): 
+						$category = get_category( get_query_var( 'cat' ) );
+						$cat_id = $category->cat_ID;
+						?>
+						<h2 class="s-articles__title c-gold heading-script f-script">Category: <?= get_cat_name($cat_id) ?></h2>
 
-		<?php if ( have_posts() ) : ?>
-
-			<header class="page-header">
-				<?php
-				the_archive_title( '<h1 class="page-title">', '</h1>' );
-				the_archive_description( '<div class="archive-description">', '</div>' );
-				?>
-			</header><!-- .page-header -->
-
-			<?php
-			/* Start the Loop */
-			while ( have_posts() ) :
-				the_post();
-
-				/*
-				 * Include the Post-Type-specific template for the content.
-				 * If you want to override this in a child theme, then include a file
-				 * called content-___.php (where ___ is the Post Type name) and that will be used instead.
-				 */
-				get_template_part( 'template-parts/content', get_post_type() );
-
-			endwhile;
-
-			the_posts_navigation();
-
-		else :
-
-			get_template_part( 'template-parts/content', 'none' );
-
-		endif;
-		?>
-
+						<?php elseif(is_author()): ?>
+							<h2 class="s-articles__title c-gold heading-script f-script">Author: <?= get_the_author_meta("display_name") ?></h2>
+					<?php endif; ?>
+					<?php if ( have_posts() ) : ?>
+						<div class="s-articles__container d-flex d-flex-wrap">
+						<?php while ( have_posts() ) :
+							the_post();
+							get_template_part( 'template-parts/content', 'articles');
+						endwhile;
+					endif; ?>
+				</div>
+				<div class="s-articles__pagination">
+                    <?php 
+                        echo paginate_links( array(
+                            'base'         => str_replace( 999999999, '%#%', esc_url( get_pagenum_link( 999999999 ) ) ),
+                            'total'        => $wp_query->max_num_pages,
+                            'current'      => max( 1, get_query_var( 'paged' ) ),
+                            'format'       => '?paged=%#%',
+                            'show_all'     => false,
+                            'type'         => 'plain',
+                            'end_size'     => 1,
+                            'mid_size'     => 2,
+                            'prev_next'    => true,
+                            'prev_text'    => __( 'Previous'),
+                            'next_text'    => __( 'Next'),
+                            'add_args'     => false,
+                            'add_fragment' => '',
+                        ) );
+                    ?>
+                </div>
+			</section>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
 <?php
-get_sidebar();
 get_footer();

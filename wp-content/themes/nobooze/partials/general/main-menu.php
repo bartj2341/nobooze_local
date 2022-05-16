@@ -18,13 +18,13 @@ $pagename = $post ? $post->post_name : '';
                 </a>
 
                 <ul class="u-header__ul p-relative list-reset">
-                    <li class="u-header__li d-flex d-flex-align-c p-relative c-pointer line-normal f-heading"><a class="u-header__cta d-flex d-flex-align-c h-100 p-relative <?= strpos('home', $pagename) !== false ? 'u-header__cta--active' : '' ?>" href="<?= home_url() ?>">HOME</a></li>
+                    <li class="u-header__li d-flex d-flex-align-c p-relative c-pointer line-normal f-heading"><a class="u-header__cta d-flex d-flex-align-c h-100 p-relative <?= strpos('home', $pagename) !== false && $pagename !== NULL && $pagename !== "" ? 'u-header__cta--active' : '' ?>" href="<?= home_url() ?>">HOME</a></li>
 
-                    <li class="u-header__li d-flex d-flex-align-c p-relative c-pointer line-normal f-heading"><a class="u-header__cta d-flex d-flex-align-c h-100 p-relative <?= strpos('about', $pagename) !== false ? 'u-header__cta--active' : '' ?>" href="<?= site_url() ?>/about">ABOUT</a></li>
+                    <li class="u-header__li d-flex d-flex-align-c p-relative c-pointer line-normal f-heading"><a class="u-header__cta d-flex d-flex-align-c h-100 p-relative <?= strpos('about', $pagename) !== false && $pagename !== NULL && $pagename !== "" ? 'u-header__cta--active' : '' ?>" href="<?= site_url() ?>/about">ABOUT</a></li>
 
                     <!-- WORK WITH ME START -->
                     <li class="u-header__li d-flex d-flex-align-c p-relative c-pointer line-normal u-header__li--has-children f-heading">
-                        <a href="#" class="u-header__cta u-header__cta--has-children d-flex d-flex-column d-flex-justify-c d-flex-align-c h-100 p-relative <?= strpos('work-with-me discover-program freedom-coaching-program exclusive-private-coaching', $pagename) !== false ? 'u-header__cta--active' : '' ?>">
+                        <a href="#" class="u-header__cta u-header__cta--has-children d-flex d-flex-column d-flex-justify-c d-flex-align-c h-100 p-relative <?= strpos('work-with-me discover-program freedom-coaching-program exclusive-private-coaching', $pagename) !== false && $pagename !== NULL && $pagename !== "" ? 'u-header__cta--active' : '' ?>">
                             WORK WITH ME
                             <?php include get_icons_directory('icons/arrow.svg') ?>
                         </a>
@@ -42,7 +42,7 @@ $pagename = $post ? $post->post_name : '';
                     
                     <!-- RESOURCES START -->
                     <li class="u-header__li d-flex d-flex-align-c p-relative c-pointer line-normal u-header__li--has-children f-heading">
-                        <a href="#" class="u-header__cta u-header__cta--has-children d-flex d-flex-column d-flex-justify-c d-flex-align-c h-100 p-relative <?= strpos('books videos articles', $pagename) !== false ? 'u-header__cta--active' : '' ?>">
+                        <a href="#" class="u-header__cta u-header__cta--has-children d-flex d-flex-column d-flex-justify-c d-flex-align-c h-100 p-relative <?= strpos('books videos articles', $pagename) !== false && $pagename !== NULL && $pagename !== "" ? 'u-header__cta--active' : '' ?>">
                             RESOURCES
                             <?php include get_icons_directory('icons/arrow.svg') ?>
                         </a>
@@ -65,7 +65,7 @@ $pagename = $post ? $post->post_name : '';
                     <!-- RESOURCES END -->
 
                     <li class="u-header__li d-flex d-flex-align-c p-relative c-pointer line-normal f-heading">
-                        <a class="u-header__cta d-flex d-flex-align-c h-100 p-relative <?= strpos('press-media', $pagename) !== false ? 'u-header__cta--active' : '' ?>" href="<?= site_url() ?>/press-media">PRESS & MEDIA</a>
+                        <a class="u-header__cta d-flex d-flex-align-c h-100 p-relative <?= strpos('press-media', $pagename) !== false && $pagename !== NULL && $pagename !== "" ? 'u-header__cta--active' : '' ?>" href="<?= site_url() ?>/press-media">PRESS & MEDIA</a>
                     </li>
 
                     <li class="u-header__contact d-flex-align-c">

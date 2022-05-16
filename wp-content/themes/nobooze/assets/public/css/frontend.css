@@ -2471,12 +2471,14 @@ a {
   color: inherit;
 }
 
-p > a {
+p > a,
+.link-brown {
   text-decoration: none;
   color: #c58511;
 }
 @media (min-width: 1280px) {
-  p > a:hover {
+  p > a:hover,
+.link-brown:hover {
     color: #0a3c4e;
     text-decoration: underline;
   }

@@ -11,7 +11,7 @@ $title = get_field("title") ? get_field("title") : "";
     <main id="main" role="main">
         <?php nobooze_layout(); ?>
 
-        <section class="s-articles ">
+        <section class="s-articles">
             <div class="s-articles__wrapper wrapper-large">
                 <?php if($title): ?>
                     <h2 class="s-articles__title c-gold heading-script f-script"><?= $title ?></h2>

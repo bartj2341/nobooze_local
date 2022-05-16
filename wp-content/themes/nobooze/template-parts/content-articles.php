@@ -30,7 +30,14 @@ $author_link = get_author_posts_url($author_id);
                     </h2>
                 <?php endif; ?>
                 <?php if(get_the_author()): ?>
-                    <div class="s-articles__author text-small">By <a class="s-articles__author__name" href="<?= $author_link ?>"><?= $author_name ?></a></div>
+                <div class="s-articles__author text-small">
+                    By 
+                    <a class="s-articles__author__name link-brown" href="<?= $author_link ?>"><?= $author_name ?></a>
+                    <?php if(is_archive() && get_the_date() !== ""): ?> 
+                        <span> | </span> 
+                        <span><?php echo get_the_date(); ?></span>
+                    <?php endif; ?>
+                </div>
                 <?php endif; ?>
                 <div class="s-articles__text text-sixteen"><?=(get_the_excerpt() ? the_excerpt() : wp_trim_words(get_the_content(), 55)) ?></div> 
                 <div class="s-articles__btn w-100">
