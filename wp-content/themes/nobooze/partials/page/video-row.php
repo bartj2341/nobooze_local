@@ -5,7 +5,7 @@ $video = get_sub_field("video") ? get_sub_field("video") : "";
 
 <section class="video-row">
     <div class="video-row__container wrapper-large">
-        <div class="video-row__title heading-basic c-white u-text-center"><?= $title ?></div>
+        <h2 class="video-row__title heading-basic c-white u-text-center"><?= $title ?></h2>
         <div class="video-row__video">
             <div class="video-row__responsive">
                 <?= $video ?>

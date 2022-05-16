@@ -13,7 +13,7 @@ $text = get_sub_field("text") ? get_sub_field("text") : "";
         <div class="basic-row__container d-flex d-flex-column">
             <div class="basic-row__content">
                 <?php if($text): ?>
-                    <div class="basic-row__text"><?= $text ?></div>
+                    <div class="basic-row__text list-basic"><?= $text ?></div>
                 <?php endif; ?>
             </div>
         </div>

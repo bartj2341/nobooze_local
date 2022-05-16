@@ -15,11 +15,11 @@ $handwriting = get_sub_field("handwriting") ? get_sub_field("handwriting") : "";
             <?php endif; ?>
 
             <?php if($copy): ?>
-                <div class="heavy-text__copy"><?= $copy ?></div>
+                <div class="heavy-text__copy list-basic"><?= $copy ?></div>
             <?php endif; ?>
 
             <?php if($handwriting): ?>
-                <p class="heavy-text__handwriting f-script heading-script u-text-center c-blue m-reset"><?= $handwriting ?></p>
+                <p class="heavy-text__handwriting f-script heading-script u-text-center c-blue"><?= $handwriting ?></p>
             <?php endif; ?>
         </div>
     </div>

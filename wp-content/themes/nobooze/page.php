@@ -13,12 +13,10 @@
  */
 
 get_header();
-
 ?>
-	<div class="main-wrapper">
-		<main id="main">
-			<?php nobooze_layout(); ?>
-		</main><!-- #main -->
+	<main id="main" class="main-wrapper">
+		<?php nobooze_layout(); ?>
+	</main><!-- #main -->
+<?php 
+get_footer();
 
-		<?php get_footer(); ?>
-	</div>

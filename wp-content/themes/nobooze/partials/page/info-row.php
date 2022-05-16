@@ -16,7 +16,7 @@ $signature = get_sub_field("signature") ? get_sub_field("signature") : "";
         <div class="info-row__container d-flex d-flex-column">
             <div class="info-row__content">
                 <?php if($text): ?>
-                    <div class="info-row__text"><?= $text ?></div>
+                    <div class="info-row__text list-basic"><?= $text ?></div>
                 <?php endif; ?>
                     
                 <?php if($cta): ?>

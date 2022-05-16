@@ -47,10 +47,7 @@ body {
 }
 
 .main-wrapper {
-    display: flex;
-    min-height: 100vh;
-    flex-direction: column;
-    justify-content: space-between;
+    min-height: calc(100vh - 270px);
 }
 
 .vh {

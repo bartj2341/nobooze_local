@@ -19,11 +19,11 @@ $cta = get_sub_field("cta") ? get_sub_field("cta") : "";
         <div class="wave-section__container d-flex">
             <div class="wave-section__content">
                 <?php if($title): ?>
-                    <p class="wave-section__title f-heading heading-fifty m-reset"><?= $title ?></p>
+                    <p class="wave-section__title f-heading heading-fifty"><?= $title ?></p>
                 <?php endif; ?>
     
                 <?php if($text): ?>
-                    <div class="wave-section__text"><?= $text ?></div>
+                    <div class="wave-section__text list-basic"><?= $text ?></div>
                 <?php endif; ?>
     
                 <?php if($cta): ?>

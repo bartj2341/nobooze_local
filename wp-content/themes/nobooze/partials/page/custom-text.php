@@ -11,7 +11,7 @@ $text = get_sub_field("text") ? get_sub_field("text") : "";
                 <h2 class="custom-text__title heading-huge u-text-center"><?= $title ?></h2>
             <?php endif; ?>
             <?php if($text): ?>
-                <div class="custom-text__text"><?= $text ?></h2>
+                <div class="custom-text__text list-basic"><?= $text ?></h2>
             <?php endif; ?>
         </div>
     </div>

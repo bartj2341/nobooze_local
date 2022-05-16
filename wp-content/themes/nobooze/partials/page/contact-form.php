@@ -20,7 +20,7 @@ $signature = get_sub_field("signature") ? get_sub_field("signature") : "";
 
             <div class="contact-form__contact d-flex d-flex-column d-flex-align-c">
                 <?php if($text): ?>
-                    <div class="contact-form__text"><?= $text ?></div>
+                    <div class="contact-form__text list-basic"><?= $text ?></div>
                 <?php endif; ?>
 
                 <?php if($signature): ?>
