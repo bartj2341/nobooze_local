@@ -1514,7 +1514,7 @@ fieldset {
 }
 
 .u-header__sub__list {
-  padding: 24px;
+  padding: 20px;
 }
 
 .u-header__sub__li {
@@ -1532,6 +1532,17 @@ fieldset {
   .u-header__sub__cta:hover {
     background-color: #f3f6f8;
   }
+}
+
+.u-header__sub__icon {
+  display: flex;
+  width: 25px;
+  height: 25px;
+  margin-right: 10px;
+}
+
+.u-header__sub__text {
+  flex: 1;
 }
 
 /* HOVER
@@ -1621,17 +1632,8 @@ fieldset {
   }
 }
 
-.m-menu__ul--less-padding {
-  padding: 8px 0 14px 0;
-}
-
 .m-submenu__li {
-  line-height: 3;
-}
-
-.m-submenu__li--more-spacing {
-  margin-bottom: 30px;
-  padding-left: 35px;
+  padding: 12px 0;
 }
 
 .m-submenu__num {
@@ -1643,10 +1645,6 @@ fieldset {
 .m-submenu__text {
   padding-left: 14px;
   pointer-events: none;
-}
-
-.m-submenu__text--less-padding {
-  padding-left: 0;
 }
 
 .m-submenu__image {

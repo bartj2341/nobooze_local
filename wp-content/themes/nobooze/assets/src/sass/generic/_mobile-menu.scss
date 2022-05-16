@@ -56,17 +56,8 @@
     }
 }
 
-.m-menu__ul--less-padding {
-    padding: 8px 0 14px 0;
-}
-
 .m-submenu__li {
-    line-height: 3;
-}
-
-.m-submenu__li--more-spacing {
-    margin-bottom: 30px;
-    padding-left: 35px;
+    padding: 12px 0;
 }
 
 .m-submenu__num {
@@ -78,10 +69,6 @@
 .m-submenu__text {
     padding-left: 14px;
     pointer-events: none;
-}
-
-.m-submenu__text--less-padding {
-    padding-left: 0;
 }
 
 .m-submenu__image {

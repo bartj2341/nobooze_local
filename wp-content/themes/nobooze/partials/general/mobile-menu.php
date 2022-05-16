@@ -20,26 +20,12 @@
                     </div>
                     <ul class="m-submenu__ul list-reset p-relative">
                         <li class="m-submenu__li">
-                            <a class="d-flex d-flex-align-c w-100" href="#">
-                                <div class="m-submenu__text f-heading text-sixteen">DISCOVER PROGRAM</div>
-                            </a>
-                        </li>
-                        <li class="m-submenu__li">
-                            <a class="d-flex d-flex-align-c w-100" href="#">
-                                <div class="m-submenu__text f-heading text-sixteen">FREEDOM COACHING PROGRAM</div>
-                            </a>
-                        </li>
-                        <li class="m-submenu__li">
                             <a class="d-flex d-flex-align-c w-100" href="<?= site_url() ?>/exclusive-private-coaching">
+                                <div class="u-header__sub__icon"><?php include get_icons_directory('icons/coaching.svg') ?></div>
                                 <div class="m-submenu__text f-heading text-sixteen">EXCLUSIVE PRIVATE COACHING</div>
                             </a>
                         </li>
                     </ul>
-                </li>
-                <li class="m-menu__li p-relative">
-                    <a class="m-menu__link d-flex d-flex-justify-s d-flex-align-c w-100 c-pointer" href="#">
-                        <span class="f-heading">MASTERCLASS</span>
-                    </a>
                 </li>
                 <li class="m-menu__li m-menu__has-children p-relative">
                     <div class="m-menu__link d-flex d-flex-justify-s d-flex-align-c w-100 c-pointer">
@@ -49,16 +35,19 @@
                     <ul class="m-submenu__ul list-reset p-relative">
                         <li class="m-submenu__li">
                             <a class="d-flex d-flex-align-c w-100" href="<?= site_url() ?>/books">
+                                <div class="u-header__sub__icon"><?php include get_icons_directory('icons/books.svg') ?></div>
                                 <div class="m-submenu__text f-heading text-sixteen">BOOKS</div>
                             </a>
                         </li>
                         <li class="m-submenu__li">
                             <a class="d-flex d-flex-align-c w-100" href="<?= site_url() ?>/videos">
+                                <div class="u-header__sub__icon"><?php include get_icons_directory('icons/video.svg') ?></div>
                                 <div class="m-submenu__text f-heading text-sixteen">VIDEOS</div>
                             </a>
                         </li>
                         <li class="m-submenu__li">
                             <a class="d-flex d-flex-align-c w-100" href="<?= site_url() ?>/articles">
+                                <div class="u-header__sub__icon"><?php include get_icons_directory('icons/articles.svg') ?></div>
                                 <div class="m-submenu__text f-heading text-sixteen">ARTICLES</div>
                             </a>
                         </li>

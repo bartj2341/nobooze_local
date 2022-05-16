@@ -173,7 +173,7 @@
 }
 
 .u-header__sub__list {
-	padding: 24px;
+	padding: 20px;
 }
 
 .u-header__sub__li {
@@ -194,6 +194,17 @@
 	}
 }
 
+.u-header__sub__icon {
+	display: flex;
+	width: 25px;
+	height: 25px;
+	margin-right: 10px;
+}
+
+.u-header__sub__text {
+	flex: 1;
+}
+ 
 /* HOVER
     ========================================================================== */
 .u-header__li {
