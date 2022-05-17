@@ -9,7 +9,8 @@
 }
 
 .cta-banner__content {
-    width: 65%;
+    width: 100%;
+    margin-bottom: 25px;
 
     .cta-banner__title {
         font-size: 2rem;
@@ -19,6 +20,12 @@
     *:last-child {
         margin: 0;
     }
+
+    @include bp(medium) {
+        width: 65%;
+        padding-right: 30px;
+        margin-bottom: 0;
+    }
 }
 
 .cta-banner__text {
@@ -26,10 +33,20 @@
 }
 
 .cta-banner__button {
-    width: 35%;
+    width: 100%;
+
+    @include bp(medium) {
+        width: 35%;
+    }
 }
 
 .cta-banner__cta {
-    width: 100%;
-    padding: 20px 30px;
+    padding: 12px 30px;
+    width: auto;
+    max-width: 100%;
+
+    @include bp(medium) {
+        width: 100%;
+        padding: 20px 30px;
+    }
 }

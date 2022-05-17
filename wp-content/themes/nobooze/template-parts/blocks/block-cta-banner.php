@@ -12,7 +12,7 @@ $cta = get_field("cta") ? get_field("cta") : "";
 ?>
 
 <div class="cta-banner p-relative">
-    <div class="cta-banner__container d-flex d-flex-justify-c">
+    <div class="cta-banner__container d-flex d-flex-wrap d-flex-justify-c">
         <div class="cta-banner__content d-flex d-flex-column d-flex-align-c d-flex-justify-c">
             <?php if($title): ?>
                 <h2 class="cta-banner__title f-heading c-white u-text-center"><?= $title ?></h2>

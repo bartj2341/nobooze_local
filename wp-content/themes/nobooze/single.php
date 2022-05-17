@@ -45,7 +45,7 @@ get_header();
 						</div>
 						<div class="single-article__bio">
 							<h3 class="single-article__bio__name">Tom White</h3>
-							<p class="single-article__bio__description">Tom is the world's leading authority for enabling highly successful women to embrace their true, alcohol-free, authentic selves in a world where alcohol is normalised for those who are successful.Her ground-breaking science-based methods using The Science of Transformational Freedom, result in the revelation of uncovering The Social Secret®, so that high achieving woman can joyfully live their lives free from alcohol – but also thrive in all aspects of their work and personal life without it.</h3>
+							<p class="single-article__bio__description">Tom is the world's leading authority for enabling highly successful women to embrace their true, alcohol-free, authentic selves in a world where alcohol is normalised for those who are successful. Her ground-breaking science-based methods using The Science of Transformational Freedom, result in the revelation of uncovering The Social Secret®, so that high achieving woman can joyfully live their lives free from alcohol – but also thrive in all aspects of their work and personal life without it.</h3>
 						</div>
 						<div class="single-article__navigation d-flex d-flex-wrap d-flex-justify-s">
 							<div class="single-article__navigation__item single-article__navigation__prev">

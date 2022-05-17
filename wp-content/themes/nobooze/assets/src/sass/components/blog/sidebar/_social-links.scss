@@ -12,6 +12,14 @@
     &:last-child {
         margin-bottom: 0;
     }
+
+    @include bp(xlarge) {
+        &:hover {
+            .social-links__row__icon {
+                background-color: $cbg-gold;
+            }
+        }
+    }
 }
 
 .social-links__row__icon {
@@ -21,12 +29,6 @@
 
     svg {
         fill: $cbg-white;
-    }
-
-    @include bp(xlarge) {
-        &:hover {
-            background-color: $cbg-gold;
-        }
     }
 }
 
