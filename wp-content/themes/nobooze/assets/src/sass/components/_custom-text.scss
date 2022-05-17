@@ -3,8 +3,8 @@
    ========================================================================== */
 
 .custom-text {
-    padding: 100px 0 50px;
-
+    padding: 150px 0 50px; 
+    
     @include bp(medium) {
         padding: 190px 0 70px; 
     }
@@ -16,14 +16,6 @@
 
 .custom-text__text {
     max-width: 760px; 
-    
-    p {
-        margin-bottom: 10px;
-
-        &:last-child {
-            margin: 0;
-        }
-    }
 
     h3,
     h4 {

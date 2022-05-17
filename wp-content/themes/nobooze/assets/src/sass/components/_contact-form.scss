@@ -5,6 +5,7 @@
 .contact-form {
     background-color: $cbg-gray-2;
     justify-content: center;
+    padding: 102px 0 50px; 
 
     @include bp(large) {
         justify-content: flex-end
@@ -19,7 +20,7 @@
 .contact-form__image {
     width: 100%;
     max-width: 400px;
-    height: 280px;
+    height: 400px;
 
     @include bp(large) {
         position: absolute;
@@ -44,12 +45,12 @@
     z-index: $z-lvl-1;
 
     @include bp(medium) {
-        padding: 170px 20px 60px;
+        padding: 60px 40px 60px;
     }
 
     @include bp(large) {
         justify-content: flex-end;
-        padding: 170px 70px 116px;
+        padding: 60px 70px 116px;
         width: 53%;
     }
 }
@@ -61,14 +62,6 @@
 .contact-form__text {
     margin-bottom: 50px;
     max-width: 450px;
-
-    p {
-        margin-bottom: 10px;
-
-        &:last-child {
-            margin: 0;
-        }
-    }
 }
 
 .contact-form__signature {

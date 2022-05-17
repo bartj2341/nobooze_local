@@ -57,4 +57,13 @@ body {
 p {
     color: $ct;
     white-space: normal;
+    margin-bottom: 10px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.m-reset {
+    margin: 0;
 }

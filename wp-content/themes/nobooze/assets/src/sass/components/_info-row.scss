@@ -16,7 +16,7 @@
 
 .info-row__container {
     width: 100%;
-    padding: 40px 40px 0;
+    padding: 40px;;
     align-items: center;
     order: 0;
 
@@ -38,14 +38,6 @@
 
 .info-row__text {
     margin-bottom: 50px;
-
-    p {
-        margin-bottom: 10px;
-
-        &:last-child {
-            margin: 0;
-        }
-    }
 }
 
 .info-row__title {
@@ -53,15 +45,8 @@
 }
 
 .info-row__signature {
-    position: relative;
-    top: 50px;
     padding: 0 20px;
     align-self: flex-end;
-
-    @include bp(medium) {
-        position: unset;
-        top: 0;
-    }
 }
 
 .info-row__image {
@@ -103,16 +88,6 @@
 
         @include bp(medium) {
             max-width: 460px;
-        }
-    }
-
-    .info-row__signature {
-        width: 100%;
-        max-width: 320px;
-        margin: 0 auto;
-
-        @include bp(medium) {
-            max-width: none;
         }
     }
 }
