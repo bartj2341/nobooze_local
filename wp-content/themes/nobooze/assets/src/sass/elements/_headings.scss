@@ -14,6 +14,10 @@ h1, h2, h3, h4, h5, h6, .heading-family {
     line-height: 1.2; 
     color: $ct;
     font-weight: normal;
+
+    strong {
+        font-family: $heading-xbold;
+    }
 }
 
 h3,
@@ -34,22 +38,37 @@ h4,
     }
 }
 
+h5,
+.display-5 /* 30px ~ 28px */ {
+    font-size: 2.8rem;
+
+    @include bp(medium) {
+        font-size: 3rem;
+    } 
+}
+
+h6,
+.display-6 /* 24px */ {
+    font-size: 2.4rem;
+}
+
+
 // Heading sizes for a single post
 .single-article {
     h2 /* 50px ~ 38px */{
-    font-size: 3.8rem;
-
-        @include bp(medium) {
-            font-size: 5rem;
-        } 
+        @extend .display-3;
     }
 
     h3 /* 38px ~ 32px */ {
-    font-size: 3.2rem;
+        @extend .display-4;
+    }
 
-        @include bp(medium) {
-            font-size: 3.8rem;
-        }
+    h4 /* 30px ~ 28px */ {
+        @extend .display-5;
+    }
+
+    h5 /* 24px */ {
+        @extend .display-6;
     }
 }
 

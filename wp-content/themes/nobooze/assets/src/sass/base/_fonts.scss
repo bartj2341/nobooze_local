@@ -7,6 +7,14 @@
 }
 
 @font-face {
+    font-family: 'Proxima Nova Extrabld';
+    src: url('../fonts/proximanova-extrabld.woff') format('woff'),
+        url('../fonts/proximanova-extrabld.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
     font-family: 'Open Sans Regular';
     src: url('../fonts/open-sans-regular.woff') format('woff'),
         url('../fonts/open-sans-regular.woff2') format('woff2');
