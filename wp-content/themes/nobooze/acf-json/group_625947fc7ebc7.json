@@ -1625,8 +1625,8 @@
                 },
                 "layout_6282492f08ca2": {
                     "key": "layout_6282492f08ca2",
-                    "name": "video_row",
-                    "label": "Video Row",
+                    "name": "single_video",
+                    "label": "Single Video",
                     "display": "block",
                     "sub_fields": [
                         {
@@ -1667,6 +1667,72 @@
                     ],
                     "min": "",
                     "max": ""
+                },
+                "layout_6284b4bcda238": {
+                    "key": "layout_6284b4bcda238",
+                    "name": "video_row",
+                    "label": "Video Row",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_6284c1cded4bf",
+                            "label": "Title",
+                            "name": "title",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_6284c225ed4c0",
+                            "label": "Videos Repeater",
+                            "name": "videos_repeater",
+                            "type": "repeater",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "collapsed": "",
+                            "min": 0,
+                            "max": 0,
+                            "layout": "table",
+                            "button_label": "",
+                            "sub_fields": [
+                                {
+                                    "key": "field_6284c232ed4c1",
+                                    "label": "Video",
+                                    "name": "video",
+                                    "type": "oembed",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "width": "",
+                                    "height": ""
+                                }
+                            ]
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
                 }
             },
             "button_label": "Add Row",
@@ -1691,5 +1757,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1652705670
+    "modified": 1652870473
 }

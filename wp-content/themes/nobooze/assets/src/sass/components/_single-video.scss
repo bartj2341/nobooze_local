@@ -1,28 +1,22 @@
 /* ==========================================================================
-   #VIDEO ROW / PARTIAL
+   #SINGLE VIDEO / PARTIAL
    ========================================================================== */
 
-.video-row { 
+.single-video { 
     background-color: $cbg-blue-2;
     padding: 50px 0 90px 0;
 }
 
-.video-row__container {
+.single-video__container {
     *:last-child {
         margin-bottom: 0;
     }
 }
 
-.video-row__title {
+.single-video__title {
     margin-bottom: 10px;
 }
 
-.video-row__row {
+.single-video__video {
     padding-top: 40px;
-    margin: -20px;
-}
-
-.video-row__video {
-    width: calc(50% - 40px);
-    margin: 20px;
 }
