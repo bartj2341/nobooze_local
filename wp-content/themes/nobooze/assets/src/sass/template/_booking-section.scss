@@ -1,0 +1,265 @@
+/* ==========================================================================
+   #BOOKING SECTION / TEMPLATE
+   ========================================================================== */
+
+.booking-section {
+    padding: 150px 0 50px; 
+    
+    @include bp(medium) {
+        padding: 190px 0 70px; 
+    }
+
+    .cpp_form { 
+        #fbuilder {
+            .booking-main {
+                margin-bottom: 30px;
+            }
+
+            label {
+                @extend .f-text-bold;
+
+                display: block;
+                margin-bottom: 8px;
+            }
+
+            input,
+            select {
+                min-height: 56px;
+                border: 1px solid $cb-yellow;
+                background-color: $cbg-gray-3;
+                padding: 10px;
+                font-size: 19px;
+                border-radius: 0;
+            }
+
+            input:focus,
+            select:focus {
+                border: 1px solid $cb-blue;
+                outline: 0;
+            }
+    
+            .fieldCalendarService {
+                margin-bottom: 50px;
+            }
+    
+            select {
+                padding: 10px;
+                padding-right: 20px;
+            }
+
+            .ui-datepicker {
+                z-index: auto !important;
+                box-shadow: none;
+                font-size: 1.6rem;
+                box-shadow: 10px 10px 20px 0px rgba(239, 236, 236, 1);
+                @extend .f-text-bold;
+
+                th {
+                    padding: 10px 0;
+                }
+
+                td {
+                    @extend .f-text;
+
+                    a, span {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        height: 45px;
+                    }
+                }
+            }
+    
+            .ui-datepicker-inline {
+                max-width: none;
+                border: 1px solid $cb-black-2;
+            }
+
+            .ui-datepicker-header {
+                padding: 5px 0;
+                background: $cbg-blue-7; 
+                text-shadow: none;
+            }
+
+            .ui-datepicker-calendar {
+                .ui-state-active {
+                    background: $cbg-blue-7;
+                    text-shadow: none;
+                }
+            }
+
+            .slotsCalendar {
+                padding: 50px 0 20px;
+                margin-bottom: 0 -20px 20px;
+            }
+
+            .slots {
+                padding: 30px 20px;
+                background-color: $cbg-gray-2;
+                box-shadow: none;
+                border: none;
+
+                span {
+                    display: inline-block;
+                    margin-left: 10px;
+                    @extend .f-text-bold;
+                }
+
+                .availableslot {
+                    a {
+                        background-color: $cbg-gold;
+                    }
+                }
+
+                .choosen {
+                    a {
+                        background-color: $cbg-blue;
+                    }
+                }
+
+                .availableslot,
+                .choosen {
+                    width: calc(20% - 20px);
+                    margin: 10px;
+                    border: none;
+                    padding: 0;
+
+                    a {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        color: $ct-white;
+                        padding: 12px 12px;
+                        font-size: 1.8rem;
+                        line-height: 1.2;
+                        border: none;
+                        position: relative;
+                        text-align: center;
+                        cursor: pointer;
+                    
+                        @include bp(xlarge) {
+                            &:hover {
+                                background-color: $cbg-blue;
+                                color: $ct-white;
+                                text-decoration: none;
+                            }
+                        }
+                    }     
+                }
+
+            }
+            
+            .usedSlots {
+                display: flex;
+                flex-direction: column;
+                background-color: $cbg-gray-2; 
+                padding: 30px;
+                margin-bottom: 10px;  
+                
+                .cancel {
+                    color: $ct-red-2;
+                }  
+            }
+
+            .ahb_list_service {
+                padding: 5px 10px;
+                background-color: $cbg-white;
+                border-radius: $global-radius;
+            }
+
+            .booking-email {
+                margin-bottom: 30px;
+            }
+
+            .ahb_list {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 15px 0;
+                border-bottom: 1px solid $cbg-blue-4;
+            }
+
+            .cff-checkbox-field {
+                label {
+                    display: flex;
+                    align-items: center;
+                }
+
+                input {
+                    width: 20px;
+                    height: 20px;
+                }
+
+                span {
+                    margin-left: 10px;
+                    
+                    a {
+                        @extend .link-brown;
+                    }
+                    
+                    .r {
+                        margin-left: 5px;
+                    }
+                }
+            }
+
+            .cpefb_error {
+                background-color: $ct-red-2;
+                border: 1px solid $ct-red;
+                padding: 5px;
+                line-height: normal;
+                color: $ct-white;
+                z-index: auto;
+
+                &:after {
+                    display: none;
+                }
+            }
+
+            .r {
+                margin-left: 5px;
+                color: $ct-red-2;
+            }
+
+            .pbSubmit {
+                display: inline-flex;
+                justify-content: center;
+                align-items: center;
+                color: $ct-white;
+                padding: 15px 30px;
+                font-size: 1.8rem;
+                line-height: 2;
+                background-color: $cbg-gold;
+                border: none !important; 
+                position: relative;
+                text-align: center;
+                cursor: pointer;
+        
+                @include bp(xsmall) {
+                    line-height: 1.2;
+                }
+        
+                @include bp(medium) {
+                    padding: 12px 24px;
+                }
+            
+                @include bp(xlarge) {
+                    &:hover {
+                        background-color: $cbg-blue;
+                        color: $ct-white;
+                    }
+                }
+            }
+
+            .totalCost {
+                margin-top: 15px;
+                font-size: 2.4rem;
+                @extend .f-heading;
+
+                .n {
+                    @extend .f-heading-xbold;
+                }
+            }
+        }
+    } 
+}

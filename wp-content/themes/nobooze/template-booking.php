@@ -6,9 +6,13 @@
 get_header(); 
 ?>
 
-<div class="main-wrapper" style="padding-top: 150px;">
-    <?php echo do_shortcode('[CP_APP_HOUR_BOOKING id="3"]') ?> 
-</div>
+<main class="main-wrapper">
+    <section class="booking-section">
+        <div class="booking-section__container wrapper-large">
+            <?php echo do_shortcode('[CP_APP_HOUR_BOOKING id="3"]') ?> 
+        </div>
+    </section>
+</main>
 
 <?php
 get_footer();
