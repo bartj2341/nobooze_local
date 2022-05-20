@@ -4492,15 +4492,7 @@ p > a,
   margin-left: 5px;
 }
 .booking-section .cpp_form #fbuilder .cpefb_error {
-  background-color: #cf2e2e;
-  border: 1px solid #790000;
-  padding: 5px;
-  line-height: normal;
-  color: #fff;
-  z-index: auto;
-}
-.booking-section .cpp_form #fbuilder .cpefb_error:after {
-  display: none;
+  border: 1px solid #FB995B;
 }
 .booking-section .cpp_form #fbuilder .r {
   margin-left: 5px;

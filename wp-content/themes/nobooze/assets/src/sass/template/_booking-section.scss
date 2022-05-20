@@ -204,16 +204,7 @@
             }
 
             .cpefb_error {
-                background-color: $ct-red-2;
-                border: 1px solid $ct-red;
-                padding: 5px;
-                line-height: normal;
-                color: $ct-white;
-                z-index: auto;
-
-                &:after {
-                    display: none;
-                }
+                border: 1px solid $cb-orange;
             }
 
             .r {
