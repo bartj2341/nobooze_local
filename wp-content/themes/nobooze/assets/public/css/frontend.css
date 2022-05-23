@@ -4409,6 +4409,7 @@ p > a,
 .booking-section .cpp_form #fbuilder .slots .availableslot,
 .booking-section .cpp_form #fbuilder .slots .choosen {
   width: 100%;
+  margin: 0;
   margin-bottom: 20px;
   border: none;
   padding: 0;
