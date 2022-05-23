@@ -58,6 +58,11 @@
                         <span class="f-heading">PRESS & MEDIA</span>
                     </a>
                 </li>
+                <li class="m-menu__li p-relative">
+                    <a class="m-menu__link d-flex d-flex-justify-s d-flex-align-c w-100 c-pointer" href="<?= site_url() ?>/booking">
+                        <span class="f-heading">BOOKING</span>
+                    </a>
+                </li>
             </ul>
         </div>
         <div class="m-menu__btn">

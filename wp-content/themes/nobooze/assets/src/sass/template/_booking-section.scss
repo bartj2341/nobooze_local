@@ -27,7 +27,7 @@
                 min-height: 56px;
                 border: 1px solid $cb-yellow;
                 background-color: $cbg-gray-3;
-                padding: 10px;
+                padding: 8px;
                 font-size: 19px;
                 border-radius: 0;
             }
@@ -90,7 +90,7 @@
 
             .slotsCalendar {
                 padding: 50px 0 20px;
-                margin-bottom: 0 -20px 20px;
+                margin-bottom: 20px;
             }
 
             .slots {
@@ -102,7 +102,12 @@
                 span {
                     display: inline-block;
                     margin-left: 10px;
+                    margin-bottom: 10px;
                     @extend .f-text-bold;
+
+                    @include bp(small) {
+                        margin-bottom: 0;
+                    }
                 }
 
                 .availableslot {
@@ -119,8 +124,8 @@
 
                 .availableslot,
                 .choosen {
-                    width: calc(20% - 20px);
-                    margin: 10px;
+                    width: 100%;
+                    margin-bottom: 20px;
                     border: none;
                     padding: 0;
 
@@ -134,7 +139,7 @@
                         line-height: 1.2;
                         border: none;
                         position: relative;
-                        text-align: center;
+                        text-align: center; 
                         cursor: pointer;
                     
                         @include bp(xlarge) {
@@ -144,7 +149,20 @@
                                 text-decoration: none;
                             }
                         }
-                    }     
+                    }
+
+                    @include bp(small) {
+                        width: calc(50% - 20px);
+                        margin: 10px;
+                    }
+                    
+                    @include bp(medium) {
+                        width: calc(25% - 20px);
+                    }
+
+                    @include bp(large) {
+                        width: calc(20% - 20px);
+                    }
                 }
 
             }
@@ -161,22 +179,42 @@
                 }  
             }
 
-            .ahb_list_service {
-                padding: 5px 10px;
-                background-color: $cbg-white;
-                border-radius: $global-radius;
-            }
-
             .booking-email {
                 margin-bottom: 30px;
             }
 
             .ahb_list {
                 display: flex;
-                justify-content: space-between;
-                align-items: center;
+                flex-direction: column;
+                align-items: flex-start;
                 padding: 15px 0;
                 border-bottom: 1px solid $cbg-blue-4;
+
+                @include bp(medium) {
+                    flex-direction: row;
+                    justify-content: space-between;
+                    align-items: center;
+                }
+            }
+
+            .ahb_list_time {
+                margin-bottom: 10px;
+            }
+
+            .ahb_list_service {
+                margin-bottom: 10px;
+                padding: 5px 10px;
+                background-color: $cbg-white;
+                border-radius: $global-radius;
+            }
+
+            .ahb_list_time,
+            .ahb_list_service {
+                margin-bottom: 10px;
+
+                @include bp(medium) {
+                    margin-bottom: 0;
+                }
             }
 
             .cff-checkbox-field {
@@ -219,16 +257,11 @@
                 color: $ct-white;
                 padding: 15px 30px;
                 font-size: 1.8rem;
-                line-height: 2;
                 background-color: $cbg-gold;
                 border: none !important; 
                 position: relative;
                 text-align: center;
                 cursor: pointer;
-        
-                @include bp(xsmall) {
-                    line-height: 1.2;
-                }
         
                 @include bp(medium) {
                     padding: 12px 24px;

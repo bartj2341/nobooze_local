@@ -42,7 +42,6 @@
     width: 100%;
     justify-content: center;
     padding: 30px 20px 80px;
-    z-index: $z-lvl-1;
 
     @include bp(medium) {
         padding: 60px 40px 60px;

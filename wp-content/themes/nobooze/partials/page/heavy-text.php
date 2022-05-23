@@ -9,7 +9,7 @@ $handwriting = get_sub_field("handwriting") ? get_sub_field("handwriting") : "";
 
 <section class="heavy-text p-relative <?php foreach ($modifier as $value) { echo(' ' . $value); } ?>">
     <div class="heavy-text__wrapper d-flex d-flex-justify-c wrapper-large">
-        <div class="heavy-text__container p-relative">
+        <div class="heavy-text__container p-relative z-index-1">
             <?php if($title): ?>
                 <h2 class="heavy-text__title heading-heavy-lg u-text-center"><?= $title ?></h2>
             <?php endif; ?>

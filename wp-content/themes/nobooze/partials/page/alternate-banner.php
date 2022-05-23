@@ -6,7 +6,7 @@ $title = get_sub_field("title") ? get_sub_field("title") : "";
 ?>
 
 <section class="alternate-banner p-relative d-flex d-flex-column d-flex-align-c d-flex-justify-c" style="background-color: <?= $bg_color ?>">
-    <div class="alternate-banner__container d-flex wrapper-large w-100 p-relative">
+    <div class="alternate-banner__container d-flex wrapper-large w-100 p-relative z-index-1">
         <div class="alternate-banner__content">
             <?php if($tagline): ?>
                 <p class="alternate-banner__tagline f-heading heading-tagline line-normal u-text-center"><?= $tagline ?></p>

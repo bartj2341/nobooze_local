@@ -10,7 +10,7 @@ $cta = get_sub_field("cta") ? get_sub_field("cta") : "";
 ?>
 
 <section class="full-image p-relative d-flex d-flex-column d-flex-align-c d-flex-justify-c <?php foreach ($modifier as $value) { echo(' ' . $value); } ?>" style="background-color: <?= $bg_color ?>">
-    <div class="full-image__container d-flex wrapper-large w-100 p-relative">
+    <div class="full-image__container d-flex wrapper-large w-100 p-relative z-index-1">
         <div class="full-image__content">
             <?php if($title): ?>
                 <p class="full-image__title f-heading heading-xlarge u-text-center line-normal"><?= $title ?></p>

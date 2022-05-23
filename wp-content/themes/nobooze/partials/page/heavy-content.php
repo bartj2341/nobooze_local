@@ -10,7 +10,7 @@ $cta = get_sub_field("cta") ? get_sub_field("cta") : "";
 
 <section class="heavy-content p-relative">
     <div class="heavy-content__wrapper d-flex d-flex-justify-c wrapper-full">
-        <div class="heavy-content__container p-relative">
+        <div class="heavy-content__container p-relative z-index-1">
             <?php if($title): ?>
                 <h2 class="heavy-content__title heading-heavy u-text-center"><?= $title ?></h2>
             <?php endif; ?>

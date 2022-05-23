@@ -2811,6 +2811,17 @@ p > a,
   cursor: pointer;
 }
 
+/* ==========================================================================
+   #Z-INDEX
+   ========================================================================== */
+.z-index-1 {
+  z-index: 100;
+}
+
+.z-index-2 {
+  z-index: 200;
+}
+
 .wpforms-container .wpforms-form .wpforms-field-container .wpforms-field,
 .wpforms-container-full .wpforms-form .wpforms-field-container .wpforms-field {
   padding: 8px 0;
@@ -2873,6 +2884,10 @@ p > a,
 .wpforms-container .wpforms-form .wpforms-field-container .wpforms-field .wpforms-error,
 .wpforms-container-full .wpforms-form .wpforms-field-container .wpforms-field .wpforms-error {
   margin-top: 3px;
+}
+.wpforms-container .wpforms-form .wpforms-submit-container,
+.wpforms-container-full .wpforms-form .wpforms-submit-container {
+  padding: 20px 0 0 0 !important;
 }
 .wpforms-container .wpforms-form .wpforms-submit-container .wpforms-submit,
 .wpforms-container-full .wpforms-form .wpforms-submit-container .wpforms-submit {
@@ -2958,7 +2973,6 @@ p > a,
 .full-image__container {
   justify-content: center;
   padding-bottom: 35px;
-  z-index: 100;
 }
 @media (min-width: 1024px) {
   .full-image__container {
@@ -3015,9 +3029,6 @@ p > a,
   padding: 50px 0;
 }
 
-.basic-banner__container {
-  z-index: 100;
-}
 .basic-banner__container *:last-child {
   margin: 0;
 }
@@ -3047,9 +3058,6 @@ p > a,
   }
 }
 
-.heavy-text__container {
-  z-index: 100;
-}
 .heavy-text__container *:last-child {
   margin-bottom: 0;
 }
@@ -3097,9 +3105,6 @@ p > a,
   }
 }
 
-.heavy-content__container {
-  z-index: 100;
-}
 .heavy-content__container *:last-child {
   margin-bottom: 0;
 }
@@ -3143,9 +3148,6 @@ p > a,
   left: 0;
 }
 
-.hero-banner__container {
-  z-index: 100;
-}
 .hero-banner__container *:last-child {
   margin-bottom: 0;
 }
@@ -3188,12 +3190,11 @@ p > a,
   left: 0;
   width: 100%;
   padding: 30px 20px 0;
-  z-index: 100;
+  text-align: center;
 }
 @media (min-width: 1024px) {
   .fifty__title {
     position: static;
-    text-align: center;
     align-self: flex-start;
   }
 }
@@ -3293,7 +3294,6 @@ p > a,
   width: 100%;
   justify-content: center;
   padding: 30px 20px 80px;
-  z-index: 100;
 }
 @media (min-width: 768px) {
   .contact-form__container {
@@ -3590,9 +3590,6 @@ p > a,
   left: 0;
 }
 
-.script-banner__container {
-  z-index: 100;
-}
 .script-banner__container *:last-child {
   margin-bottom: 0;
 }
@@ -3631,9 +3628,6 @@ p > a,
   padding: 50px 0;
 }
 
-.glowing-banner__container {
-  z-index: 100;
-}
 .glowing-banner__container *:last-child {
   margin: 0;
 }
@@ -3748,7 +3742,6 @@ p > a,
 .alternate-banner__container {
   justify-content: center;
   padding-bottom: 35px;
-  z-index: 100;
 }
 @media (min-width: 1024px) {
   .alternate-banner__container {
@@ -3862,9 +3855,6 @@ p > a,
   padding: 90px 0;
 }
 
-.buttons-row__container {
-  z-index: 100;
-}
 .buttons-row__container *:last-child {
   margin: 0;
 }
@@ -3992,22 +3982,29 @@ p > a,
   padding: 50px 0 90px 0;
 }
 
-.video-row__container *:last-child {
-  margin-bottom: 0;
-}
-
 .video-row__title {
   margin-bottom: 10px;
 }
 
 .video-row__row {
   padding-top: 40px;
-  margin: -20px;
+  margin-bottom: -35px;
+}
+@media (min-width: 768px) {
+  .video-row__row {
+    margin: -20px;
+  }
 }
 
 .video-row__video {
-  width: calc(50% - 40px);
-  margin: 20px;
+  width: 100%;
+  margin-bottom: 35px;
+}
+@media (min-width: 768px) {
+  .video-row__video {
+    width: calc(50% - 40px);
+    margin: 20px;
+  }
 }
 
 /* ==========================================================================
@@ -4060,7 +4057,6 @@ p > a,
 .article-banner__container {
   justify-content: center;
   padding-bottom: 35px;
-  z-index: 100;
 }
 @media (min-width: 1024px) {
   .article-banner__container {
@@ -4098,10 +4094,6 @@ p > a,
   left: 0;
   background-color: #f0f0f0;
   height: calc(100% - 50px);
-}
-
-.about-column__container {
-  z-index: 100;
 }
 
 .about-column__image {
@@ -4359,7 +4351,7 @@ p > a,
   min-height: 56px;
   border: 1px solid #f6db91;
   background-color: #f7f7f7;
-  padding: 10px;
+  padding: 8px;
   font-size: 19px;
   border-radius: 0;
 }
@@ -4405,7 +4397,7 @@ p > a,
 }
 .booking-section .cpp_form #fbuilder .slotsCalendar {
   padding: 50px 0 20px;
-  margin-bottom: 0 -20px 20px;
+  margin-bottom: 20px;
 }
 .booking-section .cpp_form #fbuilder .slots {
   padding: 30px 20px;
@@ -4416,6 +4408,12 @@ p > a,
 .booking-section .cpp_form #fbuilder .slots span {
   display: inline-block;
   margin-left: 10px;
+  margin-bottom: 10px;
+}
+@media (min-width: 480px) {
+  .booking-section .cpp_form #fbuilder .slots span {
+    margin-bottom: 0;
+  }
 }
 .booking-section .cpp_form #fbuilder .slots .availableslot a {
   background-color: #c58511;
@@ -4425,8 +4423,8 @@ p > a,
 }
 .booking-section .cpp_form #fbuilder .slots .availableslot,
 .booking-section .cpp_form #fbuilder .slots .choosen {
-  width: calc(20% - 20px);
-  margin: 10px;
+  width: 100%;
+  margin-bottom: 20px;
   border: none;
   padding: 0;
 }
@@ -4452,6 +4450,25 @@ p > a,
     text-decoration: none;
   }
 }
+@media (min-width: 480px) {
+  .booking-section .cpp_form #fbuilder .slots .availableslot,
+.booking-section .cpp_form #fbuilder .slots .choosen {
+    width: calc(50% - 20px);
+    margin: 10px;
+  }
+}
+@media (min-width: 768px) {
+  .booking-section .cpp_form #fbuilder .slots .availableslot,
+.booking-section .cpp_form #fbuilder .slots .choosen {
+    width: calc(25% - 20px);
+  }
+}
+@media (min-width: 1024px) {
+  .booking-section .cpp_form #fbuilder .slots .availableslot,
+.booking-section .cpp_form #fbuilder .slots .choosen {
+    width: calc(20% - 20px);
+  }
+}
 .booking-section .cpp_form #fbuilder .usedSlots {
   display: flex;
   flex-direction: column;
@@ -4462,20 +4479,41 @@ p > a,
 .booking-section .cpp_form #fbuilder .usedSlots .cancel {
   color: #cf2e2e;
 }
-.booking-section .cpp_form #fbuilder .ahb_list_service {
-  padding: 5px 10px;
-  background-color: #fff;
-  border-radius: 15px;
-}
 .booking-section .cpp_form #fbuilder .booking-email {
   margin-bottom: 30px;
 }
 .booking-section .cpp_form #fbuilder .ahb_list {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  flex-direction: column;
+  align-items: flex-start;
   padding: 15px 0;
   border-bottom: 1px solid #5e7884;
+}
+@media (min-width: 768px) {
+  .booking-section .cpp_form #fbuilder .ahb_list {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+.booking-section .cpp_form #fbuilder .ahb_list_time {
+  margin-bottom: 10px;
+}
+.booking-section .cpp_form #fbuilder .ahb_list_service {
+  margin-bottom: 10px;
+  padding: 5px 10px;
+  background-color: #fff;
+  border-radius: 15px;
+}
+.booking-section .cpp_form #fbuilder .ahb_list_time,
+.booking-section .cpp_form #fbuilder .ahb_list_service {
+  margin-bottom: 10px;
+}
+@media (min-width: 768px) {
+  .booking-section .cpp_form #fbuilder .ahb_list_time,
+.booking-section .cpp_form #fbuilder .ahb_list_service {
+    margin-bottom: 0;
+  }
 }
 .booking-section .cpp_form #fbuilder .cff-checkbox-field label {
   display: flex;
@@ -4505,17 +4543,11 @@ p > a,
   color: #fff;
   padding: 15px 30px;
   font-size: 1.8rem;
-  line-height: 2;
   background-color: #c58511;
   border: none !important;
   position: relative;
   text-align: center;
   cursor: pointer;
-}
-@media (min-width: 640px) {
-  .booking-section .cpp_form #fbuilder .pbSubmit {
-    line-height: 1.2;
-  }
 }
 @media (min-width: 768px) {
   .booking-section .cpp_form #fbuilder .pbSubmit {

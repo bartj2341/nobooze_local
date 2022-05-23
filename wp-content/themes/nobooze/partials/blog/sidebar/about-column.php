@@ -1,6 +1,6 @@
 <div class="about-column p-relative">
     <div class="about-column__bg p-absolute w-100"></div>
-    <div class="about-column__container p-relative">
+    <div class="about-column__container p-relative z-index-1">
         <div class="about-column__image">
             <img class="about-column__img d-block w-100 h-100 fit-cover" src="<?= get_template_directory_uri() ?>/assets/src/images/MWPB_076edit.jpeg">
         </div>

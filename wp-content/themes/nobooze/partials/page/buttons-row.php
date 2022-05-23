@@ -4,7 +4,7 @@ $title = get_sub_field("title") ? get_sub_field("title") : "";
 
 ?>
 
-<section class="buttons-row p-relative <?php foreach ($modifier as $value) { echo(' ' . $value); } ?>">
+<section class="buttons-row p-relative">
     <div class="wrapper-large">
         <div class="buttons-row__wrapper d-flex d-flex-justify-c">
             <div class="buttons-row__container p-relative">

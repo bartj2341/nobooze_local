@@ -80,6 +80,10 @@ $pagename = $post ? $post->post_name : '';
                         <a class="u-header__cta d-flex d-flex-align-c h-100 p-relative <?= strpos('press-media', $pagename) !== false && $pagename !== NULL && $pagename !== "" ? 'u-header__cta--active' : '' ?>" href="<?= site_url() ?>/press-media">PRESS & MEDIA</a>
                     </li>
 
+                    <li class="u-header__li d-flex d-flex-align-c p-relative c-pointer line-normal f-heading">
+                        <a class="u-header__cta d-flex d-flex-align-c h-100 p-relative <?= strpos('booking', $pagename) !== false && $pagename !== NULL && $pagename !== "" ? 'u-header__cta--active' : '' ?>" href="<?= site_url() ?>/booking">BOOKING</a>
+                    </li>
+
                     <li class="u-header__contact d-flex-align-c">
                         <a class="u-header__contact__cta u-btn--nav" href="<?= site_url() ?>/contact">CONTACT</a>
                     </li>

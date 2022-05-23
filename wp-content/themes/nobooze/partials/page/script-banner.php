@@ -14,7 +14,7 @@ $title = get_sub_field("title") ? get_sub_field("title") : "";
     <?php endif; ?>
     <div class="wrapper-full">
         <div class="script-banner__wrapper d-flex d-flex-center">
-            <div class="script-banner__container p-relative">
+            <div class="script-banner__container p-relative z-index-1">
                 <?php if($title): ?>
                     <h2 class="script-banner__title f-script heading-script u-text-center"><?= $title ?></h2>
                 <?php endif; ?>

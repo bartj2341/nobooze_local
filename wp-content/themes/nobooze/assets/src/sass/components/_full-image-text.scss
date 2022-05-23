@@ -43,7 +43,6 @@
 .full-image__container {
     justify-content: center;
     padding-bottom: 35px;
-    z-index: $z-lvl-1;
 
     @include bp(large) {
         justify-content: flex-start;
