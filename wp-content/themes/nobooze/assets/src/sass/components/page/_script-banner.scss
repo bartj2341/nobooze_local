@@ -3,14 +3,10 @@
    ========================================================================== */
 
 .script-banner__wrapper {
-    padding: 70px 0 170px;
-
-    @include bp(medium) {
-        padding: 85px 0;
-    }
+    padding: 145px 0;
 
     @include bp(large) {
-        padding: 200px 0;
+        padding: 260px 0;
     }
 }
 
@@ -37,17 +33,13 @@
 .script-banner__title {
     margin-bottom: 10px;
     line-height: 1;
-
-    @include bp(large) {
-        line-height: 2;
-    }
 }
 
 // Modifiers
 .script-banner--text-bottom {
     .script-banner__wrapper {
         @include bp(large) {
-            padding: 300px 0 100px 0;
+            padding: 360px 0 160px 0;
         }
     }
 }

@@ -3075,11 +3075,6 @@ p > a,
 .heavy-text__handwriting {
   padding: 30px 0;
 }
-@media (min-width: 768px) {
-  .heavy-text__handwriting {
-    padding-bottom: 10px;
-  }
-}
 
 .heavy-text--gray-bg.heavy-text {
   background-color: #f0f0f0;
@@ -3571,16 +3566,11 @@ p > a,
    #SCRIPT BANNER / PARTIAL
    ========================================================================== */
 .script-banner__wrapper {
-  padding: 70px 0 170px;
-}
-@media (min-width: 768px) {
-  .script-banner__wrapper {
-    padding: 85px 0;
-  }
+  padding: 145px 0;
 }
 @media (min-width: 1024px) {
   .script-banner__wrapper {
-    padding: 200px 0;
+    padding: 260px 0;
   }
 }
 
@@ -3608,15 +3598,10 @@ p > a,
   margin-bottom: 10px;
   line-height: 1;
 }
-@media (min-width: 1024px) {
-  .script-banner__title {
-    line-height: 2;
-  }
-}
 
 @media (min-width: 1024px) {
   .script-banner--text-bottom .script-banner__wrapper {
-    padding: 300px 0 100px 0;
+    padding: 360px 0 160px 0;
   }
 }
 

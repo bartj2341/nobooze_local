@@ -32,10 +32,6 @@
 
 .heavy-text__handwriting {
     padding: 30px 0;
-
-    @include bp(medium) {
-        padding-bottom: 10px;
-    }
 }
 
 // Modifiers
