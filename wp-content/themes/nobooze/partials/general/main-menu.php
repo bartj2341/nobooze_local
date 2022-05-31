@@ -3,7 +3,7 @@ $post = $wp_query->get_queried_object();
 $pagename = $post ? $post->post_name : '';
 ?>
 <div class="p-relative">
-    <div class="bg-black">
+    <div class="bg-blue">
         <div class="wrapper-nav">
             <div class="u-header__top__content d-flex d-flex-align-c d-flex-justify-e">
                 <div class="c-white f-heading line-reset text-small">Call us: <span class="phone-number"><a href="tel:+12311231234">+123 1 123 1234</a></span></div>
@@ -93,12 +93,12 @@ $pagename = $post ? $post->post_name : '';
                 <div class="menu-toggle__wrapper d-flex d-flex-center h-100 c-pointer">
                     <div id="menu-toggle" class="p-relative c-pointer">
                         <div id="hamburger" class="p-absolute w-100 h-100">
-                            <span class="menu-span d-block bg-black"></span>
-                            <span class="menu-span d-block bg-black"></span>
+                            <span class="menu-span d-block bg-blue"></span>
+                            <span class="menu-span d-block bg-blue"></span>
                         </div>
                         <div id="cross" class="p-absolute w-100 h-100">
-                            <span class="menu-span d-block bg-black"></span>
-                            <span class="menu-span d-block bg-black"></span>
+                            <span class="menu-span d-block bg-blue"></span>
+                            <span class="menu-span d-block bg-blue"></span>
                         </div>
                     </div>
                 </div>

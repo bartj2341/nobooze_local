@@ -29,12 +29,12 @@
 
                     input,
                     textarea {
-                        border: 1px solid $cb-gray-8;
+                        border: 2px solid transparent;
                         padding: 10px;
                         font-size: 14px;
 
                         &.wpforms-error {
-                            border: 1px solid $cb-gray-8;
+                            border: 2px solid transparent;
                         }
                     }
                 
@@ -44,7 +44,8 @@
                     }
 
                     input:focus {
-                        border: 1px solid $cb-blue-5;
+                        border: 2px solid $cb-blue-4;
+                        outline: 0;
                     }
 
                     .wpforms-required-label {

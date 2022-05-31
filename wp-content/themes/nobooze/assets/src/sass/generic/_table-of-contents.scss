@@ -1,0 +1,16 @@
+// ==========================================================================
+// # TABLE OF CONTENTS
+// ==========================================================================
+
+#ez-toc-container {
+    background-color: $cbg-blue-5;
+    border: 1px solid $cb-blue-2;
+
+    a {
+        color: $ct-blue;
+
+        &:visited {
+            color: $ct-blue-6;
+        }
+    }
+}

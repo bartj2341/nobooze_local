@@ -17,6 +17,7 @@
 }
 
 .hero-banner__container {
+    text-shadow: 0 0 0.4px $ct-blue, 0 0 0.4px $ct-blue;
     *:last-child {
         margin-bottom: 0;
     }
@@ -38,6 +39,10 @@
 }
 
 .hero-banner--text-white {
+    .hero-banner__container {
+        text-shadow: 0 0 0.4px $ct-white, 0 0 0.4px $ct-white; 
+    } 
+
     .hero-banner__title,
     .hero-banner__subtitle {
         color: $ct-white;

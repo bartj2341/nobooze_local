@@ -15,7 +15,7 @@ $button = get_sub_field("button") ? get_sub_field("button") : "";
 
                 <?php if($button): ?>
                     <div class="glowing-banner__button w-100 d-flex d-flex-center"> 
-                        <a href="<?= $button["url"] ?>" target="<?= $button["target"]?>" class="glowing-banner__cta u-btn"><?= $button["title"]?></a>
+                        <a href="<?= $button["url"] ?>" target="<?= $button["target"]?>" class="glowing-banner__cta u-btn--white"><?= $button["title"]?></a>
                     </div>
                 <?php endif; ?>
             </div>

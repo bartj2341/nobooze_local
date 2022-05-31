@@ -58,7 +58,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="bg-black">
+		<div class="bg-blue">
 			<div class="wrapper-nav">
 				<div class="u-footer__summary d-flex d-flex-wrap">
 					<div class="u-footer__terms d-flex d-flex-justify-c d-flex-align-c">

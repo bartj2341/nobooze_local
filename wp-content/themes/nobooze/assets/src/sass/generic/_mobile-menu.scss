@@ -8,9 +8,9 @@
     z-index: $z-lvl-4;
     display: none;
     overflow: hidden;
-    box-shadow: 0 4px 8px -6px $cbg-blue-4;
+    box-shadow: 0 4px 8px -6px $cbg-blue-3;
     transform: translateY(-1px);
-    border-top: 1px solid $cb-gray-6;
+    border-top: 1px solid $cb-gray;
 }
 
 .m-menu__ul {
@@ -28,9 +28,9 @@
 }
 
 .m-menu__li {
-    border-bottom: 1px solid $cb-gray-6;
+    border-bottom: 1px solid $cb-gray;
     @include bp(medium) {
-        padding: 0 20px;
+        padding: 0 20px; 
     }
 }
 

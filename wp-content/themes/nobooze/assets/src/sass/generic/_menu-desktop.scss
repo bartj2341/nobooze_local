@@ -8,7 +8,7 @@
     top: 0;
     width: 100%;
     height: 102px;
-    box-shadow: 0 2px 8px -4px $cbg-blue-4;
+    box-shadow: 0 2px 8px -4px $cbg-blue-3;
 
 	&.u-header--scroll {
 		overflow-y: auto;
@@ -58,7 +58,7 @@
 
 .u-header__cta {
 	transition: text-shadow .1s;
-	color: $ct-blue-3;
+	color: $ct-blue;
     font-size: 1.3rem;
 
     @include bp(xlarge) {
@@ -72,7 +72,7 @@
 
 .u-header__li {
 	.u-header__cta--active {
-		text-shadow: 0 0 .4px $ct-black-2, 0 0 .4px $ct-black-2;
+		text-shadow: 0 0 .4px $ct-black, 0 0 .4px $ct-black;
 	}
 }
 
@@ -85,7 +85,7 @@
 		position: absolute;
 		bottom: 16px;
 		transform: rotate(90deg);
-		fill: $ct-blue-3;
+		fill: $ct-blue;
 		transition: $global-transition;
 	}
 }
@@ -142,7 +142,7 @@
 
 .u-header__sub__inner {
 	background-color: $cbg-white;
-	box-shadow: 0 2px 12px -4px $cbg-blue-4;
+	box-shadow: 0 2px 12px -4px $cbg-blue-3;
 
 	&::after {
 		content: "";
@@ -168,7 +168,7 @@
 		border-color: transparent transparent $cbg-white $cbg-white;
 		transform-origin: 0 0;
 		transform: rotate(135deg);
-		box-shadow: 0 2px 12px -4px $cbg-blue-4;
+		box-shadow: 0 2px 12px -4px $cbg-blue-3;
 	}
 }
 
@@ -189,7 +189,7 @@
 
 	@include bp(large) {
 		&:hover {
-			background-color: $cbg-gray-5;
+			background-color: $cbg-blue-5;
 		}
 	}
 }
@@ -215,12 +215,12 @@
 	@include bp(large) {
 		&.u-header__li--active {
 			.u-header__cta {
-				color: $ct-black-2;
-				text-shadow: 0 0 .4px $ct-black-2, 0 0 .4px $ct-black-2;
+				color: $ct-blue;
+				text-shadow: 0 0 .4px $ct-blue, 0 0 .4px $ct-blue;
 			}
 
 			svg {
-				fill: $ct-black-2;
+				fill: $ct-black;
 				bottom: 10px;
 			}
 

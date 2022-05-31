@@ -23,7 +23,7 @@ $cta = get_field("cta") ? get_field("cta") : "";
         </div>
         <?php if($cta): ?>
             <div class="cta-banner__button w-100 d-flex d-flex-center"> 
-                <a href="<?= $cta["url"] ?>" target="<?= $cta["target"]?>" class="cta-banner__cta u-btn"><?= $cta["title"]?></a>
+                <a href="<?= $cta["url"] ?>" target="<?= $cta["target"]?>" class="cta-banner__cta u-btn--white"><?= $cta["title"]?></a>
             </div>
         <?php endif; ?>
     </div>

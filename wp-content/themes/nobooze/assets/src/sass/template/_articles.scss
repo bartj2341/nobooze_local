@@ -59,7 +59,7 @@
 .s-articles__content {
     flex: 1;
     padding: 35px;
-    background-color: $cbg-gray-3;
+    background-color: $cbg-blue-5;
 }
 
 .s-articles__content__title {
@@ -101,8 +101,8 @@
     
     .page-numbers {
         display: block;
-        border: 1px solid $cb-gold;
-        color: $ct-gold;
+        border: 1px solid $cb-blue; 
+        color: $ct-blue;
         font-size: 1.4rem; 
         line-height: 1.55;
         padding: 10px 13px;
@@ -111,13 +111,13 @@
 
         @include bp(xlarge) {
             &:hover:not(.dots) {
-                background-color: $cb-gold;
+                background-color: $cb-blue;
                 color: $ct-white;
             }
         }
 
         &.current {
-            background-color: $cb-gold;
+            background-color: $cb-blue;
             color: $ct-white;
         }
     }

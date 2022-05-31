@@ -1412,7 +1412,7 @@ fieldset {
 
 .u-header__cta {
   transition: text-shadow 0.1s;
-  color: #385363;
+  color: #2e487d;
   font-size: 1.3rem;
 }
 @media (min-width: 1280px) {
@@ -1438,7 +1438,7 @@ fieldset {
   position: absolute;
   bottom: 16px;
   transform: rotate(90deg);
-  fill: #385363;
+  fill: #2e487d;
   transition: all 200ms linear;
 }
 
@@ -1542,7 +1542,7 @@ fieldset {
 }
 @media (min-width: 1024px) {
   .u-header__sub__cta:hover {
-    background-color: #f3f6f8;
+    background-color: #ecf0f7;
   }
 }
 
@@ -1566,8 +1566,8 @@ fieldset {
 }
 @media (min-width: 1024px) {
   .u-header__li.u-header__li--active .u-header__cta {
-    color: #000;
-    text-shadow: 0 0 0.4px #000, 0 0 0.4px #000;
+    color: #2e487d;
+    text-shadow: 0 0 0.4px #2e487d, 0 0 0.4px #2e487d;
   }
   .u-header__li.u-header__li--active svg {
     fill: #000;
@@ -1774,8 +1774,8 @@ fieldset {
   margin: 0 0 20px;
 }
 .single-article__content pre {
-  background-color: #f7f7f7;
-  border: 1px solid #ccc;
+  background-color: #ecf0f7;
+  border: 1px solid #d7e0e4;
   font-size: 1.3rem;
   color: #cf2e2e;
   padding: 10px;
@@ -1838,7 +1838,7 @@ fieldset {
 
 .single-article__categories {
   border-style: solid;
-  border-color: #e8e8e8;
+  border-color: #d7e0e4;
   border-width: 0;
   border-top-width: 1px;
   border-bottom-width: 1px;
@@ -1847,7 +1847,7 @@ fieldset {
 }
 
 .single-article__bio {
-  background-color: #f7f7f7;
+  background-color: #ecf0f7;
   padding: 30px 50px;
   margin-bottom: 40px;
 }
@@ -1875,7 +1875,7 @@ fieldset {
   }
 }
 .single-article__navigation__item a {
-  color: #c58511;
+  color: #2e487d;
 }
 @media (min-width: 1280px) {
   .single-article__navigation__item a:hover {
@@ -2046,6 +2046,17 @@ fieldset {
   }
 }
 
+#ez-toc-container {
+  background-color: #ecf0f7;
+  border: 1px solid #4267B2;
+}
+#ez-toc-container a {
+  color: #2e487d;
+}
+#ez-toc-container a:visited {
+  color: #8ea4d1;
+}
+
 /* ==========================================================================
    #PAGE
    ========================================================================== */
@@ -2063,7 +2074,7 @@ fieldset {
 }
 
 html {
-  color: #08192b;
+  color: #2e487d;
   font-size: 10px;
   /* [1] */
   line-height: 1.55;
@@ -2114,7 +2125,7 @@ body * {
 }
 
 p {
-  color: #08192b;
+  color: #2e487d;
   white-space: normal;
   margin-bottom: 20px;
 }
@@ -2137,7 +2148,7 @@ strong {
 h1, h2, h3, h4, h5, h6, .heading-family {
   font-family: "Proxima Nova Regular", Arial, sans-serif;
   line-height: 1.2;
-  color: #08192b;
+  color: #2e487d;
   font-weight: normal;
 }
 h1 strong, h2 strong, h3 strong, h4 strong, h5 strong, h6 strong, .heading-family strong {
@@ -2459,7 +2470,7 @@ h6,
  * Font Colors
  */
 .c-black {
-  color: #08192b;
+  color: #2e487d;
 }
 
 .c-white {
@@ -2467,11 +2478,11 @@ h6,
 }
 
 .c-blue {
-  color: #1a9ac8;
+  color: #4267B2;
 }
 
 .c-gold {
-  color: #c58511;
+  color: #2e487d;
 }
 
 /**
@@ -2551,31 +2562,32 @@ a {
   color: inherit;
 }
 
-p > a,
-.link-brown,
-.booking-section .cpp_form #fbuilder .cff-checkbox-field span a {
+.link-blue, .booking-section .cpp_form #fbuilder .cff-checkbox-field span a {
   text-decoration: none;
-  color: #c58511;
+  color: #4267B2;
 }
 @media (min-width: 1280px) {
-  p > a:hover,
-.link-brown:hover,
-.booking-section .cpp_form #fbuilder .cff-checkbox-field span a:hover {
-    color: #0a3c4e;
+  .link-blue:hover, .booking-section .cpp_form #fbuilder .cff-checkbox-field span a:hover {
     text-decoration: underline;
   }
 }
 
+p a,
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a, .heading-family a {
+  text-decoration: none;
+  color: #4267B2;
+}
 @media (min-width: 1280px) {
-  h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover, .heading-family a:hover {
-    color: #23527c;
+  p a:hover,
+h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover, .heading-family a:hover {
+    text-decoration: underline;
   }
 }
 
 /* ==========================================================================
    #BUTTONS
    ========================================================================== */
-.u-btn, .u-btn--nav {
+.u-btn, .u-btn--nav, .u-btn--white {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -2594,9 +2606,18 @@ p > a,
   transition: all 200ms linear;
   cursor: pointer;
 }
-.u-btn:hover, .u-btn--nav:hover {
+.u-btn:hover, .u-btn--nav:hover, .u-btn--white:hover {
   background-color: #2e487d;
   color: #fff;
+}
+
+.u-btn--white {
+  color: #2e487d;
+  background-color: #fff;
+}
+.u-btn--white:hover {
+  color: #2e487d;
+  background-color: #ecf0f7;
 }
 
 .u-btn--nav {
@@ -2681,7 +2702,7 @@ p > a,
   display: block;
   left: 0;
   bottom: 0;
-  background-color: #333333;
+  background-color: #2e487d;
   height: 2px;
   width: 50px;
   margin-top: 20px;
@@ -2797,8 +2818,8 @@ p > a,
 /* ==========================================================================
    #BACKGROUNDS
    ========================================================================== */
-.bg-black {
-  background-color: #000;
+.bg-blue {
+  background-color: #2e487d;
 }
 
 .bg-white {
@@ -2836,7 +2857,7 @@ p > a,
 .wpforms-container .wpforms-form .wpforms-field-container .wpforms-field textarea,
 .wpforms-container-full .wpforms-form .wpforms-field-container .wpforms-field input,
 .wpforms-container-full .wpforms-form .wpforms-field-container .wpforms-field textarea {
-  border: 1px solid #f6db91;
+  border: 1px solid transparent;
   padding: 12px;
   font-size: 19px;
   border-radius: 0;
@@ -2851,7 +2872,7 @@ p > a,
 .wpforms-container-full .wpforms-form .wpforms-field-container .wpforms-field input {
   min-height: 53px;
   line-height: 2;
-  color: #08192b;
+  color: #2e487d;
 }
 @media (min-width: 640px) {
   .wpforms-container .wpforms-form .wpforms-field-container .wpforms-field input,
@@ -2875,7 +2896,7 @@ p > a,
 .wpforms-container .wpforms-form .wpforms-field-container .wpforms-field textarea:focus,
 .wpforms-container-full .wpforms-form .wpforms-field-container .wpforms-field input:focus,
 .wpforms-container-full .wpforms-form .wpforms-field-container .wpforms-field textarea:focus {
-  border: 1px solid #0a3c4e;
+  border: 1px solid #2e487d;
   outline: 0;
 }
 .wpforms-container .wpforms-form .wpforms-field-container .wpforms-field .wpforms-required-label,
@@ -2893,36 +2914,38 @@ p > a,
 .wpforms-container .wpforms-form .wpforms-submit-container .wpforms-submit,
 .wpforms-container-full .wpforms-form .wpforms-submit-container .wpforms-submit {
   display: inline-flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  background-color: #4267B2;
+  border: 0;
+  border-radius: 30px;
   color: #fff;
-  padding: 15px 30px;
-  font-size: 1.8rem;
-  line-height: 2;
-  background-color: #c58511;
-  border: none !important;
-  position: relative;
+  font-size: 1.6rem;
+  font-family: "Proxima Nova Semibold", Arial Bold, sans-serif;
+  line-height: 1;
   text-align: center;
+  max-width: 480px;
+  min-height: 40px;
+  overflow: hidden;
+  padding: 10px 20px;
+  transition: all 200ms linear;
   cursor: pointer;
 }
-@media (min-width: 640px) {
-  .wpforms-container .wpforms-form .wpforms-submit-container .wpforms-submit,
-.wpforms-container-full .wpforms-form .wpforms-submit-container .wpforms-submit {
-    line-height: 1.2;
-  }
-}
-@media (min-width: 768px) {
-  .wpforms-container .wpforms-form .wpforms-submit-container .wpforms-submit,
-.wpforms-container-full .wpforms-form .wpforms-submit-container .wpforms-submit {
-    padding: 12px 24px;
-  }
-}
-@media (min-width: 1280px) {
-  .wpforms-container .wpforms-form .wpforms-submit-container .wpforms-submit:hover,
+.wpforms-container .wpforms-form .wpforms-submit-container .wpforms-submit:hover,
 .wpforms-container-full .wpforms-form .wpforms-submit-container .wpforms-submit:hover {
-    background-color: #0a3c4e;
-    color: #fff;
-  }
+  border: 0;
+  background-color: #2e487d;
+  color: #fff;
+}
+.wpforms-container .wpforms-form .wpforms-submit-container .wpforms-submit.u-btn--white,
+.wpforms-container-full .wpforms-form .wpforms-submit-container .wpforms-submit.u-btn--white {
+  color: #2e487d;
+  background-color: #fff;
+}
+.wpforms-container .wpforms-form .wpforms-submit-container .wpforms-submit.u-btn--white:hover,
+.wpforms-container-full .wpforms-form .wpforms-submit-container .wpforms-submit.u-btn--white:hover {
+  color: #2e487d;
+  background-color: #ecf0f7;
 }
 
 /* ==========================================================================
@@ -3026,7 +3049,7 @@ p > a,
    #BASIC BANNER / PARTIAL
    ========================================================================== */
 .basic-banner {
-  background-color: #1a9ac8;
+  background-color: #4267B2;
   padding: 50px 0;
 }
 
@@ -3078,7 +3101,7 @@ p > a,
 }
 
 .heavy-text--gray-bg.heavy-text {
-  background-color: #f0f0f0;
+  background-color: #ecf0f7;
 }
 
 .heavy-text--align-left .heavy-text__copy {
@@ -3144,6 +3167,9 @@ p > a,
   left: 0;
 }
 
+.hero-banner__container {
+  text-shadow: 0 0 0.4px #2e487d, 0 0 0.4px #2e487d;
+}
 .hero-banner__container *:last-child {
   margin-bottom: 0;
 }
@@ -3161,6 +3187,9 @@ p > a,
   }
 }
 
+.hero-banner--text-white .hero-banner__container {
+  text-shadow: 0 0 0.4px #fff, 0 0 0.4px #fff;
+}
 .hero-banner--text-white .hero-banner__title,
 .hero-banner--text-white .hero-banner__subtitle {
   color: #fff;
@@ -3177,7 +3206,7 @@ p > a,
    ========================================================================== */
 .fifty {
   min-height: 1270px;
-  background-color: #f0f0f0;
+  background-color: #ecf0f7;
 }
 
 .fifty__title {
@@ -3249,7 +3278,7 @@ p > a,
    #CONTACT FORM / PARTIAL
    ========================================================================== */
 .contact-form {
-  background-color: #f0f0f0;
+  background-color: #ecf0f7;
   justify-content: center;
   padding: 102px 0 50px;
 }
@@ -3560,7 +3589,7 @@ p > a,
 }
 
 .info-row--gray-bg {
-  background-color: #f0f0f0;
+  background-color: #ecf0f7;
 }
 
 /* ==========================================================================
@@ -3581,6 +3610,9 @@ p > a,
   left: 0;
 }
 
+.script-banner__container {
+  text-shadow: 0 0 0.4px #2e487d, 0 0 0.4px #2e487d;
+}
 .script-banner__container *:last-child {
   margin-bottom: 0;
 }
@@ -3610,7 +3642,7 @@ p > a,
    #GLOWING BANNER / PARTIAL
    ========================================================================== */
 .glowing-banner {
-  background: radial-gradient(at center center, #1a9ac8 15%, #0a3c4e 100%);
+  background: radial-gradient(at center center, #4267B2 15%, #2e487d 100%);
   padding: 50px 0;
 }
 
@@ -3790,13 +3822,13 @@ p > a,
    #TESTIMONIAL BOX / PARTIAL
    ========================================================================== */
 .testimonial-box {
-  background-color: #f0f0f0;
+  background-color: #ecf0f7;
   padding: 70px 0;
 }
 
 .testimonial-box__container {
   background-color: #fff;
-  border: 1px solid #1a9ac8;
+  border: 1px solid #4267B2;
 }
 
 .testimonial-box__image {
@@ -3837,7 +3869,7 @@ p > a,
    #BUTTONS ROW / PARTIAL
    ========================================================================== */
 .buttons-row {
-  background-color: #f0f0f0;
+  background-color: #ecf0f7;
   padding: 90px 0;
 }
 
@@ -3944,7 +3976,7 @@ p > a,
    #SINGLE VIDEO / PARTIAL
    ========================================================================== */
 .single-video {
-  background-color: #1a9ac8;
+  background-color: #4267B2;
   padding: 50px 0 90px 0;
 }
 
@@ -3964,7 +3996,7 @@ p > a,
    #VIDEO ROW / PARTIAL
    ========================================================================== */
 .video-row {
-  background-color: #1a9ac8;
+  background-color: #4267B2;
   padding: 50px 0 90px 0;
 }
 
@@ -3999,7 +4031,7 @@ p > a,
 .article-banner {
   min-height: 480px;
   padding: 135px 0 0px;
-  background-color: #EBECF0;
+  background-color: #ecf0f7;
 }
 @media (min-width: 768px) {
   .article-banner {
@@ -4078,7 +4110,7 @@ p > a,
 .about-column__bg {
   bottom: 0;
   left: 0;
-  background-color: #f0f0f0;
+  background-color: #ecf0f7;
   height: calc(100% - 50px);
 }
 
@@ -4110,14 +4142,14 @@ p > a,
 }
 @media (min-width: 1280px) {
   .social-links__row:hover .social-links__row__icon {
-    background-color: #c58511;
+    background-color: #2e487d;
   }
 }
 
 .social-links__row__icon {
   width: 40px;
   height: 40px;
-  background-color: #1a9ac8;
+  background-color: #4267B2;
 }
 .social-links__row__icon svg {
   fill: #fff;
@@ -4133,7 +4165,7 @@ p > a,
    #NEWSLETTER FORM / BLOG SIDEBAR PARTIAL
    ========================================================================== */
 .newsletter-form {
-  background: radial-gradient(at center center, #1a9ac8 15%, #0a3c4e 100%);
+  background: radial-gradient(at center center, #4267B2 15%, #2e487d 100%);
   padding: 40px;
 }
 
@@ -4154,7 +4186,7 @@ p > a,
 .newsletter-form__form .wpforms-container .wpforms-form .wpforms-field-container .wpforms-field textarea,
 .newsletter-form__form .wpforms-container-full .wpforms-form .wpforms-field-container .wpforms-field input,
 .newsletter-form__form .wpforms-container-full .wpforms-form .wpforms-field-container .wpforms-field textarea {
-  border: 1px solid #eeeeee;
+  border: 2px solid transparent;
   padding: 10px;
   font-size: 14px;
 }
@@ -4162,7 +4194,7 @@ p > a,
 .newsletter-form__form .wpforms-container .wpforms-form .wpforms-field-container .wpforms-field textarea.wpforms-error,
 .newsletter-form__form .wpforms-container-full .wpforms-form .wpforms-field-container .wpforms-field input.wpforms-error,
 .newsletter-form__form .wpforms-container-full .wpforms-form .wpforms-field-container .wpforms-field textarea.wpforms-error {
-  border: 1px solid #eeeeee;
+  border: 2px solid transparent;
 }
 .newsletter-form__form .wpforms-container .wpforms-form .wpforms-field-container .wpforms-field input,
 .newsletter-form__form .wpforms-container-full .wpforms-form .wpforms-field-container .wpforms-field input {
@@ -4171,7 +4203,8 @@ p > a,
 }
 .newsletter-form__form .wpforms-container .wpforms-form .wpforms-field-container .wpforms-field input:focus,
 .newsletter-form__form .wpforms-container-full .wpforms-form .wpforms-field-container .wpforms-field input:focus {
-  border: 1px solid #719ece;
+  border: 2px solid #719ece;
+  outline: 0;
 }
 .newsletter-form__form .wpforms-container .wpforms-form .wpforms-field-container .wpforms-field .wpforms-required-label,
 .newsletter-form__form .wpforms-container-full .wpforms-form .wpforms-field-container .wpforms-field .wpforms-required-label {
@@ -4252,7 +4285,7 @@ p > a,
 .s-articles__content {
   flex: 1;
   padding: 35px;
-  background-color: #f7f7f7;
+  background-color: #ecf0f7;
 }
 
 .s-articles__content__title {
@@ -4289,8 +4322,8 @@ p > a,
 }
 .s-articles__pagination .page-numbers {
   display: block;
-  border: 1px solid #c58511;
-  color: #c58511;
+  border: 1px solid #2e487d;
+  color: #2e487d;
   font-size: 1.4rem;
   line-height: 1.55;
   padding: 10px 13px;
@@ -4299,12 +4332,12 @@ p > a,
 }
 @media (min-width: 1280px) {
   .s-articles__pagination .page-numbers:hover:not(.dots) {
-    background-color: #c58511;
+    background-color: #2e487d;
     color: #fff;
   }
 }
 .s-articles__pagination .page-numbers.current {
-  background-color: #c58511;
+  background-color: #2e487d;
   color: #fff;
 }
 
@@ -4329,15 +4362,15 @@ p > a,
 .booking-section .cpp_form #fbuilder input,
 .booking-section .cpp_form #fbuilder select {
   min-height: 56px;
-  border: 1px solid #f6db91;
-  background-color: #f7f7f7;
+  border: 1px solid transparent;
+  background-color: #ecf0f7;
   padding: 8px;
   font-size: 19px;
   border-radius: 0;
 }
 .booking-section .cpp_form #fbuilder input:focus,
 .booking-section .cpp_form #fbuilder select:focus {
-  border: 1px solid #0a3c4e;
+  border: 1px solid #2e487d;
   outline: 0;
 }
 .booking-section .cpp_form #fbuilder .fieldCalendarService {
@@ -4381,7 +4414,7 @@ p > a,
 }
 .booking-section .cpp_form #fbuilder .slots {
   padding: 30px 20px;
-  background-color: #f0f0f0;
+  background-color: #ecf0f7;
   box-shadow: none;
   border: none;
 }
@@ -4428,7 +4461,7 @@ p > a,
 @media (min-width: 1280px) {
   .booking-section .cpp_form #fbuilder .slots .availableslot a:hover,
 .booking-section .cpp_form #fbuilder .slots .choosen a:hover {
-    background-color: #0a3c4e;
+    background-color: #2e487d;
     color: #fff;
     text-decoration: none;
   }
@@ -4455,7 +4488,7 @@ p > a,
 .booking-section .cpp_form #fbuilder .usedSlots {
   display: flex;
   flex-direction: column;
-  background-color: #f0f0f0;
+  background-color: #ecf0f7;
   padding: 30px;
   margin-bottom: 10px;
 }
@@ -4550,7 +4583,7 @@ p > a,
    #CTA BANNER / TEMPLATE (BLOCK)
    ========================================================================== */
 .cta-banner {
-  background: radial-gradient(at center center, #1a9ac8 15%, #0a3c4e 100%);
+  background: radial-gradient(at center center, #4267B2 15%, #2e487d 100%);
   padding: 25px 45px;
   margin: 44px 0;
 }

@@ -6,7 +6,7 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    background-color: $cbg-blue-7;
+    background-color: $cbg-blue-2;
     border: 0;
     border-radius: $btn-radius;
     color: $ct-white;
@@ -22,8 +22,19 @@
     cursor: pointer;
 
     &:hover {
-        background-color: $cbg-blue-8;
+        background-color: $cbg-blue;
         color: $ct-white;
+    }
+}
+
+.u-btn--white {
+    @extend .u-btn;
+    color: $ct-blue;
+    background-color: $cbg-white;
+
+    &:hover {
+        color: $ct-blue;
+        background-color: $cbg-blue-5;
     }
 }
 

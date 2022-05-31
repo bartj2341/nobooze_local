@@ -17,7 +17,7 @@
 
                 input,
                 textarea {
-                    border: 1px solid $cb-yellow;
+                    border: 1px solid transparent;
                     padding: 12px;
                     font-size: 19px;
                     border-radius: 0;
@@ -30,7 +30,7 @@
                 input {
                     min-height: 53px;
                     line-height: 2;
-                    color: $ct;
+                    color: $ct-blue;
                     
                     @include bp(xsmall) {
                         line-height: 1.4;
@@ -69,30 +69,36 @@
 
             .wpforms-submit {
                 display: inline-flex;
-                justify-content: center;
                 align-items: center;
+                justify-content: center;
+                background-color: $cbg-blue-2;
+                border: 0;
+                border-radius: $btn-radius;
                 color: $ct-white;
-                padding: 15px 30px;
-                font-size: 1.8rem;
-                line-height: 2;
-                background-color: $cbg-gold;
-                border: none !important; 
-                position: relative;
+                font-size: 1.6rem;
+                font-family: $heading-semibold;
+                line-height: 1;
                 text-align: center;
+                max-width: 480px;
+                min-height: 40px;
+                overflow: hidden;
+                padding: 10px 20px;
+                transition: $global-transition;
                 cursor: pointer;
-        
-                @include bp(xsmall) {
-                    line-height: 1.2;
+
+                &:hover {
+                    border: 0;
+                    background-color: $cbg-blue;
+                    color: $ct-white;
                 }
-        
-                @include bp(medium) {
-                    padding: 12px 24px;
-                }
-            
-                @include bp(xlarge) {
+
+                &.u-btn--white {
+                    color: $ct-blue;
+                    background-color: $cbg-white;
+
                     &:hover {
-                        background-color: $cbg-blue;
-                        color: $ct-white;
+                        color: $ct-blue;
+                        background-color: $cbg-blue-5;
                     }
                 }
             }

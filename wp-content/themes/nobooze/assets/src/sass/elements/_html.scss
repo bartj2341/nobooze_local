@@ -17,7 +17,7 @@
 } 
 
 html {
-    color: $ct; 
+    color: $ct-blue; 
     font-size: 10px; /* [1] */
     line-height: 1.55; /* [1] */
     min-height: 100%; /* [3] */
@@ -55,7 +55,7 @@ body {
 }
 
 p {
-    color: $ct;
+    color: $ct-blue;
     white-space: normal;
     margin-bottom: 20px;
 

@@ -25,8 +25,8 @@
             input,
             select {
                 min-height: 56px;
-                border: 1px solid $cb-yellow;
-                background-color: $cbg-gray-3;
+                border: 1px solid transparent; 
+                background-color: $cbg-blue-5;
                 padding: 8px;
                 font-size: 19px;
                 border-radius: 0;
@@ -72,18 +72,18 @@
     
             .ui-datepicker-inline {
                 max-width: none;
-                border: 1px solid $cb-black-2;
+                border: 1px solid $cb-black;
             }
 
             .ui-datepicker-header {
                 padding: 5px 0;
-                background: $cbg-blue-7; 
+                background: $cbg-blue-2; 
                 text-shadow: none;
             }
 
             .ui-datepicker-calendar {
                 .ui-state-active {
-                    background: $cbg-blue-7;
+                    background: $cbg-blue-2;
                     text-shadow: none;
                 }
             }
@@ -95,7 +95,7 @@
 
             .slots {
                 padding: 30px 20px;
-                background-color: $cbg-gray-2;
+                background-color: $cbg-blue-5;
                 box-shadow: none;
                 border: none;
 
@@ -112,13 +112,13 @@
 
                 .availableslot {
                     a {
-                        background-color: $cbg-blue-7;
+                        background-color: $cbg-blue-2;
                     } 
                 }
 
                 .choosen {
                     a {
-                        background-color: $cbg-blue-8;
+                        background-color: $cbg-blue;
                     }
                 }
 
@@ -173,7 +173,7 @@
             .usedSlots {
                 display: flex;
                 flex-direction: column;
-                background-color: $cbg-gray-2; 
+                background-color: $cbg-blue-5; 
                 padding: 30px;
                 margin-bottom: 10px;  
                 
@@ -191,7 +191,7 @@
                 flex-direction: column;
                 align-items: flex-start;
                 padding: 15px 0;
-                border-bottom: 1px solid $cbg-blue-4;
+                border-bottom: 1px solid $cbg-blue-3;
 
                 @include bp(medium) {
                     flex-direction: row;
@@ -235,7 +235,7 @@
                     margin-left: 10px;
                     
                     a {
-                        @extend .link-brown;
+                        @extend .link-blue;
                     }
                     
                     .r {
@@ -257,7 +257,7 @@
                 display: inline-flex;
                 align-items: center;
                 justify-content: center;
-                background-color: $cbg-blue-7;
+                background-color: $cbg-blue-2;
                 border: 0;
                 border-radius: $btn-radius;
                 color: $ct-white;
@@ -273,7 +273,7 @@
                 cursor: pointer;
 
                 &:hover {
-                    background-color: $cbg-blue-8;
+                    background-color: $cbg-blue;
                     color: $ct-white;
                 }
             }

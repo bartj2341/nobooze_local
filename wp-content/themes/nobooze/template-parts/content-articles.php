@@ -32,7 +32,7 @@ $author_link = get_author_posts_url($author_id);
                 <?php if(get_the_author()): ?>
                 <div class="s-articles__author text-small">
                     By 
-                    <a class="s-articles__author__name link-brown" href="<?= $author_link ?>"><?= $author_name ?></a>
+                    <a class="s-articles__author__name link-blue" href="<?= $author_link ?>"><?= $author_name ?></a>
                     <?php if(is_archive() && get_the_date() !== ""): ?> 
                         <span> | </span> 
                         <span><?php echo get_the_date(); ?></span>
