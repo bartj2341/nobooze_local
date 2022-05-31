@@ -68,7 +68,7 @@
         <div class="m-menu__btn">
             <div class="wrapper-nav">
                 <div class="m-menu__cta__wrapper">
-                    <a class="m-menu__cta u-btn--mobile-lg" href="<?= site_url() ?>/contact">CONTACT</a>
+                    <a class="m-menu__cta u-btn" href="<?= site_url() ?>/contact">CONTACT</a>
                 </div>
             </div>
         </div>

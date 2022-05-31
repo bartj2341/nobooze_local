@@ -7,6 +7,15 @@
 }
 
 @font-face {
+    font-family: 'Proxima Nova Semibold';
+    src: url('../fonts/proximanova-semibold.woff') format('woff'),
+        url('../fonts/proximanova-semibold.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
     font-family: 'Proxima Nova Extrabld';
     src: url('../fonts/proximanova-extrabld.woff') format('woff'),
         url('../fonts/proximanova-extrabld.woff2') format('woff2');

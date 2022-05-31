@@ -7,11 +7,13 @@
 $global-radius: 15px !default;
 $global-opacity: 0.4;
 $global-transition: all 200ms linear !default;
+$btn-radius: 30px;
 
 /* Fonts
    ========================================================================== */
 
 $proxima-regular: 'Proxima Nova Regular', Arial, sans-serif;
+$proxima-semibold: 'Proxima Nova Semibold', Arial Bold, sans-serif;
 $proxima-extrabld: 'Proxima Nova Extrabld', Arial Bold, sans-serif;
 $open-regular: 'Open Sans Regular', Arial, sans-serif;
 $open-bold : 'Open Sans Bold', Arial Bold, sans-serif;
@@ -56,6 +58,7 @@ $c-blue-4: #5e7884;
 $c-blue-5: #719ece;
 $c-blue-6: #23527c;
 $c-blue-7: #4267B2;
+$c-blue-8: #2e487d;
 $c-yellow: #f6db91;
 $c-red: #790000;
 $c-red-2: #cf2e2e;
@@ -87,6 +90,7 @@ $cbg-blue: $c-blue;
 $cbg-blue-2: $c-blue-2;
 $cbg-blue-4: $c-blue-4;
 $cbg-blue-7: $c-blue-7;
+$cbg-blue-8: $c-blue-8;
 $cbg-white: $c-white;
 
 // Borders
@@ -116,5 +120,6 @@ $black-arrow: 2px solid $cb-black-2;
 $text-family: $open-regular;
 $text-bold: $open-bold;
 $heading-family: $proxima-regular;
+$heading-semibold: $proxima-semibold;
 $heading-xbold: $proxima-extrabld;
 $text-script: $font-script;
