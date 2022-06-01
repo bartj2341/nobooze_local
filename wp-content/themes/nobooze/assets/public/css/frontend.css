@@ -2980,7 +2980,7 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover, .heading
 @media (min-width: 1024px) {
   .full-image__bg {
     position: absolute;
-    height: 100%;
+    height: 75%;
     bottom: 0;
     right: 0;
   }
@@ -3780,7 +3780,7 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover, .heading
 @media (min-width: 1024px) {
   .alternate-banner__bg {
     position: absolute;
-    height: 100%;
+    height: 75%;
     bottom: 0;
     right: 0;
   }
@@ -4058,7 +4058,7 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover, .heading
 @media (min-width: 1024px) {
   .article-banner__bg {
     position: absolute;
-    height: 100%;
+    height: 75%;
     bottom: 0;
     right: 0;
   }
