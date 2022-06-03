@@ -19,7 +19,7 @@
     }
 
     @include bp(large) {
-        padding: 170px 90px 90px 0;
+        padding: 170px 90px 90px 90px;
         width: 50%;
         order: 2;
     }

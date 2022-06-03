@@ -20,10 +20,10 @@ get_header();
 						$category = get_category( get_query_var( 'cat' ) );
 						$cat_id = $category->cat_ID;
 						?>
-						<h2 class="s-articles__title c-gold heading-script f-script">Category: <?= get_cat_name($cat_id) ?></h2>
+						<h2 class="s-articles__title heading-script f-script">Category: <?= get_cat_name($cat_id) ?></h2>
 
 						<?php elseif(is_author()): ?>
-							<h2 class="s-articles__title c-gold heading-script f-script">Author: <?= get_the_author_meta("display_name") ?></h2>
+							<h2 class="s-articles__title heading-script f-script">Author: <?= get_the_author_meta("display_name") ?></h2>
 					<?php endif; ?>
 					<?php if ( have_posts() ) : ?>
 						<div class="s-articles__container d-flex d-flex-wrap">

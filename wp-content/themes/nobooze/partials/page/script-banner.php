@@ -7,6 +7,7 @@ $title = get_sub_field("title") ? get_sub_field("title") : "";
 ?>
 
 <section class="script-banner p-relative <?php foreach ($modifier as $value) { echo(' ' . $value); } ?>">
+    <div class="script-banner__dark p-absolute z-index-1"></div>
     <?php if($bg_image): ?>
         <div class="script-banner__bg w-100 h-100">
             <img src="<?= $bg_image["url"] ?>" alt="<?= $bg_image["alt"] ?>" class="script-banner__img w-100 h-100 fit-cover">
@@ -16,7 +17,7 @@ $title = get_sub_field("title") ? get_sub_field("title") : "";
         <div class="script-banner__wrapper d-flex d-flex-center">
             <div class="script-banner__container p-relative z-index-1">
                 <?php if($title): ?>
-                    <h2 class="script-banner__title f-script heading-script u-text-center"><?= $title ?></h2>
+                    <h2 class="script-banner__title c-white f-script heading-script u-text-center"><?= $title ?></h2>
                 <?php endif; ?>
             </div>
         </div>

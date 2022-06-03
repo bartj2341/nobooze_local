@@ -37,7 +37,6 @@
                             },
                             "choices": {
                                 "full-image--invert": "Invert",
-                                "full-image--narrow": "Narrow Text",
                                 "full-image--title-mobile-lg": "Large Title (On Mobile)",
                                 "full-image--sub-desktop-lg": "Large Subtitle (On Desktop)"
                             },
@@ -567,7 +566,6 @@
                             },
                             "choices": {
                                 "hero-banner--large-height": "Large component height",
-                                "hero-banner--text-white": "White text",
                                 "hero-banner--text-top": "Text at the top of the component"
                             },
                             "default_value": [],
@@ -1757,5 +1755,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1653298232
+    "modified": 1654262347
 }

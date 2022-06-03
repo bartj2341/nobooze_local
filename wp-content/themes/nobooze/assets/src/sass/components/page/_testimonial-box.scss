@@ -10,6 +10,7 @@
 .testimonial-box__container {
     background-color: $cbg-white;
     border: 1px solid $cb-blue-2;
+    padding: 55px;
 }
 
 .testimonial-box__image {
@@ -22,20 +23,27 @@
 
 .testimonial-box__img {
     max-width: 100%;
-    height: auto;
+    max-height: 300px;
+    border-radius: $global-radius;
+    margin: 0 auto;
+
+    @include bp(medium) {
+        max-height: 400px;
+    }
+
+    @include bp(large) {
+        max-height: none;
+    }
 }
 
 .testimonial-box__content {
     width: 100%;
-    padding: 35px 20px;
-
-    @include bp(medium) {
-        padding: 55px;
-    }
+    padding-top: 35px;
 
     @include bp(large) {
-        padding: 55px;
-        width: 73%;
+        padding-top: 0;
+        padding-left: 55px;
+        width: 73%; 
     }
 }
 

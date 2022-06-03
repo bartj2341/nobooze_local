@@ -10,14 +10,22 @@
     }
 }
 
+.hero-banner__dark {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: $cbg-black;
+    opacity: 0.6;
+}
+
 .hero-banner__bg {
-    position: absolute;
     top: 0;
     left: 0;
 }
 
 .hero-banner__container {
-    text-shadow: 0 0 0.4px $ct-blue, 0 0 0.4px $ct-blue;
+    text-shadow: 0 0 0.4px $ct-white, 0 0 0.4px $ct-white;
     *:last-child {
         margin-bottom: 0;
     }
@@ -35,17 +43,6 @@
         @include bp(large) {
             padding: 220px 0 190px;
         }
-    }
-}
-
-.hero-banner--text-white {
-    .hero-banner__container {
-        text-shadow: 0 0 0.4px $ct-white, 0 0 0.4px $ct-white; 
-    } 
-
-    .hero-banner__title,
-    .hero-banner__subtitle {
-        color: $ct-white;
     }
 }
 

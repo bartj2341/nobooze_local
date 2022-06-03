@@ -14,7 +14,7 @@ $title = get_field("title") ? get_field("title") : "";
         <section class="s-articles">
             <div class="s-articles__wrapper wrapper-large">
                 <?php if($title): ?>
-                    <h2 class="s-articles__title c-gold heading-script f-script"><?= $title ?></h2>
+                    <h2 class="s-articles__title heading-script f-script"><?= $title ?></h2>
                 <?php endif; ?>
 
                 <div class="s-articles__container d-flex d-flex-wrap">
