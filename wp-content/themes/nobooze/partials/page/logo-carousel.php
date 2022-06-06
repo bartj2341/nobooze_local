@@ -1,7 +1,5 @@
 <?php
-
 $title = get_sub_field("title") ? get_sub_field("title") : "";
-
 ?>
 
 <section class="logo-carousel u-carousel wrapper-carousel">

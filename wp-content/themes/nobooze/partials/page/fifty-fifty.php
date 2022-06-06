@@ -1,10 +1,8 @@
 <?php
-
 $title = get_sub_field("title") ? get_sub_field("title") : "";
 $image = get_sub_field("image") ? get_sub_field("image") : "";
 $text = get_sub_field("text") ? get_sub_field("text") : "";
 $cta = get_sub_field("cta") ? get_sub_field("cta") : "";
-
 ?>
 
 

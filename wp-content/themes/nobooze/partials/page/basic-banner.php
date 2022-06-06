@@ -1,9 +1,7 @@
 <?php
-
 $modifier = get_sub_field("modifier") ? get_sub_field("modifier") : [];
 $text = get_sub_field("text") ? get_sub_field("text") : "";
 $author = get_sub_field("author") ? get_sub_field("author") : "";
-
 ?>
 
 <section class="basic-banner p-relative <?php foreach ($modifier as $value) { echo(' ' . $value); } ?>">

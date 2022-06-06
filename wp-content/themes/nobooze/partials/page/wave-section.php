@@ -1,11 +1,9 @@
 <?php
-
 $modifier = get_sub_field("modifier") ? get_sub_field("modifier") : [];
 $image = get_sub_field("image") ? get_sub_field("image") : "";
 $title = get_sub_field("title") ? get_sub_field("title") : "";
 $text = get_sub_field("text") ? get_sub_field("text") : "";
 $cta = get_sub_field("cta") ? get_sub_field("cta") : "";
-
 ?>
 
 

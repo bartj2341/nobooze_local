@@ -1,12 +1,10 @@
 <?php
-
 $modifier = get_sub_field("modifier") ? get_sub_field("modifier") : [];
 $bg_color = get_sub_field("background_color") ? get_sub_field("background_color") : "";
 $image = get_sub_field("image") ? get_sub_field("image") : "";
 $title = get_sub_field("title") ? get_sub_field("title") : "";
 $subtitle = get_sub_field("subtitle") ? get_sub_field("subtitle") : "";
 $cta = get_sub_field("cta") ? get_sub_field("cta") : "";
-
 ?>
 
 <section class="full-image p-relative d-flex d-flex-column d-flex-align-c d-flex-justify-c <?php foreach ($modifier as $value) { echo(' ' . $value); } ?>" style="background-color: <?= $bg_color ?>">

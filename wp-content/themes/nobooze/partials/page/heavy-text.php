@@ -1,10 +1,8 @@
 <?php
-
 $modifier = get_sub_field("modifier") ? get_sub_field("modifier") : [];
 $title = get_sub_field("title") ? get_sub_field("title") : "";
 $copy = get_sub_field("copy") ? get_sub_field("copy") : "";
 $handwriting = get_sub_field("handwriting") ? get_sub_field("handwriting") : "";
-
 ?>
 
 <section class="heavy-text p-relative <?php foreach ($modifier as $value) { echo(' ' . $value); } ?>">

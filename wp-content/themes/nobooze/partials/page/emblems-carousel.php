@@ -1,11 +1,9 @@
 <?php
-
 $title = get_sub_field("title") ? get_sub_field("title") : "";
-
 ?>
 
 <section class="emblems-carousel u-carousel wrapper-carousel">
-    <div class="u-carousel__container d-flex d-flex-column d-flex-align-c">
+    <div class="emblems-carousel__container u-carousel__container d-flex d-flex-column d-flex-align-c">
         <?php if($title): ?>
             <div class="u-carousel__title f-heading text-sixteen ls-4 u-text-center"><?= $title ?></div>
         <?php endif; ?>

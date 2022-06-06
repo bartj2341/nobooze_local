@@ -1,9 +1,7 @@
 <?php
-
 $image = get_sub_field("image") ? get_sub_field("image") : "";
 $title = get_sub_field("title") ? get_sub_field("title") : "";
 $text = get_sub_field("text") ? get_sub_field("text") : "";
-
 ?>
 
 <section class="standard-row p-relative d-flex d-flex-wrap">

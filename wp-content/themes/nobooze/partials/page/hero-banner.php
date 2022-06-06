@@ -1,10 +1,8 @@
 <?php
-
 $modifier = get_sub_field("modifier") ? get_sub_field("modifier") : [];
 $bg_image = get_sub_field("background_image") ? get_sub_field("background_image") : "";
 $title = get_sub_field("title") ? get_sub_field("title") : "";
 $subtitle = get_sub_field("subtitle") ? get_sub_field("subtitle") : "";
-
 ?>
 
 <section class="hero-banner p-relative <?php foreach ($modifier as $value) { echo(' ' . $value); } ?>">

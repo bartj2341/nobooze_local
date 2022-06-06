@@ -1,8 +1,6 @@
 <?php
-
 $title = get_sub_field("title") ? get_sub_field("title") : "";
 $button = get_sub_field("button") ? get_sub_field("button") : "";
-
 ?>
 
 <section class="glowing-banner p-relative">

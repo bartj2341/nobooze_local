@@ -1,11 +1,9 @@
 <?php
-
 $title = get_sub_field("title") ? get_sub_field("title") : "";
 $handwriting = get_sub_field("handwriting") ? get_sub_field("handwriting") : "";
 $subtitle = get_sub_field("subtitle") ? get_sub_field("subtitle") : "";
 $copy = get_sub_field("copy") ? get_sub_field("copy") : "";
 $cta = get_sub_field("cta") ? get_sub_field("cta") : "";
-
 ?>
 
 <section class="heavy-content p-relative">

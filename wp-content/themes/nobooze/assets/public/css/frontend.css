@@ -3017,7 +3017,12 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover, .heading
 }
 
 .full-image__title {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+}
+@media (min-width: 1024px) {
+  .full-image__title {
+    margin-bottom: 50px;
+  }
 }
 
 .full-image__subtitle {
@@ -3080,7 +3085,12 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover, .heading
 }
 
 .heavy-text__title {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+}
+@media (min-width: 1024px) {
+  .heavy-text__title {
+    margin-bottom: 50px;
+  }
 }
 
 .heavy-text__copy {
@@ -3224,7 +3234,7 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover, .heading
 }
 @media (min-width: 768px) {
   .fifty__container {
-    padding: 90px 55px 40px 55px;
+    padding: 90px 55px;
   }
 }
 @media (min-width: 1024px) {
@@ -3993,7 +4003,12 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover, .heading
    ========================================================================== */
 .single-video {
   background-color: #4267B2;
-  padding: 50px 0 90px 0;
+  padding: 50px 0;
+}
+@media (min-width: 1024px) {
+  .single-video {
+    padding: 50px 0 90px 0;
+  }
 }
 
 .single-video__container *:last-child {
@@ -4013,7 +4028,12 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover, .heading
    ========================================================================== */
 .video-row {
   background-color: #4267B2;
-  padding: 50px 0 90px 0;
+  padding: 50px 0;
+}
+@media (min-width: 1024px) {
+  .video-row {
+    padding: 50px 0 90px 0;
+  }
 }
 
 .video-row__title {
@@ -4039,6 +4059,13 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover, .heading
     width: calc(50% - 40px);
     margin: 20px;
   }
+}
+
+/* ==========================================================================
+   #EMBLEMS CAROUSEL / PARTIAL
+   ========================================================================== */
+.emblems-carousel__container {
+  padding: 55px 0;
 }
 
 /* ==========================================================================
