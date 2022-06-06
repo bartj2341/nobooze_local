@@ -16,7 +16,7 @@ $cta = get_sub_field("cta") ? get_sub_field("cta") : "";
         <?php endif; ?>
         <div class="fifty__wrapper d-flex d-flex-wrap d-flex-column w-100"> 
             <?php if($title): ?>
-                <h2 class="fifty__title heading-script f-script z-index-1"><?= $title ?></h2>
+                <h2 class="fifty__title heading-script f-script c-white z-index-1"><?= $title ?></h2>
             <?php endif; ?>
             <div class="fifty__container d-flex">
             <div class="fifty__content">
