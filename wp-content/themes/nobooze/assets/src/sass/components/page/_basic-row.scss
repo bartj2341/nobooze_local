@@ -43,6 +43,9 @@
     order: 2;
 
     @include bp(large) {
+        position: absolute;
+        top: 0;
+        left: 0;
         width: 50%;
         height: 100%;
         order: 0;

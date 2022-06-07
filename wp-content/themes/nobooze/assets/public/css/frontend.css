@@ -3965,6 +3965,9 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover, .heading
 }
 @media (min-width: 1024px) {
   .basic-row__image {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 50%;
     height: 100%;
     order: 0;
