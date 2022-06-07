@@ -99,10 +99,18 @@
                 box-shadow: none;
                 border: none;
 
+                br {
+                   display: none;
+                }
+
                 span {
-                    display: inline-block;
-                    margin-left: 10px;
-                    margin-bottom: 10px;
+                    display: block;
+                    height: 30px !important;
+                    width: 100% !important;
+                    margin-left: 10px !important;
+                    margin-bottom: 10px !important;
+                    opacity: 1 !important;
+                    transition: $global-transition;
                     @extend .f-text-bold;
 
                     @include bp(small) {
