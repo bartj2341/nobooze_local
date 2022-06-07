@@ -2,6 +2,10 @@
    #BASIC ROW / PARTIAL
    ========================================================================== */
 
+.basic-row {
+    position: relative;
+}
+
 .basic-row__wrapper {
     @include bp(large) {
         justify-content: flex-end;

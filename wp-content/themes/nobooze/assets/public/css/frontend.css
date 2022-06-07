@@ -3921,6 +3921,10 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover, .heading
 /* ==========================================================================
    #BASIC ROW / PARTIAL
    ========================================================================== */
+.basic-row {
+  position: relative;
+}
+
 @media (min-width: 1024px) {
   .basic-row__wrapper {
     justify-content: flex-end;

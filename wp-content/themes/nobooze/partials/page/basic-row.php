@@ -3,7 +3,7 @@ $image = get_sub_field("image") ? get_sub_field("image") : "";
 $text = get_sub_field("text") ? get_sub_field("text") : "";
 ?>
 
-<section class="basic-row d-flex d-flex-wrap p-relative">
+<section class="basic-row d-flex d-flex-wrap">
     <div class="basic-row__wrapper d-flex d-flex-wrap d-flex-align-c w-100"> 
         <?php if($image): ?>
             <div class="basic-row__image">
