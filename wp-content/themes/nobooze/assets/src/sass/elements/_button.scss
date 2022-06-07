@@ -15,8 +15,8 @@
     line-height: 1;
     text-align: center;
     max-width: 480px;
-    min-height: 40px;
-    overflow: hidden;
+    min-height: 45px;
+    font-size: 1.6rem;
     padding: 10px 20px;
     transition: $global-transition;
     cursor: pointer;
@@ -24,6 +24,11 @@
     &:hover {
         background-color: $cbg-blue;
         color: $ct-white;
+    }
+
+    @include bp(large) {
+        font-size: 1.8rem;
+        min-height: 50px;
     }
 }
 
@@ -39,6 +44,8 @@
 }
 
 .u-btn--nav {
+    min-height: 40px;
+
     @extend .u-btn;
     font-size: 1.3rem;
 

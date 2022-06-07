@@ -2592,8 +2592,8 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover, .heading
   line-height: 1;
   text-align: center;
   max-width: 480px;
-  min-height: 40px;
-  overflow: hidden;
+  min-height: 45px;
+  font-size: 1.6rem;
   padding: 10px 20px;
   transition: all 200ms linear;
   cursor: pointer;
@@ -2601,6 +2601,12 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover, .heading
 .u-btn:hover, .u-btn--nav:hover, .u-btn--white:hover {
   background-color: #2e487d;
   color: #fff;
+}
+@media (min-width: 1024px) {
+  .u-btn, .u-btn--nav, .u-btn--white {
+    font-size: 1.8rem;
+    min-height: 50px;
+  }
 }
 
 .u-btn--white {
@@ -2613,6 +2619,7 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover, .heading
 }
 
 .u-btn--nav {
+  min-height: 40px;
   font-size: 1.3rem;
 }
 @media (min-width: 1024px) {

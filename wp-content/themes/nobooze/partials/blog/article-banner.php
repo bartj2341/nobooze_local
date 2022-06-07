@@ -10,6 +10,6 @@ $author_name = get_the_author_meta("display_name");
         </div>
     </div>
     <div class="article-banner__bg d-flex d-flex-align-e">
-        <img src="<?= get_template_directory_uri() ?>/assets/src/images/Alcohol-Coach-Blog.png" alt="article banner image" class="article-banner__img d-block">
+        <img src="<?= get_template_directory_uri() ?>/assets/src/images/article-banner-image.png" alt="article banner image" class="article-banner__img d-block">
     </div>
 </section> 
