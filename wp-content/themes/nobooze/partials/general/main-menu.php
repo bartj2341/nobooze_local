@@ -33,7 +33,7 @@ $pagename = $post ? $post->post_name : '';
                                 <ul class="u-header__sub__list d-flex d-flex-column list-reset">
                                     <li class="u-header__sub__li p-relative">
                                         <a class="u-header__sub__cta text-links d-flex d-flex-align-c" href="<?= site_url() ?>/exclusive-private-coaching">
-                                            <div class="u-header__sub__icon"><?php //include get_icons_directory('icons/coaching.svg') ?></div>
+                                            <div class="u-header__sub__icon"><?php include get_icons_directory('icons/coaching.svg') ?></div>
                                             <div class="u-header__sub__text">EXCLUSIVE PRIVATE COACHING</div>
                                         </a>
                                     </li>
