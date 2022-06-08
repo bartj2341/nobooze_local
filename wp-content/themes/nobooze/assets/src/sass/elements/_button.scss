@@ -21,14 +21,14 @@
     transition: $global-transition;
     cursor: pointer;
 
-    &:hover {
-        background-color: $cbg-blue;
-        color: $ct-white;
-    }
-
     @include bp(large) {
         font-size: 1.8rem;
         min-height: 50px;
+
+        &:hover {
+            background-color: $cbg-blue;
+            color: $ct-white;
+        }
     }
 }
 

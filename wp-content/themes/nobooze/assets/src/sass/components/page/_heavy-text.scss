@@ -3,14 +3,14 @@
    ========================================================================== */
 
 .heavy-text {
-    padding: 50px 0 50px 0;
+    padding: 50px 0;
 
     @include bp(medium) {
-        padding: 65px 0 65px 0;
+        padding: 70px 0;
     }
 
     @include bp(large) {
-        padding: 100px 0 90px 0;
+        padding: 100px 0;
     }
 }
 
@@ -22,7 +22,11 @@
 
 .heavy-text__title {
     margin-bottom: 30px;
-    
+
+    @include bp(medium) {
+        margin-bottom: 40px;
+    }
+
     @include bp(large) {
         margin-bottom: 50px;
     }

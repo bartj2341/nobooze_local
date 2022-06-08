@@ -6,7 +6,7 @@ $title = get_sub_field("title") ? get_sub_field("title") : "";
 <section class="video-row <?php foreach ($modifier as $value) { echo(' ' . $value); } ?>">
     <div class="video-row__container wrapper-large">
         <?php if($title): ?>
-            <h2 class="video-row__title heading-basic c-white u-text-center"><?= $title ?></h2>
+            <h2 class="video-row__title heading-basic u-text-center"><?= $title ?></h2>
         <?php endif; ?>
         <?php if(have_rows("videos_repeater")): ?>
         <div class="video-row__row d-flex d-flex-wrap">

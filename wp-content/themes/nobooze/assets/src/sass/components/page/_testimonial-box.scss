@@ -4,13 +4,17 @@
 
 .testimonial-box {
     background-color: $cbg-blue-5;
-    padding: 70px 0;
+    padding: 50px 0;
+
+    @include bp(medium) {
+        padding: 70px 0;
+    }
 }
 
 .testimonial-box__container {
     background-color: $cbg-white;
     border: 1px solid $cb-blue-2;
-    padding: 55px;
+    padding: 50px;
 }
 
 .testimonial-box__image {

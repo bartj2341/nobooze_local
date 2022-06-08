@@ -3,7 +3,6 @@
    ========================================================================== */
 
 .video-row { 
-    background-color: $cbg-blue-2;
     padding: 50px 0;
 
     @include bp(large) {
@@ -12,11 +11,18 @@
 }
 
 .video-row__title {
-    margin-bottom: 10px;
+    margin-bottom: 30px;
+
+    @include bp(medium) {
+        margin-bottom: 40px;
+    }
+
+    @include bp(large) {
+        margin-bottom: 50px;
+    }
 }
 
 .video-row__row {
-    padding-top: 40px;
     margin-bottom: -35px;
 
     @include bp(medium) {

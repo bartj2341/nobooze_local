@@ -16,10 +16,10 @@
 .wave-section__container {
     width: 100%;
     justify-content: center;
-    padding: 40px 40px 50px;
+    padding: 50px 40px;
 
     @include bp(medium) {
-        padding: 40px;
+        padding: 70px 40px;
     }
 
     @include bp(large) {
@@ -37,11 +37,27 @@
 }
 
 .wave-section__text {
-    margin-bottom: 50px;
+    margin-bottom: 30px;
+
+    @include bp(medium) {
+        margin-bottom: 40px;
+    }
+
+    @include bp(large) {
+        margin-bottom: 50px;
+    }
 }
 
 .wave-section__title {
-    margin-bottom: 50px;
+    margin-bottom: 30px;
+
+    @include bp(medium) {
+        margin-bottom: 40px;
+    }
+
+    @include bp(large) {
+        margin-bottom: 50px;
+    }
 }
 
 .wave-section__image {
@@ -69,7 +85,6 @@
 }
 
 // Modifiers
-
 .wave-section--invert {
     .wave-section__wrapper {
         @include bp(large) {

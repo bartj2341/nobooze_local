@@ -18,9 +18,13 @@
 }
 
 .single-video__title {
-    margin-bottom: 10px;
-}
+    margin-bottom: 30px;
 
-.single-video__video {
-    padding-top: 40px;
+    @include bp(medium) {
+        margin-bottom: 40px;
+    }
+
+    @include bp(large) {
+        margin-bottom: 50px;
+    }
 }

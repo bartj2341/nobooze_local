@@ -16,12 +16,12 @@
 
 .info-row__container {
     width: 100%;
-    padding: 40px;;
+    padding: 50px 40px;
     align-items: center;
     order: 0;
 
     @include bp(medium) {
-        padding: 40px 55px;
+        padding: 70px 55px;
     }
 
     @include bp(large) {
@@ -33,15 +33,39 @@
 
 .info-row__content {
     max-width: 460px;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
+
+    @include bp(medium) {
+        margin-bottom: 40px;
+    }
+
+    @include bp(large) {
+        margin-bottom: 50px;
+    }
 }
 
 .info-row__text {
-    margin-bottom: 50px;
+    margin-bottom: 30px;
+
+    @include bp(medium) {
+        margin-bottom: 40px;
+    }
+
+    @include bp(large) {
+        margin-bottom: 50px;
+    }
 }
 
 .info-row__title {
-    margin-bottom: 50px;
+    margin-bottom: 30px;
+
+    @include bp(medium) {
+        margin-bottom: 40px;
+    }
+
+    @include bp(large) {
+        margin-bottom: 50px;
+    }
 }
 
 .info-row__signature {

@@ -14,12 +14,12 @@
 
 .basic-row__container {
     width: 100%;
-    padding: 40px 40px 50px;
+    padding: 50px 40px;
     align-items: center;
     order: 0;
 
     @include bp(medium) {
-        padding: 40px 55px;
+        padding: 70px 55px;
     }
 
     @include bp(large) {

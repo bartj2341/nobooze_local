@@ -12,14 +12,14 @@
                 .wpforms-field-label {
                     @extend .f-text-bold;
                     margin-bottom: 8px;
-                    font-size: 1.9rem;
+                    font-size: 1.8rem;
                 }
 
                 input,
                 textarea {
                     border: 1px solid transparent;
                     padding: 12px;
-                    font-size: 19px;
+                    font-size: 18px;
                     border-radius: 0;
 
                     &.wpforms-error {

@@ -14,11 +14,23 @@
 }
 
 .u-carousel__container {
-    padding: 55px 0 35px;
+    padding: 55px 0;
+
+    @include bp(medium) {
+        padding: 55px 0 70px;
+    }
+
+    @include bp(large) {
+        padding: 55px 0 90px;
+    }
 }
 
 .u-carousel__title {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
+
+    @include bp(medium) {
+        margin-bottom: 50px;
+    }
 }
 
 .u-carousel__carousel {
@@ -40,11 +52,13 @@
 }
 
 .u-carousel__item {
-    padding: 15px;
+    padding: 0 15px;
+    min-height: 1px;
+    max-height: 250px;
 }
 
 .u-carousel__img {
     max-width: 100%;
-    height: auto;
+    height: 100%;
     margin: 0 auto;
 }

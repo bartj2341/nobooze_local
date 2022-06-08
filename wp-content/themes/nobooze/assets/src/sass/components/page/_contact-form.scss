@@ -55,17 +55,41 @@
 }
 
 .contact-form__title {
-    margin-bottom: 50px;
+    margin-bottom: 30px;
+
+    @include bp(medium) {
+        margin-bottom: 40px;
+    }
+
+    @include bp(large) {
+        margin-bottom: 50px;
+    }
 }
 
 .contact-form__text {
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     max-width: 450px;
+
+    @include bp(medium) {
+        margin-bottom: 40px;
+    }
+
+    @include bp(large) {
+        margin-bottom: 50px;
+    }
 }
 
 .contact-form__signature {
     width: 100%;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
+
+    @include bp(medium) {
+        margin-bottom: 40px;
+    }
+
+    @include bp(large) {
+        margin-bottom: 50px;
+    }
 }
 
 .contact-form__form {
