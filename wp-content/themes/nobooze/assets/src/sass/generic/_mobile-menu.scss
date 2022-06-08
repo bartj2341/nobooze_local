@@ -13,10 +13,17 @@
     border-top: 1px solid $cb-gray;
 }
 
-.m-menu__ul {
+.m-menu__ul,
+.m-menu__cta__wrapper {
+    margin: 0 -20px;
+    
     @include bp(medium) {
-        margin: 0 -24px;
+        margin: 0 -35px;
     }
+}
+
+.m-menu__cta__wrapper {
+    padding: 0 20px;
 }
 
 .m-submenu__ul {
@@ -29,9 +36,7 @@
 
 .m-menu__li {
     border-bottom: 1px solid $cb-gray;
-    @include bp(medium) {
-        padding: 0 20px; 
-    }
+    padding: 0 20px; 
 }
 
 .m-menu__link {

@@ -24,7 +24,7 @@ $signature = get_sub_field("signature") ? get_sub_field("signature") : "";
                 <?php endif; ?>
 
                 <?php if($signature): ?>
-                    <div class="contact-form__signature f-script heading-script-two u-text-right line-medium"><?= $signature ?></div>
+                    <div class="contact-form__signature f-script heading-script-two u-text-right"><?= $signature ?></div>
                 <?php endif; ?>
                 <?php echo do_shortcode('[wpforms id="466" title="false"]');?>
             </div>

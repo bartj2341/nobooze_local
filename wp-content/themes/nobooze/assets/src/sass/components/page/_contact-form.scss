@@ -5,7 +5,7 @@
 .contact-form {
     background-color: $cbg-blue-5;
     justify-content: center;
-    padding: 102px 0 50px; 
+    padding-top: 102px;
 
     @include bp(large) {
         justify-content: flex-end
@@ -41,15 +41,15 @@
 .contact-form__container {
     width: 100%;
     justify-content: center;
-    padding: 30px 20px 80px;
+    padding: 50px 40px;
 
     @include bp(medium) {
-        padding: 60px 40px 60px;
+        padding: 70px 40px;
     }
 
     @include bp(large) {
         justify-content: flex-end;
-        padding: 60px 70px 116px;
+        padding: 60px 70px 120px;
         width: 53%;
     }
 }

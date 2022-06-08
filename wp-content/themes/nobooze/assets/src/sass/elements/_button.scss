@@ -17,7 +17,7 @@
     max-width: 480px;
     min-height: 45px;
     font-size: 1.6rem;
-    padding: 10px 20px;
+    padding: 12px 25px;
     transition: $global-transition;
     cursor: pointer;
 
@@ -55,7 +55,7 @@
 
     @include bp(xlarge) {
         font-size: 1.5rem; 
-        padding: 10px 20px;
+        padding: 12px 25px;
     }
 
 	@include bp(full) {

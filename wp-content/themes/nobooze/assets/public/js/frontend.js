@@ -1,6 +1,55 @@
 /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
+/***/ "./assets/src/js/modules/_booking-summary.js":
+/*!***************************************************!*\
+  !*** ./assets/src/js/modules/_booking-summary.js ***!
+  \***************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "BookingSummary": () => (/* binding */ BookingSummary)
+/* harmony export */ });
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
+
+var BookingSummary = /*#__PURE__*/function () {
+  function BookingSummary() {
+    _classCallCheck(this, BookingSummary);
+
+    this.events();
+  }
+
+  _createClass(BookingSummary, [{
+    key: "events",
+    value: function events() {
+      setTimeout(function () {
+        var summary = document.querySelector(".usedSlots");
+        var observer = new MutationObserver(function () {
+          if (summary.hasChildNodes()) {
+            summary.classList.add("hasChildren");
+          } else {
+            summary.classList.remove("hasChildren");
+          }
+        }); // Pass in the target node, as well as the observer options.
+
+        observer.observe(summary, {
+          childList: true
+        });
+      }, 300);
+    }
+  }]);
+
+  return BookingSummary;
+}();
+
+/***/ }),
+
 /***/ "./assets/src/js/modules/_desktop-submenu.js":
 /*!***************************************************!*\
   !*** ./assets/src/js/modules/_desktop-submenu.js ***!
@@ -24141,6 +24190,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _modules_swiper__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./modules/_swiper */ "./assets/src/js/modules/_swiper.js");
 /* harmony import */ var _modules_desktop_submenu__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./modules/_desktop-submenu */ "./assets/src/js/modules/_desktop-submenu.js");
 /* harmony import */ var _modules_mobile_menu__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./modules/_mobile-menu */ "./assets/src/js/modules/_mobile-menu.js");
+/* harmony import */ var _modules_booking_summary__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./modules/_booking-summary */ "./assets/src/js/modules/_booking-summary.js");
 /**
  * SASS
  */
@@ -24157,13 +24207,19 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+
 window.addEventListener('DOMContentLoaded', function () {
   var carousel = document.querySelector('.js-carousel');
+  var bookingSummary = document.querySelector('.booking-section');
   new _modules_desktop_submenu__WEBPACK_IMPORTED_MODULE_3__.Accessibility();
   new _modules_mobile_menu__WEBPACK_IMPORTED_MODULE_4__.Menu();
 
   if (carousel) {
     new _modules_swiper__WEBPACK_IMPORTED_MODULE_2__.SwiperCarousel();
+  }
+
+  if (bookingSummary) {
+    new _modules_booking_summary__WEBPACK_IMPORTED_MODULE_5__.BookingSummary();
   }
 
   (0,_modules_helpers__WEBPACK_IMPORTED_MODULE_1__.handleWindow)();

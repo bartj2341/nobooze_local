@@ -179,11 +179,15 @@
             }
             
             .usedSlots {
-                display: flex;
+                display: none;
                 flex-direction: column;
                 background-color: $cbg-blue-5; 
                 padding: 30px;
-                margin-bottom: 10px;  
+                margin-bottom: 10px; 
+
+                &.hasChildren {
+                    display: flex;
+                }
                 
                 .cancel {
                     color: $ct-red-2;
@@ -269,21 +273,27 @@
                 border: 0;
                 border-radius: $btn-radius;
                 color: $ct-white;
-                font-size: 1.8rem;
+                font-size: 1.6rem;
                 font-family: $heading-semibold;
                 line-height: 1;
                 text-align: center;
                 max-width: 480px;
-                min-height: 40px;
+                min-height: 45px;
                 overflow: hidden;
-                padding: 10px 20px;
+                padding: 12px 25px;
                 transition: background-color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, box-shadow 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s;
                 cursor: pointer;
 
-                &:hover {
-                    background-color: $cbg-blue;
-                    color: $ct-white;
+                @include bp(large) {
+                    font-size: 1.8rem;
+                    min-height: 50px;
+
+                    &:hover {
+                        background-color: $cbg-blue;
+                        color: $ct-white;
+                    }
                 }
+
             }
 
             .totalCost {

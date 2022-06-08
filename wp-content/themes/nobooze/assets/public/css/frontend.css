@@ -1597,10 +1597,19 @@ fieldset {
   border-top: 1px solid #d7e0e4;
 }
 
+.m-menu__ul,
+.m-menu__cta__wrapper {
+  margin: 0 -20px;
+}
 @media (min-width: 768px) {
-  .m-menu__ul {
-    margin: 0 -24px;
+  .m-menu__ul,
+.m-menu__cta__wrapper {
+    margin: 0 -35px;
   }
+}
+
+.m-menu__cta__wrapper {
+  padding: 0 20px;
 }
 
 .m-submenu__ul {
@@ -1615,11 +1624,7 @@ fieldset {
 
 .m-menu__li {
   border-bottom: 1px solid #d7e0e4;
-}
-@media (min-width: 768px) {
-  .m-menu__li {
-    padding: 0 20px;
-  }
+  padding: 0 20px;
 }
 
 .m-menu__link {
@@ -1782,7 +1787,7 @@ fieldset {
   margin-bottom: 20px;
 }
 .single-article__content blockquote {
-  padding: 10px 20px;
+  padding: 12px 25px;
   font-size: 1.7rem;
   border-left: 5px solid #000;
   margin-bottom: 30px;
@@ -2215,7 +2220,7 @@ h6,
 .heading-script-two {
   /* 80px ~ 75px */
   font-size: 7.5rem;
-  line-height: 1.2;
+  line-height: 1;
 }
 @media (min-width: 768px) {
   .heading-script-two {
@@ -2513,10 +2518,6 @@ h6,
   line-height: 2.4;
 }
 
-.line-medium {
-  line-height: 1.4;
-}
-
 .line-normal {
   line-height: 1.2;
 }
@@ -2594,7 +2595,7 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover, .heading
   max-width: 480px;
   min-height: 45px;
   font-size: 1.6rem;
-  padding: 10px 20px;
+  padding: 12px 25px;
   transition: all 200ms linear;
   cursor: pointer;
 }
@@ -2630,7 +2631,7 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover, .heading
 @media (min-width: 1280px) {
   .u-btn--nav {
     font-size: 1.5rem;
-    padding: 10px 20px;
+    padding: 12px 25px;
   }
 }
 @media (min-width: 1600px) {
@@ -2947,17 +2948,24 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover, .heading
   line-height: 1;
   text-align: center;
   max-width: 480px;
-  min-height: 40px;
+  min-height: 45px;
   overflow: hidden;
-  padding: 10px 20px;
+  padding: 12px 25px;
   transition: all 200ms linear;
   cursor: pointer;
 }
-.wpforms-container .wpforms-form .wpforms-submit-container .wpforms-submit:hover,
+@media (min-width: 1024px) {
+  .wpforms-container .wpforms-form .wpforms-submit-container .wpforms-submit,
+.wpforms-container-full .wpforms-form .wpforms-submit-container .wpforms-submit {
+    font-size: 1.8rem;
+    min-height: 50px;
+  }
+  .wpforms-container .wpforms-form .wpforms-submit-container .wpforms-submit:hover,
 .wpforms-container-full .wpforms-form .wpforms-submit-container .wpforms-submit:hover {
-  border: 0;
-  background-color: #2e487d;
-  color: #fff;
+    border: 0;
+    background-color: #2e487d;
+    color: #fff;
+  }
 }
 .wpforms-container .wpforms-form .wpforms-submit-container .wpforms-submit.u-btn--white,
 .wpforms-container-full .wpforms-form .wpforms-submit-container .wpforms-submit.u-btn--white {
@@ -3332,7 +3340,7 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover, .heading
 .contact-form {
   background-color: #ecf0f7;
   justify-content: center;
-  padding: 102px 0 50px;
+  padding-top: 102px;
 }
 @media (min-width: 1024px) {
   .contact-form {
@@ -3370,17 +3378,17 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover, .heading
 .contact-form__container {
   width: 100%;
   justify-content: center;
-  padding: 30px 20px 80px;
+  padding: 50px 40px;
 }
 @media (min-width: 768px) {
   .contact-form__container {
-    padding: 60px 40px 60px;
+    padding: 70px 40px;
   }
 }
 @media (min-width: 1024px) {
   .contact-form__container {
     justify-content: flex-end;
-    padding: 60px 70px 116px;
+    padding: 60px 70px 120px;
     width: 53%;
   }
 }
@@ -4722,11 +4730,14 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover, .heading
   }
 }
 .booking-section .cpp_form #fbuilder .usedSlots {
-  display: flex;
+  display: none;
   flex-direction: column;
   background-color: #ecf0f7;
   padding: 30px;
   margin-bottom: 10px;
+}
+.booking-section .cpp_form #fbuilder .usedSlots.hasChildren {
+  display: flex;
 }
 .booking-section .cpp_form #fbuilder .usedSlots .cancel {
   color: #cf2e2e;
@@ -4796,20 +4807,26 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover, .heading
   border: 0;
   border-radius: 30px;
   color: #fff;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   font-family: "Proxima Nova Semibold", Arial Bold, sans-serif;
   line-height: 1;
   text-align: center;
   max-width: 480px;
-  min-height: 40px;
+  min-height: 45px;
   overflow: hidden;
-  padding: 10px 20px;
+  padding: 12px 25px;
   transition: background-color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, box-shadow 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s;
   cursor: pointer;
 }
-.booking-section .cpp_form #fbuilder .pbSubmit:hover {
-  background-color: #2e487d;
-  color: #fff;
+@media (min-width: 1024px) {
+  .booking-section .cpp_form #fbuilder .pbSubmit {
+    font-size: 1.8rem;
+    min-height: 50px;
+  }
+  .booking-section .cpp_form #fbuilder .pbSubmit:hover {
+    background-color: #2e487d;
+    color: #fff;
+  }
 }
 .booking-section .cpp_form #fbuilder .totalCost {
   margin-top: 15px;
