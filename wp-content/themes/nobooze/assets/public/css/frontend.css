@@ -2644,6 +2644,8 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover, .heading
    #IMAGES
    ========================================================================== */
 .fit-cover {
+  width: 100%;
+  height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -3021,8 +3023,6 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover, .heading
   max-width: 100%;
   max-height: 100%;
   margin-left: auto;
-  -o-object-fit: cover;
-     object-fit: cover;
 }
 
 .full-image__container {
@@ -3326,13 +3326,6 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover, .heading
   }
 }
 
-.fifty__img {
-  height: 100%;
-  width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
 /* ==========================================================================
    #CONTACT FORM / PARTIAL
    ========================================================================== */
@@ -3365,13 +3358,6 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover, .heading
     height: 100%;
     max-width: unset;
   }
-}
-
-.contact-form__img {
-  height: 100%;
-  width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
 }
 
 .contact-form__container {
@@ -3528,13 +3514,6 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover, .heading
     height: calc(100% + 100px);
     margin-right: 0;
   }
-}
-
-.wave-section__img {
-  height: 100%;
-  width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
 }
 
 @media (min-width: 1024px) {
@@ -3703,13 +3682,6 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover, .heading
   }
 }
 
-.info-row__img {
-  height: 100%;
-  width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
 @media (min-width: 1024px) {
   .info-row--image-wider .info-row__image {
     width: 53%;
@@ -3756,7 +3728,6 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover, .heading
 }
 
 .script-banner__bg {
-  position: absolute;
   top: 0;
   left: 0;
 }
@@ -3886,15 +3857,6 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover, .heading
   }
 }
 
-.standard-row__img {
-  height: 100%;
-  width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: center top;
-     object-position: center top;
-}
-
 /* ==========================================================================
 #ALTERNATE BANNER / PARTIAL
 ========================================================================== */
@@ -3949,8 +3911,6 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover, .heading
   max-width: 100%;
   max-height: 100%;
   margin-left: auto;
-  -o-object-fit: cover;
-     object-fit: cover;
 }
 
 .alternate-banner__content {
@@ -4140,13 +4100,6 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover, .heading
   }
 }
 
-.basic-row__img {
-  height: 100%;
-  width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
 /* ==========================================================================
    #CUSTOM TEXT / PARTIAL
    ========================================================================== */
@@ -4304,8 +4257,6 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover, .heading
   max-width: 100%;
   max-height: 100%;
   margin-left: auto;
-  -o-object-fit: cover;
-     object-fit: cover;
 }
 
 .article-banner__container {

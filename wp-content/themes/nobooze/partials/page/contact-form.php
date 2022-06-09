@@ -1,16 +1,13 @@
 <?php
-
 $image = get_sub_field("image") ? get_sub_field("image") : "";
-$form_decoration = get_sub_field("form_decoration") ? get_sub_field("form_decoration") : "";
 $title = get_sub_field("title") ? get_sub_field("title") : "";
 $text = get_sub_field("text") ? get_sub_field("text") : "";
 $signature = get_sub_field("signature") ? get_sub_field("signature") : "";
-
 ?>
 
 <section class="contact-form p-relative d-flex d-flex-wrap">
     <div class="contact-form__image">
-        <img src="<?= $image["url"] ?>" alt="<?= $image["alt"] ?>" class="contact-form__img d-block">
+        <img src="<?= $image["url"] ?>" alt="<?= $image["alt"] ?>" class="contact-form__img d-block fit-cover">
     </div>
     <div class="contact-form__container p-relative">
         <div class="contact-form__content p-relative">

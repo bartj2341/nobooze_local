@@ -7,7 +7,7 @@ $text = get_sub_field("text") ? get_sub_field("text") : "";
 <section class="standard-row p-relative d-flex d-flex-wrap">
     <?php if($image): ?>
         <div class="standard-row__image z-index-2">
-            <img src="<?= $image["url"] ?>" alt="<?= $image["alt"] ?>" class="standard-row__img">
+            <img src="<?= $image["url"] ?>" alt="<?= $image["alt"] ?>" class="standard-row__img d-block fit-cover">
         </div> 
     <?php endif; ?>
     <div class="standard-row__wrapper p-relative d-flex d-flex-wrap d-flex-align-c w-100"> 

@@ -10,7 +10,7 @@ $cta = get_sub_field("cta") ? get_sub_field("cta") : "";
 <section class="wave-section p-relative d-flex d-flex-wrap <?php foreach ($modifier as $value) { echo(' ' . $value); } ?>">
     <?php if($image): ?>
         <div class="wave-section__image z-index-2">
-            <img src="<?= $image["url"] ?>" alt="<?= $image["alt"] ?>" class="wave-section__img d-block">
+            <img src="<?= $image["url"] ?>" alt="<?= $image["alt"] ?>" class="wave-section__img d-block fit-cover">
         </div> 
     <?php endif; ?>
     <div class="wave-section__wrapper d-flex w-100">

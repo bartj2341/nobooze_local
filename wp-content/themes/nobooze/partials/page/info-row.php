@@ -10,7 +10,7 @@ $signature = get_sub_field("signature") ? get_sub_field("signature") : "";
     <div class="info-row__wrapper p-relative d-flex d-flex-wrap d-flex-align-c w-100"> 
         <?php if($image): ?>
             <div class="info-row__image">
-                <img src="<?= $image["url"] ?>" alt="<?= $image["alt"] ?>" class="info-row__img d-block">
+                <img src="<?= $image["url"] ?>" alt="<?= $image["alt"] ?>" class="info-row__img d-block fit-cover">
             </div> 
         <?php endif; ?>
         <div class="info-row__container d-flex d-flex-column">

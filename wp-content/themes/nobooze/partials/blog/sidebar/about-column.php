@@ -2,7 +2,7 @@
     <div class="about-column__bg p-absolute w-100"></div>
     <div class="about-column__container p-relative z-index-1">
         <div class="about-column__image">
-            <img class="about-column__img d-block w-100 h-100 fit-cover" src="<?= get_template_directory_uri() ?>/assets/src/images/Tom.jpg">
+            <img class="about-column__img d-block fit-cover" src="<?= get_template_directory_uri() ?>/assets/src/images/Tom.jpg">
         </div>
         <div class="about-column__content">
             <p class="about-column__title f-heading heading-post u-text-center"><span class="l-script">Hi,</span> I'm Tom</p>

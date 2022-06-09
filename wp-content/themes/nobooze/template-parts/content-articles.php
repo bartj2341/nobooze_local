@@ -19,7 +19,7 @@ $author_link = get_author_posts_url($author_id);
         <div class="s-articles__card d-flex d-flex-column">
             <?php if(get_the_post_thumbnail_url()): ?>
             <div class="s-articles__image">
-                <img class="s-articles__img img-fluid lazy" src="<?php the_post_thumbnail_url(); ?>" alt="<?= get_post_meta( get_post_thumbnail_id(), '_wp_attachment_image_alt', true ); ?>" />
+                <img class="s-articles__img" src="<?php the_post_thumbnail_url(); ?>" alt="<?= get_post_meta( get_post_thumbnail_id(), '_wp_attachment_image_alt', true ); ?>" />
             </div>
             <?php endif; ?>
             
