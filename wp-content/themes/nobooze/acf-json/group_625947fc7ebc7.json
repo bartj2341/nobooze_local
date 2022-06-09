@@ -589,7 +589,6 @@
                                 "id": ""
                             },
                             "choices": {
-                                "hero-banner--large-height": "Large component height",
                                 "hero-banner--text-top": "Text at the top of the component"
                             },
                             "default_value": [],
@@ -1803,5 +1802,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1654762917
+    "modified": 1654776373
 }

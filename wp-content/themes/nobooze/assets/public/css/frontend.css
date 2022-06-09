@@ -3207,6 +3207,12 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover, .heading
     padding: 200px 0 190px;
   }
 }
+@media (min-width: 1900px) {
+  .hero-banner__wrapper {
+    padding-top: calc(200px + 4vw);
+    padding-bottom: calc(190px + 4vw);
+  }
+}
 
 .hero-banner__dark {
   top: 0;
@@ -3230,18 +3236,15 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover, .heading
   margin-bottom: 10px;
 }
 
-.hero-banner--large-height .hero-banner__wrapper {
-  padding: 120px 0 130px;
-}
-@media (min-width: 1024px) {
-  .hero-banner--large-height .hero-banner__wrapper {
-    padding: 220px 0 190px;
-  }
-}
-
 @media (min-width: 1024px) {
   .hero-banner--text-top .hero-banner__wrapper {
     padding: 60px 0 355px 0;
+  }
+}
+@media (min-width: 1900px) {
+  .hero-banner--text-top .hero-banner__wrapper {
+    padding-top: calc(60px + 4vw);
+    padding-bottom: calc(355px + 4vw);
   }
 }
 
@@ -3714,6 +3717,12 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover, .heading
     padding: 260px 0;
   }
 }
+@media (min-width: 1900px) {
+  .script-banner__wrapper {
+    padding-top: calc(260px + 4vw);
+    padding-bottom: calc(260px + 4vw);
+  }
+}
 
 .script-banner__dark {
   top: 0;
@@ -3751,6 +3760,12 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover, .heading
 @media (min-width: 1024px) {
   .script-banner--text-bottom .script-banner__wrapper {
     padding: 360px 0 160px 0;
+  }
+}
+@media (min-width: 1900px) {
+  .script-banner--text-bottom .script-banner__wrapper {
+    padding-top: calc(360px + 4vw);
+    padding-bottom: calc(160px + 4vw);
   }
 }
 

@@ -8,6 +8,11 @@
     @include bp(large) {
         padding: 260px 0;
     }
+
+    @include bp(xfull) {
+        padding-top: calc(260px + 4vw);
+        padding-bottom: calc(260px + 4vw);
+    }
 }
 
 .script-banner__dark {
@@ -48,6 +53,11 @@
     .script-banner__wrapper {
         @include bp(large) {
             padding: 360px 0 160px 0;
+        }
+
+        @include bp(xfull) {
+            padding-top: calc(360px + 4vw);
+            padding-bottom: calc(160px + 4vw);
         }
     }
 }
