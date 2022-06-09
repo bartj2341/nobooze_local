@@ -283,6 +283,30 @@
                     "display": "block",
                     "sub_fields": [
                         {
+                            "key": "field_62a1aa60ec7d4",
+                            "label": "Modifier",
+                            "name": "modifier",
+                            "type": "select",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "u-carousel--small-pb": "Small Padding Bottom"
+                            },
+                            "default_value": [],
+                            "allow_null": 1,
+                            "multiple": 1,
+                            "ui": 1,
+                            "ajax": 0,
+                            "return_format": "value",
+                            "placeholder": ""
+                        },
+                        {
                             "key": "field_625e85d3a85b6",
                             "label": "Title",
                             "name": "title",
@@ -1169,6 +1193,30 @@
                     "display": "block",
                     "sub_fields": [
                         {
+                            "key": "field_62a1a8aaec7d3",
+                            "label": "Modifier",
+                            "name": "modifier",
+                            "type": "select",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "u-carousel--small-pb": "Small Padding Bottom"
+                            },
+                            "default_value": [],
+                            "allow_null": 1,
+                            "multiple": 1,
+                            "ui": 1,
+                            "ajax": 0,
+                            "return_format": "value",
+                            "placeholder": ""
+                        },
+                        {
                             "key": "field_62667a4e5fadf",
                             "label": "Title",
                             "name": "title",
@@ -1755,5 +1803,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1654262347
+    "modified": 1654762917
 }
