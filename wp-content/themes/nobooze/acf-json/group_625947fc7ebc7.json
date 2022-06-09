@@ -296,7 +296,7 @@
                                 "id": ""
                             },
                             "choices": {
-                                "u-carousel--small-pb": "Small Padding Bottom"
+                                "u-carousel--small-pt": "Small Padding Top"
                             },
                             "default_value": [],
                             "allow_null": 1,
@@ -1205,7 +1205,7 @@
                                 "id": ""
                             },
                             "choices": {
-                                "u-carousel--small-pb": "Small Padding Bottom"
+                                "u-carousel--small-pt": "Small Padding Top"
                             },
                             "default_value": [],
                             "allow_null": 1,
@@ -1802,5 +1802,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1654776373
+    "modified": 1654778961
 }

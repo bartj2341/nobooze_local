@@ -6,19 +6,18 @@
 .u-carousel {
     padding-left: 20px;
     padding-right: 20px;
-    
+    margin-bottom: 70px;
+
     @include bp(large) {
         padding-left: 55px;
         padding-right: 55px;
+        margin-bottom: 100px;
     }
 }
 
 .u-carousel__container {
-    padding: 55px 0 70px;
+    
 
-    @include bp(large) {
-        padding: 55px 0 100px;
-    }
 }
 
 .u-carousel__title {
@@ -60,8 +59,8 @@
 }
 
 // Modifers
-.u-carousel--small-pb {
+.u-carousel--small-pt {
     .u-carousel__container {
-        padding: 55px 0 35px;
+        padding-top: 55px;
     }
 }
