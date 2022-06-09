@@ -3288,6 +3288,18 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover, .heading
     padding: 90px;
   }
 }
+@media (min-width: 1280px) {
+  .fifty__container {
+    padding-top: calc(90px + 2vw);
+    padding-bottom: calc(90px + 2vw);
+  }
+}
+@media (min-width: 1900px) {
+  .fifty__container {
+    padding-top: calc(90px + 4vw);
+    padding-bottom: calc(90px + 4vw);
+  }
+}
 
 .fifty__content {
   max-width: 460px;
@@ -3459,6 +3471,18 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover, .heading
     width: 50%;
   }
 }
+@media (min-width: 1280px) {
+  .wave-section__container {
+    padding-top: calc(90px + 2vw);
+    padding-bottom: calc(90px + 2vw);
+  }
+}
+@media (min-width: 1900px) {
+  .wave-section__container {
+    padding-top: calc(90px + 4vw);
+    padding-bottom: calc(90px + 4vw);
+  }
+}
 
 .wave-section__content {
   max-width: 460px;
@@ -3613,6 +3637,18 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover, .heading
     padding: 90px;
     width: 50%;
     order: 2;
+  }
+}
+@media (min-width: 1280px) {
+  .info-row__container {
+    padding-top: calc(90px + 2vw);
+    padding-bottom: calc(90px + 2vw);
+  }
+}
+@media (min-width: 1900px) {
+  .info-row__container {
+    padding-top: calc(90px + 4vw);
+    padding-bottom: calc(90px + 4vw);
   }
 }
 
@@ -3822,6 +3858,18 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover, .heading
     width: 50%;
   }
 }
+@media (min-width: 1280px) {
+  .standard-row__container {
+    padding-top: calc(90px + 2vw);
+    padding-bottom: calc(90px + 2vw);
+  }
+}
+@media (min-width: 1900px) {
+  .standard-row__container {
+    padding-top: calc(90px + 4vw);
+    padding-bottom: calc(90px + 4vw);
+  }
+}
 
 .standard-row__content {
   max-width: 460px;
@@ -3865,6 +3913,11 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover, .heading
     margin: 0;
     max-width: none;
   }
+}
+
+.standard-row__image-bottom .standard-row__img {
+  -o-object-position: center bottom;
+     object-position: center bottom;
 }
 
 /* ==========================================================================
@@ -4079,6 +4132,18 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover, .heading
     padding: 170px 90px 90px 90px;
     width: 50%;
     order: 2;
+  }
+}
+@media (min-width: 1280px) {
+  .basic-row__container {
+    padding-top: calc(170px + 2vw);
+    padding-bottom: calc(90px + 2vw);
+  }
+}
+@media (min-width: 1900px) {
+  .basic-row__container {
+    padding-top: calc(170px + 4vw);
+    padding-bottom: calc(90px + 4vw);
   }
 }
 

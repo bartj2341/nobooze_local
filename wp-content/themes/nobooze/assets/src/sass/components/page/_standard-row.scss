@@ -33,6 +33,16 @@
         padding: 90px;
         width: 50%;
     }
+    
+    @include bp(xlarge) {
+        padding-top: calc(90px + 2vw);
+        padding-bottom: calc(90px + 2vw);
+    }
+
+    @include bp(xfull) {
+        padding-top: calc(90px + 4vw);
+        padding-bottom: calc(90px + 4vw);
+    }
 }
 
 .standard-row__content {
@@ -74,5 +84,12 @@
         padding: 0;
         margin: 0;
         max-width: none;
+    }
+}
+
+// Modifers
+.standard-row__image-bottom {
+    .standard-row__img {
+        object-position: center bottom;
     }
 }

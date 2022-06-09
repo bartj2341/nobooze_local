@@ -27,6 +27,16 @@
         width: 50%;
         order: 2;
     }
+
+    @include bp(xlarge) {
+        padding-top: calc(170px + 2vw);
+        padding-bottom: calc(90px + 2vw);
+    }
+
+    @include bp(xfull) {
+        padding-top: calc(170px + 4vw);
+        padding-bottom: calc(90px + 4vw);
+    }
 }
 
 .basic-row__content {
