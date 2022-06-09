@@ -3023,6 +3023,7 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover, .heading
   max-width: 100%;
   max-height: 100%;
   margin-left: auto;
+  margin-right: auto;
 }
 
 .full-image__container {
@@ -3069,10 +3070,6 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover, .heading
 .full-image--invert .full-image__bg {
   left: 0;
   right: auto;
-}
-.full-image--invert .full-image__img {
-  margin-left: unset;
-  margin-right: auto;
 }
 @media (min-width: 1024px) {
   .full-image--invert .full-image__container {
@@ -3911,6 +3908,7 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover, .heading
   max-width: 100%;
   max-height: 100%;
   margin-left: auto;
+  margin-right: auto;
 }
 
 .alternate-banner__content {
@@ -4247,6 +4245,7 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover, .heading
 @media (min-width: 1024px) {
   .article-banner__bg {
     position: absolute;
+    width: 45%;
     height: 75%;
     bottom: 0;
     right: 0;
@@ -4257,6 +4256,7 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover, .heading
   max-width: 100%;
   max-height: 100%;
   margin-left: auto;
+  margin-right: auto;
 }
 
 .article-banner__container {
@@ -4275,7 +4275,7 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover, .heading
 }
 @media (min-width: 1024px) {
   .article-banner__content {
-    max-width: 53%;
+    max-width: 55%;
   }
 }
 .article-banner__content *:last-child {
