@@ -3,13 +3,13 @@
    ========================================================================== */
 
 .error-page {
-    padding-top: 102px;
+    padding-top: $nav;
     height: 100vh;
     background-color: $cbg-blue-5;
 }
 
 .error-page__container {
-    padding-bottom: 102px;
+    padding-bottom: $nav;
 }
 
 .error-page__code {

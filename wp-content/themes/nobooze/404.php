@@ -15,7 +15,7 @@ get_header();
 			<section class="error-page d-flex d-flex-center">
 				<div class="error-page__container d-flex d-flex-column d-flex-center">
 					<div class="error-page__code heading-error f-heading-xbold">404</div>
-					<h2 class="error-page__header heading-huge">Page not found</h2>
+					<h2 class="error-page__header heading-huge f-heading-sbold">Page not found</h2>
 					<a class="u-btn" href="<?= home_url(); ?>">BACK HOME</a>
 				</div>
 			</section>
