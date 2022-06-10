@@ -53,7 +53,8 @@
 .s-articles__img {
     display: block;
     width: 100%;
-    height: auto;
+    height: 250px;
+    object-fit: cover;
 }
 
 .s-articles__content {
