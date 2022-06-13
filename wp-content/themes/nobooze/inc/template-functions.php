@@ -61,3 +61,20 @@ function get_icons_directory( $file )
     $dir = '/assets/src/images/';
     return get_stylesheet_directory() . $dir . $file;
 }
+
+/**
+ * Print Favicons Directories
+ */ 
+function get_favicons() {
+	echo "<link rel='apple-touch-icon' sizes='180x180' href='" . get_stylesheet_directory_uri() . "/assets/src/favicon/apple-touch-icon.png' />" . "\n";
+	echo "<link rel='icon' type='image/png' sizes='32x32' href='" . get_stylesheet_directory_uri() . "/assets/src/favicon/favicon-32x32.png' />" . "\n";
+	echo "<link rel='icon' type='image/png' sizes='16x16' href='" . get_stylesheet_directory_uri() . "/assets/src/favicon/favicon-16x16.png' />" . "\n";
+	echo "<link rel='manifest' href='" . get_stylesheet_directory_uri() . "/assets/src/favicon/site.webmanifest' />" . "\n";
+	echo "<link rel='mask-icon' color='#5bbad5' href='" . get_stylesheet_directory_uri() . "/assets/src/favicon/safari-pinned-tab.svg' />" . "\n";
+	echo "<link rel='shortcut icon' href='" . get_stylesheet_directory_uri() . "/assets/src/favicon/favicon.ico' />" . "\n";
+	echo "<meta name='msapplication-TileColor' content='#da532c' />" . "\n";
+	echo "<meta name='msapplication-config' content='" . get_stylesheet_directory_uri() . "/assets/src/favicon/browserconfig.xml' />". "\n";
+	echo "<meta name='theme-color' content='#ffffff' />" . "\n";
+}
+
+add_action( 'wp_head', 'get_favicons');
