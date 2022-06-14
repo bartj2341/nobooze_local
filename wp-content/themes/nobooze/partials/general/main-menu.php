@@ -22,26 +22,7 @@ $pagename = $post ? $post->post_name : '';
 
                     <li class="u-header__li d-flex d-flex-align-c p-relative c-pointer line-normal f-heading"><a class="u-header__cta d-flex d-flex-align-c h-100 p-relative <?= strpos('about', $pagename) !== false && $pagename !== NULL && $pagename !== "" ? 'u-header__cta--active' : '' ?>" href="<?= site_url() ?>/about">ABOUT</a></li>
 
-                    <!-- WORK WITH ME START -->
-                    <li class="u-header__li d-flex d-flex-align-c p-relative c-pointer line-normal u-header__li--has-children f-heading">
-                        <a href="#" class="u-header__cta u-header__cta--has-children d-flex d-flex-column d-flex-justify-c d-flex-align-c h-100 p-relative <?= strpos('work-with-me discover-program freedom-coaching-program exclusive-private-coaching', $pagename) !== false && $pagename !== NULL && $pagename !== "" ? 'u-header__cta--active' : '' ?>">
-                            WORK WITH ME
-                            <?php include get_icons_directory('icons/arrow.svg') ?>
-                        </a>
-                        <div class="u-header__sub__ul">
-                            <div class="u-header__sub__inner p-relative">
-                                <ul class="u-header__sub__list d-flex d-flex-column list-reset">
-                                    <li class="u-header__sub__li p-relative">
-                                        <a class="u-header__sub__cta text-links d-flex d-flex-align-c" href="<?= site_url() ?>/exclusive-private-coaching">
-                                            <div class="u-header__sub__icon"><?php include get_icons_directory('icons/coaching.svg') ?></div>
-                                            <div class="u-header__sub__text">EXCLUSIVE PRIVATE COACHING</div>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </li>
-                    <!-- WORK WITH ME END -->
+                    <li class="u-header__li d-flex d-flex-align-c p-relative c-pointer line-normal f-heading"><a class="u-header__cta d-flex d-flex-align-c h-100 p-relative <?= strpos('work-with-me', $pagename) !== false && $pagename !== NULL && $pagename !== "" ? 'u-header__cta--active' : '' ?>" href="<?= site_url() ?>/work-with-me">WORK WITH ME</a></li>
                     
                     <!-- RESOURCES START -->
                     <li class="u-header__li d-flex d-flex-align-c p-relative c-pointer line-normal u-header__li--has-children f-heading">
@@ -52,12 +33,6 @@ $pagename = $post ? $post->post_name : '';
                         <div class="u-header__sub__ul">
                             <div class="u-header__sub__inner p-relative">
                                 <ul class="u-header__sub__list d-flex d-flex-column list-reset">
-                                    <li class="u-header__sub__li p-relative">
-                                        <a class="u-header__sub__cta text-links d-flex d-flex-align-c" href="<?= site_url() ?>/books">
-                                            <div class="u-header__sub__icon"><?php include get_icons_directory('icons/books.svg') ?></div>
-                                            <div class="u-header__sub__text">BOOKS</div>
-                                        </a>
-                                    </li>
                                     <li class="u-header__sub__li p-relative">
                                         <a class="u-header__sub__cta text-links d-flex d-flex-align-c" href="<?= site_url() ?>/videos">
                                             <div class="u-header__sub__icon"><?php include get_icons_directory('icons/video.svg') ?></div>
@@ -75,10 +50,6 @@ $pagename = $post ? $post->post_name : '';
                         </div>
                     </li>
                     <!-- RESOURCES END -->
-
-                    <li class="u-header__li d-flex d-flex-align-c p-relative c-pointer line-normal f-heading">
-                        <a class="u-header__cta d-flex d-flex-align-c h-100 p-relative <?= strpos('press-media', $pagename) !== false && $pagename !== NULL && $pagename !== "" ? 'u-header__cta--active' : '' ?>" href="<?= site_url() ?>/press-media">PRESS & MEDIA</a>
-                    </li>
 
                     <li class="u-header__li d-flex d-flex-align-c p-relative c-pointer line-normal f-heading">
                         <a class="u-header__cta d-flex d-flex-align-c h-100 p-relative <?= strpos('booking', $pagename) !== false && $pagename !== NULL && $pagename !== "" ? 'u-header__cta--active' : '' ?>" href="<?= site_url() ?>/booking">BOOKING</a>

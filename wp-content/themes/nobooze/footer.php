@@ -83,14 +83,11 @@
 								<a class="u-footer__socials__link d-flex d-flex-align-c" href="#"><?php include get_icons_directory('icons/instagram.svg') ?></a>
 							</li>
 							<li class="u-footer__socials__li p-relative">
-								<a class="u-footer__socials__link d-flex d-flex-align-c" href="#"><?php include get_icons_directory('icons/linkedin.svg') ?></a>
-							</li>
-							<li class="u-footer__socials__li p-relative">
 								<a class="u-footer__socials__link d-flex d-flex-align-c" href="#"><?php include get_icons_directory('icons/youtube.svg') ?></a>
 							</li>
 						</ul>
 					</div>
-					<div class="u-footer__copyright d-flex d-flex-justify-c d-flex-align-c c-white text-tiny">© 2022 The Alcohol Coach. All Rights Reserved.</div>
+					<div class="u-footer__copyright d-flex d-flex-justify-c d-flex-align-c c-white text-tiny">© 2022 NoBooze. All Rights Reserved.</div>
 				</div>
 			</div>
 		</div>
