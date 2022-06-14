@@ -59,14 +59,14 @@
 .u-header__cta {
 	transition: text-shadow .1s;
 	color: $ct-blue;
-    font-size: 1.3rem;
+    font-size: 1.6rem;
 
     @include bp(xlarge) {
-        font-size: 1.5rem; 
+        font-size: 1.8rem; 
     }
 
 	@include bp(full) {
-		font-size: 1.8rem;
+		font-size: 2rem;
 	}
 }
 
@@ -96,18 +96,6 @@
     @include bp(large) {
         display: flex;
     }
-}
-
-.u-header__contact__cta {
-	font-size: 1.3rem;
-
-    @include bp(xlarge) {
-        font-size: 1.5rem; 
-    }
-
-	@include bp(full) {
-		font-size: 1.8rem;
-	}
 }
 
 /* SUBMENU
@@ -186,12 +174,17 @@
 	border-top-right-radius: 16px;
 	border-bottom-right-radius: 16px;
 	transition: all 80ms linear;
+	font-size: 1.6rem;
 
 	@include bp(large) {
 		&:hover {
 			background-color: $cbg-blue-5;
 		}
 	}
+
+    @include bp(xlarge) {
+        font-size: 1.8rem; 
+    }
 }
 
 .u-header__sub__icon {

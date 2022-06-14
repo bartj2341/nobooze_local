@@ -1413,16 +1413,16 @@ fieldset {
 .u-header__cta {
   transition: text-shadow 0.1s;
   color: #2e487d;
-  font-size: 1.3rem;
+  font-size: 1.6rem;
 }
 @media (min-width: 1280px) {
   .u-header__cta {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
   }
 }
 @media (min-width: 1600px) {
   .u-header__cta {
-    font-size: 1.8rem;
+    font-size: 2rem;
   }
 }
 
@@ -1448,20 +1448,6 @@ fieldset {
 @media (min-width: 1024px) {
   .u-header__contact {
     display: flex;
-  }
-}
-
-.u-header__contact__cta {
-  font-size: 1.3rem;
-}
-@media (min-width: 1280px) {
-  .u-header__contact__cta {
-    font-size: 1.5rem;
-  }
-}
-@media (min-width: 1600px) {
-  .u-header__contact__cta {
-    font-size: 1.8rem;
   }
 }
 
@@ -1539,10 +1525,16 @@ fieldset {
   border-top-right-radius: 16px;
   border-bottom-right-radius: 16px;
   transition: all 80ms linear;
+  font-size: 1.6rem;
 }
 @media (min-width: 1024px) {
   .u-header__sub__cta:hover {
     background-color: #ecf0f7;
+  }
+}
+@media (min-width: 1280px) {
+  .u-header__sub__cta {
+    font-size: 1.8rem;
   }
 }
 
@@ -1629,6 +1621,7 @@ fieldset {
 
 .m-menu__link {
   padding: 10px 0 10px 0;
+  font-size: 2rem;
 }
 
 .m-menu__link--active .m-menu__li__arrow {
@@ -1651,6 +1644,7 @@ fieldset {
 
 .m-submenu__li {
   padding: 12px 0;
+  font-size: 1.8rem;
 }
 
 .m-submenu__num {
@@ -2624,7 +2618,7 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover, .heading
 
 .u-btn--nav {
   min-height: 40px;
-  font-size: 1.3rem;
+  font-size: 1.6rem;
 }
 @media (min-width: 1024px) {
   .u-btn--nav {
@@ -2633,13 +2627,13 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover, .heading
 }
 @media (min-width: 1280px) {
   .u-btn--nav {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     padding: 12px 25px;
   }
 }
 @media (min-width: 1600px) {
   .u-btn--nav {
-    font-size: 1.8rem;
+    font-size: 2rem;
   }
 }
 
@@ -3239,13 +3233,13 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover, .heading
 
 @media (min-width: 1024px) {
   .hero-banner--text-top .hero-banner__wrapper {
-    padding: 60px 0 355px 0;
+    padding: 100px 0 260px 0;
   }
 }
 @media (min-width: 1900px) {
   .hero-banner--text-top .hero-banner__wrapper {
-    padding-top: calc(60px + 4vw);
-    padding-bottom: calc(355px + 4vw);
+    padding-top: calc(100px + 4vw);
+    padding-bottom: calc(260px + 4vw);
   }
 }
 
@@ -4080,10 +4074,6 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover, .heading
 /* ==========================================================================
    #BASIC ROW / PARTIAL
    ========================================================================== */
-.basic-row {
-  position: relative;
-}
-
 @media (min-width: 1024px) {
   .basic-row__wrapper {
     justify-content: flex-end;

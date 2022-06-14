@@ -26,7 +26,7 @@ $pagename = $post ? $post->post_name : '';
                     
                     <!-- RESOURCES START -->
                     <li class="u-header__li d-flex d-flex-align-c p-relative c-pointer line-normal u-header__li--has-children f-heading">
-                        <a href="#" class="u-header__cta u-header__cta--has-children d-flex d-flex-column d-flex-justify-c d-flex-align-c h-100 p-relative <?= strpos('books videos articles', $pagename) !== false && $pagename !== NULL && $pagename !== "" ? 'u-header__cta--active' : '' ?>">
+                        <a href="#" class="u-header__cta u-header__cta--has-children d-flex d-flex-column d-flex-justify-c d-flex-align-c h-100 p-relative <?= strpos('videos articles', $pagename) !== false && $pagename !== NULL && $pagename !== "" ? 'u-header__cta--active' : '' ?>">
                             RESOURCES
                             <?php include get_icons_directory('icons/arrow.svg') ?>
                         </a>
@@ -34,13 +34,13 @@ $pagename = $post ? $post->post_name : '';
                             <div class="u-header__sub__inner p-relative">
                                 <ul class="u-header__sub__list d-flex d-flex-column list-reset">
                                     <li class="u-header__sub__li p-relative">
-                                        <a class="u-header__sub__cta text-links d-flex d-flex-align-c" href="<?= site_url() ?>/videos">
+                                        <a class="u-header__sub__cta d-flex d-flex-align-c" href="<?= site_url() ?>/videos">
                                             <div class="u-header__sub__icon"><?php include get_icons_directory('icons/video.svg') ?></div>
                                             <div class="u-header__sub__text">VIDEOS</div>
                                         </a>
                                     </li>
                                     <li class="u-header__sub__li p-relative">
-                                        <a class="u-header__sub__cta text-links d-flex d-flex-align-c" href="<?= site_url() ?>/articles">
+                                        <a class="u-header__sub__cta d-flex d-flex-align-c" href="<?= site_url() ?>/articles">
                                             <div class="u-header__sub__icon"><?php include get_icons_directory('icons/articles.svg') ?></div>
                                             <div class="u-header__sub__text">ARTICLES</div>
                                         </a>

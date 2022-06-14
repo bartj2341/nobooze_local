@@ -32,10 +32,9 @@
 							</ul>
 						</li>
 						<li class="u-footer__li">
-							<span class="u-footer__li__title f-text-bold text-small">WORK WITH ME</span>
 							<ul class="u-footer__sub list-reset">
 								<li class="u-footer__sub__li">
-									<a class="u-footer__link text-small" href="<?= site_url() ?>/exclusive-private-coaching">EXCLUSIVE PRIVATE COACHING</a>
+									<a class="u-footer__link text-small" href="<?= site_url() ?>/work-with-me">WORK WITH ME</a>
 								</li>
 							</ul>
 						</li>
@@ -43,9 +42,6 @@
 						<li class="u-footer__li">
 							<span class="u-footer__li__title f-text-bold text-small">RESOURCES</span>
 							<ul class="u-footer__sub list-reset">
-								<li class="u-footer__sub__li">
-									<a class="u-footer__link text-small" href="<?= site_url() ?>/books">BOOKS</a>
-								</li>
 								<li class="u-footer__sub__li">
 									<a class="u-footer__link text-small" href="<?= site_url() ?>/videos">VIDEOS</a>
 								</li>

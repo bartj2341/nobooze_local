@@ -43,12 +43,12 @@
 .hero-banner--text-top {
     .hero-banner__wrapper {
         @include bp(large) {
-            padding: 60px 0 355px 0;
+            padding: 100px 0 260px 0;
         }
 
         @include bp(xfull) {
-            padding-top: calc(60px + 4vw);
-            padding-bottom: calc(355px + 4vw);
+            padding-top: calc(100px + 4vw);
+            padding-bottom: calc(260px + 4vw);
         }
     }
 }

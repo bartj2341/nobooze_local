@@ -47,18 +47,18 @@
     min-height: 40px;
 
     @extend .u-btn;
-    font-size: 1.3rem;
+    font-size: 1.6rem;
 
     @include bp(large)  {
         padding: 5px 15px;
     }
 
     @include bp(xlarge) {
-        font-size: 1.5rem; 
+        font-size: 1.8rem; 
         padding: 12px 25px;
     }
 
 	@include bp(full) {
-		font-size: 1.8rem;
+		font-size: 2rem;
 	}
 }
