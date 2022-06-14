@@ -55,20 +55,20 @@ h6,
 
 // Heading sizes for a single post
 .single-article {
-    h2 /* 50px ~ 38px */{
-        @extend .display-3;
-    }
-
-    h3 /* 38px ~ 32px */ {
+    h2 /* 38px ~ 32px */{
         @extend .display-4;
     }
 
-    h4 /* 30px ~ 28px */ {
+    h3 /* 30px ~ 28px */ {
         @extend .display-5;
     }
 
-    h5 /* 24px */ {
+    h4 /* 24px */ {
         @extend .display-6;
+    }
+
+    h5 /* 20px */ {
+        font-size: 2rem;
     }
 }
 

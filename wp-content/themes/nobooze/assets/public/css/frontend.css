@@ -2161,48 +2161,50 @@ h1 strong, h2 strong, h3 strong, h4 strong, h5 strong, h6 strong, .heading-famil
 }
 
 h3,
-.display-3,
-.single-article h2 {
+.display-3 {
   font-size: 3.8rem;
 }
 @media (min-width: 768px) {
   h3,
-.display-3,
-.single-article h2 {
+.display-3 {
     font-size: 5rem;
   }
 }
 
 h4,
 .display-4,
-.single-article h3 {
+.single-article h2 {
   font-size: 3.2rem;
 }
 @media (min-width: 768px) {
   h4,
 .display-4,
-.single-article h3 {
+.single-article h2 {
     font-size: 3.8rem;
   }
 }
 
 h5,
 .display-5,
-.single-article h4 {
+.single-article h3 {
   font-size: 2.8rem;
 }
 @media (min-width: 768px) {
   h5,
 .display-5,
-.single-article h4 {
+.single-article h3 {
     font-size: 3rem;
   }
 }
 
 h6,
 .display-6,
-.single-article h5 {
+.single-article h4 {
   font-size: 2.4rem;
+}
+
+.single-article h5 {
+  font-size: 2rem;
 }
 
 .heading-error {
