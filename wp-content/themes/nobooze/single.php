@@ -26,23 +26,6 @@ get_header();
 						</div>
 					</div>
 					<div class="single-article__footer wrapper-small"> 
-						<div class="single-article__categories">
-							<p>
-								<span>Posted in</span>
-								<?php
-									$output = '';
-									foreach((get_the_category()) as $category) {
-										$category_id = get_cat_ID( $category->cat_name );
-										$category_link = get_category_link( $category_id );
-									
-										if(!empty($output))
-											$output .= ', ';
-										$output .= '<a href="'.$category_link.'">'.$category->cat_name.'</a>';
-									}
-									echo $output;
-								?>
-							</p>
-						</div>
 						<div class="single-article__bio">
 							<h3 class="single-article__bio__name">Tom White</h3>
 							<p class="single-article__bio__description">Tom is the world's leading authority for enabling highly successful women to embrace their true, alcohol-free, authentic selves in a world where alcohol is normalised for those who are successful. Her ground-breaking science-based methods using The Science of Transformational Freedom, result in the revelation of uncovering The Social Secret®, so that high achieving woman can joyfully live their lives free from alcohol – but also thrive in all aspects of their work and personal life without it.</h3>
