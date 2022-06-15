@@ -25,7 +25,7 @@ $author_link = get_author_posts_url($author_id);
             
             <div class="s-articles__content d-flex d-flex-column">
                 <?php if(get_the_title()): ?>
-                    <h2 class="s-articles__content__title text-pills u-underline">
+                    <h2 class="s-articles__content__title u-underline">
                         <a href="<?= the_permalink(); ?>"><?= the_title(); ?></a>
                     </h2>
                 <?php endif; ?>
