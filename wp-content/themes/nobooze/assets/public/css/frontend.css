@@ -1359,7 +1359,7 @@ fieldset {
   z-index: 400;
   top: 0;
   width: 100%;
-  height: 102px;
+  height: 124px;
   box-shadow: 0 2px 8px -4px #5e7884;
 }
 .u-header.u-header--scroll {
@@ -1376,7 +1376,7 @@ fieldset {
 /* BOTTOM
     ========================================================================== */
 .u-header__main {
-  height: 78px;
+  height: 100px;
 }
 @media (min-width: 768px) {
   .u-header__main {
@@ -1390,8 +1390,12 @@ fieldset {
 }
 
 .u-header__logo {
-  width: 100px;
+  width: 150px;
+  height: 70px;
+}
+.u-header__logo svg {
   height: 100%;
+  width: 100%;
 }
 
 .u-header__svg {
@@ -4829,13 +4833,13 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover, .heading
    #BOOKING SECTION / TEMPLATE
    ========================================================================== */
 .error-page {
-  padding-top: 102px;
+  padding-top: 124px;
   height: 100vh;
   background-color: #ecf0f7;
 }
 
 .error-page__container {
-  padding-bottom: 102px;
+  padding-bottom: 124px;
 }
 
 .error-page__code {

@@ -15,7 +15,7 @@
 			<div class="wrapper-nav">
 				<div class="u-footer__main d-flex">
 					<a class="u-footer__logo d-flex d-flex-center" href="<?= home_url(); ?>">
-						<?php include get_icons_directory('icons/logo-blue.svg') ?>
+						<?php include get_icons_directory('icons/logo-blue-oval.svg') ?>
 					</a>
 					<ul class="u-footer__ul d-flex d-flex-justify-c d-flex-wrap list-reset">
 						<li class="u-footer__li">

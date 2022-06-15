@@ -38,8 +38,13 @@
 }
 
 .u-header__logo {
-    width: 100px;
-    height: 100%;
+    width: 150px;
+    height: 70px;
+
+	svg {
+		height: 100%;
+		width: 100%;
+	}
 }
 
 .u-header__svg {

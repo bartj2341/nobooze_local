@@ -14,7 +14,7 @@ $pagename = $post ? $post->post_name : '';
         <div class="wrapper-nav">
             <div class="u-header__main d-flex d-flex-align-c d-flex-justify-s">
                 <a class="u-header__logo d-flex d-flex-align-c" href="<?= home_url(); ?>">
-                    <?php include get_icons_directory('icons/logo-blue.svg') ?> 
+                    <?php include get_icons_directory('icons/logo-blue-oval.svg') ?> 
                 </a>
 
                 <ul class="u-header__ul p-relative list-reset">
