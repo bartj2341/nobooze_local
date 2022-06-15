@@ -1417,16 +1417,16 @@ fieldset {
 .u-header__cta {
   transition: text-shadow 0.1s;
   color: #2e487d;
-  font-size: 1.6rem;
+  font-size: 1.7rem;
 }
 @media (min-width: 1280px) {
   .u-header__cta {
-    font-size: 1.8rem;
+    font-size: 1.9rem;
   }
 }
 @media (min-width: 1600px) {
   .u-header__cta {
-    font-size: 2rem;
+    font-size: 2.1rem;
   }
 }
 
@@ -1625,7 +1625,7 @@ fieldset {
 
 .m-menu__link {
   padding: 10px 0 10px 0;
-  font-size: 2rem;
+  font-size: 2.1rem;
 }
 
 .m-menu__link--active .m-menu__li__arrow {
@@ -2622,22 +2622,23 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover, .heading
 
 .u-btn--nav {
   min-height: 40px;
-  font-size: 1.6rem;
+  font-size: 2.1rem;
 }
 @media (min-width: 1024px) {
   .u-btn--nav {
+    font-size: 1.7rem;
     padding: 5px 15px;
   }
 }
 @media (min-width: 1280px) {
   .u-btn--nav {
-    font-size: 1.8rem;
+    font-size: 1.9rem;
     padding: 12px 25px;
   }
 }
 @media (min-width: 1600px) {
   .u-btn--nav {
-    font-size: 2rem;
+    font-size: 2.1rem;
   }
 }
 

@@ -64,14 +64,14 @@
 .u-header__cta {
 	transition: text-shadow .1s;
 	color: $ct-blue;
-    font-size: 1.6rem;
+    font-size: 1.7rem;
 
     @include bp(xlarge) {
-        font-size: 1.8rem; 
+        font-size: 1.9rem; 
     }
 
 	@include bp(full) {
-		font-size: 2rem;
+		font-size: 2.1rem;
 	}
 }
 
