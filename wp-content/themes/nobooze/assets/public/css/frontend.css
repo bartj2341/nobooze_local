@@ -4522,11 +4522,6 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover, .heading
     margin: 15px;
     width: calc(50% - 30px);
   }
-}
-@media (min-width: 1280px) {
-  .s-articles__article {
-    width: calc(33.33% - 30px);
-  }
   .s-articles__article:hover {
     box-shadow: 0 30px 130px rgba(82, 109, 122, 0.24);
     transform: translateY(-10px);
@@ -4539,6 +4534,11 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover, .heading
   }
   .s-articles__article:hover .s-articles__btn__arrow {
     transform: translateX(6px);
+  }
+}
+@media (min-width: 1280px) {
+  .s-articles__article {
+    width: calc(33.33% - 30px);
   }
 }
 
