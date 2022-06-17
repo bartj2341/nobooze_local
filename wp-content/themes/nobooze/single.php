@@ -25,7 +25,9 @@ get_header();
 							<?php get_template_part('partials/blog/sidebar/newsletter-form'); ?>    
 						</div>
 					</div>
-					<div class="single-article__footer wrapper-small"> 
+					<div class="single-article__footer wrapper-small">
+						<?php 
+						/*
 						<div class="single-article__categories">
 							<p>
 								<span>Posted in</span>
@@ -43,6 +45,8 @@ get_header();
 								?>
 							</p>
 						</div>
+						*/
+						?>
 						<div class="single-article__bio">
 							<h3 class="single-article__bio__name">Tom White</h3>
 							<p class="single-article__bio__description">Tom is the world's leading authority for enabling highly successful women to embrace their true, alcohol-free, authentic selves in a world where alcohol is normalised for those who are successful. Her ground-breaking science-based methods using The Science of Transformational Freedom, result in the revelation of uncovering The Social Secret®, so that high achieving woman can joyfully live their lives free from alcohol – but also thrive in all aspects of their work and personal life without it.</h3>

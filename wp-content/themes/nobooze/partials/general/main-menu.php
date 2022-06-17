@@ -38,9 +38,11 @@ $pagename = $post ? $post->post_name : '';
                         <a class="u-header__cta d-flex d-flex-align-c h-100 p-relative <?= strpos('blog', $pagename) !== false && $pagename !== NULL && $pagename !== "" ? 'u-header__cta--active' : '' ?>" href="<?= site_url() ?>/blog">BLOG</a>
                     </li>
 
+                    <?php
+                    /*
                     <!-- RESOURCES DROPDOWN START -->
                     <li class="u-header__li d-flex d-flex-align-c p-relative c-pointer line-normal u-header__li--has-children f-heading">
-                        <a href="#" class="u-header__cta u-header__cta--has-children d-flex d-flex-column d-flex-justify-c d-flex-align-c h-100 p-relative <?= strpos('videos articles', $pagename) !== false && $pagename !== NULL && $pagename !== "" ? 'u-header__cta--active' : '' ?>">
+                        <a href="#" class="u-header__cta u-header__cta--has-children d-flex d-flex-column d-flex-justify-c d-flex-align-c h-100 p-relative <?= strpos('videos blog', $pagename) !== false && $pagename !== NULL && $pagename !== "" ? 'u-header__cta--active' : '' ?>">
                             RESOURCES
                             <?php include get_icons_directory('icons/arrow.svg') ?>
                         </a>
@@ -64,6 +66,8 @@ $pagename = $post ? $post->post_name : '';
                         </div>
                     </li>
                     <!-- RESOURCES DROPDOWN END -->
+                    */
+                    ?>
 
                     <li class="u-header__li d-flex d-flex-align-c p-relative c-pointer line-normal f-heading">
                         <a class="u-header__cta d-flex d-flex-align-c h-100 p-relative <?= strpos('booking', $pagename) !== false && $pagename !== NULL && $pagename !== "" ? 'u-header__cta--active' : '' ?>" href="<?= site_url() ?>/booking">BOOKING</a>

@@ -1838,6 +1838,16 @@ fieldset {
   }
 }
 
+.single-article__categories {
+  border-style: solid;
+  border-color: #d7e0e4;
+  border-width: 0;
+  border-top-width: 1px;
+  border-bottom-width: 1px;
+  padding: 40px 0;
+  margin-bottom: 40px;
+}
+
 .single-article__bio {
   background-color: #ecf0f7;
   padding: 30px 50px;
