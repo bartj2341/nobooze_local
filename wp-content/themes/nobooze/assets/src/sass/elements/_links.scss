@@ -11,7 +11,7 @@ a {
     text-decoration: none;
     color: $ct-blue-2;
 
-    @include bp(xlarge) {
+    @include bp(large) {
         &:hover {
             text-decoration: underline;
         }
@@ -24,7 +24,7 @@ h1, h2, h3, h4, h5, h6, .heading-family {
         text-decoration: none;
         color: $ct-blue-2;
 
-        @include bp(xlarge) {
+        @include bp(large) {
             &:hover {
                 text-decoration: underline;
             }

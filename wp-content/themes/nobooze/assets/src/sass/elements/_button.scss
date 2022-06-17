@@ -37,9 +37,11 @@
     color: $ct-blue;
     background-color: $cbg-white;
 
-    &:hover {
-        color: $ct-blue;
-        background-color: $cbg-blue-5;
+    @include bp(large) {
+        &:hover {
+            color: $ct-blue;
+            background-color: $cbg-blue-5;
+        }
     }
 }
 

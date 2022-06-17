@@ -72,6 +72,11 @@ body.has-scrollbar {
     @extend .wrapper-basic;
 }
 
+.wrapper-posts {
+    max-width: 1320px;
+    @extend .wrapper-basic;
+}
+
 .wrapper-box {
     max-width: 1240px;
     @extend .wrapper-basic-two;

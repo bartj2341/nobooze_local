@@ -12,25 +12,27 @@ $title = get_field("title") ? get_field("title") : "";
         <?php nobooze_layout(); ?>
 
         <section class="s-articles">
-            <div class="s-articles__wrapper wrapper-large">
+            <div class="s-articles__wrapper wrapper-posts">
                 <?php if($title): ?>
                     <h2 class="s-articles__title heading-script f-script"><?= $title ?></h2>
                 <?php endif; ?>
 
-                <div class="s-articles__container d-flex d-flex-wrap">
-                    <?php
-                        $paged = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;
-                        $articles = new WP_Query(array(
-                            'posts_per_page' => 6,
-                            'post_type' => 'post',
-                            'paged' => $paged,
-                        ));
-                
-                        while($articles->have_posts()) {
-                            $articles->the_post();
-                            get_template_part('template-parts/content', 'articles');
-                        }
-                    ?>
+                <div class="s-articles__container">
+                    <div class="s-articles__row d-flex d-flex-wrap">
+                        <?php
+                            $paged = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;
+                            $articles = new WP_Query(array(
+                                'posts_per_page' => 6,
+                                'post_type' => 'post',
+                                'paged' => $paged,
+                            ));
+                    
+                            while($articles->have_posts()) {
+                                $articles->the_post();
+                                get_template_part('template-parts/content', 'articles');
+                            }
+                        ?>
+                    </div>
                 </div>
                 <div class="s-articles__pagination">
                     <?php 

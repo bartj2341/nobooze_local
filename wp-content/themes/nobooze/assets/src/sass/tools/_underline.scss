@@ -3,7 +3,7 @@
     /// ------------------------------------
     
 @mixin underline ( $color: #000000, $position: -4px, $height: 3px ) {
-    @include bp ( xlarge ) {
+    @include bp ( large ) {
         a:after {
             content: "";
             background: none repeat scroll 0 0 transparent;

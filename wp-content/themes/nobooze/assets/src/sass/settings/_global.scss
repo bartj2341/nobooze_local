@@ -8,6 +8,7 @@ $global-radius: 15px !default;
 $global-opacity: 0.4;
 $global-transition: all 200ms linear !default;
 $btn-radius: 30px;
+$box-radius: 8px;
 
 $nav: 124px;
 $nav-top: 24px;
@@ -51,6 +52,9 @@ $c-blue-3: #5e7884;
 $c-blue-4: #719ece;
 $c-blue-5: #ecf0f7;
 $c-blue-6: #8ea4d1;
+$c-blue-7: #294171;
+$c-blue-8: #f7fafc;
+$c-blue-9: #d9e1f0;
 $c-red: #790000;
 $c-red-2: #cf2e2e;
 $c-orange: #FB995B;
@@ -62,6 +66,7 @@ $ct-white: $c-white;
 $ct-blue: $c-blue;
 $ct-blue-2: $c-blue-2; 
 $ct-blue-6: $c-blue-6; 
+$ct-blue-7: $c-blue-7;
 $ct-red: $c-red;
 $ct-red-2: $c-red-2;
 
@@ -71,7 +76,9 @@ $cbg-blue: $c-blue;
 $cbg-blue-2: $c-blue-2;
 $cbg-blue-3: $c-blue-3;
 $cbg-blue-5: $c-blue-5;
-$cbg-white: $c-white;
+$cbg-blue-8: $c-blue-8;
+$cbg-blue-9: $c-blue-9;
+$cbg-white: $c-white; 
 
 // Borders
 $cb-black: $c-black;

@@ -65,8 +65,10 @@
 }
 
 .u-footer__link {
-    &:hover {
-        text-decoration: underline;
+    @include bp(large) {
+        &:hover {
+            text-decoration: underline;
+        }
     }
 }
 

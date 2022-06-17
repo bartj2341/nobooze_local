@@ -15,7 +15,7 @@ get_header();
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
 			<section class="s-articles">
-				<div class="s-articles__wrapper wrapper-large">
+				<div class="s-articles__wrapper wrapper-posts">
 					<?php if(is_category()): 
 						$category = get_category( get_query_var( 'cat' ) );
 						$cat_id = $category->cat_ID;
@@ -27,11 +27,14 @@ get_header();
 					<?php endif; ?>
 					<?php if ( have_posts() ) : ?>
 						<div class="s-articles__container d-flex d-flex-wrap">
-						<?php while ( have_posts() ) :
-							the_post();
-							get_template_part( 'template-parts/content', 'articles');
-						endwhile;
-					endif; ?>
+							<div class="s-articles__row d-flex d-flex-wrap">
+							<?php while ( have_posts() ) :
+								the_post();
+								get_template_part( 'template-parts/content', 'articles');
+							endwhile; ?>
+							</div>
+						</div>
+					<?php endif; ?>
 				</div>
 				<div class="s-articles__pagination">
                     <?php 
