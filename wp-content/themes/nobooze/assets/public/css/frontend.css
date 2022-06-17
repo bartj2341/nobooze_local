@@ -1539,7 +1539,7 @@ fieldset {
     background-color: #ecf0f7;
   }
 }
-@media (min-width: 1280px) {
+@media (min-width: 1600px) {
   .u-header__sub__cta {
     font-size: 1.8rem;
   }
@@ -2651,7 +2651,7 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover, .heading
     padding: 5px 15px;
   }
 }
-@media (min-width: 1280px) {
+@media (min-width: 1600px) {
   .u-btn--nav {
     font-size: 1.8rem;
     padding: 12px 25px;

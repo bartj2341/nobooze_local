@@ -56,7 +56,7 @@
         padding: 5px 15px;
     }
 
-    @include bp(xlarge) {
+    @include bp(full) {
         font-size: 1.8rem;
         padding: 12px 25px;
     }
