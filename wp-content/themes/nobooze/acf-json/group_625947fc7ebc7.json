@@ -949,6 +949,30 @@
                     "display": "block",
                     "sub_fields": [
                         {
+                            "key": "field_62aae9987d0b9",
+                            "label": "Modifier",
+                            "name": "modifier",
+                            "type": "select",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "standard-row__image-bottom": "Position image from the bottom"
+                            },
+                            "default_value": [],
+                            "allow_null": 1,
+                            "multiple": 1,
+                            "ui": 1,
+                            "ajax": 0,
+                            "return_format": "value",
+                            "placeholder": ""
+                        },
+                        {
                             "key": "field_6267dd02b103f",
                             "label": "Image",
                             "name": "image",
@@ -1802,5 +1826,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1654778961
+    "modified": 1655368130
 }
