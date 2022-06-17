@@ -38,6 +38,33 @@ $pagename = $post ? $post->post_name : '';
                         <a class="u-header__cta d-flex d-flex-align-c h-100 p-relative <?= strpos('blog', $pagename) !== false && $pagename !== NULL && $pagename !== "" ? 'u-header__cta--active' : '' ?>" href="<?= site_url() ?>/blog">BLOG</a>
                     </li>
 
+                    <!-- RESOURCES DROPDOWN START -->
+                    <li class="u-header__li d-flex d-flex-align-c p-relative c-pointer line-normal u-header__li--has-children f-heading">
+                        <a href="#" class="u-header__cta u-header__cta--has-children d-flex d-flex-column d-flex-justify-c d-flex-align-c h-100 p-relative <?= strpos('videos articles', $pagename) !== false && $pagename !== NULL && $pagename !== "" ? 'u-header__cta--active' : '' ?>">
+                            RESOURCES
+                            <?php include get_icons_directory('icons/arrow.svg') ?>
+                        </a>
+                        <div class="u-header__sub__ul">
+                            <div class="u-header__sub__inner p-relative">
+                                <ul class="u-header__sub__list d-flex d-flex-column list-reset">
+                                    <li class="u-header__sub__li p-relative">
+                                        <a class="u-header__sub__cta d-flex d-flex-align-c" href="<?= site_url() ?>/videos">
+                                            <div class="u-header__sub__icon"><?php include get_icons_directory('icons/video.svg') ?></div>
+                                            <div class="u-header__sub__text">VIDEOS</div>
+                                        </a>
+                                    </li>
+                                    <li class="u-header__sub__li p-relative">
+                                        <a class="u-header__sub__cta d-flex d-flex-align-c" href="<?= site_url() ?>/blog">
+                                            <div class="u-header__sub__icon"><?php include get_icons_directory('icons/articles.svg') ?></div>
+                                            <div class="u-header__sub__text">BLOG</div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- RESOURCES DROPDOWN END -->
+
                     <li class="u-header__li d-flex d-flex-align-c p-relative c-pointer line-normal f-heading">
                         <a class="u-header__cta d-flex d-flex-align-c h-100 p-relative <?= strpos('booking', $pagename) !== false && $pagename !== NULL && $pagename !== "" ? 'u-header__cta--active' : '' ?>" href="<?= site_url() ?>/booking">BOOKING</a>
                     </li>
