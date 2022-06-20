@@ -8,8 +8,8 @@ $subtitle = get_sub_field("subtitle") ? get_sub_field("subtitle") : "";
 <section class="hero-banner p-relative <?php foreach ($modifier as $value) { echo(' ' . $value); } ?>">
     <div class="hero-banner__dark p-absolute z-index-1"></div>
     <?php if($bg_image): ?>
-        <div class="hero-banner__bg w-100 h-100 p-absolute">
-            <img src="<?= $bg_image["url"] ?>" alt="<?= $bg_image["alt"] ?>" class="hero-banner__img d-block fit-cover">
+        <div class="parallax-banner hero-banner__bg w-100 p-absolute">
+            <img src="<?= $bg_image["url"] ?>" alt="<?= $bg_image["alt"] ?>" class="hero-banner__img d-block h-100 w-100 fit-cover">
         </div>
     <?php endif; ?>
     <div class="wrapper-large">

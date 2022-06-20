@@ -15,11 +15,13 @@ import { handleWindow } from './modules/_helpers'
 import { SwiperCarousel } from './modules/_swiper'
 import { Accessibility } from './modules/_desktop-submenu'
 import { Menu } from './modules/_mobile-menu'
-import { BookingSummary } from './modules/_booking-summary'
+import { BookingSummary } from './modules/_booking-summary' 
+import { Parallax } from './modules/_parallax';
 
 window.addEventListener('DOMContentLoaded', () => {
     const carousel = document.querySelector('.js-carousel')
     const bookingSummary = document.querySelector('.booking-section')
+    const parallax = document.querySelector(".parallax-banner")
 
     new Accessibility();
     new Menu();
@@ -30,6 +32,10 @@ window.addEventListener('DOMContentLoaded', () => {
 
     if(bookingSummary) {
         new BookingSummary()
+    }
+
+    if(parallax) {
+        new Parallax();
     }
 
     handleWindow()

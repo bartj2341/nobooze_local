@@ -5,7 +5,7 @@ $author_name = get_the_author_meta("display_name");
 <section class="article-banner p-relative d-flex d-flex-column d-flex-align-c d-flex-justify-c">
     <?php if(get_the_post_thumbnail()): ?>
     <div class="article-banner__bg">
-        <img class="article-banner__img" src="<?php the_post_thumbnail_url(); ?>" alt="<?= get_post_meta( get_post_thumbnail_id(), '_wp_attachment_image_alt', true ); ?>" />
+        <img class="article-banner__img h-100 w-100 fit-cover" src="<?php the_post_thumbnail_url(); ?>" alt="<?= get_post_meta( get_post_thumbnail_id(), '_wp_attachment_image_alt', true ); ?>" />
     </div>
     <?php endif; ?>
     <div class="article-banner__container d-flex wrapper-large w-100 p-relative z-index-1">

@@ -3224,6 +3224,10 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover, .heading
 /* ==========================================================================
    #HERO BANNER / PARTIAL
    ========================================================================== */
+.hero-banner {
+  overflow: hidden;
+}
+
 .hero-banner__wrapper {
   padding: 100px 0 130px;
 }
@@ -3251,6 +3255,12 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover, .heading
 .hero-banner__bg {
   top: 0;
   left: 0;
+  height: 580px;
+}
+@media (min-width: 1024px) {
+  .hero-banner__bg {
+    height: 900px;
+  }
 }
 
 .hero-banner__container *:last-child {
@@ -3740,6 +3750,10 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover, .heading
 /* ==========================================================================
    #SCRIPT BANNER / PARTIAL
    ========================================================================== */
+.script-banner {
+  overflow: hidden;
+}
+
 .script-banner__wrapper {
   padding: 145px 0;
 }
@@ -3767,6 +3781,16 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover, .heading
 .script-banner__bg {
   top: 0;
   left: 0;
+  height: 580px;
+}
+@media (min-width: 1024px) {
+  .script-banner__bg {
+    height: 900px;
+  }
+}
+
+.simpleParallax {
+  height: 100%;
 }
 
 .script-banner__container *:last-child {
@@ -4290,6 +4314,7 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover, .heading
   min-height: 460px;
   background-color: #4267B2;
   padding: 50px 0;
+  overflow: hidden;
 }
 
 .article-banner__container {

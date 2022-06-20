@@ -2,6 +2,10 @@
    #SCRIPT BANNER / PARTIAL
    ========================================================================== */
 
+.script-banner {
+    overflow: hidden;
+}
+
 .script-banner__wrapper {
     padding: 145px 0;
 
@@ -27,7 +31,17 @@
 .script-banner__bg {
     top: 0;
     left: 0;
+    height: 580px;
+
+    @include bp(large) {
+        height: 900px; 
+    }
 }
+
+.simpleParallax {
+    height: 100%;
+}
+
 
 .script-banner__container {
     *:last-child {
