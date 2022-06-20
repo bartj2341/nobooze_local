@@ -4,17 +4,16 @@
 
 .full-image {
     min-height: 480px;
-    padding: 142px 0 0px;
+    padding: 140px 0 0px;
 
     @include bp(medium) {
-        padding: 152px 0 0px;
         min-height: 600px;
         margin: 0;
     }
 
     @include bp(large) {
         min-height: 700px;
-        padding: 170px 0 70px 0;
+        padding: 70px 0;
     }
 }
 

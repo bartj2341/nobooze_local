@@ -108,6 +108,18 @@ h6,
     }
 }
 
+.heading-post { /* 60px ~ 50px ~ 40px */
+    font-size: 4rem;
+
+    @include bp(medium) {
+        font-size: 5rem;
+    }
+
+    @include bp(large) {
+        font-size: 6rem;
+    }
+}
+
 .heading-banner { /* 51px ~ 46px */
     font-size: 4.6rem;
 
@@ -256,16 +268,8 @@ h6,
     font-size: 2.4rem;
 }
 
-.heading-author { /* 20px ~ 30px ~ 24px */
-    font-size: 2.4rem;
-
-    @include bp(medium) {
-        font-size: 3rem;
-    }
-
-    @include bp(large) {
-        font-size: 2rem;
-    }
+.heading-author { /* 20px */
+    font-size: 2rem;
 }
 
 .text-normal { /* 19px */
