@@ -2715,8 +2715,6 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover, .heading
 
 .u-carousel__item {
   padding: 0 15px;
-  min-height: 1px;
-  max-height: 250px;
 }
 
 .u-carousel__img {
