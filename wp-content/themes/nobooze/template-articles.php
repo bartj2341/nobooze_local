@@ -8,7 +8,7 @@ get_header();
 $title = get_field("title") ? get_field("title") : "";
 ?>
 
-    <main id="main" role="main">
+    <main id="main" role="main" class="main-wrapper">
         <?php nobooze_layout(); ?>
 
         <section class="s-articles">

@@ -2119,6 +2119,7 @@ body * {
 }
 
 .main-wrapper {
+  padding-top: 124px;
   min-height: calc(100vh - 260px);
 }
 
@@ -3003,18 +3004,18 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover, .heading
    #FULL IMAGE TEXT / PARTIAL
    ========================================================================== */
 .full-image {
-  min-height: 480px;
-  padding: 140px 0 0px;
+  min-height: 380px;
+  padding: 40px 0 0;
 }
 @media (min-width: 768px) {
   .full-image {
-    min-height: 600px;
+    min-height: 500px;
     margin: 0;
   }
 }
 @media (min-width: 1024px) {
   .full-image {
-    min-height: 700px;
+    min-height: 600px;
     padding: 70px 0;
   }
 }
@@ -3032,7 +3033,7 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover, .heading
   .full-image__bg {
     position: absolute;
     width: 45%;
-    height: 75%;
+    height: 85%;
     bottom: 0;
     right: 0;
   }
@@ -3368,7 +3369,6 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover, .heading
 .contact-form {
   background-color: #ecf0f7;
   justify-content: center;
-  padding-top: 124px;
 }
 @media (min-width: 1024px) {
   .contact-form {
@@ -3921,19 +3921,19 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover, .heading
 #ALTERNATE BANNER / PARTIAL
 ========================================================================== */
 .alternate-banner {
-  min-height: 480px;
-  padding: 140px 0 0px;
+  min-height: 380px;
+  padding: 40px 0 0;
 }
 @media (min-width: 768px) {
   .alternate-banner {
-    min-height: 600px;
+    min-height: 500px;
     margin: 0;
   }
 }
 @media (min-width: 1024px) {
   .alternate-banner {
-    min-height: 700px;
-    padding: 170px 0 70px 0;
+    min-height: 600px;
+    padding: 70px 0;
   }
 }
 
@@ -4173,11 +4173,11 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover, .heading
    #CUSTOM TEXT / PARTIAL
    ========================================================================== */
 .custom-text {
-  padding: 150px 0 50px;
+  padding: 50px 0 50px;
 }
 @media (min-width: 768px) {
   .custom-text {
-    padding: 190px 0 70px;
+    padding: 90px 0 70px;
   }
 }
 
@@ -4289,7 +4289,7 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover, .heading
 .article-banner {
   min-height: 460px;
   background-color: #4267B2;
-  padding: 174px 0 50px;
+  padding: 50px 0;
 }
 
 .article-banner__container {
@@ -4456,11 +4456,11 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover, .heading
    #ARTICLES / TEMPLATE
    ========================================================================== */
 .s-articles {
-  padding: 150px 0 50px;
+  padding: 50px 0 50px;
 }
 @media (min-width: 768px) {
   .s-articles {
-    padding: 190px 0 70px;
+    padding: 90px 0 70px;
   }
 }
 
@@ -4525,9 +4525,9 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover, .heading
   text-align: center;
   margin-bottom: 50px;
 }
-@media (min-width: 1024px) {
+@media (min-width: 768px) {
   .s-articles__title {
-    margin-bottom: 80px;
+    margin-bottom: 90px;
   }
 }
 
@@ -4629,11 +4629,11 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover, .heading
    #BOOKING SECTION / TEMPLATE
    ========================================================================== */
 .booking-section {
-  padding: 150px 0 50px;
+  padding: 50px 0 50px;
 }
 @media (min-width: 768px) {
   .booking-section {
-    padding: 190px 0 70px;
+    padding: 90px 0 70px;
   }
 }
 .booking-section .cpp_form #fbuilder .booking-main {

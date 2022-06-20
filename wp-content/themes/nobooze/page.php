@@ -14,7 +14,7 @@
 
 get_header();
 ?>
-	<main id="main" class="main-wrapper">
+	<main id="main" class="main-wrapper <?= is_admin() ? '': '' ?>">
 		<?php nobooze_layout(); ?>
 	</main><!-- #main -->
 <?php 

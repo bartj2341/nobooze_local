@@ -3,16 +3,16 @@
    ========================================================================== */
 
 .full-image {
-    min-height: 480px;
-    padding: 140px 0 0px;
+    min-height: 380px;
+    padding: 40px 0 0;
 
     @include bp(medium) {
-        min-height: 600px;
+        min-height: 500px;
         margin: 0;
     }
 
     @include bp(large) {
-        min-height: 700px;
+        min-height: 600px;
         padding: 70px 0;
     }
 }
@@ -28,7 +28,7 @@
     @include bp(large) {
         position: absolute;
         width: 45%;
-        height: 75%;
+        height: 85%;
         bottom: 0;
         right: 0;
     }

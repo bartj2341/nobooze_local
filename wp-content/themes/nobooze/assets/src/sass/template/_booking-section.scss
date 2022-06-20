@@ -3,10 +3,10 @@
    ========================================================================== */
 
 .booking-section {
-    padding: 150px 0 50px; 
+    padding: 50px 0 50px; 
     
     @include bp(medium) {
-        padding: 190px 0 70px; 
+        padding: 90px 0 70px; 
     }
 
     .cpp_form { 
