@@ -16,4 +16,4 @@ export class Parallax {
             speed: 0.2,
         })
     }
-}
+} 

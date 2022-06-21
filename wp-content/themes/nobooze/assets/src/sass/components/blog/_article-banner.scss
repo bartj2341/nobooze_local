@@ -7,6 +7,10 @@
     background-color: $cbg-blue-2; 
     padding: 50px 0;
     overflow: hidden;
+
+    @include bp(large) {
+        min-height: 600px;
+    }
 }
 
 .article-banner__container {
@@ -21,25 +25,19 @@
 .article-banner__bg {
     left: 0;
     top: 0;
+}
 
-    &:before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: $cbg-black;
-        opacity: 0.4;
-    }
+.article-banner__dark {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: $cbg-black;
+    opacity: 0.4; 
 }
 
 .article-banner__img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-}
-
-.article-banner__info__dot {
-    margin: 0 5px;
 }

@@ -13,7 +13,7 @@ get_header();
 ?>
 
 	<div id="primary" class="content-area">
-		<main id="main" class="site-main">
+		<main id="main" class="main-wrapper">
 			<section class="s-articles">
 				<div class="s-articles__wrapper wrapper-posts">
 					<?php if(is_category()): 

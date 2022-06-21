@@ -2903,6 +2903,24 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover, .heading
   z-index: 200;
 }
 
+/* ==========================================================================
+   #IMAGE POSITIONS
+   ========================================================================== */
+.p-image-center {
+  -o-object-position: 50% 50% !important;
+     object-position: 50% 50% !important;
+}
+
+.p-image-top {
+  -o-object-position: center top !important;
+     object-position: center top !important;
+}
+
+.p-image-bottom {
+  -o-object-position: center bottom !important;
+     object-position: center bottom !important;
+}
+
 .wpforms-container .wpforms-form .wpforms-field-container .wpforms-field,
 .wpforms-container-full .wpforms-form .wpforms-field-container .wpforms-field {
   padding: 8px 0;
@@ -4316,6 +4334,11 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover, .heading
   padding: 50px 0;
   overflow: hidden;
 }
+@media (min-width: 1024px) {
+  .article-banner {
+    min-height: 600px;
+  }
+}
 
 .article-banner__container {
   justify-content: center;
@@ -4330,9 +4353,8 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover, .heading
   left: 0;
   top: 0;
 }
-.article-banner__bg:before {
-  content: "";
-  position: absolute;
+
+.article-banner__dark {
   top: 0;
   left: 0;
   width: 100%;
@@ -4346,10 +4368,6 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover, .heading
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-}
-
-.article-banner__info__dot {
-  margin: 0 5px;
 }
 
 /* ==========================================================================
@@ -4577,7 +4595,7 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover, .heading
 .s-articles__img {
   display: block;
   width: 100%;
-  height: 175px;
+  height: 215px;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -4587,7 +4605,7 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover, .heading
   padding: 25px 35px 35px;
 }
 
-.s-articles__author {
+.s-articles__date {
   margin-bottom: 12px;
 }
 
