@@ -1,5 +1,5 @@
 <?php
-$image_position = get_field("image_position") ? get_field("image_position") : [];
+$image_position = get_field("image_position") ? get_field("image_position") : "";
 $image = get_field("image") ? get_field("image") : "";
 ?>
 
