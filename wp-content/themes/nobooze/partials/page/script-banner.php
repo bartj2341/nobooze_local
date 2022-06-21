@@ -7,8 +7,10 @@ $title = get_sub_field("title") ? get_sub_field("title") : "";
 <section class="script-banner p-relative <?php foreach ($modifier as $value) { echo(' ' . $value); } ?>">
     <div class="script-banner__dark p-absolute z-index-1"></div>
     <?php if($bg_image): ?>
-        <div class="script-banner__bg w-100 p-absolute">
-            <img src="<?= $bg_image["url"] ?>" alt="<?= $bg_image["alt"] ?>" class="parallax-banner script-banner__img d-block h-100 w-100 fit-cover">
+        <div class="script-banner__bg w-100 h-100 p-absolute">
+            <div class="jarallax-up jarallax w-100 h-100">
+                <img src="<?= $bg_image["url"] ?>" alt="<?= $bg_image["alt"] ?>" class="jarallax-img script-banner__img d-block">
+            </div>
         </div>
     <?php endif; ?>
     <div class="wrapper-full">

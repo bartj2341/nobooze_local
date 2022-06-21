@@ -1,16 +1,19 @@
-import simpleParallax from 'simple-parallax-js';
+import { jarallax, jarallaxVideo } from "jarallax"; 
 
 export class Parallax {
     constructor() {
-        this.image = document.querySelectorAll('.parallax-banner');
+        this.parallaxUp = document.querySelectorAll(".jarallax-up");
+        this.parallaxDown = document.querySelectorAll(".jarallax-down");
         this.init()
     }
 
     init() {
-        new simpleParallax(this.image, {
-            delay: 0,
-            orientation: 'up',
-            scale: 1.3,
-        });
+        jarallax(this.parallaxUp, {
+            speed: -0.2,
+          });
+
+        jarallax(this.parallaxDown, {
+            speed: 0.2,
+        })
     }
 }

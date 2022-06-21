@@ -21,7 +21,7 @@ import { Parallax } from './modules/_parallax';
 window.addEventListener('DOMContentLoaded', () => {
     const carousel = document.querySelector('.js-carousel')
     const bookingSummary = document.querySelector('.booking-section')
-    const parallax = document.querySelector(".parallax-banner")
+    const parallax = document.querySelector(".jarallax")
 
     new Accessibility();
     new Menu();

@@ -4655,6 +4655,13 @@
     "has-to-string-tag-x" "^1.2.0"
     "is-object" "^1.0.1"
 
+"jarallax@^2.0.3":
+  "integrity" "sha512-K50tf1hJ3eoyVwGs9Hin/tweNqJoHw1BdVGMr8ZCHf4LlbeuDbAPRoaFl6Lsg/fseYag4SoFA/rP7qw8Sb/JuQ=="
+  "resolved" "https://registry.npmjs.org/jarallax/-/jarallax-2.0.3.tgz"
+  "version" "2.0.3"
+  dependencies:
+    "video-worker" "^2.0.0"
+
 "jest-worker@^27.3.1", "jest-worker@^27.4.5":
   "integrity" "sha512-7vuh85V5cdDofPyxn58nrPjBktZo0u9x1g8WtjQol+jZDaE+fhN+cIvTj11GndBnMnyfrUOG1sZQxCdjKh+DKg=="
   "resolved" "https://registry.npmjs.org/jest-worker/-/jest-worker-27.5.1.tgz"
@@ -6934,11 +6941,6 @@
   "resolved" "https://registry.npmjs.org/signal-exit/-/signal-exit-3.0.7.tgz"
   "version" "3.0.7"
 
-"simple-parallax-js@^5.6.2":
-  "integrity" "sha512-qJPZgg37BstDyvNqONU1YffiJ9P5n4B9IPl5h3kzZ2oEinTRwy1syxfEwTMLXYFHAFCRWXUcWD8yBnVcp8nxdA=="
-  "resolved" "https://registry.npmjs.org/simple-parallax-js/-/simple-parallax-js-5.6.2.tgz"
-  "version" "5.6.2"
-
 "slash@^3.0.0":
   "integrity" "sha512-g9Q1haeby36OSStwb4ntCGGGaKsaVSjQ68fBxoQcutl5fS1vuY18H3wSt3jFyFtrkx+Kz0V1G85A4MyAdDMi2Q=="
   "resolved" "https://registry.npmjs.org/slash/-/slash-3.0.0.tgz"
@@ -7949,6 +7951,11 @@
     "is-buffer" "^2.0.0"
     "unist-util-stringify-position" "^2.0.0"
     "vfile-message" "^2.0.0"
+
+"video-worker@^2.0.0":
+  "integrity" "sha512-hdah9eSOaxDgj8SSE82HQkj4yzgXVK91ceMqJc6/0Q+M2710LTy7J1Jxgw5RDSPRfgMc68YuFtgptnodsje5Fw=="
+  "resolved" "https://registry.npmjs.org/video-worker/-/video-worker-2.0.0.tgz"
+  "version" "2.0.0"
 
 "watchpack@^2.3.1":
   "integrity" "sha512-x0t0JuydIo8qCNctdDrn1OzH/qDzk2+rdCOC3YzumZ42fiMqmQ7T3xQurykYMhYfHaPHTp4ZxAx2NfUo1K6QaA=="
