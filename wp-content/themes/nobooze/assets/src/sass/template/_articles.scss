@@ -47,10 +47,8 @@
             box-shadow: 0 30px 130px rgb(82, 109, 122, 0.24);
             transform: translateY(-10px);
 
-            .s-articles__image {
-                &:before {
-                    opacity: 0;
-                }
+            .s-articles__dark {
+                opacity: 0;
             }
 
             .s-articles__btn {
@@ -87,16 +85,16 @@
     position: relative;
     border-radius: $box-radius;
     overflow: hidden;
+}
 
-    &:before {
-        content: "";
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        background-color: $cbg-black;
-        transition: $global-transition;
-        opacity: 0.4;
-    }
+.s-articles__dark {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: $cbg-black;
+    transition: $global-transition;
+    opacity: 0.4;
+    z-index: 100;
 }
 
 .s-articles__img {

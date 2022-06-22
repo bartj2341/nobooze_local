@@ -76,7 +76,7 @@
 
 .u-header__li {
 	.u-header__cta--active {
-		text-shadow: 0 0 .4px $ct-black, 0 0 .4px $ct-black;
+		font-weight: 600;
 	}
 }
 
@@ -211,7 +211,7 @@
 
 	@include bp(large) {
 		&.u-header__li--active {
-			.u-header__cta {
+			.u-header__cta:not(.u-header__cta--active) {
 				color: $ct-blue;
 				text-shadow: 0 0 .4px $ct-blue, 0 0 .4px $ct-blue;
 			}

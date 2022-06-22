@@ -15,11 +15,13 @@ $image = get_field("image") ? get_field("image") : "";
     <div class="s-articles__card d-flex d-flex-column">
         <?php if($image): ?>
             <div class="s-articles__image">
-                <img class="s-articles__img <?= $image_position ?>" src="<?= $image["url"] ?>" alt="<?= $image["alt"] ?>" />
+                <div class="s-articles__dark"></div>
+                <img class="s-articles__img lazy <?= $image_position ?>" data-src="<?= $image["url"] ?>" alt="<?= $image["alt"] ?>" />
             </div>
         <?php elseif(get_the_post_thumbnail()): ?>
             <div class="s-articles__image">
-                <img class="s-articles__img <?= $image_position ?>" src="<?php the_post_thumbnail_url(); ?>" alt="<?= get_post_meta( get_post_thumbnail_id(), '_wp_attachment_image_alt', true ); ?>" />
+                <div class="s-articles__dark"></div>
+                <img class="s-articles__img lazy <?= $image_position ?>" data-src="<?php the_post_thumbnail_url(); ?>" alt="<?= get_post_meta( get_post_thumbnail_id(), '_wp_attachment_image_alt', true ); ?>" />
             </div>
         <?php endif; ?>  
         
