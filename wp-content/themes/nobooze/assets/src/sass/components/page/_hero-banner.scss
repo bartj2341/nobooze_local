@@ -8,8 +8,10 @@
 
 .hero-banner__wrapper {
     padding: 100px 0 130px;
+    min-height: 400px;
 
     @include bp(large) {
+        min-height: 600px;
         padding: 200px 0 190px;
     }
 

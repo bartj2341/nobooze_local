@@ -10,7 +10,7 @@ $subtitle = get_sub_field("subtitle") ? get_sub_field("subtitle") : "";
     <?php if($bg_image): ?>
         <div class="hero-banner__bg w-100 h-100 p-absolute">
             <div class="jarallax-up jarallax w-100 h-100">
-                <img src="<?= $bg_image["url"] ?>" alt="<?= $bg_image["alt"] ?>" class="jarallax-img hero-banner__img d-block">
+                <img data-src="<?= $bg_image["url"] ?>" alt="<?= $bg_image["alt"] ?>" class="jarallax-img hero-banner__img d-block lazy">
             </div>
         </div>
     <?php endif; ?>

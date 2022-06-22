@@ -11,6 +11,8 @@ import '../sass/frontend.scss'
  * Add here your JavasScript code
  */
 
+import LazyLoad from 'vanilla-lazyload';
+
 import { handleWindow } from './modules/_helpers'
 import { SwiperCarousel } from './modules/_swiper'
 import { Accessibility } from './modules/_desktop-submenu'
@@ -29,6 +31,8 @@ window.addEventListener('DOMContentLoaded', () => {
     if (carousel) {
         new SwiperCarousel()
     }
+
+    let lazyLoad = new LazyLoad();
 
     if(bookingSummary) {
         new BookingSummary()

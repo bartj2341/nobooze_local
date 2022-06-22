@@ -7,7 +7,7 @@ $signature = get_sub_field("signature") ? get_sub_field("signature") : "";
 
 <section class="contact-form p-relative d-flex d-flex-wrap">
     <div class="contact-form__image">
-        <img src="<?= $image["url"] ?>" alt="<?= $image["alt"] ?>" class="contact-form__img d-block fit-cover">
+        <img data-src="<?= $image["url"] ?>" alt="<?= $image["alt"] ?>" class="contact-form__img d-block fit-cover lazy">
     </div>
     <div class="contact-form__container p-relative">
         <div class="contact-form__content p-relative">

@@ -8,8 +8,10 @@
 
 .script-banner__wrapper {
     padding: 145px 0;
+    min-height: 400px;
 
     @include bp(large) {
+        min-height: 600px;
         padding: 260px 0;
     }
 

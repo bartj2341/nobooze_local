@@ -9,7 +9,7 @@ $cta = get_sub_field("cta") ? get_sub_field("cta") : "";
 <section class="fifty p-relative d-flex d-flex-wrap">
     <?php if($image): ?>
         <div class="fifty__image">
-            <img src="<?= $image["url"] ?>" alt="<?= $image["alt"] ?>" class="fifty__img d-block fit-cover">
+            <img data-src="<?= $image["url"] ?>" alt="<?= $image["alt"] ?>" class="fifty__img d-block fit-cover lazy">
         </div> 
         <?php endif; ?>
         <div class="fifty__wrapper d-flex d-flex-wrap d-flex-column w-100"> 

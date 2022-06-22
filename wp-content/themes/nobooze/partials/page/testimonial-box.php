@@ -9,7 +9,7 @@ $signature = get_sub_field("signature") ? get_sub_field("signature") : "";
         <div class="testimonial-box__container d-flex d-flex-wrap d-flex-align-c">
             <?php if($image): ?>
                 <div class="testimonial-box__image">
-                    <img src="<?= $image["url"] ?>" alt="<?= $image["alt"] ?>" class="testimonial-box__img d-block">
+                    <img data-src="<?= $image["url"] ?>" alt="<?= $image["alt"] ?>" class="testimonial-box__img d-block lazy">
                 </div>
             <?php endif; ?>
             <div class="testimonial-box__content">

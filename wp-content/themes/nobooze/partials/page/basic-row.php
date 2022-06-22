@@ -7,7 +7,7 @@ $text = get_sub_field("text") ? get_sub_field("text") : "";
     <div class="basic-row__wrapper d-flex d-flex-wrap d-flex-align-c w-100"> 
         <?php if($image): ?>
             <div class="basic-row__image">
-                <img src="<?= $image["url"] ?>" alt="<?= $image["alt"] ?>" class="basic-row__img d-block fit-cover">
+                <img data-src="<?= $image["url"] ?>" alt="<?= $image["alt"] ?>" class="lazy basic-row__img d-block fit-cover">
             </div> 
         <?php endif; ?>
         <div class="basic-row__container d-flex d-flex-column">
