@@ -88,3 +88,6 @@ function remove_admin_login_header() {
 }
 
 add_action('get_header', 'remove_admin_login_header');
+
+/* Disable WordPress Admin Bar for all users * (tymczasowo, usunąć później) */
+add_filter( 'show_admin_bar', '__return_false' );
