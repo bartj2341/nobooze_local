@@ -7,8 +7,12 @@
     z-index: $z-lvl-4;
     top: 0;
     width: 100%;
-    height: $nav;
+    height: $m-nav;
     box-shadow: 0 2px 8px -4px $cbg-blue-3;
+
+	@include bp(large) {
+		height: $nav;
+	}
 
 	&.u-header--scroll {
 		overflow-y: auto;
@@ -26,7 +30,7 @@
 /* BOTTOM
     ========================================================================== */
 .u-header__main {
-	height: $nav-bottom;
+	height: $m-nav-bottom;
 
 	@include bp(medium) {
 		margin: 0 -12px 0 -10px;
@@ -34,12 +38,18 @@
 
 	@include bp(large) {
 		margin: 0;
+		height: $nav-bottom;
 	}
 }
 
 .u-header__logo {
-    width: 150px;
-    height: 70px;
+    width: 120px;
+	height: 50px;
+
+	@include bp(large) {
+		width: 150px;
+		height: 70px;
+	}
 
 	svg {
 		height: 100%;

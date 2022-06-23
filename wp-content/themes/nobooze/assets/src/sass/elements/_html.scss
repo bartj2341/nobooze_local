@@ -47,8 +47,12 @@ body {
 }
 
 .main-wrapper {
-    padding-top: $nav;
+    padding-top: $m-nav;
     min-height: calc(100vh - 260px);
+
+    @include bp(large) {
+        padding-top: $nav;
+    }
 }
 
 .vh {
