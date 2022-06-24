@@ -26295,11 +26295,9 @@ window.addEventListener('DOMContentLoaded', function () {
     new _modules_swiper__WEBPACK_IMPORTED_MODULE_3__.SwiperCarousel();
   }
 
-  var lazyLoad = new (vanilla_lazyload__WEBPACK_IMPORTED_MODULE_1___default())();
-
-  if (bookingSummary) {
-    new _modules_booking_summary__WEBPACK_IMPORTED_MODULE_6__.BookingSummary();
-  }
+  var lazyLoad = new (vanilla_lazyload__WEBPACK_IMPORTED_MODULE_1___default())(); // if(bookingSummary) {
+  //     new BookingSummary()
+  // }
 
   if (parallax) {
     new _modules_parallax__WEBPACK_IMPORTED_MODULE_7__.Parallax();

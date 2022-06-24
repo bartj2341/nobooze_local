@@ -1458,6 +1458,18 @@ fieldset {
   .u-header__cta {
     font-size: 1.6rem;
   }
+  .u-header__cta:after {
+    content: "";
+    background: none repeat scroll 0 0 transparent;
+    bottom: 20px;
+    display: block;
+    height: 3px;
+    left: 50%;
+    position: absolute;
+    background: #0A64BC;
+    transition: width 200ms ease 0s, left 200ms ease 0s;
+    width: 0px;
+  }
 }
 @media (min-width: 1280px) {
   .u-header__cta {
@@ -1596,9 +1608,9 @@ fieldset {
   padding-left: 15px;
 }
 @media (min-width: 1024px) {
-  .u-header__li.u-header__li--active .u-header__cta:not(.u-header__cta--active) {
-    color: #074684;
-    text-shadow: 0 0 0.4px #074684, 0 0 0.4px #074684;
+  .u-header__li.u-header__li--active .u-header__cta:not(.u-header__cta--active):hover:after {
+    width: 100%;
+    left: 0;
   }
   .u-header__li.u-header__li--active svg {
     fill: #000;

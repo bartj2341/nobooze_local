@@ -9,7 +9,7 @@ get_header();
 <main class="main-wrapper">
     <section class="booking-section">
         <div class="booking-section__container wrapper-large">
-            <?php echo do_shortcode('[CP_APP_HOUR_BOOKING id="3"]') ?> 
+            <?php echo do_shortcode('[ssa_booking type=nobooze-consultation-phone-call] ') ?> 
         </div>
     </section>
 </main>

@@ -34,9 +34,9 @@ window.addEventListener('DOMContentLoaded', () => {
 
     let lazyLoad = new LazyLoad();
 
-    if(bookingSummary) {
-        new BookingSummary()
-    }
+    // if(bookingSummary) {
+    //     new BookingSummary()
+    // }
 
     if(parallax) {
         new Parallax();

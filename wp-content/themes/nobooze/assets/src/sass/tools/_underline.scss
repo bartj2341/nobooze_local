@@ -2,7 +2,7 @@
     /// Hover underline
     /// ------------------------------------
     
-@mixin underline ( $color: #000000, $position: -4px, $height: 3px ) {
+@mixin underline ( $color: $cbg-blue-2, $position: -4px, $height: 3px ) {
     @include bp ( large ) {
         a:after {
             content: "";
