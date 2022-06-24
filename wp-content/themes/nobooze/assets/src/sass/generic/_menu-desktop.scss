@@ -77,19 +77,6 @@
 
 	@include bp(large) {
 		font-size: 1.6rem;
-
-		&:after {
-            content: "";
-            background: none repeat scroll 0 0 transparent;
-            bottom: 20px;
-            display: block;
-            height: 3px;
-            left: 50%;
-            position: absolute;
-            background: $cbg-blue-2;
-            transition: width 200ms ease 0s, left 200ms ease 0s;
-            width: 0px;
-        }
 	}
 
 	@include bp(xlarge) {
@@ -235,11 +222,9 @@
 	@include bp(large) {
 		&.u-header__li--active {
 			.u-header__cta:not(.u-header__cta--active) {
-				&:hover:after { 
-					width: 100%; 
-					left: 0; 
-				}
-			}
+				color: $ct-blue;
+                text-shadow: 0 0 .4px $ct-blue, 0 0 .4px $ct-blue;
+			} 
 
 			svg {
 				fill: $ct-black;

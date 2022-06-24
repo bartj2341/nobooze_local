@@ -8,8 +8,10 @@ get_header();
 
 <main class="main-wrapper">
     <section class="booking-section">
-        <div class="booking-section__container wrapper-large">
-            <?php echo do_shortcode('[ssa_booking type=consultation-phone-call] ') ?> 
+        <div class="booking-section__wrapper wrapper-box">
+            <div class="booking-section__container">
+                <?php echo do_shortcode('[ssa_booking type=consultation-phone-call] ') ?> 
+            </div>
         </div>
     </section>
 </main>

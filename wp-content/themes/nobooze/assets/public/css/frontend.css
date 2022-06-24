@@ -1458,18 +1458,6 @@ fieldset {
   .u-header__cta {
     font-size: 1.6rem;
   }
-  .u-header__cta:after {
-    content: "";
-    background: none repeat scroll 0 0 transparent;
-    bottom: 20px;
-    display: block;
-    height: 3px;
-    left: 50%;
-    position: absolute;
-    background: #0A64BC;
-    transition: width 200ms ease 0s, left 200ms ease 0s;
-    width: 0px;
-  }
 }
 @media (min-width: 1280px) {
   .u-header__cta {
@@ -1608,9 +1596,9 @@ fieldset {
   padding-left: 15px;
 }
 @media (min-width: 1024px) {
-  .u-header__li.u-header__li--active .u-header__cta:not(.u-header__cta--active):hover:after {
-    width: 100%;
-    left: 0;
+  .u-header__li.u-header__li--active .u-header__cta:not(.u-header__cta--active) {
+    color: #074684;
+    text-shadow: 0 0 0.4px #074684, 0 0 0.4px #074684;
   }
   .u-header__li.u-header__li--active svg {
     fill: #000;
@@ -2559,17 +2547,17 @@ h6,
 /**
  * Font Weights
  */
-.f-text, .booking-section .cpp_form #fbuilder .ui-datepicker td {
+.f-text {
   font-family: "Open Sans Regular", Arial, sans-serif;
 }
 
-.f-text-bold, .booking-section .cpp_form #fbuilder .slots span, .booking-section .cpp_form #fbuilder .ui-datepicker, .booking-section .cpp_form #fbuilder label, .wpforms-container .wpforms-form .wpforms-field-container .wpforms-field .wpforms-required-label,
+.f-text-bold, .wpforms-container .wpforms-form .wpforms-field-container .wpforms-field .wpforms-required-label,
 .wpforms-container-full .wpforms-form .wpforms-field-container .wpforms-field .wpforms-required-label, .wpforms-container .wpforms-form .wpforms-field-container .wpforms-field .wpforms-field-label,
 .wpforms-container-full .wpforms-form .wpforms-field-container .wpforms-field .wpforms-field-label {
   font-family: "Open Sans Bold", Arial Bold, sans-serif;
 }
 
-.f-heading, .booking-section .cpp_form #fbuilder .totalCost {
+.f-heading {
   font-family: "Proxima Nova Regular", Arial, sans-serif;
 }
 
@@ -2577,7 +2565,7 @@ h6,
   font-family: "Proxima Nova Semibold", Arial Bold, sans-serif;
 }
 
-.f-heading-xbold, .booking-section .cpp_form #fbuilder .totalCost .n {
+.f-heading-xbold {
   font-family: "Proxima Nova Extrabld", Arial Bold, sans-serif;
 }
 
@@ -2629,12 +2617,12 @@ a {
   color: inherit;
 }
 
-.link-blue, .booking-section .cpp_form #fbuilder .cff-checkbox-field span a {
+.link-blue {
   text-decoration: none;
   color: #0A64BC;
 }
 @media (min-width: 1024px) {
-  .link-blue:hover, .booking-section .cpp_form #fbuilder .cff-checkbox-field span a:hover {
+  .link-blue:hover {
     text-decoration: underline;
   }
 }
@@ -4715,249 +4703,16 @@ img.error {
     padding: 90px 0 70px;
   }
 }
-.booking-section .cpp_form #fbuilder .booking-main {
-  margin-bottom: 30px;
-}
-.booking-section .cpp_form #fbuilder label {
-  display: block;
-  margin-bottom: 8px;
-}
-.booking-section .cpp_form #fbuilder input,
-.booking-section .cpp_form #fbuilder select {
-  min-height: 56px;
-  border: 1px solid transparent;
-  background-color: #e7f0f8;
-  padding: 8px;
-  font-size: 19px;
-  border-radius: 0;
-}
-.booking-section .cpp_form #fbuilder input:focus,
-.booking-section .cpp_form #fbuilder select:focus {
-  border: 1px solid #074684;
-  outline: 0;
-}
-.booking-section .cpp_form #fbuilder .fieldCalendarService {
-  margin-bottom: 50px;
-}
-.booking-section .cpp_form #fbuilder select {
-  padding: 10px;
-  padding-right: 20px;
-}
-.booking-section .cpp_form #fbuilder .ui-datepicker {
-  z-index: auto !important;
-  box-shadow: none;
-  font-size: 1.6rem;
-  box-shadow: 10px 10px 20px 0px rgb(239, 236, 236);
-}
-.booking-section .cpp_form #fbuilder .ui-datepicker th {
-  padding: 10px 0;
-}
-.booking-section .cpp_form #fbuilder .ui-datepicker td a, .booking-section .cpp_form #fbuilder .ui-datepicker td span {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 45px;
-}
-.booking-section .cpp_form #fbuilder .ui-datepicker-inline {
-  max-width: none;
-  border: 1px solid #000;
-}
-.booking-section .cpp_form #fbuilder .ui-datepicker-header {
-  padding: 5px 0;
-  background: #0A64BC;
-  text-shadow: none;
-}
-.booking-section .cpp_form #fbuilder .ui-datepicker-calendar .ui-state-active {
-  background: #0A64BC;
-  text-shadow: none;
-}
-.booking-section .cpp_form #fbuilder .slotsCalendar {
-  padding: 50px 0 20px;
-  margin-bottom: 20px;
-}
-.booking-section .cpp_form #fbuilder .slots {
-  padding: 30px 20px;
-  background-color: #e7f0f8;
-  box-shadow: none;
-  border: none;
-}
-.booking-section .cpp_form #fbuilder .slots br {
-  display: none;
-}
-.booking-section .cpp_form #fbuilder .slots span {
-  display: block;
-  height: 30px !important;
-  width: 100% !important;
-  margin-left: 10px !important;
-  margin-bottom: 10px !important;
-  opacity: 1 !important;
-  transition: all 200ms linear;
-}
-@media (min-width: 480px) {
-  .booking-section .cpp_form #fbuilder .slots span {
-    margin-bottom: 0;
-  }
-}
-.booking-section .cpp_form #fbuilder .slots .availableslot a {
-  background-color: #0A64BC;
-}
-.booking-section .cpp_form #fbuilder .slots .choosen a {
-  background-color: #074684;
-}
-.booking-section .cpp_form #fbuilder .slots .availableslot,
-.booking-section .cpp_form #fbuilder .slots .choosen {
-  width: 100%;
-  min-height: 40px;
-  margin: 0;
-  margin-bottom: 20px;
-  border: none;
-  padding: 0;
-}
-.booking-section .cpp_form #fbuilder .slots .availableslot a,
-.booking-section .cpp_form #fbuilder .slots .choosen a {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #fff;
-  padding: 12px 12px;
-  font-size: 1.8rem;
-  line-height: 1;
-  border: none;
-  position: relative;
-  text-align: center;
-  transition: background-color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, box-shadow 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s;
-  cursor: pointer;
+
+.booking-section__container {
+  margin: 0 -20px;
 }
 @media (min-width: 1024px) {
-  .booking-section .cpp_form #fbuilder .slots .availableslot a:hover,
-.booking-section .cpp_form #fbuilder .slots .choosen a:hover {
-    background-color: #074684;
-    color: #fff;
-    text-decoration: none;
+  .booking-section__container {
+    margin: 0;
   }
 }
-@media (min-width: 480px) {
-  .booking-section .cpp_form #fbuilder .slots .availableslot,
-.booking-section .cpp_form #fbuilder .slots .choosen {
-    width: calc(50% - 20px);
-    margin: 10px;
-  }
-}
-@media (min-width: 768px) {
-  .booking-section .cpp_form #fbuilder .slots .availableslot,
-.booking-section .cpp_form #fbuilder .slots .choosen {
-    width: calc(25% - 20px);
-  }
-}
-@media (min-width: 1024px) {
-  .booking-section .cpp_form #fbuilder .slots .availableslot,
-.booking-section .cpp_form #fbuilder .slots .choosen {
-    width: calc(20% - 20px);
-  }
-}
-.booking-section .cpp_form #fbuilder .usedSlots {
-  display: none;
-  flex-direction: column;
-  background-color: #e7f0f8;
-  padding: 30px;
-  margin-bottom: 10px;
-}
-.booking-section .cpp_form #fbuilder .usedSlots.hasChildren {
-  display: flex;
-}
-.booking-section .cpp_form #fbuilder .usedSlots .cancel {
-  color: #cf2e2e;
-}
-.booking-section .cpp_form #fbuilder .booking-email {
-  margin-bottom: 30px;
-}
-.booking-section .cpp_form #fbuilder .ahb_list {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding: 15px 0;
-  border-bottom: 1px solid #5e7884;
-}
-@media (min-width: 768px) {
-  .booking-section .cpp_form #fbuilder .ahb_list {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-  }
-}
-.booking-section .cpp_form #fbuilder .ahb_list_time {
-  margin-bottom: 10px;
-}
-.booking-section .cpp_form #fbuilder .ahb_list_service {
-  margin-bottom: 10px;
-  padding: 5px 10px;
-  background-color: #fff;
-  border-radius: 15px;
-}
-.booking-section .cpp_form #fbuilder .ahb_list_time,
-.booking-section .cpp_form #fbuilder .ahb_list_service {
-  margin-bottom: 10px;
-}
-@media (min-width: 768px) {
-  .booking-section .cpp_form #fbuilder .ahb_list_time,
-.booking-section .cpp_form #fbuilder .ahb_list_service {
-    margin-bottom: 0;
-  }
-}
-.booking-section .cpp_form #fbuilder .cff-checkbox-field label {
-  display: flex;
-  align-items: center;
-}
-.booking-section .cpp_form #fbuilder .cff-checkbox-field input {
-  width: 20px;
-  height: 20px;
-}
-.booking-section .cpp_form #fbuilder .cff-checkbox-field span {
-  margin-left: 10px;
-}
-.booking-section .cpp_form #fbuilder .cff-checkbox-field span .r {
-  margin-left: 5px;
-}
-.booking-section .cpp_form #fbuilder .cpefb_error {
-  border: 1px solid #FB995B;
-}
-.booking-section .cpp_form #fbuilder .r {
-  margin-left: 5px;
-  color: #cf2e2e;
-}
-.booking-section .cpp_form #fbuilder .pbSubmit {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #0A64BC;
-  border: 0;
-  border-radius: 30px;
-  color: #fff;
-  font-size: 1.6rem;
-  font-family: "Proxima Nova Semibold", Arial Bold, sans-serif;
-  line-height: 1;
-  text-align: center;
-  max-width: 480px;
-  min-height: 45px;
-  overflow: hidden;
-  padding: 12px 25px;
-  transition: background-color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, box-shadow 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s;
-  cursor: pointer;
-}
-@media (min-width: 1024px) {
-  .booking-section .cpp_form #fbuilder .pbSubmit {
-    font-size: 1.8rem;
-    min-height: 50px;
-  }
-  .booking-section .cpp_form #fbuilder .pbSubmit:hover {
-    background-color: #074684;
-    color: #fff;
-  }
-}
-.booking-section .cpp_form #fbuilder .totalCost {
-  margin-top: 15px;
-  font-size: 2.4rem;
-}
+
 /* ==========================================================================
    #BOOKING SECTION / TEMPLATE
    ========================================================================== */
