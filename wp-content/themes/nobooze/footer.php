@@ -73,13 +73,13 @@
 					<div class="u-footer__socials d-flex d-flex-justify-c d-flex-align-c">
 						<ul class="u-footer__socials__ul d-flex list-reset">
 							<li class="u-footer__socials__li p-relative"> 
-								<a class="u-footer__socials__link d-flex d-flex-align-c" href="#"><?php include get_icons_directory('icons/facebook.svg') ?></a>
+								<a class="u-footer__socials__link d-flex d-flex-align-c" href="https://www.facebook.com/groups/5914894288539638"><?php include get_icons_directory('icons/facebook.svg') ?></a>
 							</li>
 							<li class="u-footer__socials__li p-relative">
-								<a class="u-footer__socials__link d-flex d-flex-align-c" href="#"><?php include get_icons_directory('icons/instagram.svg') ?></a>
+								<a class="u-footer__socials__link d-flex d-flex-align-c" href="https://www.instagram.com/tomabwhite/"><?php include get_icons_directory('icons/instagram.svg') ?></a>
 							</li>
 							<li class="u-footer__socials__li p-relative">
-								<a class="u-footer__socials__link d-flex d-flex-align-c" href="#"><?php include get_icons_directory('icons/youtube.svg') ?></a>
+								<a class="u-footer__socials__link d-flex d-flex-align-c" href="https://www.youtube.com/channel/UCVbLEt3gdXtoqqXtIzoxzWA"><?php include get_icons_directory('icons/youtube.svg') ?></a>
 							</li>
 						</ul>
 					</div>
