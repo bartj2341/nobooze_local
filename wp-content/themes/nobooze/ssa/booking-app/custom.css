@@ -1,239 +1,259 @@
 /* ==========================================================================
    #CUSTOM BOOKING STYLES
    ========================================================================== */
-
+/* BOOKING VARIABLES */
+/* GENERAL */
+.md-theme-default :not(input):not(textarea)::-moz-selection {
+  color: #fff !important;
+  background: #007aff !important;
+}
 .md-theme-default :not(input):not(textarea)::selection {
-    color: #fff !important;
-    background: #007aff !important;
-} 
+  color: #fff !important;
+  background: #007aff !important;
+}
 
 .app-wrapper {
-    color: #074684;
-    font-family: 'Open Sans Regular', Arial, sans-serif;
+  color: #074684;
+  font-family: "Open Sans Regular", Arial, sans-serif;
 }
 
 .md-title,
 .md-subhead,
 .md-subheading,
 .appointment-duration {
-    color: #074684;
+  color: #074684;
 }
 
 .md-card .md-subhead {
-    opacity: 1;
+  opacity: 1;
 }
 
 .md-title {
-    font-family: 'Proxima Nova SemiBold', Arial, sans-serif;
+  font-family: "Proxima Nova SemiBold", Arial, sans-serif;
 }
 
 .timezone .md-button.md-icon-button .md-icon {
-    color: #074684;
+  color: #074684;
 }
 
 .timezone strong {
-    margin-right: 5px;
+  margin-right: 5px;
 }
 
 .md-input-container label {
-    color: rgba(7, 70, 132, 0.8)
+  color: rgba(7, 70, 132, 0.8);
 }
 
 .appt-select,
 .md-card {
-    box-shadow: 0 2px 8px -4px #5e7884;
+  box-shadow: 0 2px 8px -4px #5e7884;
 }
 
 .date-select-headline {
-    color: #fff;
-    font-family: 'Proxima Nova SemiBold', Arial, sans-serif;
-    margin: 0;
-    padding: 20px 0;
-    background-color: #0A64BC;
+  color: #fff;
+  font-family: "Proxima Nova SemiBold", Arial, sans-serif;
+  margin: 0;
+  padding: 20px 0;
+  background-color: #0A64BC;
 }
 
 .calendar.monthly {
-    max-width: none;
+  max-width: none;
 }
 
 .title.monthly {
-    background-color: #0A64BC;
+  background-color: #0A64BC;
 }
 
 .monthly-title {
-    color: #fff;
-    font-family: 'Proxima Nova SemiBold', Arial, sans-serif;
+  color: #fff;
+  font-family: "Proxima Nova SemiBold", Arial, sans-serif;
 }
 
 .md-button {
-    margin: 10px 0;
+  margin: 10px 0;
 }
 
 .md-button.md-icon-button .md-icon {
-    color: #fff;
+  color: #fff;
 }
 
 .md-button[disabled] .md-icon {
-    color: rgba(255, 255, 255, 0.3);
+  color: rgba(255, 255, 255, 0.3);
 }
 
-.md-button.md-icon-button {
-    padding: 0;
-    margin: 0 12px;
-}
-
-.md-button:focus {
-    outline: none !important;
-}
-
-ul.week {
-    margin: 0;
-    padding: 10px 0;
-    background-color: #074684;
-    color: #fff;
-    font-family: 'Open Sans Bold', Arial, sans-serif;
-}
-
-.calendar div.calendar-days {
-    padding-bottom: 0;
-    margin-left: 0;
-}
-
-.monthly .book-day {
-    padding: 5px;
-}
-
-@media only screen and (min-width: 768px) {
-    .monthly .book-day {
-        padding: 10px;
-    }    
-}
-
-.book-day button.md-whiteframe {
-    border-radius: 30px;
-    font-family: 'Open Sans Regular', Arial, sans-serif !important;
-}
-
-/* LOADING SCREEN */
-
-.app-loading {
-    padding: 25px 20px;
-}
-
-.app-loading .md-title {
-    margin: 0;
-}
-
-/* SELECT A TIME */
-
-.time-listing-icon {
-    fill: #074684;
+.md-button .md-icon-button {
+  padding: 0;
+  margin: 0 12px;
 }
 
 .md-button.md-raised:not([disabled]) {
-    box-shadow: 2px 2px 8px -2px #5e7884;
+  box-shadow: 2px 2px 8px -2px #5e7884;
+}
+
+.md-card-actions .md-button.md-raised:not([disabled]),
+.md-menu .md-button.md-raised:not([disabled]) {
+  box-shadow: none;
+}
+
+.md-button:focus {
+  outline: none !important;
+}
+
+ul.week {
+  margin: 0;
+  padding: 10px 0;
+  background-color: #074684;
+  color: #fff;
+  font-family: "Open Sans Bold", Arial, sans-serif;
+}
+
+.calendar div.calendar-days {
+  padding-bottom: 0;
+  margin-left: 0;
+}
+
+.monthly .book-day {
+  padding: 5px;
+}
+@media (min-width: 768px) {
+  .monthly .book-day {
+    padding: 10px;
+  }
+}
+
+.book-day button.md-whiteframe {
+  border-radius: 30px;
+  font-family: "Open Sans Regular", Arial, sans-serif;
+}
+
+/* LOADING SCREEN */
+.app-loading {
+  padding: 25px 20px;
+}
+
+.app-loading .md-title {
+  margin: 0;
+}
+
+/* SELECT A TIME */
+.time-listing-icon {
+  fill: #074684;
+}
+
+.time-listing {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.md-flex-25 {
+  padding: 0 20px;
 }
 
 /* BOOKING FORM */
-
 .md-card .md-card-actions,
 .md-card-content,
 .md-card-header {
-    padding: 25px 20px 0 !important;
-    color: #074684;
+  padding: 25px 20px 0 !important;
+  color: #074684;
 }
 
 .md-card .md-card-actions {
-    padding: 25px 20px !important;
+  padding: 25px 20px !important;
 }
 
 .md-card-content strong {
-    margin-right: 5px;
+  margin-right: 5px;
 }
 
 .md-card-content .md-subheading {
-    margin-bottom: 16px;
+  margin-bottom: 16px;
 }
 
-.md-input-container.md-has-value input, 
+.md-input-container.md-has-value input,
 .md-input-container.md-has-value textarea {
-    color: #074684 !important;
+  color: #074684 !important;
+}
+
+.md-card-actions .md-button .md-ink-ripple,
+.md-menu .md-button .md-ink-ripple,
+.time-listing .md-button .md-ink-ripple {
+  display: none !important;
 }
 
 .md-card-actions .md-button,
 .md-menu .md-button {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #0A64BC !important;
-    border: 0;
-    border-radius: 30px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #0A64BC !important;
+  border: 0;
+  border-radius: 30px;
+  color: #fff !important;
+  font-size: 16px !important;
+  font-family: "Proxima Nova SemiBold", Arial, sans-serif;
+  line-height: 1;
+  text-align: center;
+  font-weight: 600;
+  max-width: 480px;
+  min-height: 45px !important;
+  padding: 12px 25px;
+  transition: all 200ms linear;
+  cursor: pointer;
+}
+@media (min-width: 1024px) {
+  .md-card-actions .md-button,
+.md-menu .md-button {
+    font-size: 18px !important;
+    min-height: 50px !important;
+  }
+  .md-card-actions .md-button:hover,
+.md-menu .md-button:hover {
+    background-color: #074684 !important;
     color: #fff !important;
-    font-size: 16px !important;
-    font-family: 'Proxima Nova Semibold', Arial Bold, sans-serif;
-    line-height: 1;
-    text-align: center;
-    max-width: 480px;
-    min-height: 45px !important;
-    padding: 12px 25px;
-    transition: all 200ms linear;
-    cursor: pointer;
+  }
 }
 
-@media only screen and (min-width: 1024px) {
-    .md-card-actions .md-button,
-    .md-menu .md-button {
-        font-size: 18px !important;
-        min-height: 50px !important;
-    }
-
-    .md-card-actions .md-button:hover,
-    .md-menu .md-button:hover {
-        background-color: #074684 !important;
-        color: #fff !important;
-    }
-}    
-
 .md-input-container.md-has-value input:-webkit-autofill,
-.md-input-container.md-has-value input:-webkit-autofill:hover, 
-.md-input-container.md-has-value input:-webkit-autofill:focus, 
+.md-input-container.md-has-value input:-webkit-autofill:hover,
+.md-input-container.md-has-value input:-webkit-autofill:focus,
 .md-input-container.md-has-value input:-webkit-autofill:active {
-    box-shadow: 0 0 0 30px white inset !important;
-    -webkit-text-fill-color: #074684 !important;
+  box-shadow: 0 0 0 30px #fff inset !important;
+  -webkit-text-fill-color: #074684 !important;
 }
 
 /* THANK YOU PAGE */
-
 .appointment-actions .md-button,
 .md-menu .md-button {
-    font-size: 14px !important;
-    min-height: 40px !important;
-    padding: 12px 16px;
-    width: 100%;
-    max-width: 100%;
+  font-size: 14px !important;
+  min-height: 40px !important;
+  padding: 12px 16px;
+  width: 100%;
+  max-width: 100%;
 }
 
-@media only screen and (min-width: 600px) {
-    .appointment-actions .md-button {
-        width: calc(50% - 8px);
-        max-width: none;
-    }
+@media (min-width: 600px) {
+  .appointment-actions .md-button {
+    width: calc(50% - 8px);
+    max-width: none;
+  }
 }
-
-@media only screen and (min-width: 860px) {
-    .appointment-actions .md-button {
-        width: auto;
-    }
-}  
+@media (min-width: 860px) {
+  .appointment-actions .md-button {
+    width: auto;
+  }
+}
 
 .appointment-actions .md-button {
-    margin: 4px !important;
+  margin: 4px !important;
 }
 
 .appointment-actions {
-    margin: 0 -4px;
+  margin: 0 -4px;
 }
 
 .md-dialog-actions {
-    padding: 8px 24px;
-}
+  padding: 8px 24px;
+}/*# sourceMappingURL=custom.css.map */

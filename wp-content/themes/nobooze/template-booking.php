@@ -6,7 +6,7 @@
 get_header(); 
 ?>
 
-<main class="main-wrapper">
+<main class="booking-wrapper">
     <section class="booking-section">
         <div class="booking-section__wrapper wrapper-box">
             <div class="booking-section__container">

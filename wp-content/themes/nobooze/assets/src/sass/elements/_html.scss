@@ -55,6 +55,15 @@ body {
     }
 }
 
+.booking-wrapper {
+    padding-top: $m-nav;
+    min-height: 1000px; 
+    
+    @include bp(large) {
+        padding-top: $nav;
+    }
+}
+
 .vh {
     @include hidden-visually();
 }

@@ -70,7 +70,7 @@ function get_favicons() {
 	echo "<link rel='icon' type='image/png' sizes='32x32' href='" . get_stylesheet_directory_uri() . "/assets/src/favicon/favicon-32x32.png' />" . "\n";
 	echo "<link rel='icon' type='image/png' sizes='16x16' href='" . get_stylesheet_directory_uri() . "/assets/src/favicon/favicon-16x16.png' />" . "\n";
 	echo "<link rel='manifest' href='" . get_stylesheet_directory_uri() . "/assets/src/favicon/site.webmanifest' />" . "\n";
-	echo "<link rel='mask-icon' color='#5bbad5' href='" . get_stylesheet_directory_uri() . "/assets/src/favicon/safari-pinned-tab.svg' />" . "\n";
+	echo "<link rel='mask-icon' color='#0a64bc' href='" . get_stylesheet_directory_uri() . "/assets/src/favicon/safari-pinned-tab.svg' />" . "\n";
 	echo "<link rel='shortcut icon' href='" . get_stylesheet_directory_uri() . "/assets/src/favicon/favicon.ico' />" . "\n";
 	echo "<meta name='msapplication-TileColor' content='#da532c' />" . "\n";
 	echo "<meta name='msapplication-config' content='" . get_stylesheet_directory_uri() . "/assets/src/favicon/browserconfig.xml' />". "\n";

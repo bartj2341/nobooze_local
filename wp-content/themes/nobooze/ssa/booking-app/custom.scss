@@ -1,0 +1,317 @@
+/* ==========================================================================
+   #CUSTOM BOOKING STYLES
+   ========================================================================== */
+
+/* BOOKING VARIABLES */
+$sans-regular: 'Open Sans Regular', Arial, sans-serif;
+$sans-bold: 'Open Sans Bold', Arial, sans-serif;
+$proxima-semi: 'Proxima Nova SemiBold', Arial, sans-serif;
+$primary-blue: #0A64BC;
+$secondary-blue: #074684;
+$white: #fff;
+$gray: #5e7884;
+$booking-transition: all 200ms linear;
+
+/* GENERAL */
+.md-theme-default  {
+    :not(input):not(textarea)::selection {
+        color: $white !important;
+        background: #007aff !important;
+    }
+} 
+
+.app-wrapper {
+    color: $secondary-blue;
+    font-family: $sans-regular;
+}
+
+.md-title,
+.md-subhead,
+.md-subheading,
+.appointment-duration {
+    color: $secondary-blue;
+}
+
+.md-card .md-subhead {
+    opacity: 1;
+}
+
+.md-title {
+    font-family: $proxima-semi;
+}
+
+.timezone{
+    .md-button {
+        &.md-icon-button {
+            .md-icon {
+                color: $secondary-blue;
+            }
+        }
+    }
+}
+
+.timezone {
+    strong {
+        margin-right: 5px;
+    }
+}
+
+.md-input-container {
+    label {
+        color: rgba(7, 70, 132, 0.8)
+    }
+}
+
+.appt-select,
+.md-card {
+    box-shadow: 0 2px 8px -4px $gray;
+}
+
+.date-select-headline {
+    color: $white;
+    font-family: $proxima-semi;
+    margin: 0;
+    padding: 20px 0;
+    background-color: $primary-blue;
+}
+
+.calendar {
+    &.monthly {
+        max-width: none;
+    }
+}
+
+.title {
+    &.monthly {
+        background-color: $primary-blue;
+    }
+}
+
+.monthly-title {
+    color: $white;
+    font-family: $proxima-semi;
+}
+
+.md-button {
+    margin: 10px 0;
+}
+
+.md-button  {
+    &.md-icon-button {
+        .md-icon {
+            color: $white;
+        }
+    }
+}
+
+.md-button[disabled] {
+    .md-icon {
+        color: rgba(255, 255, 255, 0.3);
+    }
+}
+
+.md-button {
+    .md-icon-button {
+        padding: 0;
+        margin: 0 12px;
+    }
+}
+
+.md-button {
+    &.md-raised:not([disabled]) {
+        box-shadow: 2px 2px 8px -2px $gray;
+    }
+}
+
+.md-card-actions,
+.md-menu {
+    .md-button {
+        &.md-raised:not([disabled]) {
+            box-shadow: none;
+        }
+    }
+}
+
+.md-button:focus {
+    outline: none !important;
+}
+
+ul.week {
+    margin: 0;
+    padding: 10px 0;
+    background-color: $secondary-blue;
+    color: $white;
+    font-family: $sans-bold;
+}
+
+.calendar {
+    div.calendar-days {
+        padding-bottom: 0;
+        margin-left: 0;
+    }
+}
+
+.monthly {
+    .book-day {
+        padding: 5px;
+
+        @media (min-width: 768px) {
+            padding: 10px;
+        }
+    }
+}
+
+.book-day {
+    button.md-whiteframe {
+        border-radius: 30px;
+        font-family: $sans-regular;
+    } 
+}
+
+/* LOADING SCREEN */
+.app-loading {
+    padding: 25px 20px;
+}
+
+.app-loading {
+    .md-title {
+        margin: 0;
+    }
+}
+
+/* SELECT A TIME */
+.time-listing-icon {
+    fill: $secondary-blue;
+}
+
+.time-listing {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.md-flex-25 {
+    padding: 0 20px;
+}
+
+/* BOOKING FORM */
+.md-card .md-card-actions,
+.md-card-content,
+.md-card-header {
+    padding: 25px 20px 0 !important;
+    color: $secondary-blue;
+}
+
+.md-card {
+    .md-card-actions {
+        padding: 25px 20px !important;
+    }
+}
+
+.md-card-content {
+    strong {
+        margin-right: 5px;
+    }
+}
+
+.md-card-content {
+    .md-subheading {
+        margin-bottom: 16px;
+    }
+}
+
+.md-input-container.md-has-value input, 
+.md-input-container.md-has-value textarea {
+    color: $secondary-blue !important;
+}
+
+.md-card-actions,
+.md-menu,
+.time-listing {
+    .md-button {
+        .md-ink-ripple {
+            display: none !important;
+        }
+    }
+}
+
+.md-card-actions,
+.md-menu {
+    .md-button {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        background-color: $primary-blue !important;
+        border: 0;
+        border-radius: 30px;
+        color: $white !important;
+        font-size: 16px !important;
+        font-family: $proxima-semi;
+        line-height: 1;
+        text-align: center;
+        font-weight: 600;
+        max-width: 480px;
+        min-height: 45px !important;
+        padding: 12px 25px;
+        transition: $booking-transition;
+        cursor: pointer;
+
+        @media (min-width: 1024px) {
+            font-size: 18px !important;
+            min-height: 50px !important;
+
+            &:hover {
+                background-color: $secondary-blue !important;
+                color: $white !important;
+            }
+        }
+    }
+}
+
+.md-input-container.md-has-value input:-webkit-autofill,
+.md-input-container.md-has-value input:-webkit-autofill:hover, 
+.md-input-container.md-has-value input:-webkit-autofill:focus, 
+.md-input-container.md-has-value input:-webkit-autofill:active {
+    box-shadow: 0 0 0 30px $white inset !important;
+    -webkit-text-fill-color: $secondary-blue !important;
+}
+
+/* THANK YOU PAGE */
+.appointment-actions,
+.md-menu {
+    .md-button {
+        font-size: 14px !important;
+        min-height: 40px !important;
+        padding: 12px 16px;
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
+.appointment-actions {
+    .md-button {
+        @media (min-width: 600px) {
+            width: calc(50% - 8px);
+            max-width: none;
+        }
+
+        @media (min-width: 860px) {
+            width: auto;
+        }
+    }
+}
+
+.appointment-actions {
+    .md-button {
+        margin: 4px !important;
+    }
+}
+
+.appointment-actions {
+    margin: 0 -4px;
+}
+
+.md-dialog-actions {
+    padding: 8px 24px;
+}

@@ -2155,6 +2155,16 @@ body * {
   }
 }
 
+.booking-wrapper {
+  padding-top: 100px;
+  min-height: 1000px;
+}
+@media (min-width: 1024px) {
+  .booking-wrapper {
+    padding-top: 124px;
+  }
+}
+
 .vh {
   border: 0 !important;
   clip: rect(0 0 0 0) !important;
