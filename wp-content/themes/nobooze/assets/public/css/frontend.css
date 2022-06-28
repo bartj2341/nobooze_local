@@ -3073,6 +3073,16 @@ img.error {
     background-color: #e7f0f8;
   }
 }
+.wpforms-container .wpforms-confirmation-container-full,
+.wpforms-container-full .wpforms-confirmation-container-full {
+  background: #0A64BC;
+  border: none;
+  border-radius: 15px;
+}
+.wpforms-container .wpforms-confirmation-container-full p,
+.wpforms-container-full .wpforms-confirmation-container-full p {
+  color: #fff;
+}
 
 /* ==========================================================================
    #FULL IMAGE TEXT / PARTIAL

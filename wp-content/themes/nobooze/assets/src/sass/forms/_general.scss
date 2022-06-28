@@ -112,4 +112,14 @@
             }
         }
     }
+
+    .wpforms-confirmation-container-full {
+        background: $cbg-blue-2;
+        border: none;
+        border-radius: $global-radius;
+ 
+        p {
+            color: $ct-white;
+        }
+    }
 }
