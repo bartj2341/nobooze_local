@@ -17,8 +17,9 @@ import { handleWindow } from './modules/_helpers'
 import { SwiperCarousel } from './modules/_swiper'
 import { Accessibility } from './modules/_desktop-submenu'
 import { Menu } from './modules/_mobile-menu'
-import { BookingSummary } from './modules/_booking-summary' 
+// import { BookingSummary } from './modules/_booking-summary' 
 import { Parallax } from './modules/_parallax';
+import { Aos } from './modules/_aos';
 
 window.addEventListener('DOMContentLoaded', () => {
     const carousel = document.querySelector('.js-carousel')
@@ -41,6 +42,8 @@ window.addEventListener('DOMContentLoaded', () => {
     if(parallax) {
         new Parallax();
     }
+
+    new Aos();
 
     handleWindow()
 })

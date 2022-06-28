@@ -3,9 +3,13 @@
 // ==========================================================================
 
 .u-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     position: relative;
     z-index: $z-lvl-2;
-    box-shadow: 0 -2px 8px -4px $cbg-blue-3; 
+    box-shadow: 0 -2px 8px -4px $cbg-blue-3;
+    min-height: 260px;
 }
 
 .u-footer__main {

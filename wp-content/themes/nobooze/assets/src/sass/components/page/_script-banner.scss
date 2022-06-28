@@ -54,6 +54,15 @@
     line-height: 1;
 }
 
+.script-banner__word {
+    display: inline-block;
+    padding: 0 10px;
+}
+
+.script-banner__letter {
+    display: inline-block;
+}
+
 // Modifiers
 .script-banner--text-bottom {
     .script-banner__wrapper {
