@@ -8,15 +8,15 @@
  */
 
 $image_position = get_field("image_position") ? get_field("image_position") : "";
-$image = get_field("image") ? get_field("image") : "";
+$banner_image = get_field("banner_image") ? get_field("banner_image") : "";
 ?>
 
 <a href="<?= the_permalink(); ?>" class="s-articles__article d-block" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
     <div class="s-articles__card d-flex d-flex-column">
-        <?php if($image): ?>
+        <?php if($banner_image): ?>
             <div class="s-articles__image">
                 <div class="s-articles__dark"></div>
-                <img class="s-articles__img lazy <?= $image_position ?>" data-src="<?= $image["url"] ?>" alt="<?= $image["alt"] ?>" />
+                <img class="s-articles__img lazy <?= $image_position ?>" data-src="<?= $banner_image["url"] ?>" alt="<?= $banner_image["alt"] ?>" />
             </div>
         <?php elseif(get_the_post_thumbnail()): ?>
             <div class="s-articles__image">

@@ -8,6 +8,7 @@
  */
 
 get_header();
+
 ?>
 	<main id="main" class="main-wrapper">
 		<div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
@@ -15,7 +16,8 @@ get_header();
 			<div>
 				<?php get_template_part('partials/blog/article-banner'); ?>  
 				<section class="single-article">
-					<div class="single-article__container d-flex d-flex-wrap">
+					<div class="single-article__container p-relative d-flex d-flex-wrap">
+						<?php get_template_part('partials/blog/sidebar/share-links'); ?>
 						<div class="single-article__content list-basic">
 							<?php the_content(); ?>
 						</div>
@@ -25,7 +27,7 @@ get_header();
 							<?php get_template_part('partials/blog/sidebar/newsletter-form'); ?>    
 						</div>
 					</div>
-					<div class="single-article__footer wrapper-small">
+					<div class="single-article__footer wrapper-small-two">
 						<?php 
 						/*
 						<div class="single-article__categories">

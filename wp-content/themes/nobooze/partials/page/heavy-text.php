@@ -17,7 +17,7 @@ $handwriting = get_sub_field("handwriting") ? get_sub_field("handwriting") : "";
             <?php endif; ?>
 
             <?php if($handwriting): ?>
-                <p class="heavy-text__handwriting f-script heading-script u-text-center c-blue"><?= $handwriting ?></p>
+                <p class="heavy-text__handwriting f-script heading-script u-text-center c-blue-2"><?= $handwriting ?></p>
             <?php endif; ?>
         </div>
     </div>

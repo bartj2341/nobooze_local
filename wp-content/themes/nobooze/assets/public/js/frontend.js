@@ -240,6 +240,104 @@ var Parallax = /*#__PURE__*/function () {
 
 /***/ }),
 
+/***/ "./assets/src/js/modules/_share.js":
+/*!*****************************************!*\
+  !*** ./assets/src/js/modules/_share.js ***!
+  \*****************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "Share": () => (/* binding */ Share)
+/* harmony export */ });
+/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
+/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_0__);
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
+
+
+var Share = /*#__PURE__*/function () {
+  function Share() {
+    _classCallCheck(this, Share);
+
+    this.total = jquery__WEBPACK_IMPORTED_MODULE_0___default()('.js-share-total');
+    this.thisPost = jquery__WEBPACK_IMPORTED_MODULE_0___default()('.nm__share');
+    this.facebookNum = this.thisPost.data('facebook');
+    this.allShare = this.facebookNum;
+    this.flag = false;
+    this.events();
+  }
+
+  _createClass(Share, [{
+    key: "events",
+    value: function events() {
+      this.totalNumber.bind(this)();
+      jquery__WEBPACK_IMPORTED_MODULE_0___default()(".js-share").on("click", this.shareDispatcher.bind(this));
+    } // Methods
+
+  }, {
+    key: "shareDispatcher",
+    value: function shareDispatcher(e) {
+      e.preventDefault();
+
+      if (!this.flag) {
+        this.createShare(e);
+      }
+    }
+  }, {
+    key: "totalNumber",
+    value: function totalNumber() {
+      if (this.allShare == 0) {
+        this.total.html("0");
+      } else {
+        this.total.html(this.allShare);
+      }
+    }
+  }, {
+    key: "createShare",
+    value: function createShare(e) {
+      var thisShare = jquery__WEBPACK_IMPORTED_MODULE_0___default()(e.target).parents('.js-share');
+      var thisTitle = jquery__WEBPACK_IMPORTED_MODULE_0___default()(thisShare).data('title');
+      var link = jquery__WEBPACK_IMPORTED_MODULE_0___default()(thisShare).attr('href');
+      this.flag = true;
+
+      switch (thisTitle) {
+        case 'facebook':
+          this.facebookNum += 1;
+          break;
+      }
+
+      jquery__WEBPACK_IMPORTED_MODULE_0___default().ajax({
+        beforeSend: function beforeSend(xhr) {
+          xhr.setRequestHeader('X-WP-Nonce', noboozeData.nonce);
+        },
+        url: noboozeData.root_url + "/wp-json/wp/v2/".concat(noboozeData.post_type == "post" ? "posts" : noboozeData.post_type, "/").concat(this.thisPost.data('id')),
+        type: 'POST',
+        data: {
+          'acf': {
+            'facebook': this.facebookNum
+          }
+        },
+        success: function success(response) {
+          jquery__WEBPACK_IMPORTED_MODULE_0___default()('body').addClass('waiting');
+          window.location.href = link;
+        },
+        error: function error(response) {
+          window.location.href = link;
+        }
+      });
+    }
+  }]);
+
+  return Share;
+}();
+
+/***/ }),
+
 /***/ "./assets/src/js/modules/_swiper.js":
 /*!******************************************!*\
   !*** ./assets/src/js/modules/_swiper.js ***!
@@ -26267,6 +26365,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _modules_mobile_menu__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./modules/_mobile-menu */ "./assets/src/js/modules/_mobile-menu.js");
 /* harmony import */ var _modules_parallax__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./modules/_parallax */ "./assets/src/js/modules/_parallax.js");
 /* harmony import */ var _modules_aos__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./modules/_aos */ "./assets/src/js/modules/_aos.js");
+/* harmony import */ var _modules_share__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./modules/_share */ "./assets/src/js/modules/_share.js");
 /**
  * SASS
  */
@@ -26287,9 +26386,10 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+
 window.addEventListener('DOMContentLoaded', function () {
-  var carousel = document.querySelector('.js-carousel');
-  var bookingSummary = document.querySelector('.booking-section');
+  var carousel = document.querySelector('.js-carousel'); // const bookingSummary = document.querySelector('.booking-section')
+
   var parallax = document.querySelector(".jarallax");
   new _modules_desktop_submenu__WEBPACK_IMPORTED_MODULE_4__.Accessibility();
   new _modules_mobile_menu__WEBPACK_IMPORTED_MODULE_5__.Menu();
@@ -26307,6 +26407,7 @@ window.addEventListener('DOMContentLoaded', function () {
   }
 
   new _modules_aos__WEBPACK_IMPORTED_MODULE_7__.Aos();
+  new _modules_share__WEBPACK_IMPORTED_MODULE_8__.Share();
   (0,_modules_helpers__WEBPACK_IMPORTED_MODULE_2__.handleWindow)();
 });
 })();

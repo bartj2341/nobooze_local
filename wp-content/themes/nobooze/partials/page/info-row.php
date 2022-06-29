@@ -26,7 +26,7 @@ $signature = get_sub_field("signature") ? get_sub_field("signature") : "";
                 <?php endif; ?>
             </div>
             <?php if($signature): ?>
-                <div class="info-row__signature f-script heading-script-two c-blue u-text-right"><?= $signature ?></div>
+                <div class="info-row__signature f-script heading-script-two c-blue-2 u-text-right"><?= $signature ?></div>
             <?php endif; ?>
         </div>
     </div>

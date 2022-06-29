@@ -92,6 +92,11 @@ body.has-scrollbar {
     @extend .wrapper-basic;
 }
 
+.wrapper-small-two {
+    max-width: 1100px;
+    @extend .wrapper-basic-two;
+}
+
 .wrapper-small {
     max-width: 1100px;
     @extend .wrapper-basic;
