@@ -3,7 +3,7 @@ $facebook = get_field("facebook") ? get_field("facebook") : "";
 ?>
 
 <div class="nm__side">
-	<div class="nm__share d-flex d-flex-center f-heading text-small bg-white" data-id="<?php the_ID(); ?>" data-facebook="<?php echo $facebook ?>">
+	<div class="nm__share d-flex d-flex-center f-heading bg-white" data-id="<?php the_ID(); ?>" data-facebook="<?php echo $facebook ?>">
 		<div class="nm__total d-flex d-flex-column d-flex-center f-heading-sbold line-normal c-blue text-tiny">
 			<span class="js-share-total"></span>
 			<span>SHARES</span>
