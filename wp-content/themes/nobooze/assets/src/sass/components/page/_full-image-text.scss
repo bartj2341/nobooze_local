@@ -104,3 +104,17 @@
         @extend .heading-full;
     }
 }
+
+.full-image--wide-text {
+    .full-image__content {
+        @include bp(large) {
+            max-width: 60%; 
+        }
+    }
+    
+    .full-image__bg {
+        @include bp(large) {
+            width: 40%;
+        }
+    }
+}

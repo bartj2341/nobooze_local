@@ -57,16 +57,7 @@ body {
     @include bp(large) {
         padding-top: $nav;
     }
-}
-
-.booking-wrapper {
-    padding-top: $m-nav;
-    min-height: 1000px; 
-    
-    @include bp(large) {
-        padding-top: $nav;
-    }
-}
+} 
 
 .vh {
     @include hidden-visually();
@@ -84,4 +75,9 @@ p {
 
 strong {
     font-family: $text-bold;
+}
+
+//Recaptcha
+.grecaptcha-badge {
+    z-index: $z-lvl-1;
 }

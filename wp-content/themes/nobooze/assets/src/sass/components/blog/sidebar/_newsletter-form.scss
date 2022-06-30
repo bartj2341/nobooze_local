@@ -34,7 +34,7 @@
                         font-size: 14px;
 
                         &.wpforms-error {
-                            border: 2px solid transparent;
+                            border: 2px solid #ffabab;
                         }
                     }
                 
@@ -49,11 +49,12 @@
                     }
 
                     .wpforms-required-label {
-                        color: $ct-white;
+                        color: #ffabab;
                     }
 
                     label.wpforms-error {
-                        color: $ct-white;
+                        color: #ffabab;
+                        font-size: 13px;
                     }
                 }
             }

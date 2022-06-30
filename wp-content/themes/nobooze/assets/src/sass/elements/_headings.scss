@@ -224,7 +224,7 @@ h6,
     }
 }
 
-.heading-large { /* 38px ~ 30px ~ 24px */
+.heading-large { /* 37px ~ 30px ~ 24px */
     font-size: 2.4rem;
 
     @include bp(medium) {
@@ -232,7 +232,7 @@ h6,
     }
 
     @include bp(large) {
-        font-size: 3.8rem;
+        font-size: 3.7rem;
     }
 }
 

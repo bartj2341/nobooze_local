@@ -38,7 +38,8 @@
                             "choices": {
                                 "full-image--invert": "Invert",
                                 "full-image--title-mobile-lg": "Large Title (On Mobile)",
-                                "full-image--sub-desktop-lg": "Large Subtitle (On Desktop)"
+                                "full-image--sub-desktop-lg": "Large Subtitle (On Desktop)",
+                                "full-image--wide-text": "Text Wide"
                             },
                             "default_value": [],
                             "allow_null": 1,
@@ -61,7 +62,9 @@
                                 "class": "",
                                 "id": ""
                             },
-                            "default_value": "#d1d5d8"
+                            "default_value": "#d1d5d8",
+                            "enable_opacity": false,
+                            "return_format": "string"
                         },
                         {
                             "key": "field_62594873b3de8",
@@ -1043,7 +1046,8 @@
                             "choices": {
                                 "info-row--image-wider": "Image Wider (On Desktop)",
                                 "info-row--narrow-mobile": "Text Narrow (On Mobile)",
-                                "info-row--gray-bg": "Gray Background"
+                                "info-row--gray-bg": "Gray Background",
+                                "info-row--image-top": "Position image from the top"
                             },
                             "default_value": [],
                             "allow_null": 1,
@@ -1518,7 +1522,9 @@
                                 "class": "",
                                 "id": ""
                             },
-                            "default_value": "#d1d5d8"
+                            "default_value": "#d1d5d8",
+                            "enable_opacity": false,
+                            "return_format": "string"
                         },
                         {
                             "key": "field_62693e6c905da",
@@ -2018,5 +2024,6 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1656424737
+    "show_in_rest": 0,
+    "modified": 1656593765
 }

@@ -2999,16 +2999,6 @@ body.waiting * {
   }
 }
 
-.booking-wrapper {
-  padding-top: 100px;
-  min-height: 1000px;
-}
-@media (min-width: 1024px) {
-  .booking-wrapper {
-    padding-top: 124px;
-  }
-}
-
 .vh {
   border: 0 !important;
   clip: rect(0 0 0 0) !important;
@@ -3034,6 +3024,10 @@ p:last-child {
 
 strong {
   font-family: "Open Sans Bold", Arial Bold, sans-serif;
+}
+
+.grecaptcha-badge {
+  z-index: 100;
 }
 
 /* ==========================================================================
@@ -3291,7 +3285,7 @@ h6,
 }
 
 .heading-large {
-  /* 38px ~ 30px ~ 24px */
+  /* 37px ~ 30px ~ 24px */
   font-size: 2.4rem;
 }
 @media (min-width: 768px) {
@@ -3301,7 +3295,7 @@ h6,
 }
 @media (min-width: 1024px) {
   .heading-large {
-    font-size: 3.8rem;
+    font-size: 3.7rem;
   }
 }
 
@@ -4029,6 +4023,17 @@ img.error {
   }
 }
 
+@media (min-width: 1024px) {
+  .full-image--wide-text .full-image__content {
+    max-width: 60%;
+  }
+}
+@media (min-width: 1024px) {
+  .full-image--wide-text .full-image__bg {
+    width: 40%;
+  }
+}
+
 /* ==========================================================================
    #BASIC BANNER / PARTIAL
    ========================================================================== */
@@ -4161,19 +4166,19 @@ img.error {
 }
 
 .hero-banner__wrapper {
-  padding: 100px 0 130px;
+  padding: 130px 0;
   min-height: 400px;
 }
 @media (min-width: 1024px) {
   .hero-banner__wrapper {
     min-height: 600px;
-    padding: 200px 0 190px;
+    padding: 200px 0;
   }
 }
 @media (min-width: 1900px) {
   .hero-banner__wrapper {
     padding-top: calc(200px + 4vw);
-    padding-bottom: calc(190px + 4vw);
+    padding-bottom: calc(200px + 4vw);
   }
 }
 
@@ -4673,6 +4678,11 @@ img.error {
 
 .info-row--gray-bg {
   background-color: #e7f0f8;
+}
+
+.info-row--image-top .info-row__img {
+  -o-object-position: center top;
+     object-position: center top;
 }
 
 /* ==========================================================================
@@ -5377,7 +5387,7 @@ img.error {
 .newsletter-form__form .wpforms-container .wpforms-form .wpforms-field-container .wpforms-field textarea.wpforms-error,
 .newsletter-form__form .wpforms-container-full .wpforms-form .wpforms-field-container .wpforms-field input.wpforms-error,
 .newsletter-form__form .wpforms-container-full .wpforms-form .wpforms-field-container .wpforms-field textarea.wpforms-error {
-  border: 2px solid transparent;
+  border: 2px solid #ffabab;
 }
 .newsletter-form__form .wpforms-container .wpforms-form .wpforms-field-container .wpforms-field input,
 .newsletter-form__form .wpforms-container-full .wpforms-form .wpforms-field-container .wpforms-field input {
@@ -5391,11 +5401,12 @@ img.error {
 }
 .newsletter-form__form .wpforms-container .wpforms-form .wpforms-field-container .wpforms-field .wpforms-required-label,
 .newsletter-form__form .wpforms-container-full .wpforms-form .wpforms-field-container .wpforms-field .wpforms-required-label {
-  color: #fff;
+  color: #ffabab;
 }
 .newsletter-form__form .wpforms-container .wpforms-form .wpforms-field-container .wpforms-field label.wpforms-error,
 .newsletter-form__form .wpforms-container-full .wpforms-form .wpforms-field-container .wpforms-field label.wpforms-error {
-  color: #fff;
+  color: #ffabab;
+  font-size: 13px;
 }
 .newsletter-form__form .wpforms-container .wpforms-form .wpforms-submit-container .wpforms-submit,
 .newsletter-form__form .wpforms-container-full .wpforms-form .wpforms-submit-container .wpforms-submit {
@@ -5587,7 +5598,7 @@ img.error {
 }
 @media (min-width: 768px) {
   .booking-section {
-    padding: 90px 0 70px;
+    padding: 70px 0 70px;
   }
 }
 
@@ -5597,6 +5608,15 @@ img.error {
 @media (min-width: 1024px) {
   .booking-section__container {
     margin: 0;
+  }
+}
+
+.booking-section__wrapper {
+  height: 780px;
+}
+@media (min-width: 1024px) {
+  .booking-section__wrapper {
+    height: 620px;
   }
 }
 

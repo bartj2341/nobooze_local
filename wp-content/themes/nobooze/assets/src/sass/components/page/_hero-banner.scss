@@ -7,17 +7,17 @@
 }
 
 .hero-banner__wrapper {
-    padding: 100px 0 130px;
+    padding: 130px 0;
     min-height: 400px;
 
     @include bp(large) {
         min-height: 600px;
-        padding: 200px 0 190px;
+        padding: 200px 0;
     }
 
     @include bp(xfull) {
         padding-top: calc(200px + 4vw);
-        padding-bottom: calc(190px + 4vw);
+        padding-bottom: calc(200px + 4vw);
     }
 }
 

@@ -6,7 +6,7 @@
     padding: 50px 0 50px; 
     
     @include bp(medium) {
-        padding: 90px 0 70px; 
+        padding: 70px 0 70px; 
     }
 } 
 
@@ -15,5 +15,13 @@
     
     @include bp(large) {
         margin: 0;
+    }
+}
+
+.booking-section__wrapper {
+    height: 780px;
+
+    @include bp(large) {
+        height: 620px;
     }
 }
