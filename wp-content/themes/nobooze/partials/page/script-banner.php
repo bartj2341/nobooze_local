@@ -2,7 +2,7 @@
 $modifier = get_sub_field("modifier") ? get_sub_field("modifier") : [];
 $bg_image = get_sub_field("background_image") ? get_sub_field("background_image") : "";
 $title = get_sub_field("title") ? get_sub_field("title") : "";
-$animated_letters = get_sub_field("animated_letter_by_letter") ? get_sub_field("animated_letter_by_letter") : "";
+$animated_letters = get_sub_field("animated_letters") ? get_sub_field("animated_letters") : "";
 ?>
 
 <section class="script-banner p-relative <?php foreach ($modifier as $value) { echo(' ' . $value); } ?>">

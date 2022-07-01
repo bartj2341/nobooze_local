@@ -1,7 +1,7 @@
 <?php
 $title = get_sub_field("title") ? get_sub_field("title") : "";
 $button = get_sub_field("button") ? get_sub_field("button") : "";
-$animated_letters = get_sub_field("animated_letter_by_letter") ? get_sub_field("animated_letter_by_letter") : "";
+$animated_letters = get_sub_field("animated_letters") ? get_sub_field("animated_letters") : "";
 ?>
 
 <section class="glowing-banner p-relative">

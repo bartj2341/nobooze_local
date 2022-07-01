@@ -46,7 +46,7 @@
 									<a class="u-footer__link text-small" href="<?= site_url() ?>/videos">VIDEOS</a>
 								</li>
 								<li class="u-footer__sub__li">
-									<a class="u-footer__link text-small" href="<?= site_url() ?>/articles">ARTICLES</a>
+									<a class="u-footer__link text-small" href="<?= site_url() ?>/blog">BLOG</a>
 								</li>
 							</ul>
 						</li>
