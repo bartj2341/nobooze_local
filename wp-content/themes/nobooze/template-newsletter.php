@@ -9,8 +9,8 @@ $message = get_field("message") ? get_field("message") : "";
 get_header(); 
 ?>
 
-<main class="main-wrapper">
-    <section class="newsletter-message booking-wrapper">
+<main>
+    <section class="newsletter-message main-wrapper">
         <div class="newsletter-message__wrapper wrapper-box">
             <div class="newsletter-message__container">
             <?php if($title): ?>
