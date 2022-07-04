@@ -20,17 +20,10 @@
 	}
 }
 
-/* TOP
-    ========================================================================== */
-
-.u-header__top__content {
-    height: $nav-top;
-}
-
 /* BOTTOM
     ========================================================================== */
 .u-header__main {
-	height: $m-nav-bottom;
+	height: $m-nav;
 
 	@include bp(medium) {
 		margin: 0 -12px 0 -10px;
@@ -38,7 +31,7 @@
 
 	@include bp(large) {
 		margin: 0;
-		height: $nav-bottom;
+		height: $nav;
 	}
 }
 

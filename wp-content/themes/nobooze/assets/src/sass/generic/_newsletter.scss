@@ -2,24 +2,27 @@
 // # NEWSLETTER MESSAGES
 // ==========================================================================
 
-.noptin-actions-page {
-    background: $cbg-white;
-    margin: 0 20px;
-}
+.newsletter-message {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 260px);
+} 
 
-.noptin-actions-page-inner {
+.newsletter-message__container {
     border: none;
     background: $cbg-blue-2;
     padding: 40px;
-    color: $cbg-white;
+    border-radius: $global-radius;
+    text-align: center;
 
     h1 {
-        font-family: $heading-family;
-        margin: 20px;
+        color: $ct-white;
+        margin-bottom: 20px;
     }
 
     p {
-        font-family: $text-family;
+        color: $ct-white;
     }
 }
 

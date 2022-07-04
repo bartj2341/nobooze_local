@@ -111,10 +111,4 @@
             max-width: 60%; 
         }
     }
-    
-    .full-image__bg {
-        @include bp(large) {
-            width: 40%;
-        }
-    }
 }

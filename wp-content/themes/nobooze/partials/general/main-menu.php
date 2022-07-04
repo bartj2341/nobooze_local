@@ -3,13 +3,6 @@ $post = $wp_query->get_queried_object();
 $pagename = $post ? $post->post_name : '';
 ?>
 <div class="p-relative">
-    <div class="bg-blue">
-        <div class="wrapper-nav">
-            <div class="u-header__top__content d-flex d-flex-align-c d-flex-justify-e">
-                <div class="c-white f-heading line-reset text-small">Call us: <span class="phone-number"><a href="tel:+12311231234">+123 1 123 1234</a></span></div>
-            </div>
-        </div>
-    </div>
     <div class="bg-white">
         <div class="wrapper-nav">
             <div class="u-header__main d-flex d-flex-align-c d-flex-justify-s">
