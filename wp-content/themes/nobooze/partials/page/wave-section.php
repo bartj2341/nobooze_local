@@ -13,9 +13,9 @@ $cta = get_sub_field("cta") ? get_sub_field("cta") : "";
 <section class="wave-section p-relative d-flex d-flex-wrap <?php foreach ($modifier as $value) { echo(' ' . $value); } ?>">
     <?php if($responsive_images): ?>
         <picture class="wave-section__image z-index-2">
-            <source srcset="<?= $image['url'] ?>" media="(min-width: 1024px)" />
-            <source srcset="<?= $image_tablet['url'] ?>" media="(min-width: 480px)" />
-            <img class="wave-section__img d-block fit-cover" src="<?= $image_mobile['url'] ?>" alt="<?= $image_mobile['alt'] ?>" />
+            <source data-srcset="<?= $image['url'] ?>" media="(min-width: 1024px)" />
+            <source data-srcset="<?= $image_tablet['url'] ?>" media="(min-width: 480px)" />
+            <img class="wave-section__img d-block fit-cover lazy" data-src="<?= $image_mobile['url'] ?>" alt="<?= $image_mobile['alt'] ?>" />
         </picture>
     <?php else: ?>
         <?php if($image): ?>
