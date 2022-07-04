@@ -2937,6 +2937,25 @@ fieldset {
   color: #6ca2d7;
 }
 
+.noptin-actions-page {
+  background: #fff;
+  margin: 0 20px;
+}
+
+.noptin-actions-page-inner {
+  border: none;
+  background: #0A64BC;
+  padding: 40px;
+  color: #fff;
+}
+.noptin-actions-page-inner h1 {
+  font-family: "Proxima Nova Regular", Arial, sans-serif;
+  margin: 20px;
+}
+.noptin-actions-page-inner p {
+  font-family: "Open Sans Regular", Arial, sans-serif;
+}
+
 /* ==========================================================================
    #PAGE
    ========================================================================== */

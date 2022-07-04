@@ -1,0 +1,25 @@
+// ==========================================================================
+// # NEWSLETTER MESSAGES
+// ==========================================================================
+
+.noptin-actions-page {
+    background: $cbg-white;
+    margin: 0 20px;
+}
+
+.noptin-actions-page-inner {
+    border: none;
+    background: $cbg-blue-2;
+    padding: 40px;
+    color: $cbg-white;
+
+    h1 {
+        font-family: $heading-family;
+        margin: 20px;
+    }
+
+    p {
+        font-family: $text-family;
+    }
+}
+
