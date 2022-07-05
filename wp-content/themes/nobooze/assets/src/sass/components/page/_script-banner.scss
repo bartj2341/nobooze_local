@@ -51,7 +51,7 @@
 
 .script-banner__title {
     margin-bottom: 10px;
-    line-height: 1;
+    line-height: 0.9;
 }
 
 .script-banner__word {
@@ -61,6 +61,7 @@
 
 .script-banner__letter {
     display: inline-block;
+    line-height: 0.9;
 }
 
 // Modifiers

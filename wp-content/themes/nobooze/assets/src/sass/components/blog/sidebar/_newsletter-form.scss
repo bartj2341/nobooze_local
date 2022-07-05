@@ -6,6 +6,10 @@
 .newsletter-form {
     background: radial-gradient(at center center, $cbg-blue-2 15%, $cbg-blue 100%);
     padding: 40px;
+
+    .newsletter-form__title {
+        line-height: 1.2;
+    }
 }
 
 .newsletter-form__title {

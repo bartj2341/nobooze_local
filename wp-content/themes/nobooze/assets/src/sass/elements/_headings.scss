@@ -83,7 +83,7 @@ h6,
 
 .heading-script { /* 120px ~ 70px */
     font-size: 7rem;
-    line-height: 0.9;
+    line-height: 1.1;
     letter-spacing: -2px;
 
     @include bp(medium) {
@@ -91,9 +91,9 @@ h6,
     }
 }
 
-.heading-script-two { /* 80px ~ 75px */
-    font-size: 7.5rem;
-    line-height: 1;
+.heading-script-two { /* 80px ~ 70px */
+    font-size: 7rem;
+    line-height: 1.1;
 
     @include bp(medium) {
         font-size: 8rem;
@@ -286,11 +286,7 @@ h6,
 
     @include bp(large) {
         font-size: 1.6rem;
-    }
-}
-
-.text-excerpt { /* 15px */
-    font-size: 1.5rem;
+    } 
 }
 
 .text-small { /* 14px */

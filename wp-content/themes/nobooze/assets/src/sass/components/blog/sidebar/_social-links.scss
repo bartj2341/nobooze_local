@@ -9,6 +9,10 @@
 .social-links__row {
     margin-bottom: 25px;
 
+    .social-links__row__description {
+        line-height: 1.25;
+    }
+
     &:last-child {
         margin-bottom: 0;
     }
