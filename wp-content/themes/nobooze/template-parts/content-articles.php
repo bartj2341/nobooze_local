@@ -32,7 +32,7 @@ $banner_image = get_field("banner_image") ? get_field("banner_image") : "";
             <?php if(get_the_title()): ?>
                 <h2 class="s-articles__content__title f-heading-sbold heading-medium c-blue-7"><?= the_title(); ?></h2>
             <?php endif; ?>
-            <p class="s-articles__text text-small pt-serif"><?=(has_excerpt() ? the_excerpt() : wp_trim_words(get_the_content(), 25)) ?></p> 
+            <p class="s-articles__text text-excerpt pt-serif"><?=(has_excerpt() ? the_excerpt() : wp_trim_words(get_the_content(), 25)) ?></p> 
         </div>
         <div class="s-articles__btn d-flex d-flex-align-c">
             <div>LEARN MORE</div>
