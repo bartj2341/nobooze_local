@@ -18,7 +18,7 @@ get_header();
 				<section class="single-article">
 					<div class="single-article__container p-relative d-flex d-flex-wrap">
 						<?php get_template_part('partials/blog/sidebar/share-links'); ?>
-						<div class="single-article__content list-basic">
+						<div class="single-article__content list-basic pt-serif">
 							<?php the_content(); ?>
 						</div>
 						<div class="single-article__sidebar">
@@ -51,10 +51,10 @@ get_header();
 						?>
 						<div class="single-article__bio">
 							<h3 class="single-article__bio__name">Tom White</h3>
-							<p class="single-article__bio__description">Tom is the founder of the NoBooze method, a unique approach to stopping drinking that requires no group meetings, rehab clinics, or willpower. It's based on a combination of psychology and social science, and aims to remove the desire to drink alcohol completely. Those who follow the method find that they're able to completely remove alcohol from their life, handle social situations with ease, and have meaningful, long-lasting relationships that are true and authentic.</h3>
+							<p class="single-article__bio__description pt-serif">Tom is the founder of the NoBooze method, a unique approach to stopping drinking that requires no group meetings, rehab clinics, or willpower. It's based on a combination of psychology and social science, and aims to remove the desire to drink alcohol completely. Those who follow the method find that they're able to completely remove alcohol from their life, handle social situations with ease, and have meaningful, long-lasting relationships that are true and authentic.</h3>
 						</div>
 						<div class="single-article__navigation d-flex d-flex-wrap d-flex-justify-s">
-							<div class="single-article__navigation__item single-article__navigation__prev">
+							<div class="single-article__navigation__item single-article__navigation__prev pt-serif">
 								<?php
 									$prev_post = get_adjacent_post(false, '', true);
 									if(!empty($prev_post)):
@@ -62,7 +62,7 @@ get_header();
 									endif;
 								?>
 							</div>
-							<div class="single-article__navigation__item single-article__navigation__next u-text-right">
+							<div class="single-article__navigation__item single-article__navigation__next u-text-right pt-serif">
 								<?php
 									$next_post = get_adjacent_post(false, '', false);
 									if(!empty($next_post)):

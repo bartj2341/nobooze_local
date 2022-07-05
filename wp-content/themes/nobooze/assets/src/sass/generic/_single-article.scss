@@ -30,6 +30,12 @@
         }
     }
 
+    p {
+        strong {
+            font-family: inherit;
+        }
+    }
+
     pre {
         background-color: $cbg-blue-5;
         border: 1px solid $cb-gray;

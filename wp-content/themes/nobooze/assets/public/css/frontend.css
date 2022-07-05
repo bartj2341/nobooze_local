@@ -2563,6 +2563,9 @@ fieldset {
 .single-article__content h2:first-child, .single-article__content h3:first-child, .single-article__content h4:first-child, .single-article__content h5:first-child, .single-article__content h6:first-child {
   margin: 0 0 20px;
 }
+.single-article__content p strong {
+  font-family: inherit;
+}
 .single-article__content pre {
   background-color: #e7f0f8;
   border: 1px solid #d7e0e4;
@@ -2929,6 +2932,11 @@ fieldset {
 }
 #ez-toc-container a:visited {
   color: #6ca2d7;
+}
+
+.ez-toc-title-container {
+  font-family: "Proxima Nova Regular", Arial, sans-serif;
+  font-size: 2.1rem;
 }
 
 .newsletter-message {
@@ -3373,6 +3381,7 @@ h6,
 .text-links {
   /* 16px ~ 14px */
   font-size: 1.4rem;
+  line-height: 1.25;
 }
 @media (min-width: 1024px) {
   .text-links {

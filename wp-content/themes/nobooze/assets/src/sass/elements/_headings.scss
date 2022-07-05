@@ -282,6 +282,7 @@ h6,
 
 .text-links { /* 16px ~ 14px */
     font-size: 1.4rem;
+    line-height: 1.25;
 
     @include bp(large) {
         font-size: 1.6rem;
