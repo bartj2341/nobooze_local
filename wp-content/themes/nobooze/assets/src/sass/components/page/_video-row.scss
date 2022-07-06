@@ -3,10 +3,17 @@
    ========================================================================== */
 
 .video-row { 
-    padding: 50px 0;
+    padding-top: 50px;
+    margin-bottom: 50px;
+
+    @include bp(medium) {
+        padding-top: 50px;
+        margin-bottom: 70px;
+    }
 
     @include bp(large) {
-        padding: 50px 0 100px 0;
+        padding-top: 50px;
+        margin-bottom: 100px;
     }
 }
 
@@ -18,7 +25,7 @@
     }
 
     @include bp(large) {
-        margin-bottom: 50px;
+    margin-bottom: 50px;
     }
 }
 

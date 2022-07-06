@@ -5,6 +5,7 @@
 .single-video { 
     background-color: $cbg-blue-2;
     padding: 50px 0;
+    
 
     @include bp(large) {
         padding: 50px 0 100px 0;
@@ -25,6 +26,6 @@
     }
 
     @include bp(large) {
-        margin-bottom: 50px;
+    margin-bottom: 50px;
     }
 }
