@@ -71,7 +71,16 @@
 
 .standard-row__image {
     height: 400px;
-    max-width: 400px;
+    width: 100%;
+    max-width: 100%;
+
+    @include bp(small) {
+        width: 400px;
+    }
+
+    @include bp(medium) {
+        width: 500px;
+    }
 
     @include bp(large) {
         position: absolute;
