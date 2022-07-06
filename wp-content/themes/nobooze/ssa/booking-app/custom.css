@@ -254,6 +254,11 @@ ul.week {
   margin: 0 -4px;
 }
 
+.md-dialog-content,
+.md-dialog-actions {
+  font-family: "Open Sans Regular", Arial, sans-serif;
+}
+
 .md-dialog-actions {
   padding: 8px 24px;
 }/*# sourceMappingURL=custom.css.map */

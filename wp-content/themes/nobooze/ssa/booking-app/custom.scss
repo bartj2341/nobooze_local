@@ -312,6 +312,11 @@ ul.week {
     margin: 0 -4px;
 }
 
+.md-dialog-content,
 .md-dialog-actions {
-    padding: 8px 24px;
+    font-family: $sans-regular;
+}
+
+.md-dialog-actions {
+    padding: 8px 24px; 
 }
