@@ -4,12 +4,7 @@
 
 .video-row { 
     padding-top: 50px;
-    margin-bottom: 50px;
-
-    @include bp(medium) {
-        padding-top: 50px;
-        margin-bottom: 70px;
-    }
+    margin-bottom: 70px;
 
     @include bp(large) {
         padding-top: 50px;
