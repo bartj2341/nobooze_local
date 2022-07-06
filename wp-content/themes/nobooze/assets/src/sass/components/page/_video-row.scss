@@ -13,15 +13,7 @@
 }
 
 .video-row__title {
-    margin-bottom: 30px;
-
-    @include bp(medium) {
-        margin-bottom: 40px;
-    }
-
-    @include bp(large) {
-        margin-bottom: 50px;
-    }
+    margin-bottom: 50px;
 }
 
 .video-row__row {
