@@ -6,7 +6,11 @@
 .u-carousel {
     padding-left: 20px;
     padding-right: 20px;
-    margin-bottom: 70px;
+    margin-bottom: 50px;
+
+    @include bp(medium) {
+        margin-bottom: 70px;
+    }
 
     @include bp(large) {
         padding-left: 55px;
@@ -54,6 +58,6 @@
 // Modifers
 .u-carousel--small-pt {
     .u-carousel__container {
-        padding-top: 55px;
+        padding-top: 50px;
     }
 }
