@@ -7,7 +7,8 @@
     .wpforms-form {
         .wpforms-field-container {
             .wpforms-field {
-                padding: 8px 0; 
+                position: relative;
+                padding: 8px 0 30px; 
                 
                 .wpforms-field-label {
                     @extend .f-text-bold;
@@ -58,8 +59,10 @@
                     color: $ct-red;
                 }
 
-                .wpforms-error {
-                    margin-top: 3px;
+                label.wpforms-error {
+                    position: absolute;
+                    bottom: 8px;
+                    left: 0;
                 }
             }
         }
