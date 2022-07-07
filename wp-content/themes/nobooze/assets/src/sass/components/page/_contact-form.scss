@@ -5,7 +5,7 @@
 .contact-form {
     background-color: $cbg-blue-5;
     justify-content: center;
-
+    
     @include bp(large) {
         justify-content: flex-end
     }

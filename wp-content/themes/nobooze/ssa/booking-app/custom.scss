@@ -18,11 +18,31 @@ $booking-transition: all 200ms linear;
         color: $white !important;
         background: #007aff !important;
     }
-} 
+}
+
+.hfeed {
+    max-width: 1240px;
+    padding: 80px 20px 16px 20px !important;
+    margin: 0 auto;
+
+    @media (min-width: 768px) {
+        padding: 80px 35px 16px 35px !important;
+    } 
+
+    @media (min-width: 1024px) {
+        padding: 80px 70px 16px 70px !important;
+    }
+}
 
 .app-wrapper {
     color: $secondary-blue;
     font-family: $sans-regular;
+
+    .md-fab {
+        position: absolute;
+        top: -60px;
+        left: 0;
+    }
 }
 
 .md-title,
@@ -40,6 +60,13 @@ $booking-transition: all 200ms linear;
     font-family: $proxima-semi;
 }
 
+.md-flex-small-100 {
+    @media (max-width: 1023px) {
+        min-width: 100%;
+        flex: 0 1 100%;
+    }
+}
+
 .timezone{
     .md-button {
         &.md-icon-button {
@@ -47,6 +74,16 @@ $booking-transition: all 200ms linear;
                 color: $secondary-blue;
             }
         }
+    }
+
+    @media (min-width: 960px) {
+        justify-content: unset;
+        text-align: unset;
+    }
+    
+    @media (min-width: 1024px) {
+        justify-content: flex-end;
+        text-align: right;
     }
 }
 
@@ -162,10 +199,20 @@ ul.week {
 }
 
 .book-day {
+    margin-bottom: 16px;
+
     button.md-whiteframe {
         border-radius: 30px;
         font-family: $sans-regular;
-    } 
+    }
+
+    @media (min-width: 960px) {
+        margin-bottom: 16px;
+    }
+    
+    @media (min-width: 1024px) {
+        margin-bottom: 0;
+    }
 }
 
 /* LOADING SCREEN */

@@ -12,9 +12,30 @@
   background: #007aff !important;
 }
 
+.hfeed {
+  max-width: 1240px;
+  padding: 80px 20px 16px 20px !important;
+  margin: 0 auto;
+}
+@media (min-width: 768px) {
+  .hfeed {
+    padding: 80px 35px 16px 35px !important;
+  }
+}
+@media (min-width: 1024px) {
+  .hfeed {
+    padding: 80px 70px 16px 70px !important;
+  }
+}
+
 .app-wrapper {
   color: #074684;
   font-family: "Open Sans Regular", Arial, sans-serif;
+}
+.app-wrapper .md-fab {
+  position: absolute;
+  top: -60px;
+  left: 0;
 }
 
 .md-title,
@@ -32,8 +53,27 @@
   font-family: "Proxima Nova SemiBold", Arial, sans-serif;
 }
 
+@media (max-width: 1023px) {
+  .md-flex-small-100 {
+    min-width: 100%;
+    flex: 0 1 100%;
+  }
+}
+
 .timezone .md-button.md-icon-button .md-icon {
   color: #074684;
+}
+@media (min-width: 960px) {
+  .timezone {
+    justify-content: unset;
+    text-align: unset;
+  }
+}
+@media (min-width: 1024px) {
+  .timezone {
+    justify-content: flex-end;
+    text-align: right;
+  }
 }
 
 .timezone strong {
@@ -122,9 +162,22 @@ ul.week {
   }
 }
 
+.book-day {
+  margin-bottom: 16px;
+}
 .book-day button.md-whiteframe {
   border-radius: 30px;
   font-family: "Open Sans Regular", Arial, sans-serif;
+}
+@media (min-width: 960px) {
+  .book-day {
+    margin-bottom: 16px;
+  }
+}
+@media (min-width: 1024px) {
+  .book-day {
+    margin-bottom: 0;
+  }
 }
 
 /* LOADING SCREEN */

@@ -88,3 +88,19 @@ function remove_admin_login_header() {
 }
 
 add_action('get_header', 'remove_admin_login_header');
+
+
+/** Disable the scrolling effect on field validation errors
+ *
+ *  @link   https://wpforms.com/developers/how-to-disable-the-scrolling-effect-on-field-validation/
+ */
+ 
+function wpf_dev_disable_scroll_to_error( $forms ) {
+ 
+    // If scrollToError is disabled for at least one form on the page, it will be disabled for all the forms on the page.
+ 
+    ?>
+    <script type="text/javascript">wpforms.scrollToError = function(){};</script>
+    <?php
+}
+add_action( 'wpforms_wp_footer_end', 'wpf_dev_disable_scroll_to_error', 10, 1 );
