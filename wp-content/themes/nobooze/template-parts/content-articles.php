@@ -26,11 +26,11 @@ $banner_image = get_field("banner_image") ? get_field("banner_image") : "";
         <?php endif; ?>  
         
         <div class="s-articles__content d-flex d-flex-column">
-            <?php if(get_the_author()): ?>
-            <div class="s-articles__date f-heading text-sixteen"><?= the_date(); ?></div>
+            <?php if(get_the_date()): ?>
+                <div class="s-articles__date f-heading text-sixteen"><?= get_the_date(); ?></div>
             <?php endif; ?>
             <?php if(get_the_title()): ?>
-                <h2 class="s-articles__content__title f-heading-sbold heading-medium c-blue-7"><?= the_title(); ?></h2>
+                <h2 class="s-articles__content__title f-heading-sbold heading-medium c-blue-7"><?= get_the_title(); ?></h2>
             <?php endif; ?>
             <p class="s-articles__text text-sixteen pt-serif"><?=(has_excerpt() ? the_excerpt() : wp_trim_words(get_the_content(), 25)) ?></p> 
         </div>
