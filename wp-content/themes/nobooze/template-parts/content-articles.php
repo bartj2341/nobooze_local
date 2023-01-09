@@ -26,9 +26,6 @@ $banner_image = get_field("banner_image") ? get_field("banner_image") : "";
         <?php endif; ?>  
         
         <div class="s-articles__content d-flex d-flex-column">
-            <?php if(get_the_date()): ?>
-                <div class="s-articles__date f-heading text-sixteen"><?= get_the_date(); ?></div>
-            <?php endif; ?>
             <?php if(get_the_title()): ?>
                 <h2 class="s-articles__content__title f-heading-sbold heading-medium c-blue-7"><?= get_the_title(); ?></h2>
             <?php endif; ?>

@@ -21,7 +21,6 @@ $banner_image = get_field("banner_image") ? get_field("banner_image") : "";
     <div class="article-banner__container d-flex wrapper-large w-100 p-relative z-index-1">
         <div class="article-banner__content">
             <h1 class="article-banner__title heading-post f-heading-xbold c-white u-text-center"><?= the_title() ?></h1>
-            <div class="article-banner__info heading-author c-white f-heading u-text-center"><?= the_date(); ?></div>
         </div>
     </div>
 </section>
